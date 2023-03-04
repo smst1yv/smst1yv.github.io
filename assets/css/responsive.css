@@ -1,0 +1,125 @@
+@media(max-width:1199px){
+    .search-container input{
+        right: -33px;
+    }
+    .search-container i{
+        right: -333px;
+    }
+    .film-cart-two-container{
+        max-width: 801px;
+    }
+
+    .film-cart{
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width:991px){
+    .search-container{
+        display: none;
+    }
+
+    .film-cart-two-container{
+        max-width: 534px;
+    }
+
+    .menu-bar{
+        display: none;
+    }
+    #responsive-menu-button{
+        display: block;
+    }
+    .menu-container button{
+        top: 20px;
+    }
+    .menu-container{
+        height: 45px;
+    }
+    .header-menu-container .logo-container{
+        position: absolute;
+        left: 40px;
+    }
+    .mobile-app #span{
+        display: none;
+    }
+    .mobile-app #mobile-app-span{
+        display: block;
+    }
+
+    .about-link .hdizle{
+        display: none;
+    }
+    .about-link{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media(max-width:537px){
+    .menu-bar-two ul li a{
+        font-size: 11px;
+    }
+}
+
+@media(max-width:424px){
+    .menu-bar-two ul li a{
+        font-size: 9px;
+    }
+}
+
+@media(max-width:379px){
+    .menu-bar-two {
+        display: none;
+    }
+    
+    .secim-menu{
+        padding-top: 0;
+    }
+    .mobile-app #mobile-app-span{
+        display: none;
+    }
+    .header-menu-container .logo-container h3{
+        display: none;
+    }
+    .header-menu-container .logo-container h4{
+        display: none;
+    }
+}
+
+@media(max-width:767px){
+    .film-cart{
+        width: 180px;
+        height: 239px;
+    }
+    .film-cart img{
+        width: 180px;
+        height: 239px;
+    }
+    .film-cart .dublaj{
+        font-size: 12px;
+    }
+    .film-cart h4{
+        font-size: 9px;
+    }
+    .film-cart-two-container{
+        max-width: 407px;
+    }
+}
+
+@media (max-width:767px){
+    .pages-number .span1{
+        display: none;;
+    }
+    .pages-number{
+        right: 78px;
+    }
+
+}
+@media(max-width:421px){
+    .film-cart-two-container{
+        max-width: 172px;
+    }
+    .pages-number{
+        right: -40px;
+    }
+}

@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+}
+.header-menu-container{
+    background: #1d3a48!important;
+    padding: 9px;
+}
+.menu-container{
+    display: flex;
+}
+.header-menu-container .logo-container{
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+}
+.header-menu-container .logo-container i{
+    font-size: 32px;
+    color: #fff;
+    margin-right: 10px;
+}
+.header-menu-container .logo-container h3{
+    color: rgb(110,207,255);
+    font-size: 26px;
+    margin-top: 7px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.header-menu-container .logo-container h4{
+    margin-top: 7px;
+    font-size: 26px;
+    cursor: pointer;
+}
+.header-menu-container .menu-bar ul{
+    display: flex;
+}
+
+.header-menu-container .menu-bar ul li a{
+    font: 400 17px Roboto;
+    color: #e3f5ff;
+    text-decoration: none;
+    padding: 8px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.header-menu-container .menu-bar ul li a:hover{
+    background: #1c3c4e;
+    text-shadow: 0 1px 1px #1d282d;
+    font: 400 17px Roboto;
+    color: #e3f5ff;
+    text-decoration: none;
+    padding: 8px 10px;
+    margin-right: 5px;
+}
+
+
+.header-menu-container .menu-bar ul li .active{
+    background: #2b5063!important;
+    font: 400 17px Roboto;
+    color: #e3f5ff;
+    text-decoration: none;
+    padding: 8px 10px;
+    margin-right: 5px;
+}
+
+.header-menu-container .menu-bar ul li .liste::after{
+    padding: 0 2px 0 2px;
+    right: 0;
+    font: normal 9px Arial;
+    background: #0cceff;
+    border-radius: 3px;
+    content: "Yeni";
+    color: #000!important;
+    text-shadow: none!important;
+    position: absolute;
+    top: -3px;
+    right: -2px;
+}
+
+
+.header-menu-container .menu-bar ul li .liste{
+    position: relative;
+}
+.menu-bar{
+    margin-top: 15px;
+}
+
+.secimler-container{
+    background: #264858!important;   
+}
+
+.secim-menu{
+    display: flex;
+    padding-top: 10px;
+}
+
+.menu-bar{
+    padding-top: 6px;
+}
+.menu-bar-two ul{
+    display: flex;
+}
+.menu-bar-two ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+}
+.search-container input{
+    background: #19313e;
+    color: #DBF2FF;
+    font: 400 15px Roboto;
+    border-radius: 5px;
+    width: 140%;
+    padding: 8px 10px;
+    position: relative;
+    right: -300px;
+    top: 6px;
+}
+
+.search-container input:focus{
+    outline: none;
+}
+.search-container i{
+    right: -599px;
+    position: relative;
+    top: -23px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.menu-bar-two{
+    margin-top: 15px;
+}
+
+.film-container{
+    padding-top: 200px;
+    background-image: url(https://cdn77.aj2550.bid/files2550/20/36/183/t/1713/Turkey_Brending_desktop_new.jpg?cs=9bcfb40211af6ca3d5f11a5763fe3c15);
+}
+
+.mobile-app{
+    background: #4a6371;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    padding-bottom: 19px;
+}
+.mobile-app .span-blue{
+    color: #c1ecff;
+}
+
+.mobile-app a{
+    background: #284a5b;
+    box-shadow: 0 0 6px #42515d;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin-top: 16px;
+    margin-left: 10px;
+}
+.mobile-app span{
+    color: #fff;
+    padding-top: 18px;
+}
+.film-cart-container{
+    background-color: #fff;
+    padding-top: 50px;
+}
+
+.film-cart img{
+    border-radius: 5px;
+    width: 248px;
+    height: 350px;
+    cursor: pointer;
+}
+
+.film-cart{
+    width: 248px;
+    height: 350px;
+    position: relative;
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+border-radius: 5px;
+margin-right: 19px;
+margin-top: 20px;
+}
+.film-cart .dublaj{
+    position: absolute;
+    top: 7px;
+    font-size: 15px;
+    left: 7px;
+    background: #3394a4d1!important;
+    border-radius: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #fff;
+}
+
+.film-cart .kk{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    color: black;
+    background-color: yellow;
+    padding: 1px 10px;
+    border-radius: 5px;
+}
+
+.film-cart h4{
+    position: absolute;
+    bottom: 30px;
+    color: #fff;
+    font-size: 15px;
+    margin-left: 10px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    background: #3394a4d1!important;
+}
+.film-cart .years{
+    position: absolute;
+    bottom: 5px;
+    left: 11px;
+    color: #fff;
+    font-size: 14px;
+    background: #3394a4d1!important;
+    border-radius: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.film-cart .imdb{
+    position: absolute;
+    bottom: 5px;
+    right: 11px;
+    font-size: 14px;
+    color: black;
+    background-color: yellow;
+    padding: 1px 10px;
+    border-radius: 5px;
+}
+
+.film-cart-two-container{
+    max-width: 1070px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.film-cart-two-container .pages-number span{
+    color: #fff;
+    background: #63808e;
+    margin-right: 10px;
+    padding: 2px 13px;
+    color: #415a67;
+    background: #dde5e6;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.film-cart-two-container .pages-number .active{
+    color: #fff;
+    background: #63808e;
+}
+
+.pages-number{
+    margin-top: 40px;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
+.menu-bar ul li .dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    width: 178px;
+    margin-top: 5px;
+    display: none;
+}
+
+.menu-bar ul li .dropdown-menu li a{
+    color: #22475c;
+    margin-left: 5px;
+}
+
+.menu-bar ul li .dropdown-menu li{
+    margin-top: 5px;
+}
+
+.menu-bar ul li:hover .dropdown-menu{
+    display: block;
+}
+
+.menu-bar ul li a i{
+    font-size: 13px;
+    margin-left: 3px;
+}
+
+
+footer{
+    background: #284452;
+    margin-top: 30px;
+}
+
+.about-link{
+    display: flex;
+    padding-top: 20px;
+}
+.about-link h4{
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.about-p p{
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+.about-head-h h4{
+    color: #fff;
+}
+.menu-phone{
+    position: absolute;
+    right: -100%;
+    padding: 20px;
+    background: #264858!important;
+    top: 0;
+    height: 800px;
+    transition: all 0.4s;
+    z-index: 2;
+    display: none;
+}
+
+.menu-phone.active{
+    right: 0;
+    display: block;
+}
+
+.menu-phone ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.menu-phone ul li{
+    margin-bottom: 15px;
+    text-align: center;
+}
+.menu-container button{
+    position: absolute;
+    right: 40px;
+    top: 32px;
+}
+.menu-phone #close-phone-menu{
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    right: 0;
+    cursor: pointer;
+}
+
+#responsive-menu-button{
+    display: none;
+}
+
+.mobile-app #mobile-app-span{
+    display: none;
+}

@@ -140,3 +140,251 @@ body{
         margin-top: 3rem;
     }
 }
+
+.hep{
+    height: 45rem;
+}
+@media (max-width:803px) {
+    .fulls-diy{
+        height: 65rem;
+    }
+}
+
+.sele{
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: inherit;
+    cursor: pointer;
+    user-select: none;
+    padding: 0.65rem 1.25rem;
+    background-color: var(--color-white);
+    transition: all 0.2s ease-in-out;
+}
+
+.sectione {
+    margin: 0 auto;
+    padding: 5rem 0 2rem;
+    background: #303030;
+ }
+.containers{
+    max-width: 40rem;
+    height: auto;
+    margin: 0 auto;
+    padding: 5rem 3rem;
+    border-radius: 0.25rem;
+    box-shadow: 0px 0px 7px 2px rgba(170,163,163,0.75);
+    -webkit-box-shadow: 0px 0px 7px 2px rgba(170,163,163,0.75);
+    -moz-box-shadow: 0px 0px 7px 2px rgba(170,163,163,0.75);
+}
+.fg {
+    position: relative;
+}
+
+.fa {
+    position: absolute;
+    top: 0.65rem;
+    right: 0.5rem;
+    z-index: 10;
+    font-size: 1.35rem;
+    line-height: inherit;
+    color: var(--color-darks);
+}
+
+.form .dropdown {
+    position: relative;
+}
+
+.drsl{
+    position: relative;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    cursor: pointer;
+    user-select: none;
+    width: 100%;
+    height: auto;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    outline: none;
+    border-radius: 0.25rem;
+    color: var(--color-black);
+    background-clip: padding-box;
+    box-shadow: var(--shadow-medium);
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+}
+
+.drmen{
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    border-radius: 0.25rem;
+    background-color: var(--color-white);
+    transition: all 0.3s ease-in-out;
+}
+
+.drsar{
+    display: block;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 100%;
+    height: auto;
+    padding: 0.65rem 1.25rem;
+    border: none;
+    outline: none;
+    color: var(--color-black);
+    background-clip: padding-box;
+    background-color: var(--color-light);
+}
+
+.dmi{
+    max-height: 16rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.dropdown{
+    box-shadow: 0px 0px 7px 2px rgba(170,163,163,0.75);
+    -webkit-box-shadow: 0px 0px 7px 2px rgba(170,163,163,0.75);
+    -moz-box-shadow: 0px 0px 7px 2px rgba(170,163,163,0.75);
+}
+
+.prce{
+    padding: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    box-shadow: 0px 0px 7px 2px rgba(170,163,163,0.75);
+    -webkit-box-shadow: 0px 0px 7px 2px rgba(170,163,163,0.75);
+    -moz-box-shadow: 0px 0px 7px 2px rgba(170,163,163,0.75);
+    width: 100%;
+}
+
+.active{
+    display: block;
+    position: relative;
+    background: #fff;
+}
+
+.dmeni{
+    position: relative;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    cursor: pointer;
+    user-select: none;
+    width: 100%;
+    height: auto;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    outline: none;
+    border-radius: 0.25rem;
+    color: var(--color-black);
+    background-clip: padding-box;
+    box-shadow: var(--shadow-medium);
+    transition: all 0.3s ease-in-out;
+    background: #fff
+}
+
+
+.payment{
+    text-align: center;
+    padding: 1rem;
+    width: 50%;
+}
+
+.payment-cont{
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+    padding: 1rem;
+}
+
+.payment-fullname{
+    margin-top: 1.3rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.payment-cont{
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+}
+.fullname{
+    margin-right: 10px;
+    font-weight: 600;
+}
+.lastname{
+    font-weight: 600;
+}
+.payment-name h3{
+    font-size: 32px;
+    font-weight: bold;
+}
+.payment-code p{
+    font-weight: 600;
+}
+
+.bitcoin-div{
+    text-align: center;
+    padding: 1rem;
+    width: 50%;
+}
+
+.btc-container h3{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.btc-code{
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+    padding: 1rem;
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+}
+.btc-code p{
+    font-weight: 600;
+}
+
+.flaw{
+    padding-top: 25px;
+    display: flex;
+}
+
+
+@media (max-width:989px) {
+    .bitcoin-div{
+        width: 100%;
+    }
+
+    .flaw{
+        flex-direction: column;
+    }
+
+    .payment{
+        width: 100%;
+    }
+
+    .bitcoin-div{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 820px){
+    .hep {
+    height: 26rem;
+}
+}

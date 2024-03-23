@@ -513,14 +513,25 @@ body{
     padding-left: 10px;
 }
 
+.sell-contains{
+    padding: 0 1rem;
+}
+
 .buy-sell{
     overflow: hidden;
-    position: fixed;
-    bottom: 6.5rem;
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin: .5rem !important;
+    margin-bottom: 1rem;
+}
+
+@media (max-width:900px) {
+    .buy-sell{
+        position: fixed;
+        bottom: 63px;
+        margin-left: -15px;
+    }
 }
 .by-sl-bt{
     text-align: center;
@@ -544,9 +555,13 @@ body{
 
 @media (max-width:580px) {
     .buy-sell{
-        bottom: 5rem;
+        bottom: 63px;
+        margin-left: -15px;
     }
 }
+
+
+
 
 
 @media (max-width:400px) {
@@ -629,5 +644,8 @@ body{
     }
     .footermenu{
         display: block;
+    }
+    .sell-contains{
+        margin-bottom: 150px;
     }
 }

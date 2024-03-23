@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    background: #202022;  
+}
+
+.footermenu{
+    width: 100%;
+    margin-top: 1rem;
+    padding-top: 2rem;
+}
+.menusf{
+    display: flex;
+    justify-content: space-around;
+}
+.menusf a{
+    background: #868585;
+    padding: 1rem;
+    border-radius: 30px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menusf a:hover{
+    background: aliceblue;
+    transition: all 0.3s ease-in-out;
+}
+.menusf a i{
+    color: #000;
+}
+
+.menu-tog{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.menu-tog-name{
+    color: #868585;
+}
+
+.head-dis{
+    padding: 1rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+}
+.wallet-head-b{
+    color: white;
+    margin-bottom: 0.3rem;
+}
+
+.wallet-head-d{
+    color: green;
+}
+.wallet-head{
+    display: flex;
+    flex-direction: column;
+}
+.chat-head{
+    margin-left: 15px;
+}
+.chat-head-btn{
+    background-color: yellow;
+    padding: 0.3rem;
+    font-size: 20px;
+    border-radius: 16px;
+}
+.chat-head-btn i{
+    color: #000;
+}
+.chat-flag{
+    margin-left: 15px;
+}
+.chat-website{
+    margin-left: 15px;
+}
+
+.wallet-yatr{
+    margin-left: 15px;
+}
+
+.wallet-yatr a{
+    background: green;
+    color: black;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.chat-website a{
+    background: green;
+    color: black;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+
+.grafike{
+    height: 30rem;
+    padding: 0.2rem;
+    margin-top: 20px;
+}
+
+
+@media (max-width:900px) {
+    .grafike{
+        height: 24rem;
+    }
+}
+
+@media (max-width:575px) {
+    .wallet-yatr a{
+        padding: 0.4rem;
+    }
+    .chat-website a{
+        padding: 0.4rem;
+    }
+    .menusf a{
+        padding: 0.5rem;
+        font-size: 15px;
+        width: 2rem;
+    }
+
+    .menu-tog{
+        align-items: center;
+    }
+    .footermenu{
+        margin-top: 3rem;
+    }
+}

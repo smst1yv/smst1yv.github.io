@@ -13,6 +13,8 @@ body{
     width: 100%;
     margin-top: 1rem;
     padding-top: 2rem;
+    position: absolute;
+    bottom: 0.3rem;
 }
 .menusf{
     display: flex;
@@ -136,9 +138,7 @@ body{
     .menu-tog{
         align-items: center;
     }
-    .footermenu{
-        margin-top: 5rem;
-    }
+   
 }
 
 .hep{

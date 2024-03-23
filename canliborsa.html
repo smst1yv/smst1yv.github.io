@@ -22,7 +22,7 @@
                 <p class="menu-tog-name">Piyasalar</p>
             </div>
             <div class="menu-tog gos">
-                <a id="pozisyons" href=""><i class="fa-solid fa-clock-rotate-left"></i></a>
+                <a id="pozisyons"  onclick="togglePopup(event)" href=""><i class="fa-solid fa-clock-rotate-left"></i></a>
                 <p class="menu-tog-name">Pozisyonlar</p>
             </div>
             <div class="menu-tog gos">
@@ -120,7 +120,7 @@
 
 
     <div class="pozisyon-popup" style="background: #1D1D1D;">
-        <div class="baki">Bakiye: 50$</div>
+        <div class="baki">Kazanc Geçmişi</div>
         <div class="historyy">
             <table>
                 <thead>
@@ -130,11 +130,49 @@
                         <th>Kazanc</th>
                     </tr>
                 </thead>
+                <tbody>
+                    <tr>
+                        <td>12:05:2024</td>
+                        <td>350$</td>
+                        <td>150$</td>
+                    </tr>
+                    <tr>
+                        <td>12:05:2024</td>
+                        <td>350$</td>
+                        <td>150$</td>
+                    </tr>
+                    <tr>
+                        <td>12:05:2024</td>
+                        <td>350$</td>
+                        <td>150$</td>
+                    </tr>
+                    <tr>
+                        <td>12:05:2024</td>
+                        <td>350$</td>
+                        <td>150$</td>
+                    </tr>
+                    <tr>
+                        <td>12:05:2024</td>
+                        <td>350$</td>
+                        <td>150$</td>
+                    </tr>
+                    <tr>
+                        <td>12:05:2024</td>
+                        <td>350$</td>
+                        <td>150$</td>
+                    </tr>
+                    <tr>
+                        <td>12:05:2024</td>
+                        <td>350$</td>
+                        <td>150$</td>
+                    </tr>
+
+                </tbody>
             </table>
         </div>
     </div>
 
-    
+
 
 
     <div class="sell-contains">
@@ -190,18 +228,18 @@
             <div class="buy-sell">
                 <div style="background: #202022;padding: 0.5rem;">
                     <label class="wh-tx" for="">Hacim</label>
-                       <div class="sell-hac">
+                    <div class="sell-hac">
                         <div class="fa-di"><a href=""><i class="fa-solid fa-minus"></i></a></div>
                         <span>0</span>
                         <div class="fa-di"><a href=""><i class="fa-solid fa-plus"></i></a></div>
-                       </div>
+                    </div>
                 </div>
                 <div style="display: flex;justify-content: space-around;">
                     <div class="by-sl-dis">
                         <button class="by-sl-bt gr">BUY</button>
                     </div>
                     <div class="by-sl-dis">
-                        
+
                         <button class="by-sl-bt re">SELL</button>
                     </div>
                 </div>
@@ -216,12 +254,12 @@
                 <a href="/canliborsa" id="piyasas"><i class="fa-solid fa-bars-staggered"></i></a>
                 <p class="menu-tog-name">Piyasalar</p>
             </div>
-            <div class="menu-tog">
-                <a id="pozisyons" href=""><i class="fa-solid fa-clock-rotate-left"></i></a>
+            <div class="menu-tog" >
+                <a id="pozisyons" onclick="togglePopup(event)"href="#"><i class="fa-solid fa-clock-rotate-left"></i></a>
                 <p class="menu-tog-name">Pozisyonlar</p>
             </div>
             <div class="menu-tog">
-                <a id="ticaros" href=""><i class="fa-solid fa-chart-simple"></i></i></a>
+                <a id="ticaros"  href=""><i class="fa-solid fa-chart-simple"></i></i></a>
                 <p class="menu-tog-name">Ticaret</p>
             </div>
             <div class="menu-tog">
@@ -235,7 +273,27 @@
         </div>
     </div>
     <script>
+//pozisyonlar
 
+function togglePopup(event) {
+    event.preventDefault();
+    var popup = document.querySelector('.pozisyon-popup');
+    popup.classList.add('dops');
+
+    setTimeout(function() {
+        document.addEventListener('click', closePopupOutside);
+    }, 5000); 
+
+    function closePopupOutside(event) {
+        if (!popup.contains(event.target)) {
+            popup.classList.remove('dops');
+            document.removeEventListener('click', closePopupOutside);
+        }
+    }
+}
+
+
+    
         //Selected
         document.addEventListener('DOMContentLoaded', function () {
             const dropdownLabel = document.querySelector('.drsl');
@@ -315,7 +373,7 @@
 
         //Yatirim
         document.addEventListener("DOMContentLoaded", function () {
-            
+
             var yatirimLink = document.getElementById("yatirims");
             var digerLinkler = document.querySelectorAll(".menu-tog a:not(#yatirims)");
 
@@ -339,26 +397,29 @@
         });
 
 
+        
+
+
         //Hacim
-    document.addEventListener("DOMContentLoaded", function() {
-        var plusButton = document.querySelector(".fa-plus");
-        var minusButton = document.querySelector(".fa-minus");
-        var spanElement = document.querySelector(".sell-hac span");
+        document.addEventListener("DOMContentLoaded", function () {
+            var plusButton = document.querySelector(".fa-plus");
+            var minusButton = document.querySelector(".fa-minus");
+            var spanElement = document.querySelector(".sell-hac span");
 
-        plusButton.addEventListener("click", function(e) {
-            e.preventDefault();
-            var currentValue = parseInt(spanElement.textContent);
-            spanElement.textContent = currentValue + 1;
-        });
+            plusButton.addEventListener("click", function (e) {
+                e.preventDefault();
+                var currentValue = parseInt(spanElement.textContent);
+                spanElement.textContent = currentValue + 1;
+            });
 
-        minusButton.addEventListener("click", function(e) {
-            e.preventDefault();
-            var currentValue = parseInt(spanElement.textContent);
-            if (currentValue > 0) {
-                spanElement.textContent = currentValue - 1;
-            }
+            minusButton.addEventListener("click", function (e) {
+                e.preventDefault();
+                var currentValue = parseInt(spanElement.textContent);
+                if (currentValue > 0) {
+                    spanElement.textContent = currentValue - 1;
+                }
+            });
         });
-    });
 
     </script>
 </body>

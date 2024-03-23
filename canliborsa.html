@@ -1,56 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CanliBorsa</title>
     <link rel="stylesheet" href="./assets/css/canliborsas.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <div class="head-dis">
-        <div class="wallet-head">
-            <p class="wallet-head-b">Bakiye</p>
-            <p class="wallet-head-d">$ 15000</p>
+        <div class="logo">
+            <a href="/"><img width="30" height="20" src="./assets/image/tr.png" alt=""></a>
         </div>
-        <div class="wallet-yatr">
-            <a href="">Yatirim</a>
+        <div class="menusf gs-me">
+            <div class="menu-tog gos">
+                <a href="/canliborsa" id="piyasas"><i class="fa-solid fa-bars-staggered"></i></a>
+                <p class="menu-tog-name">Piyasalar</p>
+            </div>
+            <div class="menu-tog gos">
+                <a id="pozisyons" href=""><i class="fa-solid fa-clock-rotate-left"></i></a>
+                <p class="menu-tog-name">Pozisyonlar</p>
+            </div>
+            <div class="menu-tog gos">
+                <a id="ticaros" href=""><i class="fa-solid fa-chart-simple"></i></i></a>
+                <p class="menu-tog-name">Ticaret</p>
+            </div>
+            <div class="menu-tog gos">
+                <a id="cuzdans" href=""><i class="fa-solid fa-wallet"></i></a>
+                <p class="menu-tog-name">Bakiye</p>
+            </div>
+            <div class="menu-tog gos">
+                <a id="profils" href=""><i class="fa-solid fa-user"></i></a>
+                <p class="menu-tog-name">Profil</p>
+            </div>
         </div>
-        <div class="chat-website">
-            <a href="">Ana Sayfa</a>
-        </div>
-        <div class="chat-head">
-            <a class="chat-head-btn" href=""><i class="fa-solid fa-envelope"></i></a>
-        </div>
-        <div class="chat-flag">
-            <img width="30" height="20" src="./assets/image/tr.png" alt="">
+        <div style="display: flex;align-items: center;">
+            <div class="wallet-head">
+                <p class="wallet-head-b">Bakiye</p>
+                <p class="wallet-head-d">$50</p>
+            </div>
+            <div class="wallet-yatr">
+                <a id="yatirims" href="">Yatirim</a>
+            </div>
+            <div class="chat-website">
+                <a href="">Ana Sayfa</a>
+            </div>
+            <div class="chat-head">
+                <a class="chat-head-btn" href=""><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="chat-flag">
+                <img width="30" height="20" src="./assets/image/tr.png" alt="">
+            </div>
         </div>
     </div>
     <div class="grafike">
         <div class="tradingview-widget-container" style="height:100%;width:100%;">
             <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%;"></div>
-            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-            {
-                "autosize": true,
-                "symbol": "NASDAQ:AAPL",
-                "timezone": "Etc/UTC",
-                "theme": "dark",
-                "style": "1",
-                "locale": "tr",
-                "enable_publishing": false,
-                "backgroundColor": "rgba(0, 0, 0, 1)",
-                "gridColor": "rgba(0, 0, 0, 0.98)",
-                "range": "1D",
-                "hide_side_toolbar": false,
-                "allow_symbol_change": true,
-                "save_image": false,
-                "calendar": false,
-                "hide_volume": true,
-                "support_host": "https://www.tradingview.com"
-}
-            </script>
+            <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                    {
+                        "autosize": true,
+                            "symbol": "NASDAQ:AAPL",
+                                "timezone": "Etc/UTC",
+                                    "theme": "dark",
+                                        "style": "1",
+                                            "locale": "tr",
+                                                "enable_publishing": false,
+                                                    "backgroundColor": "rgba(0, 0, 0, 1)",
+                                                        "gridColor": "rgba(0, 0, 0, 0.98)",
+                                                            "range": "1D",
+                                                                "hide_side_toolbar": false,
+                                                                    "allow_symbol_change": true,
+                                                                        "save_image": false,
+                                                                            "calendar": false,
+                                                                                "hide_volume": true,
+                                                                                    "support_host": "https://www.tradingview.com"
+                    }
+                </script>
         </div>
+
     </div>
+
+
 
     <div class="yatirim-popup" style="background: #1D1D1D;">
         <div style="margin-bottom: 15px;" class="yatirim-text">
@@ -65,161 +100,210 @@
             <div class='dropdown'>
                 <div class='drsl'>YATIRIM TURU</div>
                 <div class='drmen'>
-                    <input type='text' placeholder='Ara' value='' class='drsar' />
                     <div class='dmi'>
                         <div class='sele' data-value='BANK'>BANK</div>
-                        <div class='sele' data-value='IBAN'>IBAN</div>
                         <div class='sele' data-value='BTC'>BTC</div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="dens"><h2>Lutfen Size Uygun Olan Yatirim Yontemini Secin</h2></div>
-        <div class="bank oden"><h2>TR82 0004 6011 7988 8000 0486 45 AK BANK PINAR SUEL BANK</h2></div>
-        <div class="iban oden"><h2>TR82 0004 6011 7988 8000 0486 45 AK BANK PINAR SUEL IBAN</h2></div>
-        <div class="btc oden"><h2>TR82 0004 6011 7988 8000 0486 45 AK BANK PINAR SUEL BTC</h2></div>
+        <div class="dens">
+            <h2>Lutfen Size Uygun Olan Yatirim Yontemini Secin</h2>
+        </div>
+        <div class="bank oden">
+            <h2>T123 456 789 123 456 789 BANK</h2>
+        </div>
+        <div class="btc oden">
+            <h2>T123 456 789 123 456 789 BTC</h2>
+        </div>
     </div>
+
     
-    <div class="footermenu">
-            <div class="menusf">
-                <div class="menu-tog">
-                    <a href="" id="piyasas"><i class="fa-solid fa-chart-simple"></i></a>
-                    <p class="menu-tog-name">Piyasalar</p>
+
+
+    <div class="sell-contains">
+        <form action="">
+            <div class="btc-di-fo">
+                <label class="wh-tx" for="">Asset</label>
+                <select class="fr-cn-sl" name="" id="">
+                    <option value="BTC/USD">BTC/USD</option>
+                    <option value="BTC/EUR">BTC/EUR</option>
+                    <option value="BCH/USDT">BCH/USDT</option>
+                    <option value="ADA/USDT">ADA/USDT</option>
+                    <option value='BTC'>BTC</option>
+                    <option value='ETH'>ETH</option>
+                    <option value='THT'>THT</option>
+                    <option value='APL'>APL</option>
+                    <option value='AMZ'>AMZ</option>
+                    <option value='SLN'>SLN</option>
+                    <option value='BNB'>BNB</option>
+                    <option value='XRP'>XRP</option>
+                    <option value='USDC'>USDC</option>
+                    <option value='CD'>CD</option>
+                    <option value='DGC'>DGC</option>
+                    <option value='AVE'>AVE</option>
+                    <option value='AVE'>TC</option>
+                    <option value='AVE'>PD</option>
+                    <option value='AVE'>TR</option>
+                    <option value='AVE'>CL</option>
+                    <option value='AVE'>PL</option>
+                    <option value='BTC CASH'>BTC CASH</option>
+                    <option value='USW'>USW</option>
+                    <option value='LTC'>LTC</option>
+                    <option value='INT COM'>INT COM</option>
+                    <option value='AS'>AS</option>
+                    <option value='SOL'>SOL</option>
+                    <option value='IMX'>IMX</option>
+                    <option value='GRT'>GRT</option>
+                    <option value='STX'>STX</option>
+                </select>
+            </div>
+            <div class="btc-di-fo">
+                <label class="wh-tx" for="">Take Profit</label>
+                <input type="text" class="wh-tx-in">
+            </div>
+
+            <div class="buy-sell">
+                <div class="by-sl-dis">
+                    <button class="by-sl-bt gr">BUY</button>
                 </div>
-                <div class="menu-tog">
-                    <a id="yatirims" href=""><i class="fa-solid fa-coins"></i></a>
-                    <p class="menu-tog-name">Yatirim</p>
-                </div>
-                <div class="menu-tog">
-                    <a  id="cuzdans" href=""><i class="fa-solid fa-wallet"></i></a>
-                    <p class="menu-tog-name">Cuzdan</p>
-                </div>
-                <div class="menu-tog">
-                    <a id="profils" href=""><i class="fa-solid fa-user"></i></a>
-                    <p class="menu-tog-name">Profil</p>
+                <div class="by-sl-dis">
+                    <button class="by-sl-bt re">SELL</button>
                 </div>
             </div>
-    </div>
-
-    <div class="buy-sell">
-        <div class="by-sl-dis">
-            <a class="by-sl-bt gr" href="">BUY</a>
-        </div>
-        <div class="by-sl-dis">
-            <a class="by-sl-bt re" href="">SELL</a>
-        </div>
+        </form>
     </div>
 
 
-
+    <div class="footermenu">
+        <div class="menusf">
+            <div class="menu-tog">
+                <a href="/canliborsa" id="piyasas"><i class="fa-solid fa-bars-staggered"></i></a>
+                <p class="menu-tog-name">Piyasalar</p>
+            </div>
+            <div class="menu-tog">
+                <a id="pozisyons" href=""><i class="fa-solid fa-clock-rotate-left"></i></a>
+                <p class="menu-tog-name">Pozisyonlar</p>
+            </div>
+            <div class="menu-tog">
+                <a id="ticaros" href=""><i class="fa-solid fa-chart-simple"></i></i></a>
+                <p class="menu-tog-name">Ticaret</p>
+            </div>
+            <div class="menu-tog">
+                <a id="cuzdans" href=""><i class="fa-solid fa-wallet"></i></a>
+                <p class="menu-tog-name">Bakiye</p>
+            </div>
+            <div class="menu-tog">
+                <a id="profils" href=""><i class="fa-solid fa-user"></i></a>
+                <p class="menu-tog-name">Profil</p>
+            </div>
+        </div>
+    </div>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-        const dropdownLabel = document.querySelector('.drsl');
-        const searchInput = document.querySelector('.drsar');
-        const dropdownMenu = document.querySelector('.drmen');
-        const options = document.querySelectorAll('.sele');
-        const selectedCurrency = document.querySelector('.drsl span');
+            const dropdownLabel = document.querySelector('.drsl');
+            const searchInput = document.querySelector('.drsar');
+            const dropdownMenu = document.querySelector('.drmen');
+            const options = document.querySelectorAll('.sele');
+            const selectedCurrency = document.querySelector('.drsl span');
 
-        dropdownLabel.addEventListener('click', function () {
-            dropdownMenu.classList.toggle('active');
-            if (dropdownMenu.classList.contains('active')) {
-                searchInput.focus();
-                searchInput.value = '';
-                filterOptions('');
-            }
-        });
-
-        searchInput.addEventListener('input', function () {
-            filterOptions(searchInput.value.toLowerCase());
-        });
-
-        options.forEach(option => {
-            option.addEventListener('click', function () {
-                const selectedValue = this.getAttribute('data-value');
-                dropdownLabel.textContent = selectedValue;
-                dropdownMenu.classList.remove('active');
-                selectedCurrency.textContent = selectedValue;
-            });
-        });
-
-        function filterOptions(searchText) {
-            options.forEach(option => {
-                const optionText = option.textContent.toLowerCase();
-                if (optionText.includes(searchText)) {
-                    option.style.display = 'block';
-                } else {
-                    option.style.display = 'none';
+            dropdownLabel.addEventListener('click', function () {
+                dropdownMenu.classList.toggle('active');
+                if (dropdownMenu.classList.contains('active')) {
+                    searchInput.focus();
+                    searchInput.value = '';
+                    filterOptions('');
                 }
             });
-        }
 
-       
-    });
+            searchInput.addEventListener('input', function () {
+                filterOptions(searchInput.value.toLowerCase());
+            });
 
+            options.forEach(option => {
+                option.addEventListener('click', function () {
+                    const selectedValue = this.getAttribute('data-value');
+                    dropdownLabel.textContent = selectedValue;
+                    dropdownMenu.classList.remove('active');
+                    selectedCurrency.textContent = selectedValue;
+                });
+            });
 
-    document.addEventListener('DOMContentLoaded', function () {
-    const options = document.querySelectorAll('.sele');
-    const bankDiv = document.querySelector('.bank');
-    const ibanDiv = document.querySelector('.iban');
-    const btcDiv = document.querySelector('.btc');
-    const densDiv = document.querySelector('.dens');
-
-    options.forEach(option => {
-        option.addEventListener('click', function () {
-            const selectedValue = this.getAttribute('data-value');
-            switch (selectedValue) {
-                case 'BANK':
-                    bankDiv.classList.add('open');
-                    ibanDiv.classList.remove('open');
-                    btcDiv.classList.remove('open');
-                    densDiv.classList.add('none')
-                    break;
-                case 'IBAN':
-                    ibanDiv.classList.add('open');
-                    bankDiv.classList.remove('open');
-                    btcDiv.classList.remove('open');
-                    densDiv.classList.add('none')
-                    break;
-                case 'BTC':
-                    btcDiv.classList.add('open');
-                    bankDiv.classList.remove('open');
-                    ibanDiv.classList.remove('open');
-                    densDiv.classList.add('none')
-                    break;
-                default:
-                    break;
+            function filterOptions(searchText) {
+                options.forEach(option => {
+                    const optionText = option.textContent.toLowerCase();
+                    if (optionText.includes(searchText)) {
+                        option.style.display = 'block';
+                    } else {
+                        option.style.display = 'none';
+                    }
+                });
             }
+
+
         });
-    });
-});
 
 
-document.addEventListener("DOMContentLoaded", function() {
-        var yatirimLink = document.getElementById("yatirims");
-        var digerLinkler = document.querySelectorAll(".menu-tog a:not(#yatirims)");
+        document.addEventListener('DOMContentLoaded', function () {
+            const options = document.querySelectorAll('.sele');
+            const bankDiv = document.querySelector('.bank');
+            const btcDiv = document.querySelector('.btc');
+            const densDiv = document.querySelector('.dens');
 
-        yatirimLink.addEventListener("click", function(e) {
-            e.preventDefault();
-            var yatirimPopup = document.querySelector(".yatirim-popup");
-            yatirimPopup.classList.add("popups");
-
-            // Diğer linklerden "popups" classını kaldır
-            digerLinkler.forEach(function(link) {
-                link.classList.remove("popups");
+            options.forEach(option => {
+                option.addEventListener('click', function () {
+                    const selectedValue = this.getAttribute('data-value');
+                    switch (selectedValue) {
+                        case 'BANK':
+                            bankDiv.classList.add('open');
+                            btcDiv.classList.remove('open');
+                            densDiv.classList.add('none')
+                            break;
+                        case 'IBAN':
+                            bankDiv.classList.remove('open');
+                            btcDiv.classList.remove('open');
+                            densDiv.classList.add('none')
+                            break;
+                        case 'BTC':
+                            btcDiv.classList.add('open');
+                            bankDiv.classList.remove('open');
+                            densDiv.classList.add('none')
+                            break;
+                        default:
+                            break;
+                    }
+                });
             });
         });
 
-        // Diğer linklerin click olaylarını dinle
-        digerLinkler.forEach(function(link) {
-            link.addEventListener("click", function(e) {
+
+        document.addEventListener("DOMContentLoaded", function () {
+            ;
+            var yatirimLink = document.getElementById("yatirims");
+            var digerLinkler = document.querySelectorAll(".menu-tog a:not(#yatirims)");
+
+            yatirimLink.addEventListener("click", function (e) {
                 e.preventDefault();
-                // "popups" classını kaldır
-                document.querySelector(".yatirim-popup").classList.remove("popups");
-                // Diğer linklerden biri tıklandığında "popups" classını eklemeye gerek yok.
+                var yatirimPopup = document.querySelector(".yatirim-popup");
+                yatirimPopup.classList.add("popups");
+
+                digerLinkler.forEach(function (link) {
+                    link.classList.remove("popups");
+                });
+            });
+
+            // Diğer linklerin click olaylarını dinle
+            digerLinkler.forEach(function (link) {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    document.querySelector(".yatirim-popup").classList.remove("popups");
+                });
             });
         });
-    });
+
+
 
     </script>
 </body>
+
 </html>

@@ -522,8 +522,9 @@ body{
     position: relative;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     margin-bottom: 1rem;
+    padding: 0 1rem;
 }
 
 @media (max-width:900px) {
@@ -648,4 +649,35 @@ body{
     .sell-contains{
         margin-bottom: 150px;
     }
+}
+
+
+
+.sell-hac{
+    border: 1px solid white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 0.3rem;
+    align-items: center;
+    background: #000;
+}
+
+.fa-di{
+    background: green;
+    border-radius: 50%;
+}
+
+.fa-di a{
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    background: #26ab58 !important;
+    border-radius: 15px;
+    padding: 4px 6px 4px 6px;
+}
+
+.sell-hac span{
+    color: #fff;
+    font-size: 22px;
 }

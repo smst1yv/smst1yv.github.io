@@ -172,12 +172,22 @@
             </div>
 
             <div class="buy-sell">
-                <div class="by-sl-dis">
-                    <button class="by-sl-bt gr">BUY</button>
+                <div style="background: #202022;padding: 0.5rem;">
+                    <label class="wh-tx" for="">Hacim</label>
+                       <div class="sell-hac">
+                        <div class="fa-di"><a href=""><i class="fa-solid fa-minus"></i></a></div>
+                        <span>0</span>
+                        <div class="fa-di"><a href=""><i class="fa-solid fa-plus"></i></a></div>
+                       </div>
                 </div>
-                <div class="by-sl-dis">
-                    
-                    <button class="by-sl-bt re">SELL</button>
+                <div style="display: flex;justify-content: space-around;">
+                    <div class="by-sl-dis">
+                        <button class="by-sl-bt gr">BUY</button>
+                    </div>
+                    <div class="by-sl-dis">
+                        
+                        <button class="by-sl-bt re">SELL</button>
+                    </div>
                 </div>
             </div>
         </form>
@@ -209,6 +219,8 @@
         </div>
     </div>
     <script>
+
+        //Selected
         document.addEventListener('DOMContentLoaded', function () {
             const dropdownLabel = document.querySelector('.drsl');
             const searchInput = document.querySelector('.drsar');
@@ -252,7 +264,7 @@
 
         });
 
-
+        //Bank None Block
         document.addEventListener('DOMContentLoaded', function () {
             const options = document.querySelectorAll('.sele');
             const bankDiv = document.querySelector('.bank');
@@ -285,9 +297,9 @@
             });
         });
 
-
+        //Yatirim
         document.addEventListener("DOMContentLoaded", function () {
-            ;
+            
             var yatirimLink = document.getElementById("yatirims");
             var digerLinkler = document.querySelectorAll(".menu-tog a:not(#yatirims)");
 
@@ -311,6 +323,26 @@
         });
 
 
+        //Hacim
+    document.addEventListener("DOMContentLoaded", function() {
+        var plusButton = document.querySelector(".fa-plus");
+        var minusButton = document.querySelector(".fa-minus");
+        var spanElement = document.querySelector(".sell-hac span");
+
+        plusButton.addEventListener("click", function(e) {
+            e.preventDefault();
+            var currentValue = parseInt(spanElement.textContent);
+            spanElement.textContent = currentValue + 1;
+        });
+
+        minusButton.addEventListener("click", function(e) {
+            e.preventDefault();
+            var currentValue = parseInt(spanElement.textContent);
+            if (currentValue > 0) {
+                spanElement.textContent = currentValue - 1;
+            }
+        });
+    });
 
     </script>
 </body>

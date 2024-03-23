@@ -52,7 +52,10 @@
         </div>
     </div>
 
-    <div class="yatirim-popup">
+    <div class="yatirim-popup" style="background: #1D1D1D;">
+        <div style="margin-bottom: 15px;" class="yatirim-text">
+            <p style="color: white;">Yatirim</p>
+        </div>
         <div class='fg'>
             <span class='fa'><i class="fa-solid fa-angle-down"></i></span>
             <select name="country" id="country" class="dropdown" style='display: none;'>
@@ -60,37 +63,163 @@
                 <option>BTC</option>
             </select>
             <div class='dropdown'>
-                <div class='drsl'>sasa</div>
+                <div class='drsl'>YATIRIM TURU</div>
                 <div class='drmen'>
                     <input type='text' placeholder='Ara' value='' class='drsar' />
                     <div class='dmi'>
+                        <div class='sele' data-value='BANK'>BANK</div>
+                        <div class='sele' data-value='IBAN'>IBAN</div>
                         <div class='sele' data-value='BTC'>BTC</div>
-                        <div class='sele' data-value='ETH'>ETH</div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="dens"><h2>Lutfen Size Uygun Olan Yatirim Yontemini Secin</h2></div>
+        <div class="bank oden"><h2>TR82 0004 6011 7988 8000 0486 45 AK BANK PINAR SUEL BANK</h2></div>
+        <div class="iban oden"><h2>TR82 0004 6011 7988 8000 0486 45 AK BANK PINAR SUEL IBAN</h2></div>
+        <div class="btc oden"><h2>TR82 0004 6011 7988 8000 0486 45 AK BANK PINAR SUEL BTC</h2></div>
     </div>
     
     <div class="footermenu">
             <div class="menusf">
                 <div class="menu-tog">
-                    <a href=""><i class="fa-solid fa-chart-simple"></i></a>
+                    <a href="" id="piyasas"><i class="fa-solid fa-chart-simple"></i></a>
                     <p class="menu-tog-name">Piyasalar</p>
                 </div>
                 <div class="menu-tog">
-                    <a href=""><i class="fa-solid fa-coins"></i></a>
+                    <a id="yatirims" href=""><i class="fa-solid fa-coins"></i></a>
                     <p class="menu-tog-name">Yatirim</p>
                 </div>
                 <div class="menu-tog">
-                    <a href=""><i class="fa-solid fa-wallet"></i></a>
+                    <a  id="cuzdans" href=""><i class="fa-solid fa-wallet"></i></a>
                     <p class="menu-tog-name">Cuzdan</p>
                 </div>
                 <div class="menu-tog">
-                    <a href=""><i class="fa-solid fa-user"></i></a>
+                    <a id="profils" href=""><i class="fa-solid fa-user"></i></a>
                     <p class="menu-tog-name">Profil</p>
                 </div>
             </div>
     </div>
+
+    <div class="buy-sell">
+        <div class="by-sl-dis">
+            <a class="by-sl-bt gr" href="">BUY</a>
+        </div>
+        <div class="by-sl-dis">
+            <a class="by-sl-bt re" href="">SELL</a>
+        </div>
+    </div>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const dropdownLabel = document.querySelector('.drsl');
+        const searchInput = document.querySelector('.drsar');
+        const dropdownMenu = document.querySelector('.drmen');
+        const options = document.querySelectorAll('.sele');
+        const selectedCurrency = document.querySelector('.drsl span');
+
+        dropdownLabel.addEventListener('click', function () {
+            dropdownMenu.classList.toggle('active');
+            if (dropdownMenu.classList.contains('active')) {
+                searchInput.focus();
+                searchInput.value = '';
+                filterOptions('');
+            }
+        });
+
+        searchInput.addEventListener('input', function () {
+            filterOptions(searchInput.value.toLowerCase());
+        });
+
+        options.forEach(option => {
+            option.addEventListener('click', function () {
+                const selectedValue = this.getAttribute('data-value');
+                dropdownLabel.textContent = selectedValue;
+                dropdownMenu.classList.remove('active');
+                selectedCurrency.textContent = selectedValue;
+            });
+        });
+
+        function filterOptions(searchText) {
+            options.forEach(option => {
+                const optionText = option.textContent.toLowerCase();
+                if (optionText.includes(searchText)) {
+                    option.style.display = 'block';
+                } else {
+                    option.style.display = 'none';
+                }
+            });
+        }
+
+       
+    });
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+    const options = document.querySelectorAll('.sele');
+    const bankDiv = document.querySelector('.bank');
+    const ibanDiv = document.querySelector('.iban');
+    const btcDiv = document.querySelector('.btc');
+    const densDiv = document.querySelector('.dens');
+
+    options.forEach(option => {
+        option.addEventListener('click', function () {
+            const selectedValue = this.getAttribute('data-value');
+            switch (selectedValue) {
+                case 'BANK':
+                    bankDiv.classList.add('open');
+                    ibanDiv.classList.remove('open');
+                    btcDiv.classList.remove('open');
+                    densDiv.classList.add('none')
+                    break;
+                case 'IBAN':
+                    ibanDiv.classList.add('open');
+                    bankDiv.classList.remove('open');
+                    btcDiv.classList.remove('open');
+                    densDiv.classList.add('none')
+                    break;
+                case 'BTC':
+                    btcDiv.classList.add('open');
+                    bankDiv.classList.remove('open');
+                    ibanDiv.classList.remove('open');
+                    densDiv.classList.add('none')
+                    break;
+                default:
+                    break;
+            }
+        });
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+        var yatirimLink = document.getElementById("yatirims");
+        var digerLinkler = document.querySelectorAll(".menu-tog a:not(#yatirims)");
+
+        yatirimLink.addEventListener("click", function(e) {
+            e.preventDefault();
+            var yatirimPopup = document.querySelector(".yatirim-popup");
+            yatirimPopup.classList.add("popups");
+
+            // Diğer linklerden "popups" classını kaldır
+            digerLinkler.forEach(function(link) {
+                link.classList.remove("popups");
+            });
+        });
+
+        // Diğer linklerin click olaylarını dinle
+        digerLinkler.forEach(function(link) {
+            link.addEventListener("click", function(e) {
+                e.preventDefault();
+                // "popups" classını kaldır
+                document.querySelector(".yatirim-popup").classList.remove("popups");
+                // Diğer linklerden biri tıklandığında "popups" classını eklemeye gerek yok.
+            });
+        });
+    });
+
+    </script>
 </body>
 </html>

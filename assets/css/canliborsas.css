@@ -735,7 +735,17 @@ body{
 }
 
 .table tbody tr td{
-    border: 1px solid #ddd;
+    border: 1px solid white;
+}
+tr{
+    border-left: 1px solid white;
+}
+th{
+    border-left: 1px solid white;
+}
+td{
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 @media (max-width:520px) {
@@ -747,4 +757,132 @@ body{
 .dops{
     left: 0;
     transition: all 0.5s ease-in;
+}
+
+
+.ticaret-popup{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 150vh;
+    top: 5.9rem;
+    left: -500%;
+    transition: all 0.5s ease-out;
+    padding: 0 2rem;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.tpop{
+    left: 0;
+    transition: all 0.5s ease-in;
+}
+
+.line {
+	height: 40px;
+	width: 2px;
+	background-color: #fff;
+	margin-right: 10px;
+}
+
+.container {
+	width: 240px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.container:first-child {
+	width: 150px;
+}
+
+h1 {
+	margin: 0;
+	font-weight: 400;
+	transition: 100ms;
+}
+
+h1:hover {
+	color: rgb(232,187,74);
+}
+
+ul {
+	list-style: none;
+	width: 100px;
+	padding: 0;
+	margin: 5px auto 0 auto;
+	border-radius: 5px;
+	box-shadow: 0 5px 28px -10px rgba(20,20,20,0.8);
+	overflow: hidden;
+	max-height: 0;
+	transition: 220ms ease-in-out;
+}
+
+.expand {
+	max-height: 300px;
+}
+
+#from-basis{
+    color: #fff;
+}
+#to-currency-price{
+    color: #fff;
+}
+
+.calc-di{
+    margin-bottom: 30px;
+}
+
+.from-currency{
+    color:#fff;
+}
+.to-currency{
+    color: #fff;
+}
+
+@media (max-width:550px) {
+    .baki{
+        font-size: 20px;
+    }
+}
+
+
+.bakiye-popup{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 150vh;
+    top: 5.9rem;
+    left: -500%;
+    transition: all 0.5s ease-out;
+    padding: 0 2rem;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.bpo{
+    left: 0;
+    transition: all 0.5s ease-in;
+}
+
+
+.sp-baki{
+    font-size: 20px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.bky-de{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.d-flexo{
+    display: flex;
+}
+
+.color-grep{
+    color: green;
 }

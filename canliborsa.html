@@ -26,11 +26,11 @@
                 <p class="menu-tog-name">Pozisyonlar</p>
             </div>
             <div class="menu-tog gos">
-                <a id="ticaros" href=""><i class="fa-solid fa-chart-simple"></i></i></a>
+                <a id="ticaros" href="" onclick="togglePopt(event)"><i class="fa-solid fa-chart-simple"></i></i></a>
                 <p class="menu-tog-name">Ticaret</p>
             </div>
             <div class="menu-tog gos">
-                <a id="cuzdans" href=""><i class="fa-solid fa-wallet"></i></a>
+                <a id="cuzdans" onclick="toggleBopt(event)" href=""><i class="fa-solid fa-wallet"></i></a>
                 <p class="menu-tog-name">Bakiye</p>
             </div>
             <div class="menu-tog gos">
@@ -172,6 +172,82 @@
         </div>
     </div>
 
+    <div style="background: #1D1D1D;" class="ticaret-popup">
+        <div class="calc-di">
+            <div class="baki">Her 10 Saniyede Guncellenen Canli Borsa Fiyatlari Karsilastirin</div>
+        </div>
+        <div style="display: flex;justify-content: center;align-items: flex-start;">
+            <div class="container">
+                <h1 id="from-basis"> </h1><i style="color: #fff;" class="fa-solid fa-angle-down"></i>
+                   <ul id="from-menu">
+                       <li class="from-currency">BTC </li>
+                       <li class="from-currency">BCH</li>
+                       <li class="from-currency">EOS</li>
+                       <li class="from-currency">ETH</li>
+                       <li class="from-currency">DASH</li>
+                       <li class="from-currency">LTC</li>
+                       <li class="from-currency">XRP</li>
+                       <li class="from-currency">ZEC</li>
+                       <li class="from-currency">ETC</li>
+                   </ul>
+              </div>
+              
+              <div class="line"></div>
+              
+              <div class="container">
+                  <h1 id="to-currency-price"></h1> <i style="color: #fff;" class="fa-solid fa-angle-down"></i>
+                  <ul id="to-menu">
+                      <li class="to-currency">USD</li>
+                      <li class="to-currency">EUR</li>
+                      <li class="to-currency">GBP</li>
+                      <li class="to-currency">BTC</li>
+                      <li class="to-currency">ETH</li>
+                  </ul>
+              </div>
+        </div>
+    </div>
+
+    <div style="background: #1D1D1D;" class="bakiye-popup">
+        <div class="calc-di">
+            <div class="baki">Bakiye</div>
+            <div class="bky-de">
+                <div class="d-flexo">
+                    <span class="sp-baki" style="margin-right: 5px;">Kullanilabilir:</span> <span class="sp-baki color-grep">$500</span>
+                </div>
+                <div class="d-flexo">
+                    <span class="sp-baki" style="margin-right: 5px;">Yatirim:</span> <span class="sp-baki color-grep">$100</span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="yat-gec">
+            <div class="historyy">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tarih</th>
+                            <th>Yatirim</th>
+                            <th>Para Cekme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12:05:2024</td>
+                            <td>350$</td>
+                            <td>150$</td>
+                        </tr>
+                        <tr>
+                            <td>12:05:2024</td>
+                            <td>350$</td>
+                            <td>150$</td>
+                        </tr>
+    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
 
 
 
@@ -259,11 +335,11 @@
                 <p class="menu-tog-name">Pozisyonlar</p>
             </div>
             <div class="menu-tog">
-                <a id="ticaros"  href=""><i class="fa-solid fa-chart-simple"></i></i></a>
+                <a id="ticaros" onclick="togglePopt(event)"  href=""><i class="fa-solid fa-chart-simple"></i></i></a>
                 <p class="menu-tog-name">Ticaret</p>
             </div>
             <div class="menu-tog">
-                <a id="cuzdans" href=""><i class="fa-solid fa-wallet"></i></a>
+                <a id="cuzdans" onclick="toggleBopt(event)" href=""><i class="fa-solid fa-wallet"></i></a>
                 <p class="menu-tog-name">Bakiye</p>
             </div>
             <div class="menu-tog">
@@ -273,6 +349,82 @@
         </div>
     </div>
     <script>
+        //btc calculator
+        var outside = document.getElementById("body-container");
+var toPrice = document.getElementById("to-currency-price");
+var fromBasis = document.getElementById("from-basis");
+var toMenu = document.getElementById("to-menu");
+var fromMenu = document.getElementById("from-menu");
+var toSelect = document.getElementsByClassName("to-currency");
+var fromSelect = document.getElementsByClassName("from-currency");
+
+
+var toCurrency = "USD";
+var fromCurrency = "BTC";
+
+
+var retrievePrice = function() {
+    var XHR = new XMLHttpRequest();
+    
+    XHR.onreadystatechange = function(){
+      if(XHR.readyState == 4 && XHR.status == 200) {
+        var response = JSON.parse(XHR.responseText);
+        if (response[fromCurrency] && response[fromCurrency][toCurrency]) {
+            var val = response[fromCurrency][toCurrency];
+            var price = val.toLocaleString('en');
+            toPrice.textContent = price + " " + toCurrency;
+            fromBasis.textContent = fromCurrency;
+        } else {
+            console.error("Hata: İstenen döviz çifti bulunamadı.");
+        }
+      }
+    }
+    
+    XHR.open("GET","https://min-api.cryptocompare.com/data/pricemulti?fsyms=" + fromCurrency + "&tsyms=" + toCurrency);
+    XHR.send();
+}
+
+
+for(var i = 0; i < toSelect.length; i++) {
+    toSelect[i].addEventListener("click", function() {
+        toMenu.classList.remove("expand");
+        toCurrency = this.textContent;
+        retrievePrice();
+    });
+}
+
+for(var i = 0; i < fromSelect.length; i++) {
+    fromSelect[i].addEventListener("click", function() {
+        fromMenu.classList.remove("expand");
+        fromCurrency = this.textContent;
+        retrievePrice();
+    });
+}
+
+
+toPrice.addEventListener("click", function() {
+    if(toMenu.classList.contains("expand")) {
+        toMenu.classList.remove("expand");
+    } else {
+        toMenu.classList.add("expand");
+    }
+});
+
+fromBasis.addEventListener("click", function() {
+    if(fromMenu.classList.contains("expand")) {
+        fromMenu.classList.remove("expand");
+    } else {
+        fromMenu.classList.add("expand");
+    }
+});
+
+setInterval(function() {
+    retrievePrice();
+}, 10000); 
+
+retrievePrice();
+
+
 //pozisyonlar
 
 function togglePopup(event) {
@@ -396,9 +548,42 @@ function togglePopup(event) {
             });
         });
 
+        //ticaret
+        function togglePopt(event) {
+    event.preventDefault();
+    var popup = document.querySelector('.ticaret-popup');
+    popup.classList.add('tpop');
 
+    setTimeout(function() {
+        document.addEventListener('click', closePoptOutside);
+    }, 1000); 
+
+    function closePoptOutside(event) {
+        if (!popup.contains(event.target)) {
+            popup.classList.remove('tpop');
+            document.removeEventListener('click', closePoptOutside);
+        }
+    }
+}
         
+        //bakiye
 
+        function toggleBopt(event) {
+    event.preventDefault();
+    var popup = document.querySelector('.bakiye-popup');
+    popup.classList.add('bpo');
+
+    setTimeout(function() {
+        document.addEventListener('click', closeBoptOutside);
+    }, 1500); 
+
+    function closeBoptOutside(event) {
+        if (!popup.contains(event.target)) {
+            popup.classList.remove('bpo');
+            document.removeEventListener('click', closeBoptOutside);
+        }
+    }
+}
 
         //Hacim
         document.addEventListener("DOMContentLoaded", function () {

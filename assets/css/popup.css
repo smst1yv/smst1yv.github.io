@@ -1,0 +1,2369 @@
+@charset "utf-8";
+
+/*기본템플릿*/
+.modal-wrap {
+    overflow: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10001;
+    box-sizing: border-box;
+}
+
+.modal-wrap:before {
+    display: block;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1
+}
+
+.modal-wrap .modal-content {
+    padding: 32px;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 350px;
+    max-width: 350px;
+    text-align: center;
+    background: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+    box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    touch-action: none;
+}
+
+.modal-wrap .modal-content.reset {
+    padding: 0 0 0
+}
+
+.modal-wrap .modal-content.widePop {
+    max-width: 600px;
+    padding: 32px;
+}
+
+/*기본템플릿 재정의*/
+.modal-wrap p,
+.modal-wrap dd {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #555;
+    word-break: keep-all;
+}
+
+.modal-wrap p+p,
+.modal-wrap dd+dd {
+    margin-top: 10px
+}
+
+.modal-wrap .tit {
+    margin-bottom: 16px;
+    padding-right: 24px;
+    font-size: 24px;
+    line-height: 1.3;
+    color: #303030;
+    text-align: left;
+    font-weight: 600;
+}
+
+.modal-wrap .tit_sub {
+    font-size: 15px;
+    font-weight: 400;
+    color: #505050;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.modal-wrap .info_box .txt {
+    font-size: 14px;
+    color: #555;
+}
+
+.modal-wrap .btn_area {
+    margin-top: 40px;
+}
+
+.modal-wrap .btn_area button {
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+.modal-wrap .btn_cancle {
+    color: #111;
+    border: 1px solid #111;
+}
+
+.modal_popup_close {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    color: #fff;
+    background: url(https://image.autowini.com/resources/IMG/common/ico_close_black.svg) no-repeat center center;
+    background-size: 20px;
+}
+
+.modal_popup_close:hover {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+.overlay {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    ;
+    z-index: 10000;
+}
+
+.btnWeek {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 32px;
+    color: #d0d0d0;
+    font-weight: 300;
+    transform: translateX(-50%)
+}
+
+.btnWeek img {
+    display: inline-block;
+    margin-top: 6px;
+    margin-right: 6px;
+    vertical-align: top;
+}
+
+.btnOk {
+    display: block;
+    margin-top: 30px;
+    height: 40px;
+    line-height: 40px;
+    background: #101010;
+    color: #fff;
+    border-radius: 4px;
+}
+
+/*이용약관*/
+.modal-wrap.terms_pop .modal-content {
+    max-width: 800px;
+    height: 80%;
+}
+
+.modal-wrap.terms_pop .modal-content h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.modal-wrap.terms_pop .modal-cont {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.modal-wrap.terms_pop .scroll_inner {
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+.modal-wrap.terms_pop .scroll_inner .tit {
+    margin: 40px 0 16px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.modal-wrap.terms_pop .scroll_inner dl {
+    margin-bottom: 16px;
+}
+
+.modal-wrap.terms_pop .scroll_inner dt {
+    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.modal-wrap.terms_pop .scroll_inner dd {
+    font-size: 13px;
+}
+
+.modal-wrap.terms_pop .modal-content section {
+    text-align: left;
+}
+
+/*개인정보 처리방침*/
+.modal-wrap.privacy_pop .modal-content {
+    max-width: 800px;
+    height: 80%;
+}
+
+.modal-wrap.privacy_pop .modal-cont {
+    height: 100%;
+    overflow-y: auto;
+    font-size: 13px;
+    text-align: left;
+}
+
+.modal-wrap.privacy_pop .modal-cont strong {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/**디테일.s**/
+/* AUCWEB-117 Invoice Asked*/
+.binPop .modal-content {
+    padding: 30px;
+    max-width: 460px;
+    box-shadow: none;
+    background: #fff;
+    text-align: left
+}
+
+.binPop dt {
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.binPop dd {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.binPop dd span {
+    display: block;
+    color: #e0000c
+}
+
+.binPop li {
+    margin: 10px 0
+}
+
+.binPop li label {
+    font-size: 11px;
+    color: #808080
+}
+
+.binPop li input {
+    background: #f4f4f4;
+    color: #303030;
+    font-weight: 400
+}
+
+.binPop .btn_area button {
+    margin-top: 15px
+}
+
+/*videopop */
+.videoPop .modal-content {
+    padding: 0;
+    margin-bottom: -20px;
+    max-width: 1240px;
+}
+
+.videoPop .modal-content iframe {
+    vertical-align: top
+}
+
+.videoPop .modal_popup_close {
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: url(https://image.autowini.com/resources/IMG/common/ico_close_white.svg) no-repeat center center;
+    z-index: 100;
+    background-size: 18px
+}
+
+/*Bidding password*/
+.bidPwPop.modal-wrap .modal-content {
+    max-width: 460px;
+}
+
+.bidPwPop dt {
+    padding: 8px 0;
+    background: #f6f6f6;
+    font-size: 15px;
+    color: #303030;
+    border-radius: 8px
+}
+
+.bidPwPop dt span {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 22px;
+    color: #e0000c;
+    font-weight: 800;
+}
+
+.bidPwPop dd {
+    padding-top: 12px;
+    text-align: left;
+}
+
+.bidPwPop .btn_area {
+    margin-top: 32px
+}
+
+.bidPwPop .inputPw {
+    position: relative
+}
+
+.bidPwPop .inputPw label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.bidPwPop .inputPw .btnPw {
+    top: auto;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+}
+
+.bidPwPop .err_msg {
+    padding: 0;
+    margin: 8px 0 0;
+    color: #e0000c;
+    font-size: 12px
+}
+
+/*Bidding Complete*/
+.bidcompPop {
+    text-align: center;
+}
+
+.bidcompPop.modal-wrap .modal-content {
+    max-width: 460px;
+}
+
+.bidcompPop dt {
+    padding: 8px 0;
+    background: #f6f6f6;
+    font-size: 15px;
+    color: #303030;
+    border-radius: 8px
+}
+
+.bidcompPop dt span {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 22px;
+    color: #e0000c;
+    font-weight: 800;
+}
+
+.bidcompPop dd {
+    padding-top: 12px;
+    text-align: left;
+}
+
+/*Auction Policy*/
+.modal-wrap.policyPop .price {
+    display: block;
+    margin-top: 4px;
+    color: #999;
+    text-align: right;
+}
+
+.modal-wrap.policyPop h2 {
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #111;
+}
+
+.modal-wrap.policyPop a {
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 40px;
+}
+
+.modal-wrap.policyPop a span {
+    display: inline-block;
+    margin-left: 4px;
+    color: #0B83E6;
+    text-decoration: underline;
+}
+
+/*용어설명*/
+.modal-wrap .dInfoCommon .infoSec {
+    text-align: left;
+}
+
+.modal-wrap .dInfoCommon .infoSec dl {
+    margin-bottom: 24px;
+}
+
+.modal-wrap .dInfoCommon .infoSec dl:last-child {
+    margin-bottom: 0;
+}
+
+.modal-wrap .dInfoCommon .infoSec dt {
+    margin-bottom: 2px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* 권역정보 */
+.bidLocatedPop .tit {
+    margin-bottom: 10px;
+    font-weight: bold
+}
+
+.ko .bidLocatedPop .tit {
+    letter-spacing: -0.8px
+}
+
+.bidLocatedPop h1 span {
+    display: block;
+    margin: 4px 0 10px;
+    font-size: 14px;
+    font-weight: normal
+}
+
+.bidLocatedPop .modal-cont {
+    text-align: left;
+}
+
+.bidLocatedPop .modal-cont .tbl_price {
+    margin: 12px 0 6px;
+    text-align: center;
+    border-top: 1px solid #303030;
+    border-bottom: 1px solid #303030
+}
+
+.bidLocatedPop .modal-cont .tbl_price th {
+    padding: 5px;
+    font-size: 13px;
+    background: #f4f4f4;
+    border-top: 1px solid #e0e0e0;
+}
+
+.bidLocatedPop .modal-cont .tbl_price td {
+    padding: 5px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.bidLocatedPop em {
+    display: block;
+    margin-bottom: 6px;
+    text-align: right;
+    font-size: 12px;
+    color: #909090;
+    font-weight: normal
+}
+
+.bidLocatedPop .modal-cont .ad_ex li {
+    margin: 4px;
+    padding-left: 10px;
+    font-size: 13px;
+    color: #606060
+}
+
+.bidLocatedPop .modal-cont .ad_ex li:before {
+    display: inline-block;
+    content: '';
+    margin-left: -10px;
+    margin-right: 10px;
+    width: 3px;
+    height: 3px;
+    background: #808080;
+    vertical-align: middle
+}
+
+.bidLocatedPop .modal-cont .ad_ex .tip {
+    color: #e0000c;
+}
+
+.bidLocatedPop .modal-cont .ad_ex .tip:before {
+    background: #e0000c;
+}
+
+/***셀러.s***/
+/**매물관리.s**/
+/*AUCMOB-342 차량가격수정*/
+.editPricePop .editPricePop_inner h1 {
+    margin-bottom: 32px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.editPricePop .editPricePop_inner span {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 15px;
+    text-align: left !important;
+}
+
+.editPricePop .editPricePop_inner dd {
+    margin-bottom: 24px;
+}
+
+.editPricePop .editPricePop_inner input {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.editPricePop .editPricePop_inner input:disabled {
+    background: #eee;
+}
+
+.editPricePop .editPricePop_inner .btn_area {
+    padding-top: 8px;
+}
+
+.editPricePop .editPricePop_inner .btn_area button {
+    margin-top: 0;
+    border-radius: 4px;
+}
+
+/**매물관리.e**/
+
+/*직원생성팝업 */
+.newStaffPop {
+    text-align: center;
+}
+
+.newStaffPop .modal-content {
+    max-width: 480px;
+    padding: 0 0;
+}
+
+.newStaffPop h1 {
+    padding: 35px 0 20px;
+    font-size: 26px;
+    letter-spacing: -0.5px;
+    font-weight: 500
+}
+
+.newStaffPop dl {
+    padding: 0 30px;
+    text-align: left
+}
+
+.newStaffPop dd {
+    position: relative;
+    margin: 8px 0 8px 15px;
+}
+
+.newStaffPop dd:after {
+    display: block;
+    content: '-';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    font-size: 14px;
+    color: #666
+}
+
+.newStaffPop .btn_area {
+    margin-top: 35px
+}
+
+.newStaffPop .btn_area button {
+    max-width: inherit;
+    height: 60px;
+    font-size: 18px;
+}
+
+/***셀러.e***/
+
+/*시스템알럿*/
+.alertPop .modal-content {
+    max-width: 350px;
+    padding: 30px 20px 30px
+}
+
+.alertPop .tit {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.alertPop .btn_area button {
+    height: 45px;
+    line-height: 45px;
+}
+
+.alertPop .modal_popup_close {
+    display: none;
+}
+
+/*팝업 테이블*/
+.tb_style {
+    text-align: center;
+}
+
+.tb_style thead {
+    background: #f5f5f5;
+}
+
+.tb_style thead th {
+    padding: 10px 4px;
+}
+
+.tb_style tbody th,
+.tb_style tbody td {
+    padding: 10px 4px;
+    border-bottom: 1px solid #eee;
+}
+
+/* 
+	메인에 노출되는 팝업
+	기본 width:550px에 맞춰서 제작
+*/
+/* .open.pop_mainNotice{display:flex !important;align-items:center;} */
+.pop_mainNotice .modal-content {
+    padding: 0;
+    min-width: 550px;
+    box-shadow: none;
+    background: none
+}
+
+.pop_mainNotice .modal-cont img {
+    display: block;
+    margin: 0 auto;
+    width: 550px;
+    border-radius: 8px;
+}
+
+.pop_mainNotice .btnDont {
+    display: block;
+    padding: 12px 0 10px 32px;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+    background: url(../images/main/ico_check_white.png) 5px center no-repeat;
+    background-size: 20px;
+}
+
+.pop_mainNotice.ar .btnDont {
+    padding: 11px 40px 10px 0;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    text-align: right;
+    background: url(../images/main/ico_check_white.png) right 5px center no-repeat;
+    background-size: 30px;
+}
+
+.pop_mainNotice .modal_popup_close {
+    width: 50px;
+    height: 50px;
+    top: -10px;
+    right: -60px;
+    background: url(https://image.autowini.com/resources/IMG/common/ico_close_white.svg) no-repeat center;
+}
+
+.pop_mainNotice .btn_seemore {
+    display: block;
+    margin-top: 30px;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.pop_text_notice {
+    padding: 40px 40px 50px;
+    background: #313435;
+    border-radius: 8px;
+}
+
+.pop_text_notice h3 {
+    position: relative;
+    font-size: 26px;
+    font-weight: 500;
+    color: #fff !important;
+    text-align: center;
+}
+
+.pop_text_notice .txt {
+    margin: 30px auto 0px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #d8d8d8;
+}
+
+.pop_text_notice .date {
+    padding: 20px 16px;
+    margin-bottom: 10px;
+    background: #050505;
+    border-radius: 4px;
+}
+
+.pop_text_notice .date p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e0000c;
+}
+
+.pop_text_notice .date p span {
+    font-size: 15px;
+}
+
+.pop_text_notice .caption {
+    display: block;
+    margin: 32px 0;
+    text-align: left;
+    font-size: 14px;
+    line-height: 15px;
+    color: #aaa;
+}
+
+.pop_text_notice .txt_important {
+    font-weight: bold;
+    color: #F35A59;
+    text-decoration: underline;
+}
+
+.pop_text_notice ul {
+    margin-top: 30px;
+}
+
+.pop_text_notice ul li {
+    margin: 8px 0 0 15px;
+    list-style: decimal;
+    text-align: left;
+    color: #fff;
+}
+
+.pop_text_notice .localInfo {
+    margin-top: 30px;
+    color: #ccc;
+}
+
+.pop_text_notice .localInfo strong {
+    display: block;
+}
+
+.ru .pop_text_notice h3 {
+    font-size: 21px;
+}
+
+.ru .pop_text_notice .date p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 18px;
+}
+
+.ru .pop_text_notice .date p:last-child {
+    margin-bottom: 0;
+}
+
+.ru .pop_text_notice {
+    padding: 40px 30px;
+}
+
+.pop_slider {
+    position: relative;
+}
+
+.pop_slider .slick-dots {
+    position: absolute;
+    top: auto;
+    bottom: 16px !important;
+    right: 50% !important;
+    transform: translateX(50%);
+}
+
+.pop_slider .slick-dots li button {
+    text-indent: -9999px;
+    margin-right: 6px;
+    width: 12px;
+    height: 12px;
+    background: #ccc;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.popup1 .pop_text_notice h3 {
+    margin-bottom: 32px;
+}
+
+.popup1 .pop_text_notice {
+    text-align: left;
+}
+
+.ar .popup1 .pop_text_notice {
+    text-align: right;
+}
+
+.popup2 .pop_text_notice .txt {
+    text-align: left;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.7
+}
+
+.popup2 .pop_text_notice .txt strong {
+    font-weight: 500;
+}
+
+/* 매물등록 - 차량연식 */
+.yearPop .modal-content {
+    max-width: 58%;
+    padding: 30px;
+    text-align: left;
+}
+
+.yearPop .tit {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: -1px
+}
+
+.yearPop .tit span {
+    margin-left: 6px;
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 0
+}
+
+.yearPop table {
+    border-left: 1px solid #d8dde1
+}
+
+.yearPop .vin {
+    margin-bottom: 24px
+}
+
+.yearPop .vin th {
+    padding: 6px 8px;
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    border: 1px solid #505050;
+    border-left: none;
+    border-top: none
+}
+
+.yearPop .vin th span {
+    display: block;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    color: #aaa
+}
+
+.yearPop .vin td {
+    padding: 6px 8px;
+    font-size: 11px;
+    line-height: 16px;
+    vertical-align: top;
+    border: 1px solid #d8dde1;
+    border-left: none;
+    border-top: none;
+}
+
+.yearPop .vin .red {
+    border: 2px dashed #e0000c
+}
+
+.yearPop .vin th.red {
+    border-bottom: none
+}
+
+.yearPop .vin td.red {
+    border-top: none
+}
+
+.yearPop h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold
+}
+
+.yearPop h3 span {
+    margin-left: 6px;
+    font-size: 13px;
+    font-weight: normal
+}
+
+.yearPop .year th {
+    padding: 4px 8px;
+    background: #f4f4f4;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #d8dde1;
+    border-left: none;
+}
+
+.yearPop .year td {
+    padding: 6px 8px;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #d8dde1;
+    border-left: none;
+    border-top: none;
+}
+
+.yearPop .year tr td:nth-child(odd) {
+    font-weight: bold
+}
+
+.yearPop .year .img {
+    padding: 0 0 0 18px;
+    border: none;
+    vertical-align: top
+}
+
+.yearPop .year .img img {
+    width: 100%
+}
+
+/*매물등록 - 로로불가능 예시*/
+.roroPop .modal-content {
+    max-width: 800px;
+    height: 80%;
+    padding: 60px 20px 40px 30px;
+}
+
+.roroPop .modal-cont {
+    max-height: 100%;
+    text-align: left;
+    overflow-y: scroll;
+}
+
+.roroPop .modal-cont>.inner {
+    padding-right: 10px;
+}
+
+.roroPop .tit {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: -1px
+}
+
+.roroPop .tit span {
+    margin-left: 6px;
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 0
+}
+
+.roroPop img {
+    max-width: 100%;
+}
+
+.roroPop .box {
+    margin-bottom: 40px;
+}
+
+.roroPop dl dt {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.roroPop dl dd {
+    position: relative;
+    margin: 0 0 8px 16px;
+    padding-left: 12px;
+    font-size: 14px;
+}
+
+.roroPop dl dd:after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #ccc;
+    border-radius: 50%;
+}
+
+.roroPop .img_list li {
+    float: left;
+    width: 33.333%;
+}
+
+.roroPop .img_list li .inner {
+    position: relative;
+    margin: 5px;
+}
+
+.roroPop .img_list li img {
+    display: block;
+}
+
+.roroPop .img_list li p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+}
+
+.roroPop .box3 {
+    margin-bottom: 0;
+}
+
+.roroPop .box3 .txt {
+    padding: 20px 40px;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.roroPop .box3 .caution {
+    display: block;
+    margin: 20px 0;
+    text-align: center;
+    color: #e0000c;
+}
+
+/*거래내역 - 배차신청*/
+.modal-wrap.dispatch_pop .modal-content {
+    padding: 40px;
+    max-width: 800px;
+    text-align: left
+}
+
+.modal-wrap.dispatch_pop h2 {
+    padding-bottom: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #111;
+    letter-spacing: -0.5px
+}
+
+.modal-wrap.dispatch_pop h3 {
+    padding: 18px 0 6px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -0.5px
+}
+
+.modal-wrap.dispatch_pop h3 b {
+    color: #e0000c
+}
+
+.modal-wrap.dispatch_pop table {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+.modal-wrap.dispatch_pop th {
+    padding: 6px;
+    background: #f5f5f5;
+    font-size: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.modal-wrap.dispatch_pop td {
+    padding: 6px;
+    font-size: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.modal-wrap.dispatch_pop td select {
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px
+}
+
+.modal-wrap.dispatch_pop td select+input {
+    margin-top: 4px
+}
+
+.modal-wrap.dispatch_pop td input[type="text"] {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    background: #f5f5f5
+}
+
+.modal-wrap.dispatch_pop .img {
+    padding: 0;
+    background: #1f1f1f
+}
+
+.modal-wrap.dispatch_pop td img {
+    width: 100%;
+    vertical-align: middle
+}
+
+.modal-wrap.dispatch_pop textarea {
+    font-size: 13px
+}
+
+.modal-wrap.dispatch_pop li {
+    margin: 4px 0
+}
+
+.modal-wrap.dispatch_pop .allChk {
+    display: flex;
+    padding-top: 14px;
+    margin-top: 14px;
+    border-top: 1px dashed #e0e0e0
+}
+
+.modal-wrap.dispatch_pop .allChk p {
+    flex: 1;
+    font-size: 12px;
+}
+
+.modal-wrap.dispatch_pop .allChk label {
+    flex: 1
+}
+
+.modal-wrap.dispatch_pop .bottom {
+    margin-top: 18px;
+    padding: 15px 0;
+    background: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.modal-wrap.dispatch_pop .btAlt {
+    margin: 12px 0 0;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    color: #e0000c;
+}
+
+/*웹비딩 비회원일때*/
+.modal-wrap.popWebbid .modal-content {
+    padding: 50px 0 0 0;
+    max-width: 700px;
+    background: #202326;
+    border-radius: 0;
+}
+
+.modal-wrap.popWebbid .inner {
+    padding-top: 350px;
+    background: url(../images/content/img_webbid.png) no-repeat bottom center;
+}
+
+.modal-wrap.popWebbid .tit {
+    display: inline-block;
+    margin: 10px 40px 30px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff4444;
+    letter-spacing: -1px
+}
+
+.ko .modal-wrap.popWebbid .tit {
+    font-size: 26px;
+    letter-spacing: -.6px;
+}
+
+.modal-wrap.popWebbid .tit:before {
+    content: '';
+    display: inline-block;
+    margin-right: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #e0000c;
+    box-shadow: 0px 0px 5px 1px #ff0047;
+    background: #e0000c;
+    animation-name: neon;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    vertical-align: middle;
+}
+
+.modal-wrap.popWebbid .txt1 {
+    font-size: 17px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.modal-wrap.popWebbid .txt2 {
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, .8);
+}
+
+.modal-wrap.popWebbid .btn_zone {
+    margin-top: 0;
+    background: #fff;
+}
+
+.modal-wrap.popWebbid .btn_zone li {
+    float: left;
+    width: 50%;
+    margin-top: 0;
+}
+
+.modal-wrap.popWebbid .btn_zone li a {
+    display: block;
+    height: 65px;
+    line-height: 65px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.modal-wrap.popWebbid .btn_zone li:first-child a {
+    font-weight: bold;
+    border-right: 1px solid #ddd;
+}
+
+.modal-wrap.popWebbid .modal_popup_close {
+    background: url(../images/common/ico_close_white.svg) no-repeat center center;
+    background-size: 26px;
+}
+
+/* AUCWEB-590 : 셀러인증팝업*/
+.modal-wrap.popSellN .modal-content {
+    padding: 0;
+    max-width: 550px;
+    border-radius: 0;
+}
+
+.popSellN {
+    letter-spacing: -.3px;
+}
+
+.popSellN img {
+    width: 38px;
+}
+
+.popSellN .content {
+    padding: 48px 8px 48px;
+}
+
+.popSellN .tit {
+    margin: 8px 0 16px;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.popSellN p {
+    font-size: 16px;
+    line-height: 170%;
+}
+
+.popSellN strong {
+    color: #111;
+    font-weight: bold;
+}
+
+.popSellN h3 {
+    margin: 48px 0 16px;
+    text-align: center;
+}
+
+.popSellN h3 span {
+    display: inline-block;
+    padding: 6px 24px;
+    font-size: 15px;
+    background: #FFF1F0;
+    color: #EF3231;
+    border-radius: 60px;
+}
+
+.popSellN li {
+    float: left;
+    width: 25%;
+    background: url(../images/common/ico_arr_grey.svg) no-repeat right center;
+}
+
+.popSellN li:last-child {
+    background: none;
+}
+
+.popSellN li span {
+    color: #999;
+}
+
+.popSellN li p {
+    margin-top: 4px;
+    color: #333;
+    line-height: 150%;
+    font-weight: 600;
+}
+
+/* 내용이 많아 너비가 넓은 팝업 액션 버튼 */
+.popContents .btn {
+    display: block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.popContents .btn_red {
+    background: #EF3231;
+    color: #fff;
+}
+
+/* AUCWEB-590 : 공통 Alert팝업*/
+.modal-wrap.popAlert .modal-content {
+    max-width: 350px;
+    padding: 0;
+    border-radius: 8px;
+}
+
+.popAlert .content {
+    padding: 24px 16px;
+}
+
+.popAlert .txt {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.popAlert .btn_confirm {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #eee;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 60px;
+    color: #0B83E6;
+}
+
+/* My Order 이미지팝업 */
+.modal-wrap.pop_img .modal-content {
+    top: 10%;
+    max-width: 700px;
+    padding: 0;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.pop_img .modal-cont {
+    padding: 32px
+}
+
+.pop_img h1 {
+    margin-bottom: 18px;
+    text-align: left;
+    font-size: 22px
+}
+
+.pop_img p {
+    max-height: 500px;
+    overflow: hidden
+}
+
+.pop_img p img {
+    width: 100%
+}
+
+.pop_img .btn_area {
+    margin-top: 24px;
+}
+
+.pop_img a {
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    background: #e0000c;
+    color: #fff;
+    border-radius: 4px
+}
+
+.popAlert .btn {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #eee;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.popAlert .btn_confirm {
+    color: #0B83E6;
+}
+
+.popAlert .btn_del {
+    color: #333;
+}
+
+.popAlert .btnZone li {
+    float: left;
+    width: 50%;
+}
+
+.popAlert .btnZone li:first-child {
+    border-right: 1px solid #eee;
+}
+
+.popAlert .btn_confirm {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #eee;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 60px;
+    color: #0B83E6;
+}
+
+/*AUCWEB-655*/
+.modal-wrap.popZip .modal-content {
+    width: 500px;
+    max-width: 500px;
+    padding: 0;
+}
+
+.modal-wrap.popZip .popHead {
+    height: 50px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.modal-wrap.popZip .popHead h2 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 50px;
+    color: #000;
+}
+
+.modal-wrap.popZip .popHead .modal_popup_close {
+    top: 4px;
+}
+
+.modal-wrap.popZip .content {
+    height: 500px;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.modal-wrap.popZip .content .addressList .addressResult {
+    min-height: 300px;
+}
+
+.addressResult li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 20
+}
+
+.addressResult li div {
+    display: inline-block
+}
+
+.addressResult li div:nth-child(1) {
+    width: 8%
+}
+
+.addressResult li div:nth-child(2) {
+    width: 72%
+}
+
+.addressResult li div:nth-child(3) {
+    width: 20%
+}
+
+.addressResult li div {
+    padding: 6px 10px
+}
+
+.addressResult .resultList li div p {
+    font-size: 14px;
+    font-weight: 600
+}
+
+.addressResult .resultList li div.addressInfo {
+    text-align: left
+}
+
+.addressResult .resultList li div.addressInfo .jibun {
+    font-size: 12px;
+    font-weight: 300
+}
+
+.addressResult .resultList li.noResult {
+    align-items: center;
+    justify-content: center;
+    height: 260px;
+}
+
+.addressResult .title {
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777
+}
+
+.addressResult .title li div {
+    font-size: 16px;
+    font-weight: bold
+}
+
+.addressDetail {
+    padding-top: 20px
+}
+
+.addressDetail table {
+    border-top: 1px solid #777
+}
+
+.addressDetail th,
+.addressDetail td {
+    border-bottom: 1px solid #777
+}
+
+.addressDetail table tr {
+    height: 40px
+}
+
+.addressDetail table th {
+    width: 24%;
+    background-color: #e0e0e0
+}
+
+.addressDetail table td {
+    text-align: left;
+    padding: 10px 10px
+}
+
+.addressDetail table td input {
+    width: 80%;
+    border: 1px solid #777;
+    height: 28px;
+    margin-bottom: 4px;
+    padding-left: 4px;
+}
+
+.addressDetail table td input.hide {
+    padding: 0;
+    text-align: left;
+    color: #1f1f1f;
+    border: #fff;
+    cursor: default
+}
+
+.addressDetail table td p input.hide {
+    padding: 0;
+    font-size: 12px;
+    cursor: default
+}
+
+.addressDetail button {
+    margin-top: 50px;
+    width: 28%;
+    height: 43px;
+    line-height: 43px;
+    background: #1f1f1f;
+    color: #fff;
+    text-align: center
+}
+
+.modal-wrap.popZip .content .paging li a span {
+    padding: 0
+}
+
+.modal-wrap.popZip .content .paging li a {
+    padding: 0
+}
+
+.content .searchBox {
+    display: inline-block;
+    background: #f5f5f5;
+    border-radius: 60px;
+    margin-bottom: 20px
+}
+
+.content .searchBox input {
+    padding-left: 20px;
+    width: 320px;
+    height: 40px;
+    font-size: 14px;
+    background: none;
+    border: none
+}
+
+.content .searchBox input::placeholder {
+    color: #777;
+}
+
+.content .searchBox .searchAddressButton {
+    display: inline-block;
+    width: 60px;
+    height: 32px;
+    background: url(https://image.autowini.com/resources/IMG/common/ico_search.svg) no-repeat center;
+    background-size: 26px;
+    border-left: 0;
+    text-indent: -9999px
+}
+
+/* AUCWEB-788 2021 추석 일정 팝업 */
+.pop_mainNotice .title {
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.pop_mainNotice .big_txt {
+    font-size: 22px;
+}
+
+.pop_mainNotice .big_txt_important {
+    font-size: 22px;
+    font-weight: bold;
+    color: #e0000c !important;
+}
+
+.pop_mainNotice .txt {
+    text-align: center !important;
+}
+
+.pop_mainNotice sup {
+    vertical-align: top;
+}
+
+/* 추석 & 이벤트 슬라이드 팝업 */
+.event_pop_slider .modal-content {
+    margin-top: 0 !important;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.event_pop_slider .event_img_container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.event_pop_slider .event_img_container img {
+    width: auto !important;
+    height: 100%;
+}
+
+.event_pop_slider .btnDont {
+    position: absolute;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 샐러페이지 안내 팝업 */
+.sellerInducePopup.active {
+    background: rgba(255, 255, 255, 0);
+}
+
+.sellerInducePopup.active.modal-wrap:before {
+    content: none;
+}
+
+.sellerInducePopup {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.sellerInducePopup.active .sellerInducePopupBox {
+    display: none
+}
+
+.sellerInducePopupBox {
+    display: block;
+    padding: 40px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 660px
+}
+
+.sellerInducePopup h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    padding-bottom: 20px
+}
+
+.sellerInducePopup p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #000
+}
+
+.sellerInducePopup p b {
+    font-weight: 600
+}
+
+.sellerInducePopup span {
+    position: absolute;
+    line-height: 0;
+    font-size: 0;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    background: url(https://image.autowini.com/resources/IMG/common/ico_modal_close.png) center no-repeat;
+    background-size: contain;
+    cursor: pointer
+}
+
+.sellerInducePopup .sellerLocation {
+    text-align: center
+}
+
+.sellerInducePopup .sellerLocation a {
+    background: #F4F4F4;
+    border-radius: 10px;
+    padding: 10px 40px;
+    line-height: 40px
+}
+
+.sellerInducePopup .goSellerPage {
+    text-align: center
+}
+
+.sellerInducePopup .goSellerPage a {
+    width: 200px;
+    padding: 10px 30px;
+    border-radius: 6px;
+    background: #DD1F26;
+    color: #fff;
+    cursor: pointer;
+    line-height: 60px
+}
+
+.joinWithdrawPop .modal-content {
+    padding: 40px 0 0;
+    max-width: 400px;
+    border-radius: 0
+}
+
+.joinWithdrawPop .modal-cont {
+    padding: 0 24px 6px;
+    text-align: left
+}
+
+.joinWithdrawPop .modal_popup_close {
+    background-size: 14px
+}
+
+.joinWithdrawPop h1 {
+    margin: 0 0 24px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.joinWithdrawPop p {
+    color: #353535
+}
+
+.joinWithdrawPop span {
+    display: block;
+    padding-left: 12px;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #888;
+    position: relative;
+}
+
+.joinWithdrawPop span:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 3px;
+    height: 3px;
+    background: #888;
+    border-radius: 50%
+}
+
+.joinWithdrawPop .btn_area {
+    margin-top: 24px
+}
+
+.joinWithdrawPop .btn_area a {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 52px;
+    font-size: 14px;
+    line-height: 52px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    background: #DD1F26;
+}
+
+.withdrawConfirmPop .modal-content {
+    padding: 40px 18px 0;
+    min-width: 280px;
+    max-width: 280px
+}
+
+.withdrawConfirmPop p {
+    color: #333
+}
+
+.withdrawConfirmPop .btn_area {
+    margin-top: 24px;
+    border-top: 1px solid #f4f4f4
+}
+
+.withdrawConfirmPop .btn_area.ea2 {
+    display: flex;
+}
+
+.withdrawConfirmPop .btn_area.ea2 button {
+    flex: 1;
+    height: 48px;
+    line-height: 48px
+}
+
+.withdrawConfirmPop .btn_area.ea2 button+button {
+    border-left: 1px solid #f4f4f4
+}
+
+.withdrawConfirmPop .btn_area .btnBlack {
+    color: #111
+}
+
+.withdrawConfirmPop .btn_area .btnBlue {
+    color: #0B83E6
+}
+
+/* 메인 - 선적지연 */
+.mainDelayPopup .modal-content {
+    padding: 30px 36px 30px;
+    max-width: 490px;
+    text-align: left;
+}
+
+.mainDelayPopup .deco {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 110px;
+}
+
+.mainDelayPopup .txt02 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #101010;
+    line-height: 1.4;
+    padding-right: 40px;
+    background-size: 34px;
+}
+
+.mainDelayPopup .box {
+    padding: 20px 68px;
+    text-align: center;
+    background: #F4F7FA;
+    border-radius: 3px;
+}
+
+.mainDelayPopup .box strong {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mainDelayPopup .box em {
+    display: block;
+    color: #D40000;
+}
+
+.mainDelayPopup .txt03 {
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.mainDelayPopup .txt03 b {
+    display: block;
+    margin-bottom: 8px;
+    color: #505050
+}
+
+.mainDelayPopup .txt03 span {
+    display: block;
+    margin-top: 4px;
+    position: relative;
+    padding-left: 12px;
+    font-size: 15px;
+    line-height: 1.3;
+    color: #909090
+}
+
+.mainDelayPopup .txt03 span:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '•';
+    color: #909090;
+}
+
+.mainDelayPopup .txt03 p {
+    padding: 5px 0
+}
+
+.mainDelayPopup table {
+    margin-top: 10px;
+    width: 100%;
+    border-right: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
+}
+
+.mainDelayPopup th {
+    padding: 6px;
+    text-align: center;
+    border-left: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    font-weight: 500;
+    font-size: 13px;
+    color: #606060
+}
+
+.mainDelayPopup td {
+    padding: 6px;
+    text-align: center;
+    border-left: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.mainDelayPopup .red {
+    padding: 10px 0;
+    color: #D40000
+}
+
+.mainDelayPopup .red span {
+    display: block;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-top: 6px;
+}
+
+/* 메인 - 상단팝업 */
+.mainTopPop {
+    display: none;
+    background: #242835;
+}
+
+.mainTopPop .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    width: 1280px;
+    height: 70px
+}
+
+.mainTopPop p a {
+    display: block;
+    padding-right: 30px;
+    color: #ddd;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    background: url(https://image.autowini.com/resources/IMG/common/ico_next_white.png) right 1px no-repeat;
+    background-size: 20px;
+}
+
+.mainTopPop p a:before {
+    display: inline-block;
+    content: 'NEW';
+    height: 14px;
+    font-size: 10px;
+    line-height: 15px;
+    color: #fff;
+    background: #e0000c;
+    border-radius: 3px;
+    padding: 1px 5px;
+    vertical-align: top;
+    margin: 2px 8px 0;
+}
+
+.mainTopPop .btnToday {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    bottom: auto;
+    margin-top: -6px;
+    color: #fff;
+    font-size: 12px;
+    padding-right: 20px;
+    background: url(https://image.autowini.com/resources/IMG/common/ico_close_white.svg) right center no-repeat;
+    background-size: 14px;
+    opacity: 0.3;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+}
+
+.mainTopPop .btnToday:hover {
+    opacity: 1
+}
+
+/* 메인 - 선적요금안내 */
+.delayWedPop .modal-content {
+    padding: 36px 30px;
+    max-width: 540px;
+    text-align: left;
+}
+
+.delayWedPop .txt02 {
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.ko .delayWedPop .txt02 {
+    font-size: 16px;
+}
+
+.ko .delayWedPop .txt03 p {
+    line-height: 1.7
+}
+
+/* 차량디테일 - 콘솔팝업 */
+.consolidationInfo .infoSec dl:last-child {
+    padding: 10px 18px;
+    background: #ffeeed;
+    border-radius: 5px
+}
+
+.consolidationInfo .infoSec dl:last-child dt {
+    margin-bottom: 8px;
+    color: #dd1f26
+}
+
+.consolidationInfo .infoSec dl:last-child dd {
+    color: #303030;
+    font-size: 14px;
+}
+
+/* 차량디테일 - 이미지팝업 */
+.carPop {
+    position: relative;
+    padding: 7rem 3rem 3rem;
+    background: #000
+}
+
+.carPop .fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem 3rem;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9)
+}
+
+.carPop h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.carPop p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.carPop ul {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.carPop li {
+    padding: 0 0.2rem;
+    width: 50%;
+    box-sizing: border-box
+}
+
+.carPop li img {
+    width: 100%;
+    border-radius: 0.2rem
+}
+
+/* toast pop */
+.toast-wrap {
+    display: table;
+    position: absolute;
+    top: -1.2rem;
+    right: 2rem;
+    padding: 0.5rem 1rem;
+    z-index: 999;
+}
+
+.toast-wrap::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: -1;
+    border-radius: 0.3rem
+}
+
+.toast {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.toast a {
+    margin-left: 3rem;
+    color: #62B1FF;
+    font-weight: 400
+}
+
+/* 4월수수료인상팝업 */
+.chargePop .modal-content {
+    max-width: 420px;
+}
+
+.chargePop p a {
+    color: #0B83E3;
+    text-decoration: underline
+}
+
+/* 바이어 컨펌 대기 팝업 */
+.buyerConfirmPop .modal-content {
+    max-width: 400px;
+}
+
+.buyerConfirmPop .tit {
+    text-align: center;
+    padding: 16px 0 0
+}
+
+.buyerConfirmPop p {
+    text-align: center
+}
+
+.buyerConfirmPop p b {
+    color: #d10023
+}
+
+/* 접근권한 팝업 */
+.accessRulePop .modal-content {
+    max-width: 1200px;
+    padding: 108px
+}
+
+.accessRulePop .accessInner {
+    display: flex;
+    align-items: center
+}
+
+.accessRulePop dl {
+    margin-right: 78px;
+    text-align: left;
+}
+
+.accessRulePop dt {
+    font-size: 28px;
+    line-height: 1.3;
+    font-weight: bold;
+    color: #111
+}
+
+.accessRulePop dd {
+    padding-right: 64px;
+    margin-top: 16px;
+    font-size: 15px;
+    color: #777;
+}
+
+.accessRulePop dd b {
+    color: #E82020
+}
+
+.accessRulePop dd a {
+    display: block;
+    margin-top: 40px;
+    width: 180px;
+    text-align: center;
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+    color: #fff;
+    background: #111;
+    border-radius: 3px
+}
+
+.accessRulePop ul {
+    display: flex;
+}
+
+.accessRulePop li {
+    flex: 1;
+    margin-left: 16px;
+    padding: 24px;
+    width: 270px;
+    border: 1px solid #ddd;
+    text-align: left;
+    border-radius: 8px
+}
+
+.accessRulePop .top strong {
+    display: block;
+    font-size: 26px;
+    font-weight: bold;
+    color: #333
+}
+
+.accessRulePop .top span {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    color: #E82020
+}
+
+.accessRulePop .top em {
+    margin-left: 4px;
+    color: #999;
+    font-size: 13px;
+    font-weight: 400
+}
+
+.accessRulePop .list {
+    padding-top: 16px;
+}
+
+.accessRulePop .list span {
+    display: block;
+    position: relative;
+    margin: 16px 0;
+    padding-left: 24px;
+    color: #999;
+    font-size: 13px;
+    vertical-align: top
+}
+
+.accessRulePop .list span:before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background: url(../images/common/ic_check_circle.svg) 0 -18px no-repeat;
+    background-size: 18px
+}
+
+.accessRulePop .list span.chk {
+    color: #111;
+    font-weight: 500;
+}
+
+.accessRulePop .list span.chk:before {
+    background-position: 0 0
+}
+
+.accessRulePop .premium {
+    position: relative;
+    background: #202020;
+}
+
+.accessRulePop .premium:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    background: url(../images/common/ic_mark_premium.svg) center no-repeat;
+    background-size: contain;
+}
+
+.accessRulePop .premium strong {
+    padding-right: 40px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.accessRulePop .premium b {
+    color: #ED5050;
+}
+
+.accessRulePop .premium span:before {
+    opacity: 0.2
+}
+
+.accessRulePop .premium span.chk {
+    color: #fff;
+    font-weight: 400
+}
+
+.accessRulePop .premium span.chk:before {
+    opacity: 1
+}
+
+.accessRulePop .premium a {
+    display: block;
+    margin-top: 24px;
+    width: 100%;
+    background: #E82020;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 4px;
+}

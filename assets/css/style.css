@@ -1,0 +1,49 @@
+.slick-img img{
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+.s-btn-sl{
+    height: 100%;
+}
+
+.solds{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aucs a{
+    background: #fff url(/assets/img/img_1st.png) right bottom no-repeat!important;
+}
+.memuKo:hover .depth2{
+    display: block!important;
+}
+
+.reviewsmenu:hover ul{
+    display: block!important;
+}
+
+.aboutusmenu:hover ul{
+    display: block!important;
+}
+
+.mySwiper2 .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mySwiper2 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mySwiper2 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Detail</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/popup.css">
+    <link rel="stylesheet" href="./assets/css/two.css">
+    <link rel="stylesheet" href="./assets/css/cars.css">
+</head>
+<style>
+    .mainView .slick-ne{
+        position: absolute;
+    right: 0;
+    background: url(https://image.autowini.com/cdn/auction/web/images/content/right_arrow.png) no-repeat center rgba(0, 0, 0, 0.5);
+    }
+</style>
+
+<body>
+    <header class="header en">
+        <!-- HEADER LANGUAGE -->
+        <div class="headerTnb clearfix">
+            <div class="inner">
+
+
+                <div class="language">
+                    <button type="button" id="lang" class="btnLang">English</button>
+                    <ul class="clearfix">
+                        <li id="en" class="on"><a href="javscript:;" class="btn_language btn_only_buyer lang_en act"
+                                style="display: inline-block;">English</a></li>
+                        <li id="es"><a href="javscript:;" class="btn_language btn_only_buyer lang_es"
+                                style="display: inline-block;">Español</a></li>
+                        <li id="ru"><a href="javscript:;" class="btn_language btn_only_buyer lang_ru"
+                                style="display: inline-block;">Русский</a></li>
+                        <li id="ar"><a href="javscript:;" class="btn_language btn_only_buyer lang_ar"
+                                style="display: inline-block;">العربية</a></li>
+                        <li id="mn"><a href="javscript:;" class="btn_language btn_only_buyer lang_mn"
+                                style="display: inline-block;">Монгол</a></li>
+                        <li id="ko" class="ko"><a href="javscript:;" class="btn_language lang_ko"
+                                style="display: inline-block;">한국어</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="gmt" id="gmt">
+                    <a href="javascript:;"><span id="headerTime">22:11 pm London</span></a>
+                    <div class="set_gmt">
+                        <span class="clearfix">Set Your Time Zone<em id="timeChg">22:11 pm London</em></span>
+                        <select id="set_timeZone" name="set_tz">
+                            <option data-sub="GMT" value="Europe/London">(GMT+00:00) U.K London</option>
+                            <option data-sub="PYST" value="America/Asuncion">(GMT-03:00) Paraguay Asuncion</option>
+                            <option data-sub="CLST" value="America/Santiago">(GMT-03:00) Chile Santiago</option>
+                            <option data-sub="AST" value="America/Santo_Domingo">(GMT-04:00) Rep Dominicana Santo
+                                Domingo</option>
+                            <option data-sub="CST" value="America/Tegucigalpa">(GMT-06:00) Honduras Tegucigalpa
+                            </option>
+                            <option data-sub="CST" value="America/Guatemala">(GMT-06:00) Guatemala Guatemala
+                            </option>
+                            <option data-sub="GMT" value="Africa/Accra">(GMT+00:00) Ghana Accra</option>
+                            <option data-sub="WAT" value="Africa/Lagos">(GMT+01:00) Nigeria Lagos</option>
+                            <option data-sub="WAT" value="Africa/Libreville">(GMT+01:00) Gabon libreville</option>
+                            <option data-sub="CET" value="Europe/Tirane">(GMT+01:00) Albania Tirane</option>
+                            <option data-sub="CET" value="Europe/Warsaw">(GMT+01:00) Poland Warsaw</option>
+                            <option data-sub="EET" value="Africa/Tripoli">(GMT+02:00) Libya Tripoli</option>
+                            <option data-sub="CAT" value="Africa/Kigali">(GMT+02:00) Rwanda Kigali</option>
+                            <option data-sub="EET" value="Europe/Kiev">(GMT+02:00) Ukraine Kiev</option>
+                            <option data-sub="AST" value="Asia/Riyadh">(GMT+03:00) Saudi Arabia Riyadh</option>
+                            <option data-sub="MSK" value="Europe/Moscow">(GMT+03:00) Russia Moscow</option>
+                            <option data-sub="EAT" value="Indian/Antananarivo">(GMT+03:00) Madagascar Antananarivo
+                            </option>
+                            <option data-sub="GET" value="Asia/Tbilisi">(GMT+04:00) Georgia Tbilisi</option>
+                            <option data-sub="AZT" value="Asia/Baku">(GMT+04:00) Azerbaijan Baku</option>
+                            <option data-sub="UZT" value="Asia/Tashkent">(GMT+05:00) Uzbekistan Tashkent</option>
+                            <option data-sub="ICT" value="Asia/Phnom_Penh">(GMT+07:00) Cambodia Phnom Penh</option>
+                            <option data-sub="ULAT" value="Asia/Ulaanbaatar">(GMT+08:00) Mongolia Ulaanbaatar
+                            </option>
+                            <option data-sub="KST" value="Asia/Seoul">(GMT+09:00) Korea Seoul</option>
+                        </select>
+                        <div class="btn_area clearfix">
+                            <button type="button" id="btn_sv" class="btn_sv">Save My Time Zone</button>
+                            <button type="button" id="btn_cl" class="btn_cl">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- END HEADER LANGUAGE -->
+
+        <!-- SEARCH HEADER -->
+        <div class="headerCon">
+            <div class="inner">
+
+                <div class="left">
+                    <h1 class="logo">
+                        <a href="/main"><img src="https://image.autowini.com/resources/IMG/common/img_logo.svg"></a>
+                    </h1>
+                    <div class="searchBox">
+                        <input id="i_skeyword_header_Search" type="text" class="ui-autocomplete-input"
+                            placeholder="Enter Make, Model, Year" autocomplete="off">
+                        <button id="btnheaderSearch" type="button" class="btn_search"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+
+                <div class="right" id="headMenuArea">
+                    <ul class="quickMeun buyer clearfix" style="display:none;">
+                        <li class="account">
+                            <a href="javascript:;">
+                                <i></i>
+                                <span class="label">My Account</span>
+                            </a>
+                            <div class="accountModal">
+                                <ul>
+                                    <li><a href="/mypage/info/my-account-view">My Information</a></li>
+                                    <li id="btnMembership"><a href="javscript:;">Membership Status</a></li>
+                                    <li id="btnPhotoId"><a href="javscript:;">Photo ID</a></li>
+                                    <li id="btnDeposit"><a href="javscript:;">Deposit</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="watch btn_subList" data-flag="WL">
+                            <a href="javascript:;">
+                                <i></i>
+                                <span class="label">Watch List</span>
+                            </a>
+                        </li>
+                        <li class="order account alertCheck ">
+                            <a href="javascript:;">
+                                <i></i>
+                                <span class="label">My Auction</span>
+                            </a>
+                            <div class="accountModal">
+                                <ul>
+                                    <li><a href="/mybids/get-bidding-list/live">My Bidding (Live)</a></li>
+                                    <li><a href="/mybids/get-bidding-list/local">My Bidding (Rental/Local)</a></li>
+                                    <li><a href="/mybids/order-list" class="alertCheck ">My Order</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="quickMeun seller clearfix" style="display: none">
+                        <li class="account">
+                            <a href="javascript:;">
+                                <i></i>
+                                <span class="label">마이페이지</span>
+                            </a>
+
+                            <div class="accountModal">
+                                <ul>
+                                    <li class="sub_my_info">
+                                        <a href="javscript:;" class="">내 정보</a>
+                                    </li>
+                                    <li class="sub_employee_manage ceo" style="display: none">
+                                        <a href="javscript:;">직원 관리</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="contact btn_sale_contact">
+                            <a href="javascript:;">
+                                <i></i>
+                                <span class="label">가입문의</span>
+                            </a>
+                        </li>
+                        <li class="regist btn_sale_reg">
+                            <a href="javascript:;">
+                                <i></i>
+                                <span class="label">매물등록</span>
+                            </a>
+                        </li>
+                        <li class="manage btn_sale_manage">
+                            <a href="javascript:;">
+                                <i></i>
+                                <span class="label">매물관리</span>
+                            </a>
+                        </li>
+                        <li class="biding btn_sale_biding">
+                            <a href="javascript:;">
+                                <i></i>
+                                <span class="label">입찰내역</span>
+                            </a>
+                        </li>
+                        <li class="order btn_sale_order">
+                            <a href="javascript:;">
+                                <i></i>
+                                <span class="label">거래내역</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="signZone nologin" style="" id="noLoginMenu">
+                        <li class="signIn"><a href="/login">SIGN IN</a></li>
+                        <li class="singUp"><a href="/join/joinus">SIGN UP</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- END SEARCH HEADER -->
+        <div class="headerGnb">
+            <div class="inner">
+                <div class="menu buyer">
+                    <div class="menuLive"><a href="/entry/carsale/get-carsale-pc-list-on">Auctions</a></div>
+
+                    <ul class="depth1">
+                        <li class="rentalAuc">
+                            <a href="javascript:;" style="line-height: 62px;" id="rentalAucEvent">
+                                <span
+                                    style="display:block;position:absolute;top:8px;left:50%;text-align:center;width:100%;font-size:11px;line-height:1;color:#FF3102;transform: translateX(-50%);">
+                                    EVENT
+                                </span>
+                                Rental Auction
+                            </a>
+                            <a href="javascript:;" id="rentalAucNoneEvent" style="display: none;">
+                                Rental Auction
+                            </a>
+                        </li>
+                        <li class="localAuc">
+                            <a href="javascript:;" style="line-height:62px; display:none;" id="localAucEvent">
+                                <span
+                                    style="display:block;position:absolute;top:8px;left:50%;text-align:center;width:100%;font-size:11px;line-height:1;color:#dd1f26;transform: translateX(-50%);">
+                                    EVENT
+                                </span>
+                                Local Auction
+                            </a>
+                            <a href="javascript:;" id="localAucNoneEvent">
+                                Local Auction
+                            </a>
+                        </li>
+                        <li class="memuKo"> <a href="/support/howtobuy/overview" class="btn_menu">Support</a>
+                            <ul class="depth2">
+                                <li><a href="/support/how-to-start" class="">How to Start</a></li>
+                                <li><a href="/support/howtobuy/overview" class="">How to Buy</a></li>
+                                <li><a href="/support/terms-guides" class="">Terms and Guides</a></li>
+                                <li><a href="/support/fee-cost" class="">Fees &amp; Costs</a></li>
+                                <li><a href="/support/rule-policy" class="">Rules &amp; Policies</a></li>
+                                <li><a href="/support/shipping" class="">Shipping</a></li>
+                                <li><a href="/support/cutting-service" class="">Cutting Services</a></li>
+                                <li><a href="/support/local-auction" class="">Rental and Local Auctions</a></li>
+                                <li><a href="/support/contactus" class="">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="reviewsmenu">
+                            <a href="/community/reviews" class="btn_menu">Reviews</a>
+                            <ul class="depth2">
+                                <li><a href="/community/reviews">Buyer's review</a></li>
+                            </ul>
+                        </li>
+                        <li class="aboutusmenu">
+                            <a href="/about/aboutus/about-auctionwini" class="btn_menu">About Us</a>
+                            <ul class="depth2">
+                                <li><a href="/about/aboutus/about-auctionwini">About Us</a></li>
+                                <li><a href="/support/notice" class="">Notice</a></li>
+
+
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+        <div class="wrap">
+            <div class="contents" id="contents">
+                <div class="nDetail" style="padding-bottom:120px;">
+
+                    <div class="carInfoTop">
+                        <div class="left">
+                            <button type="button" class="btnList" id="ON"></button>
+                            <h2 id="car_info" class="curTit">2021 Kia K9</h2>
+                        </div>
+                        <div class="right">
+                            <button type="button" class="reviewCntView"><em id="reviewCnt">8</em></button>
+                            <button type="button" class="btnWatch btn_fav webFav"><em id="watchCnt">0</em></button>
+                            <div class="btnShare"><button type="button"></button>
+                                <div class="appArea">
+                                    <ul>
+                                        <li id="btn_share_kakao" class="kakao"><button type="button">kakaotalk</button>
+                                        </li>
+                                        <li id="btn_share_whatsapp" data-network="whatsapp"
+                                            class="whats st-custom-button"><a href="whatsapp://send?text="
+                                                data-title="Auctionwini!!" data-width="800" data-height="600"
+                                                data-image="" data-description=""
+                                                data-action="share/whatsapp/share"><button type="button"
+                                                    class="button">whatsapp</button></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carInfo">
+                        <div class="carInfoLeft">
+                            <div class="carPhoto">
+                                <div class="carPhotoLeft">
+                                    <div class="currentSd">
+                                        <div id="carImageLists" class="mainView">
+
+
+
+                                            <div id="bigImg">
+                                                <div class="imgSection markAreaCar"> 
+                                                    <img id="bigImage" class="zoom"
+                                                        src="https://file.auctionwini.com/media-files/2024/6/24/4beef465-4fff-4317-a56a-7a2a58697809_1024.jpg"
+                                                        data-zoom-image="https://file.auctionwini.com/media-files/2024/6/24/4beef465-4fff-4317-a56a-7a2a58697809.jpg"
+                                                        alt="0" loading="lazy"> 
+                                                    </div>
+                                            </div>
+                                   
+
+                                            
+                                            <button id="prevButton" class="slick-prev slick-arrow" aria-label="Previous" type="button">Previous</button>
+                                            <button id="nextButton" class="slick-next slick-arrow" aria-label="Next" type="button">Next</button>
+                                            <div class="mvBottom" style="z-index: 105;">
+                                                <div class="left">
+                                                    <div class="cnt"><span class="page_ea">1</span> / <span
+                                                            class="page_total">5</span></div>
+                                                </div>
+                                                <div class="right">
+                                                    <button type="button" class="btn_video">
+                                                        <span>View
+                                                            Video</span>
+                                                        </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="secondSd">
+                                            <ul id="carImageList" class="slider-nav ">
+                                                <li class="thumb on">
+                                                    <img src="./assets/img/38-M4-Ultimate-.jpg" alt="0" loading="lazy">
+                                                </li>
+
+                                                <li class="thumb"> 
+                                                    <img src="./assets/img/img_rentalAuc.7WSEGe3X (1).png" alt="1" loading="lazy">
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="inspected" style="display: none;">
+                                        <p class="tit">
+                                            <img
+                                                src="https://image.autowini.com/resources/IMG/common/ic_inspected.png">Inspected
+                                            Vehicle
+                                        </p>
+                                        <span>This vehicle has been inspected. A report is attached to the last
+                                            image.</span>
+                                        <div class="mark">
+                                            <strong>Terms of vehicle report</strong>
+                                            <ul>
+                                                <li><b>X</b> Change</li>
+                                                <li><b>W</b> Welding</li>
+                                                <li><b>C</b> Rust</li>
+                                                <li><b>A</b> Scratch</li>
+                                                <li><b class="wind">*</b> Windscreen</li>
+                                            </ul>
+                                        </div>
+                                        <p class="red">*The report is provided by the seller. Auctionwini does not check
+                                            or verify the authenticity of the information.</p>
+                                    </div>
+
+                                </div>
+                                <div class="carPhotoRight">
+                                    <div class="infoArea">
+                                        <div class="textList">
+                                            <div class="tit">Sale Information</div>
+                                            <div class="infoBox">
+
+                                                <dl>
+                                                    <dt>Lot</dt>
+                                                    <dd id="detail_itemno">8638-272</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Item Number</dt>
+                                                    <dd id="detail_itemNumber">IC1055965</dd>
+                                                </dl>
+
+                                                <dl>
+                                                    <dt>Highlights
+                                                        <div class="toolTipBox">
+                                                            <div class="toolTipBtn"></div>
+                                                            <div class="toolTipCon">
+                                                                <ul>
+                                                                    <li>
+                                                                        <strong>Run &amp; Drive</strong>
+                                                                        The vehicle was capable of moving forward under
+                                                                        its own power at the time of the vehicle arrived
+                                                                        at the seller’s yard.
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>Engine Start</strong>
+                                                                        The vehicle was started and ran at idle. Engine
+                                                                        was started but not driving.
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>Non Drivable</strong>
+                                                                        The vehicle was not capable of being driven.
+                                                                        Engine was not started and not working.
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </dt>
+                                                    <dd id="highlights_damage"><span class="active">Run and Drive</span>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Ro-Ro</dt>
+                                                    <dd id="roro">Possible</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Odometer
+                                                        <div class="toolTipBox">
+                                                            <div class="toolTipBtn"></div>
+                                                            <div class="toolTipCon">
+                                                                <ul>
+                                                                    <li>
+                                                                        <strong>Actual</strong>
+                                                                        The vehicle has real mileage driven which is not
+                                                                        manipulated.
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>Unknown</strong>
+                                                                        Shows the last registered mileage of the vehicle
+                                                                        in the official document.
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </dt>
+                                                    <dd id="detail_mileage">(Actual) 180,143 km</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Damages</dt>
+                                                    <dd>
+                                                        <ul class="damageDetail">
+                                                            <li class=" SC0320"><span>(NORMAL WEAR) No Rust</span></li>
+                                                        </ul>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Airbag damaged</dt>
+                                                    <dd>
+                                                        <span id="driver">NO (Driver)</span>
+                                                        <br><span id="assistant">NO (Passenger)</span>
+                                                        <br><span id="etcAir">NO (Others)</span>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Warning Lights</dt>
+                                                    <dd id="warning_light">N</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>EST. Retail Value</dt>
+                                                    <dd class="retail">
+                                                        <span id="retail_Amt">USD 3,000</span>
+
+                                                        <div class="btnChk">
+                                                            <a id="checkDetailAutowini" target="_blank"
+                                                                href="https://www.autowini.com/2015 GM Daewoo (Chevrolet) Captiva/search?i_sSort_Search=lowprice">Check
+                                                                Autowini Value</a>
+                                                            <a id="checkDetailCopart" target="_blank"
+                                                                href="https://www.copart.com/lotSearchResults?free=true&amp;query=2015 GM Daewoo (Chevrolet) Captiva">Check
+                                                                Copart Value</a>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <div class="textList comment">
+                                            <strong>Item comments</strong>
+                                            <textarea id="damage_sp_comment" placeholder="No Special Comment"
+                                                disabled="disabled" style="height: 42px;"></textarea>
+                                        </div>
+                                        <div class="imprint" style="display: none;">
+                                            <strong>Re-carved VIN Number</strong>
+                                            <p>This vehicle’s VIN Number has been re-carved. Buyers need to check if
+                                                re-carved VIN numbers are allowed in their country to avoid customs
+                                                issues before bidding.</p>
+                                        </div>
+                                        <div class="textList">
+                                            <p class="tit">Details</p>
+                                            <div class="infoBox">
+                                                <dl>
+                                                    <dt>Year</dt>
+                                                    <dd id="detail_pyyYy">2015</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Make</dt>
+                                                    <dd id="detail_make">GM Daewoo (Chevrolet)</dd>
+                                                    <input type="hidden" id="makeCd" value="C1720">
+                                                </dl>
+                                                <dl>
+                                                    <dt>Model</dt>
+                                                    <dd id="detail_model">Captiva</dd>
+                                                    <input type="hidden" id="modelCd" value="C5040">
+                                                </dl>
+                                                <dl>
+                                                    <dt>Engine Work</dt>
+                                                    <dd id="detail_flagEngine">Able to vehicle start</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Engine Volume</dt>
+                                                    <dd id="detail_engineVolume">1,998 cc</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Fuel Type</dt>
+                                                    <dd id="detail_fuel">Diesel</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Engine Type</dt>
+                                                    <dd id="detail_enginetype">-</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Handle</dt>
+                                                    <dd id="detail_stringNm">LHD</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Cylinder</dt>
+                                                    <dd id="detail_cylinder">4</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Transmission</dt>
+                                                    <dd id="detail_transmission">Automatic</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Drive</dt>
+                                                    <dd id="detail_drive">Front 2WD</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>No. of Passenger</dt>
+                                                    <dd id="detail_passeger">5 seats</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Key</dt>
+                                                    <dd id="detail_key">YES</dd>
+                                                </dl>
+                                                <dl>
+
+                                                    <dt>Registration Date</dt>
+                                                    <dd id="initRegDt">2015.01.13</dd>
+                                                </dl>
+                                            </div>
+                                            <input type="hidden" id="isTop" value="N">
+                                            <input type="hidden" id="vehicleCd" value="C020">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section carInfoHowToBuy">
+                                <div class="carTit"><b>How to Buy</b><a href="/support/howtobuy/overview" class="more"
+                                        target="_blank">View More</a></div>
+                                <div class="inner">
+                                    <ul>
+                                        <li><a href="/support/howtobuy/register-fee"
+                                                target="_blank"><span>1</span>Register for free</a></li>
+                                        <li><a href="/support/howtobuy/premium-membership"
+                                                target="_blank"><span>2</span>Upgrade to premium membership</a></li>
+                                        <li><a href="/support/howtobuy/search-vechicles"
+                                                target="_blank"><span>3</span>Search vehicles and check auction time</a>
+                                        </li>
+                                        <li><a href="/support/howtobuy/join-auctions" target="_blank"><span>4</span>Join
+                                                the auctions</a></li>
+                                        <li><a href="/support/howtobuy/place-bids" target="_blank"><span>5</span>Place
+                                                bids</a></li>
+                                        <li><a href="/support/howtobuy/pay-wait" target="_blank"><span>6</span>Make the
+                                                payments</a></li>
+                                        <li><a href="/support/howtobuy/track-delivery"
+                                                target="_blank"><span>7</span>Track your delivery</a></li>
+                                    </ul>
+                                </div>
+                                <ul class="aucLinkList">
+                                    <li class="auc1 aucs">
+                                        <a href="/entry/carsale/get-carsale-pc-list-on-search?i_sAuctionTimeType=A&amp;i_sMainYn=MM"
+                                            target="_blank">
+                                            <span class="nth">1st Auction</span>
+                                            <strong>Inspected</strong>
+                                        </a>
+                                    </li>
+                                    <li class="auc2 aucs">
+                                        <a href="/entry/carsale/get-carsale-pc-list-on-search?i_sAuctionTimeType=B&amp;i_sMainYn=MM"
+                                            target="_blank">
+                                            <span class="nth">2nd Auction</span>
+                                            <strong>Truck &amp; Bus</strong>
+                                        </a>
+                                    </li>
+                                    <li class="auc3 aucs">
+                                        <a href="/entry/carsale/get-carsale-pc-list-on-search?i_sAuctionTimeType=C&amp;i_sMainYn=MM"
+                                            target="_blank">
+                                            <span class="nth">3rd Auction</span>
+                                            <strong>Run &amp; Drive - Non damaged</strong>
+                                        </a>
+                                    </li>
+                                    <li class="auc4 aucs">
+                                        <a href="/entry/carsale/get-carsale-pc-list-on-search?i_sAuctionTimeType=D&amp;i_sMainYn=MM"
+                                            target="_blank">
+                                            <span class="nth">4th Auction</span>
+                                            <strong>Run &amp; Drive - Damaged</strong>
+                                        </a>
+                                    </li>
+                                    <li class="auc5 aucs">
+                                        <a href="/entry/carsale/get-carsale-pc-list-on-search?i_sAuctionTimeType=E&amp;i_sMainYn=MM"
+                                            target="_blank">
+                                            <span class="nth">5th Auction</span>
+                                            <strong>Non-drivable</strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="section carInfoHowToBid">
+                                <div class="carTit"><b>How to bid</b></div>
+                                <div class="inner">
+                                    <div class="left">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6u_j4d9D4Rc?si=DbF8IBwtPwahApH1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="right">
+                                        <dl>
+                                            <dt>Auction Bidding Guide</dt>
+                                            <dd>
+                                                Found a vehicle you want? There are two ways of bidding, Live Auction
+                                                Bid and Pre-Bid. Pre-Bid is available at each vehicle's page with a
+                                                clear red button.Once you put the pre-bid, your bid amount will be
+                                                placed automatically in the Live Auction. You can also put the real time
+                                                bidding in the Live Auction.
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Support</dt>
+                                            <dd><a href="/support/terms-guides" target="_blank">Auction guide</a></dd>
+                                            <dd><a href="/support/fee-cost" target="_blank">Fees and costs</a></dd>
+                                            <dd><a href="/support/rule-policy" target="_blank">Penalty and claim
+                                                    policies</a></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="btnShipping">
+                                    <a href="/support/shipping" target="_blank">
+                                        <img
+                                            src="https://image.autowini.com/cdn/auction/web/images/content/img_onDemand.png">
+                                        <dl>
+                                            <dt>On-demand shipping</dt>
+                                            <dd>
+                                                From ground-trucking, and ocean shipping, all the way to document
+                                                delivery, Auctionwini will handle all the processes for you after you
+                                                win.
+                                            </dd>
+                                        </dl>
+                                    </a>
+                                    <a href="/support/cutting-service" target="_blank">
+                                        <img
+                                            src="https://image.autowini.com/cdn/auction/web/images/content/img_cutting.png">
+                                        <dl>
+                                            <dt>Cutting services</dt>
+                                            <dd>
+                                                Vehicle cutting is the best option to safely and cost-effectively get
+                                                used parts and engines.
+                                            </dd>
+                                        </dl>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="section carInfoFaq">
+                                <div class="carTit"><b>Frequently Asked Questions</b></div>
+                                <div class="inner">
+                                    <ul>
+                                        <li>
+                                            <strong>Why can't I place a bid?</strong>
+                                            <span>Please check your membership status, only premium members can bid in a
+                                                live auction. If you complete all steps(ID upload &amp; Place deposit)
+                                                for your membership, wait 1-3 business days to be processed. we will
+                                                contact you as soon as we confirm your membership.</span>
+                                        </li>
+                                        <li>
+                                            <strong>Can I cancel my bid?</strong>
+                                            <span>Once a bid is placed, it cannot be canceled or retracted. Make sure
+                                                that you are fully confident in your bid before you place it.</span>
+                                        </li>
+                                        <li>
+                                            <strong>How can I pay?</strong>
+                                            <span>100% full payment amount must be paid via bank transfer. We do not
+                                                accept partial payment, credit card, or paypal.</span>
+                                        </li>
+                                        <li>
+                                            * Deposit can be paid via Paypal.
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <strong>What is included in the Final Price?</strong>
+                                            <span>Once you win a lot(vehicle), you will receive an invoice
+                                                with,<br><br>1. Lot Price* (price at which the lot was sold during the
+                                                auction)<br>2. Carrier Charge*<br>3. Auction Charge*<br>4. Shipping Cost
+                                                (depends on your trade conditions)<br><br>If you need more information
+                                                about these charges, you can calculate your estimated total amount by
+                                                using the calculator.</span>
+                                        </li>
+                                        <li>
+                                            <strong>What is the process to make consolidation, and how does it work to
+                                                get my car?</strong>
+                                            <span>For the consolidation, the buyer needs to make sure we have the
+                                                consolidation option available for the shipping country. We have our
+                                                official agents in certain countries who are in charge of clearing the
+                                                cars, opening the containers, and distributing the cars to each buyer.
+                                                Customs is divided between the number of cars inside the container. Due
+                                                to this unique process, consolidation requires some waiting time before
+                                                the full container is ready to ship and when it arrives.</span>
+                                        </li>
+                                        <li>
+                                            <strong>Why can't I use the Ro-Ro option?</strong>
+                                            <span>Shipping companies have strict rules and guidelines for Ro-Ro. Cars
+                                                that were crashed or flooded can't be loaded to Ro-Ro.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="carInfoRight">
+                            <div id="fixedArea" class="fixedWrap fixed" style="width: 515px;">
+                                <div class="carBid textList">
+                                    <div class="tit">Bid Information
+                                        <div class="saleType">
+                                            On Approval
+                                            <button type="button" class="toolTipBtn bid_status_term"
+                                                onclick="modalPopup('.bidinfoPop')"></button>
+                                        </div>
+                                    </div>
+                                    <div class="infoBox">
+                                        <dl class="schedule">
+                                            <dt>Schedule</dt>
+                                            <dd class="auctionGB">3rd Auction</dd>
+                                        </dl>
+                                        <dl class="date">
+                                            <dt>Auction Date</dt>
+                                            <dd class="listDate">02/07/2024</dd>
+                                        </dl>
+                                        <dl class="time">
+                                            <dt>Auction Time</dt>
+                                            <dd class="listTime">AM 04:00 London</dd>
+                                        </dl>
+                                        <dl class="bidder">
+                                            <dt>No. of Bidder (Pre-Bid)</dt>
+                                            <dd class="bidderCnt">0</dd>
+                                        </dl>
+                                        <dl class="bidderCountryFlag" style="display:none">
+                                            <dt>Bidder’s Country (Pre-Bid)</dt>
+                                            <dd class="bidderCountry"> </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="timeLeft">
+                                        <dl>
+                                            <dt>Time Left</dt>
+                                            <dd id="content_countD" class="time content_cd list_type"><span>3</span>d
+                                                <span>17</span>h <span>29</span>m <span>21</span>s</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="finish" id="content_countD2" style="display:none">Live Auction in
+                                        progress</div>
+                                    <div class="cost">
+                                        <dl class="maxBid you_bid_amt" style="display: none;">
+                                            <dt>Your Bid</dt>
+                                            <dd class="pointFt">USD <span id="bidMyAmt"></span></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="bid_text">Current Bid.</dt>
+                                            <dd class="pointFt sumRed totalPrice">USD <span
+                                                    id="pre_bid_max">2,000</span><em>+ Other Charges</em></dd>
+                                        </dl>
+                                        <dl class="maxBid maxInput">
+                                            <dt>Your Bid.</dt>
+                                            <dd>
+                                                <div class="bid_option disabledBox">
+                                                    <div class="input">
+                                                        <button type="button"
+                                                            class="btn_price down jumbo_down">-</button>
+                                                        <input type="text" id="price_text" name="bid_check"
+                                                            class="bid_check pre_bid_max jumbo" maxlength="6"
+                                                            autocomplete="off" readonly="">
+                                                        <button type="button" class="btn_price up jumbo_up">+</button>
+                                                    </div>
+                                                </div>
+                                                <span>( USD 25 bidding increment )</span>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="btn_area">
+
+
+
+                                        <button type="button" class="btn_white fx_inbtn"
+                                            onclick="location.href='/mypage/membership/myaccount-membership-view'">Upgrade
+                                            Membership</button>
+
+
+                                    </div>
+                                    <div class="notiArea hide">
+                                        <div class="left">This vehicle is being sold as "as is - where is". All bids are
+                                            binding and all sales are final.</div>
+                                        <button type="button" onclick="modalPopup('.policyPop');">As Is - Where Is<span
+                                                class="toolTipBtn"></span></button>
+                                    </div>
+                                </div>
+                                <div class="sRight">
+
+
+
+
+
+
+                                    <div class="carInfoCost textList">
+                                        <div class="tit">
+                                            Additional Cost
+
+                                            <button type="button" id="isConsolidation"
+                                                onclick="modalPopup('.consolidationInfo')" style=""> What’s
+                                                Consolidation? <span class="toolTipBtn"></span></button>
+                                        </div>
+                                        <div class="select_area">
+                                            <ul>
+                                                <li>
+                                                    <select id="selectEstCountry" name="i_sEstCountryCd">
+                                                        <option value="">Country</option>
+
+                                                        <option value="C1570">S.Korea</option>
+
+                                                        <option value="C0010">Afganistan</option>
+
+                                                        <option value="C0020">Albania</option>
+
+                                                        <option value="C0030">Algeria</option>
+
+                                                        <option value="C0050">Andorra</option>
+
+                                                        <option value="C0060">Angola</option>
+
+                                                        <option value="C2060">Anguilla</option>
+
+                                                        <option value="C0070">Antigua and Barbuda</option>
+
+                                                        <option value="C0080">Argentina</option>
+
+                                                        <option value="C0100">Aruba</option>
+
+                                                        <option value="C0110">Australia</option>
+
+                                                        <option value="C0120">Austria</option>
+
+                                                        <option value="C0130">Azerbaijan</option>
+
+
+                                                    </select>
+                                                </li>
+                                                <li>
+                                                    <select id="selectEstPort" name="i_sEstPortCd">
+                                                        <option value="WP0000004107">Poti(Georgia)</option>
+                                                        <option value="WP0000004137">Iran(Badar abbas)</option>
+                                                        <option value="WP0000004170">Dubai(U.A.E)</option>
+                                                        <option value="WP0000004177">Baku</option>
+                                                    </select>
+                                                </li>
+                                                <li>
+                                                    <select id="selectEstCarType" name="i_sEstCarTypeCd" class="act">
+
+                                                        <option value="">Type &amp; Size</option>
+                                                        <option value="C080" data-trade="C010">Consolidation(40HQ) / FOB
+                                                        </option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                            <div class="cost">
+                                                <dl>
+                                                    <dt>Shipping cost (Approx.)</dt>
+                                                    <dd>
+                                                        <strong id="estimate_price">USD 300</strong>
+                                                        <span id="taradeOptions">FOB, Incheon, S.Korea</span>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Auction Fee</dt>
+                                                    <dd>
+                                                        <span id="auctionFee">USD 356</span>
+                                                        <a href="/support/fee-cost" target="_blank">+ Other Charges<em
+                                                                class="toolTipBtn"></em></a>
+                                                    </dd>
+                                                </dl>
+                                                <dl id="vipFeeOption" style="display:none;">
+                                                    <dt>Membership discount<span class="vip">VIP member</span></dt>
+                                                    <dd id="vipFee">&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="notiArea hide">
+                                                <p>- The auction Fee will be changed based on the final bid amount.</p>
+                                                <p>- The total Price including other charges can be changed at the time
+                                                    of purchase.Please check the total price on your invoice sent after
+                                                    you won the bid.</p>
+                                                <p><span>Final Bid Amount</span>+
+                                                    <span>Shipping Cost</span>+
+                                                    <span>Auction Fee</span>+
+                                                    <span>Other Charges</span>=
+                                                    <span>Total Price</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="logisLink">
+                                            <dl>
+                                                <dt>Find the best freight to your country</dt>
+                                                <dd><a href="https://winilogis.com/" target="_blank">Browse
+                                                        WiniLogis</a></dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/cdetail.js"></script>
+</body>
+
+</html>

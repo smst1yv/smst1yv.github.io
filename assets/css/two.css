@@ -1,0 +1,577 @@
+@charset "utf-8";
+/*@import url("https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');*/
+
+.wrap{background:#fff;}
+.main_wrap{padding-bottom:0;border:none;background:none}
+.main_visual{padding:70px 40px 50px;text-align:center;box-sizing:border-box}
+.main_visual .title dt{font-size:36px;;color:#fff;font-weight:500;}
+.main_visual .looking{margin:0 auto;width:1100px;background:#fff;}
+.main_visual .looking ul{float:left;padding:16px 20px;width:82%;background:#fff;}
+.main_visual .looking li{float:left;margin:0 5px;width:23.8%}
+.main_visual .looking li label{display:block;margin-bottom:5px;font-size:12px;color:#666;text-align:left}
+.main_visual .looking li.half select{width:49%}
+.main_visual .looking button{display:block;float:right;width:18%;height:105px;line-height:105px;background:#e0000c;font-size:16px;color:#fff;}
+.main_visual .looking button:hover{background:#ff2f3a}
+.main_visual .main_btn{padding:30px 0}
+@keyframes sheen {
+  0% {
+    transform: skewY(-45deg) translateX(0);
+  }
+  100% {
+    transform: skewY(-45deg) translateX(12.5em);
+  }
+}
+.main_visual .main_btn a{display:inline-block;position:relative;margin:0 10px;padding:11px 40px;min-width:250px;max-height:66px;font-size:16px;line-height:41px;color:#fff;text-align:center;letter-spacing:0.5px;background:#e0000c;
+                        transition:all 0.2s ease-in-out;overflow: hidden;vertical-align:top;border-radius:4px;}
+.ko .main_visual .main_btn a{font-weight:600}
+.main_visual .main_btn a:before{display:block;content: "";position:absolute;top:0;left:-8em;width:3em;height:100%;background-color:rgba(255,255,255,0.3);transform:skewX(-45deg) translateX(0);transition:none;}
+.main_visual .main_btn a strong{display:inline-block;margin-left:15px;font-size:32px;color:#fff;font-weight:700;vertical-align:middle}
+.main_visual .main_btn a:hover{background-color:#e0000c;color:#fff;border-bottom:3px solid #6d0006;}
+.main_visual .main_btn a:hover strong{color:#fff;}
+.main_visual .main_btn a:hover:before{transform: skewX(-45deg) translateX(35em);transition:all 0.5s ease-in-out;}
+.main_visual .main_btn a.white{background:#000;border:1px solid #fff;color:#fff;}
+.main_visual .main_btn a.white strong{color:#fff}
+.main_visual .main_btn a.white:hover{background-color:rgba(0,0,0,0.8);border-color:#000;color:#fff;border-bottom:3px solid #000}
+
+.main_tab{position:absolute;bottom:0;left:0;width:100%;text-align:center;background:rgba(0,0,0,0.8);border-top:1px solid #000;box-sizing:border-box;z-index:10}
+.main_tab .inner{margin:20px auto;padding:0 40px;width:1160px;}
+.main_tab .lft{display:none;float:left;padding:0;}
+.main_tab .lft img{vertical-align:top}
+.main_tab .rgt{float:right;width:100%;text-align:center;}
+.main_tab a{display:inline-block;padding:0 35px;font-size:15px;line-height:55px;color:#fff;letter-spacing:0.8px;}
+.main_tab a:hover{color:#e0000c}
+.main_tab.fixed{position:fixed;top:0;left:0;height:95px;background:rgba(0,0,0,0.95)}
+.main_tab.fixed .lft{display:block;}
+.main_tab.fixed .rgt{width:90%;text-align:right;}
+
+.main_stock{position:relative;padding:50px 0 80px;}
+.main_stock .title{position:relative;margin-bottom:12px;font-size:22px;line-height:38px;color:#1f1f1f;font-weight:bold;text-align:left;}
+.ko .main_stock .title{font-size:22px;letter-spacing:-1.5px;}
+.main_stock .title span{display:inline-block;position:relative;top:-5px;margin-right:12px;font-size:16px;font-weight:400;/* border:2px solid #ccc;border-radius:20px;line-height:26px; */}
+.ko .main_stock .title span{letter-spacing:-0.5px;font-weight:bold;}
+.main_stock .title span:after{content:'';height:15px;width:100%;position:absolute;bottom:5px;left:0;background:rgba(195,12,12,0.1);}
+.main_stock .title a{display:inline-block;float:right;font-size:16px;font-weight:300;color:#808080;}
+.main_stock .mark{position:absolute;bottom:0;left:8px;}
+.main_stock .mark em{display:inline-block;margin:6px 0;padding:3px;font-size:14px;line-height:22px;color:#fff;background:rgba(0,0,0,0.7);border-radius:30px}
+.main_stock .mark em.roro{padding:5px 12px;}
+.main_stock .mark em img{height:24px;vertical-align:top}
+.main_stock .verifired{display:block;position:absolute;top:0;left:0;width:23%;padding-top:16%;background-size:100%;}
+.main_stock .vEs{display:block;position:absolute;top:0;left:0;width:23%;padding-top:16%;background:url(https://image.autowini.com/resources/IMG/common/ico_mk2.png) 0 0 no-repeat;background-size:100%;}
+.main_stock .vNd{display:block;position:absolute;top:0;left:0;width:23%;padding-top:16%;background:url(https://image.autowini.com/resources/IMG/common/ico_mk3.png) 0 0 no-repeat;background-size:100%;}
+
+.main_stock .arrived{float:left;width:63%;max-width:1280px;background:#fff;text-align:left;box-sizing:border-box}
+.arrived .video{position:relative;float:left;width:40%;}
+.arrived .video a{display:block;position:relative;width:100%;padding-top:75%;background-color:#000;background-repeat:no-repeat;background-size:100%;background-position:center;border-top-left-radius:6px;border-top-right-radius:6px;}
+.arrived .video .mark em{margin:14px 8px;}
+.arrived .video .mark em img{height:42px}
+.arrived .video dl{background:#fff;padding:16px 16px 24px;box-shadow:0 0 20px rgba(0,0,0,0.1);border-bottom-left-radius:12px;border-bottom-right-radius:12px;}
+.arrived .video .dmg{margin-bottom:10px;}
+.arrived .video .dmg em{display:inline-block;margin:3px 3px 3px 0;padding:0 3px 0;border:1px solid #333;font-size:12px;font-weight:400;color:#222;border-radius:3px;}
+.ko .arrived .video .dmg em{letter-spacing:-.3px}
+.arrived .video .dmg .high{background:#222;color:#fff;border:1px solid #222;}
+.arrived .video dt{margin-bottom:4px;font-size:18px;font-weight:500;}
+.arrived .video dt strong{margin-top:16px;}
+.arrived .video dd{font-size:14px;color:#888;}
+.arrived .video dd li{position:relative;float:left;margin:0 17px 0 0;color:#888;}
+.arrived .video dd li:first-child{color:#555;}
+.arrived .video dd li:after{display:inline-block;content:'';position:absolute;top:5px;right:-10px;width:1px;height:11px;background:#e0e0e0;}
+.arrived .video dd li:last-child{margin-right:0;}
+.arrived .video dd li:last-child:after{display:none}
+.arrived .video .price{margin-top:10px;font-size:24px;color:#000;font-weight:600;letter-spacing:-0.5px}
+.arrived .new{float:right;margin-left:-0.4em;width:60%;text-align:right}
+.arrived .new > li{position:relative;display:inline-block;margin:0 0 0.8em 1em;width:46%;min-width:160px;text-align:right;}
+.arrived .new a{display:block;position:relative;width:100%;padding-top:75%;background-color:#000;background-repeat:no-repeat;background-size:100%;background-position:center;border-radius:4px;}
+.arrived .new dl{padding:12px 0 12px;background:#fff;}
+.arrived .new dt{margin-bottom:4px;font-size:16px;font-weight:400;color:#1f1f1f;text-align:left;letter-spacing:-.3px;}
+.arrived .new dd{font-size:14px;color:#606060}
+.arrived .new .price{font-size:18px;font-weight:600;color:#1f1f1f;text-align:left}
+.main_stock .verified{position:relative;float:right;width:430px;}
+.main_stock .verified .title strong{position:relative;cursor:pointer;font-weight:bold;}
+.main_stock .verified .title strong:after{display:block;content: '?';position:absolute;top:6px;right:-35px;width:23px;height:23px;background:#111;color:#fff;border-radius:50%;text-align:center;line-height:23px;font-size:16px;}
+.ko .main_stock .verified .title strong:after{top:1px;}
+.verified .tooltip{display:none;position:absolute;top:50px;left:50%;padding:15px;width:90%;font-size:14px;color:#fff;background:#fff;text-align:left;transform:translateX(-50%);background:rgba(0,0,0,.9);border-radius:8px;word-break:keep-all;cursor:pointer;z-index:200;}
+.verified .tooltip svg{float:right;margin:-8px -8px 0 0;transform:rotate(46deg)}
+.verified .tooltip:after{display:block;content:'';}
+.verified .stock a{display:block;position:relative;width:100%;padding-top:75%;background-repeat:no-repeat;background-size:cover;background-position:center;}
+.verified .stock .mark{bottom:0;left:10px;}
+.verified .stock .dmg{margin-bottom:10px;text-align:left}
+.verified .stock .dmg em{display:inline-block;margin:3px 3px 3px 0;padding:0 3px 0;border:1px solid #333;font-size:12px;color:#222;border-radius:3px;}
+.verified .stock .dmg .high{background:#222;color:#fff;border:1px solid #222;}
+.verified .stock dl{position:relative;padding:20px 16px;text-align:left}
+.verified .stock dt{margin-bottom:10px;font-size:18px;font-weight:500;color:#1f1f1f;}
+.verified .stock dd{font-size:14px;color:#888;}
+.verified .stock dd li{position:relative;float:left;margin:0 17px 4px 0;color:#888;}
+.verified .stock dd li:first-child{font-weight:500;color:#555;}
+.verified .stock dd li:after{display:inline-block;content:'';position:absolute;top:5px;right:-10px;width:2px;height:11px;background:#e0e0e0;}
+.verified .stock dd li:last-child{margin-right:0}
+.verified .stock dd li:last-child:after{display:none}
+.verified .stock .mark em{font-size:24px;line-height:40px;}
+.verified .stock .mark em img{height:30px}
+.verified .stock .price{margin-top:10px;font-size:24px;color:#000;font-weight:600;text-align:left;letter-spacing:-0.5px}
+.verified .stock .slick-prev{position:absolute;top:50%;left:-30px;margin-top:-15px;width:30px;height:30px;font-size:0;background:url(https://image.autowini.com/resources/IMG/common/ico_back.png) center no-repeat;background-size:30px}
+.verified .stock .slick-next{position:absolute;top:50%;right:-30px;margin-top:-15px;width:30px;height:30px;font-size:0;background:url(https://image.autowini.com/resources/IMG/common/ico_next.png) center no-repeat;background-size:30px}
+.verified .stock .slick-dots{display:none;bottom:-25px;top:auto}
+.verified .stock .slick-dots li button{background:#e0e0e0}
+.verified .stock .slick-dots li.slick-active button{background:#e0000c}
+.verified .stock_img{margin-top:16px;}
+.verified .stock_img .item{margin:0 3px;border:2px solid #fff;}
+.verified .stock_img .slick-current{border:2px solid #000;box-sizing:border-box;}
+
+.veri_non .verified{display:none}
+.veri_non .arrived{float:inherit;width:100%;}
+.veri_non .arrived .title{font-size:32px;}
+.veri_non .arrived .title span{font-size:22px;}
+
+.main_sold{position:relative;padding:80px 0 90px;text-align:center;background:#0C0D0E;overflow:hidden}
+.main_sold h4{position:relative;margin-bottom:40px;font-size:36px;line-height:42px;color:#eee;font-weight:600}
+.main_sold h4 b{font-weight:normal;font-style:italic}
+.main_sold h4 span{display:block;margin-top:8px;font-size:22px;font-weight:normal;}
+.main_sold h4 img{display: inline-block;margin: -4px 6px 0 0;height:30px;vertical-align: middle;border: 1px solid #ccc;}
+.main_sold .sold{margin-top:60px;height:280px; width:100%;overflow: hidden;}
+.main_sold .item{margin:0 20px;width:260px;}
+.main_sold dt{position:relative;width:260px;;overflow:hidden}
+.main_sold dt img{display:block;width:100%;height:195px}
+.main_sold dt:after{display:block;content:'SOLD OUT';position:absolute;top:0;left:14px;padding:40px 0 10px;width:53px;background:#e0000c;font-size:13px;color:#fff;text-align:center;line-height:16px;letter-spacing:1px;}
+.main_sold .price{position:relative;padding:12px 18px 10px;background:#fff;text-align:left;border-radius:0 0 8px 8px;color:#000;z-index:1}
+.main_sold .price strong{display:block;padding-bottom:3px;font-size:14px;font-weight:normal}
+.main_sold .price span{display:flex;align-items:center;}
+.main_sold .price img{height:16px;}
+.main_sold .price em{flex:1;text-align:right;font-size:18px;font-weight:600;}
+.main_sold a{display:inline-block;margin-top:44px;padding:0 68px;height:54px;font-size:18px;line-height:54px;background:#e0000c;color:#fff;border-radius:4px}
+
+.main_local{position:relative;background:#fff;}
+.main_local:before{display:block;content:'';position:absolute;top:220px;left:0;width:100%;height:1px;background:linear-gradient(to right, rgba(0,0,0,0) 1%, rgba(224, 0, 12) 50%, rgba(0, 0, 0, 0) 99%);}
+.main_local .arrow{display:block;position:absolute;top:51%;left:50%;transform:rotate(-135deg);margin-left:-625px;width:60px;height:60px;border-right:1px solid #000;border-top:1px solid #000;z-index:1}
+.main_local .arrow:hover{border-color:#e0000c}
+.main_local .btnAg{left:auto;right:50%;margin-left:0;margin-right:-625px;transform:rotate(45deg);}
+.main_local ul{position:relative;padding:100px 40px 0;margin:0 auto;width:1160px;}
+.main_local .tabLink{display:inline-block;position:absolute;top:90px;right:42%;padding:30px;font-size:30px;font-weight:500;color:#1f1f1f}
+.ko .main_local .tabLink{right:52%}
+.main_local .agent .tabLink{right:auto;left:56%}
+.main_local .con{display:none;padding-top:180px;}
+.main_local .on .tabLink{color:#ff000e;font-weight:600;background:url(https://image.autowini.com/resources/IMG/common/ico_local.png) center 0 no-repeat;background-size:27px;animation:bounceA .4s cubic-bezier(0.82, 0.02, 1, 1) infinite alternate}
+.main_local .on .con{display:block;}
+.main_local .con p{font-size:18px;line-height:1.8;font-weight:400;color:#555}
+.main_local .con .inner{margin:60px 0;}
+.main_local .photos{position:relative;float:left;width:49%;}
+.main_local .photos img{display:block;width:100%}
+.main_local .photos .logo{display:block;position:absolute;top:15px;left:15px;width:auto;}
+.main_local .photos span{display:block;padding-top:10px;font-size:14px;color:#1f1f1f;text-align:left;}
+.main_local .gMap{float:right;width:49%;}
+.main_local .gMap img{display:block;width:100%}
+.main_local .gMap .addr{display:inline-block;margin:16px 0;padding-left:30px;font-size:14px;line-height:23px;color:#808080;background:url(https://image.autowini.com/resources/IMG/common/ico_local.png) 0 2px no-repeat;background-size:20px;}
+.main_local .gMap a{display:block;padding:19px 0;font-size:18px;line-height:24px;color:#fff;background:#1f1f1f;text-align:center}
+.main_local .agent ul{padding:0;margin:0;width:auto;}
+.main_local .agent li{display:inline-block;margin:0 10px;width:29%;height:230px;vertical-align:top}
+.main_local .agent li a{display:block;position:relative;width:100%;height:100%;background-position:center;background-size:cover;background-repeat:no-repeat;border-radius:8px;}
+.main_local .agent .eu a{background-color:#E8E8E8;background-image:url(../images/main/bg_eu.png);}
+.main_local .agent .na a{background-color:#C1D0E4;background-image:url(../images/main/bg_na.png);}
+.main_local .agent .af a{background-color:#BEE1D0;background-image:url(../images/main/bg_af.png);}
+.main_local .agent li a span{position:absolute;bottom:26px;left:26px;text-align:left}
+.main_local .agent li a strong{position:relative;font-size:24px;font-weight:700;}
+.main_local .agent li a em{display:block;color:#303030}
+.main_local .agent li a:hover{border-color:#000}
+.main_local .agent li a:hover:after{content:'';position:absolute;top:46%;right:24%;width:20px;height:20px;background:url(https://image.autowini.com/resources/IMG/common/ico_local_black.png) center no-repeat;background-size:20px;animation:bounce .4s cubic-bezier(0.82, 0.02, 1, 1) infinite alternate}
+.main_local .agent .na a:hover:after{top:30%;right:60%;animation:bounce2 .4s cubic-bezier(0.82, 0.02, 1, 1) infinite alternate}
+.main_local .agent .af a:hover:after{top:30%;right:36%;animation:bounce2 .4s cubic-bezier(0.82, 0.02, 1, 1) infinite alternate}
+@keyframes bounce {  100%{top:48%;}  }
+@keyframes bounce2 {  100%{top:32%;}  }
+@keyframes bounceA {  100%{background-position:center 6px}  }
+
+.main_review{position:relative;padding:80px 40px 120px;text-align:center;background:#f5f5f5;background-blend-mode:color-dodge;}
+.main_review .title{margin-bottom:40px;}
+.main_review .title dt{font-size:36px;color:#1f1f1f;font-weight:600}
+.ko .main_review .title dt{letter-spacing:-1.5px;}
+.main_review .inner{margin:0 auto;padding:0 40px}
+.main_review .imgList{overflow: hidden;width:1280px;margin:0 auto}
+.main_review .imgList .listBox{width:calc(25% - 24px);float:left;filter: drop-shadow(2px 2px 15px rgba(0, 0, 0, 0.08));margin:12px;border-radius: 10px;border:1px solid #eee}
+.main_review .imgList .listBox:last-child{margin-right:0}
+.main_review .imgList .listBox:hover{cursor:pointer}
+.listBox .flag{font-size:14px}
+.listBox .flag img{display:inline-block;width:18px;height:12px;margin-right:8px;background-repeat:no-repeat;background-size:contain}
+.listBox .video{max-width:100%;height:180px;border-top-right-radius: 10px;border-top-left-radius: 10px;overflow: hidden}
+.listBox .video > * {width:100%;height:180px}
+.listBox .video .isYoutube{position:absolute;width:40px;height: 40px;background: url(https://image.autowini.com/resources/IMG/common/logos_youtube-icon.png) center;background-size: cover;top: 32%;left: 50%;transform: translate(-50%, -50%);border-radius: 20px;}
+.listBox .imgText{background:#fff;padding:16px}
+.listBox .imgText .text01{padding-right:24px;color:#111;font-size:18px;font-weight:500;text-align:left;line-height:1.1em;word-break:break-all;/*text-overflow:ellipsis;overflow:hidden;-webkit-line-clamp:2;display:-webkit-box;-webkit-box-orient:vertical*/}
+.listBox .imgText .text02{color:#999;font-size: 12px;line-height: 14px}
+.listBox .imgText .videoInfo{display:flex;justify-content:space-between;margin-top:20px}
+.listBox .videoInfo .postcomment .like{padding-left:24px;cursor:pointer;background:url(../images/content/ico_like_gray.png) no-repeat center left;background-size: 20px;color: #999}
+.listBox.best .imgText{position:relative;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;}
+.listBox.best .imgText p{max-height:70px;display: -webkit-box; -webkit-line-clamp:3; -webkit-box-orient: vertical; overflow: hidden; text-align: left;}
+.listBox.best .imgText:after{content:"BEST REVIEW";background:#E82020;color:#fff;display:block;height:24px;line-height:24px;padding:0 12px;text-align:center;font-size: 13px;font-weight: 500;position:absolute;top:-24px;left: 0}
+.main_review .btnReview{margin-top:60px}
+.main_review .btnReview a{font-size:16px;font-weight:600;padding:20px 40px;border:1px solid #ddd;cursor: pointer;line-height: 60px}
+
+.main_cs{background:#f5f5f5;padding:80px 0 120px;box-sizing:border-box;}
+.main_cs .cs_team{max-width:1280px;width:100%;margin:0 auto;}
+.main_cs .cs_team .title{margin-bottom:40px;text-align:center;}
+.main_cs .cs_team .title dt{margin-bottom:10px;font-size:36px;color:#1f1f1f;font-weight:500}
+.ko .main_cs .cs_team .title dt{letter-spacing:-1.5px;}
+.main_cs .cs_team .title dd{margin-bottom:80px;font-size:18px;line-height:26px;color:#999;font-weight:300;}
+.main_cs .cs_team ul{display:flex;justify-content:center}
+.main_cs .cs_team li{float:left;margin-right:1%;padding:20px 14px;width:19%;background:#fff;text-align:center;border-radius:4px;box-sizing:border-box;}
+.main_cs .cs_team li:last-child{margin-right:0;}
+.main_cs .cs_team li .lang{display:inline-block;margin:-5px 0 10px;padding:1px 10px;text-align:center;font-size:12px;color:#f4f4f4;font-weight:400;border-radius:30px;background:#222;}
+.main_cs .cs_team li img{display:block;width:75px;margin:-50px auto 0;}
+.main_cs .cs_team li dl{text-align:center;}
+.main_cs .cs_team li dt{margin-bottom:5px;font-size:18px;color:#1f1f1f;font-weight:600}
+.main_cs .cs_team li dd a{display:inline-block;padding-left:36px;font-size:16px;color:#555;}
+.main_cs .cs_team li .mail a{background:url(../images/content/ico_mail.svg) no-repeat left center;background-size:40px}
+.main_cs .cs_team li .whatsapp a{background:url(../images/content/ico_whatsapp.svg) no-repeat left center;background-size:36px}
+.main_cs .cs_team li dd a:hover{color:#e0000c}
+.main_cs .faq{margin:50px auto 0;padding:20px 40px;text-align:center;background:#fff ;cursor:pointer;border-radius:4px;box-shadow:0 0 20px rgba(185, 183, 214, 0.3);transition:0.3s;/* border:1px solid #000; */}
+.main_cs .faq:hover{box-shadow:0 0 20px rgba(185, 183, 214, 0.7);}
+.main_cs .faq p{display:inline-block;font-size:24px;font-weight:600;line-height:38px;color:#1f1f1f;}
+.ko .main_cs .faq p{letter-spacing:-1.5px;}
+.main_cs .faq em{display:inline-block;margin-left:60px;padding:6px 30px;font-size:18px;color:#000;font-weight:500;background:#fff;border-radius:4px;text-decoration:underline;background:url(https://image.autowini.com/resources/IMG/common/ico_arr_black.png) no-repeat right center;}
+
+@media only all and (max-width:1440px){
+    .main_stock .arrived,.main_stock .verified{}
+    .arrived .new > li{}
+    .arrived .video dl{padding:1em}
+    .arrived .video dt,.main_stock .verified dt{font-size:16px;}
+    .arrived .video dd,.main_stock .verified dd{font-size:12px}
+    .verified > p{font-size:12px;}
+    .main_local .arrow{display:none}
+    .veri_non .arrived{width:100%}
+}
+
+/*style guide*/
+.tit32{font-size:32px;color:#222;font-weight:600;}
+.txt18{font-size:18px;color:#666;font-wieght:400;}
+.in1280{width:100%;max-width:1280px;margin:0 auto;}
+
+/*메인비쥬얼*/
+.btnBoxBuy{position:relative;top:-40px;width:1280px;height:80px;margin:0 auto;box-shadow:5px 5px 20px rgba(0,0,0,0.1);z-index:200;}
+.btnBoxBuy a{float:left;display:block;float:left;width:50%;font-size:18px;font-weight:600;line-height:80px;background:#fff;}
+.btnBoxBuy .btnRed{color:#fff;background:#e0000c;}
+
+/*슬라이드 기본 레이아웃*/
+.slideWrap{position:relative;margin-bottom:50px}
+.mainSlide{position:relative;width:100%;height:470px;background-color:#111 !important;overflow:hidden;z-index:100;}
+.mainSlide .inner{position:relative;height:470px;margin:0 auto;text-align:center;}
+/*.mainSlide img{position:absolute;bottom:0;;margin:0 auto;}*/
+.mainSlide .bn_link{display:block;width:100%;height:100%;}
+/*슬라이드 버튼관련*/
+.mainSlide .slick-arrow{display:none !important;}
+.mainSlide .slick-dots{display:none !important;position:absolute;top:auto;bottom:60px !important;left:0 !important;width:1280px;margin:0 auto;z-index:200;}
+.mainSlide .slick-dots li button{width:10px;height:10px;background:rgba(255,255,255,0.8);text-indent:0 !important;}
+.mainSlide .slick-dots li.slick-active button{width:35px;border-radius:16px;background:#e0000c;}
+.slideWrap .sliderBtn{position:relative;top:-38px;width:100%;max-width:1280px;margin:0 auto;z-index:200;}
+.slideWrap .sliderBtn .inner{position:absolute;right:24px;bottom:22px;}
+.slideWrap .sliderBtn .btn_box{padding:10px 14px 7px;background:rgba(0,0,0,0.6);border-radius:60px;}
+.slideWrap .sliderBtn a{display:inline-block;width:20px;height:17px;color:#fff;background-repeat:no-repeat;background-position:center;text-indent:-9999px;opacity:1;z-index:300;}
+.slideWrap .sliderBtn .prev{background-image:url(https://image.autowini.com/cdn/auction/web/images/main/ico_bnPrev.png);}
+.slideWrap .sliderBtn .next{background-image:url(https://image.autowini.com/cdn/auction/web/images/main/ico_bnNext.png);}
+.slideWrap .sliderBtn .pause{background-image:url(https://image.autowini.com/cdn/auction/web/images/main/ico_bnStop.png);}
+.slideWrap .sliderBtn .play{background-image:url(https://image.autowini.com/cdn/auction/web/images/main/ico_bnPlay.png);}
+.pagingInfo{position:relative;top:-2px;font-size:12px;color:#fff;}
+.pagingInfo .currenNum{font-weight:bold;}
+.pagingInfo .total{opacity:0.7;}
+
+/*배너 텍스트*/
+.mainSlide .bn_fb .txtBox{max-width:410px;position:absolute;top:85px;text-align:left;}
+.mainSlide .bn_fb .txtBox p{margin-bottom:40px;font-size:42px;line-height:50px;letter-spacing:1px;font-weight:500;color:#b5bee0;word-break:keep-all;}
+.mainSlide .bn_fb .txtBox p strong{display:block;color:#fff;font-weight:500;}
+.mainSlide .bn_fb .txtBox .btn{display:inline-block;padding:15px 30px;color:#fff;font-size:17px;background:#4b588a;border-radius:4px;}
+
+.mainSlide .bn_intro .txtBox{max-width:500px;position:absolute;top:50px;text-align:left;}
+.mainSlide .bn_intro .txtBox .tit{margin-bottom:20px;font-size:38px;font-weight:500;line-height:1.3;color:#fff;word-break:keep-all;}
+.mainSlide .bn_intro .txtBox p strong{color:#e0000c;font-weight:600;}
+.mainSlide .bn_intro .txtBox .txtSub{margin-bottom:16px;font-size:18px;color:rgba(255,255,255,0.7);font-weight:300;}
+
+.mainSlide .bn_verified .txtBox{max-width:420px;position:absolute;top:85px;}
+.mainSlide .bn_verified .txtBox{text-align:left;}
+.mainSlide .bn_verified p{color:#fff;letter-spacing:-1px;}
+.mainSlide .bn_verified p strong{letter-spacing:0}
+.mainSlide .bn_verified .tit{margin-bottom:35px;font-size:34px;font-weight:400;}
+.mainSlide .bn_verified .tit strong{font-weight:500;color:#ffdb4d;}
+.mainSlide .bn_verified .txtSub{font-size:19px;font-weight:300;color:#ddd;letter-spacing:-.5px;}
+.mainSlide .bn_verified .txtSub strong{font-weight:400;color:#eee;}
+
+.mainSlide .bn_tuesday .txtBox{position:absolute;top:45px;text-align:left;}
+.mainSlide .bn_tuesday .txtBox .tit{margin-bottom:50px;font-size:28px;font-weight:500;line-height:1.4;color:rgba(255,255,255,0.9);word-break:keep-all;}
+.mainSlide .bn_tuesday .txtBox .txtSub{font-size:17px;color:rgba(255,255,255,0.8);font-weight:300;}
+.mainSlide .bn_tuesday .txtBox .btn{display:inline-block;margin-top:40px;padding:12px 40px;background:#e0000c;color:#fff;font-size:16px;border-radius:4px;}
+
+/*번들*/
+.ko .mainSlide .txtBox p, .ko .mainSlide .txtBox a{font-family: 'Noto Sans KR', sans-serif;}
+
+.ko .mainSlide .bn_fb .txtBox p{font-size:30px;line-height:42px;color:#fff;}
+.ko .mainSlide .bn_fb .txtBox .btn{font-size:15px;}
+.ru .mainSlide .bn_fb .txtBox{top:65px;}
+.ru .mainSlide .bn_fb .txtBox p{font-size:36px;line-height:46px;}
+.es .mainSlide .bn_fb .txtBox p{font-size:38px;}
+.ar .mainSlide .bn_fb .txtBox p{font-size:36px;}
+.en .mainSlide .bn_intro .txtBox{top:38px;}
+.en .mainSlide .bn_intro .txtBox .txtSub{margin-bottom:20px;font-size:46px;font-weight:500;line-height:1.3;color:#fff;word-break:keep-all;}
+.en .mainSlide .bn_intro .txtBox p strong{color:#e0000c;font-weight:600;}
+.en .mainSlide .bn_intro .txtBox .tit{display:none;}
+.ru .mainSlide .bn_intro .txtBox{top:45px;max-width:100%;}
+.ru .mainSlide .bn_intro .txtBox .tit{font-size:37px;}
+.ru .mainSlide .bn_intro .txtBox .txtSub{display:none;}
+.es .mainSlide .bn_intro .txtBox .txtSub{font-size:18px;}
+.es .mainSlide .bn_verified .txtBox{top:60px;}
+.en .mainSlide .bn_verified .tit{font-size:30px;line-height:42px;}
+.es .mainSlide .bn_verified .tit{margin-bottom:25px;font-size:29px;line-height:40px;}
+.ru .mainSlide .bn_verified .tit{font-size:30px;line-height:38px;}
+.ar .mainSlide .bn_verified .tit{font-size:30px;}
+.en .mainSlide .bn_verified .txtSub{font-size:18px;}
+
+.btn_src{position:absolute;top:16px;right:40px;}
+
+/* Auctionwini Auction Center */
+.main_center{padding:80px 0;width:100%;background:url(../images/main/bg_map3.jpg) no-repeat center;background-size: cover;}
+.main_center .inner{width:100%;max-width:1280px;margin:0 auto;text-align:left;}
+.main_center .box_bg{display:inline-block;padding:30px;background:rgba(255,255,255,0.95);border-radius:8px;}
+.main_center .box_bg dt{margin-bottom:8px;font-size:26px;font-weight:600;color:#1f1f1f;letter-spacing:-1px;}
+.main_center .box_bg dd{width:500px;font-size:15px;font-weight:300;color:#777;word-break:keep-all;}
+.main_center .box_bg dd br{display:none;}
+.main_center .box_bg .address{margin:30px 0 16px;padding-left:24px;font-size:16px;font-weight:500;background:url(../images/main/ico_location.png) no-repeat left center;}
+.main_center .box_bg .btn{display:block;width:100%;height:50px;font-size:18px;line-height:50px;background:#222;color:#fff;text-align:center;border-radius:4px;}
+
+.main_agent{padding:80px 0 140px;background:url(../images/main/bg_agent.png) no-repeat -160px 102%;}
+.main_agent .inner{width:100%;max-width:1280px;margin:0 auto;text-align:left;}
+.main_agent .left dt{margin-bottom:12px;font-size:36px;color:#1f1f1f;font-weight:500;text-align:center;}
+.ko .main_agent .left dt{letter-spacing:-1.5px;}
+.main_agent .left dd{margin-bottom:60px;font-size:18px;line-height:26px;color:#999;font-weight:300;text-align:center;}
+.main_agent .right ul{padding:0;margin:0;width:auto;}
+.main_agent .right li{float:left;width:48%;height:200px;vertical-align:top;}
+.main_agent .right li:nth-child(1){margin-right:2%;}
+.main_agent .right li:nth-child(2){margin-left:2%;}
+.main_agent .right li a{display:block;position:relative;top:0;width:100%;height:100%;background-position:center;background-size:100%;background-repeat:no-repeat;border-radius:8px;transition:0.3s;}
+.main_agent .right li a:hover{top:-10px;}
+.main_agent .right .eu a{background-color:#c7c7c7;background-image:url(../images/content/bg_eu.png);}
+.main_agent .right .na a{background-color:#a3c4ef;background-image:url(../images/content/bg_na.png);}
+.main_agent .right .af a{background-color:#9deac5;background-image:url(../images/content/bg_af.png);}
+.main_agent .right li a span{position:absolute;bottom:20px;left:20px;text-align:left}
+.main_agent .right li a strong{position:relative;font-size:24px;font-weight:700;}
+.main_agent .right li a em{display:block;color:#303030}
+
+.pro_box{position:relative;}
+.pro_box .product{box-shadow:0 0 20px rgba(0,0,0,0.1);border-radius:8px;}
+.mark_verified{position:absolute;top:0px;left:0;width:100px;height:63px;background:url(https://image.autowini.com/resources/IMG/common/ico_mk1.png) 0 0 no-repeat;background-size:100px;z-index:1}
+
+/* 리뉴얼 디자인 */
+.inner1280{position:relative;width:100%;max-width:1280px;margin:0 auto;text-align:left}
+.inner1280 .tit{padding:0 0 24px;font-size:26px;font-weight:700;color:#0E0C0C}
+.inner1280 .tit strong{font-size:26px;font-weight:700;color:#0E0C0C}
+.inner1280 .tit a{display: inline-block;float: right;vertical-align: middle;margin-top:12px;padding-right: 24px;font-size: 16px;color: #dd1f26;font-weight: 400;
+    background: url(https://image.autowini.com/resources/IMG/common/ico_next_red.png) right 4px center no-repeat;background-size: 17px;cursor: pointer;opacity: 0.9;}
+.inner1280 .tit a:hover{opacity:1}
+.inner1280 .tit a+a{margin-right:10px;}
+.findByFeatures.inner1280 .tit a,
+.findByMakes.inner1280 .tit a{border-color:#303030;color:#303030;background-image:url(https://image.autowini.com/resources/IMG/common/ico_next.png);}
+
+.aucLine{display:inline-block;width:400px;height:470px;padding:16px 30px;position:absolute;top:0;left:0;background-color:#1d1d1edd;color:#fff;z-index:200;}
+.aucLine .aucTit{position:relative;padding:10px 90px 10px 0;font-size:19px;line-height:1.2;color:#fff;cursor: pointer}
+.aucLine .aucTit:hover{text-decoration:underline}
+.aucLine .aucTit b{font-weight:500;}
+.aucLine .aucTit span{position:absolute;top:50%;right:0;max-width:90px;text-align:center;font-size:12px;line-height:1;font-weight:400;letter-spacing:0.5px;border-radius:40px;vertical-align:middle;transform:translateY(-50%)}
+.aucLine .aucTit .mkDday{padding:4px 6px 4px 23px;background:#dd1f26 url(../images/main/ico_clock_white.svg) 4px center no-repeat;}
+.aucLine .aucTit .mkDday.none{padding:4px 6px;background:#404040}
+.aucLine .aucTit .mkToday{padding:4px 6px;background:#0666E4;}
+.aucLine ul{padding-bottom:8px;}
+.aucLine li a{display:block;position:relative;padding:6px 40px 6px 10px;font-size:18px;color:#fff;font-weight:400;cursor:pointer}
+.aucLine li a:before{display:inline-block;margin-right:10px;content:'';width:3px;height:3px;background:rgba(255,255,255,0.5);border-radius:3px;vertical-align:middle}
+.aucLine li a span{display:block;margin-left:12px;font-size:14px;color:rgba(255,255,255,0.7);font-weight:300}
+.aucLine li a em:before{display:inline-block;margin:1px 4px 0;content:'|';font-size:12px;color:rgba(255,255,255,0.2);vertical-align:top}
+.aucLine li a:hover{text-decoration:underline}
+.aucLine li a:hover span{text-decoration:inherit}
+.es .aucLine,
+.ru .aucLine{padding:16px 20px}
+.mn .aucLine{padding:8px 20px}
+.es .aucLine .aucTit,
+.ru .aucLine .aucTit{font-size:17px}
+.mn .aucLine .aucTit{font-size:16px}
+.es .aucLine .mkToday,
+.mn .aucLine .mkToday,
+.ru .aucLine .mkToday{font-size:11px}
+.es .aucLine li a,
+.ru .aucLine li a{font-size:15px}
+.mn .aucLine li a{font-size:14px}
+.aucLine li.on a:after{display:inline-block;content:'LIVE';position:absolute;top:10px;right:0;padding:0 4px;font-size:13px;height:18px;line-height:20px;font-weight:400;letter-spacing:0.5px;background:#dd1f26;border-radius:2px;}
+.aucLine li.on a:before{width:5px;height:5px;box-shadow: 0px 0px 5px 1px #ff474e;background:#ff0000;animation-name: blink;animation-duration: 1.2s;animation-iteration-count: infinite;}
+.aucLine li.off a,
+.aucLine li.off a span{color:rgba(255,255,255,0.2)}
+.aucLine li.off a:hover{text-decoration:none}
+.aucLine li.off a:before{background:rgba(255,255,255,0.2)}
+@-webkit-keyframes blink {
+    0% {box-shadow: 0px 0px 0px 0px #ff474e}
+    100% {box-shadow: 0px 0px 8px 2px #ff474e}
+}
+
+.todayAuc{display:flex;align-items:center;justify-content:space-between;width:1280px;margin:30px auto}
+.todayAuc .tit{width:400px;text-align:left;font-size: 26px;font-weight: 700;color: #0E0C0C;}
+.todayAuc .btnLink{display:flex;align-items:center;gap:10px;justify-content:flex-end;flex-wrap: wrap}
+.todayAuc button{padding:0 24px;font-size:15px;color:#fff;height:45px;line-height:45px;background-image: linear-gradient(to right, #C00000 , #A00000);border-radius:50px}
+.todayAuc button+button{background-image: linear-gradient(to right, #A00000 , #750000);}
+.todayAuc button+button+button{background-image: linear-gradient(to right, #750000 , #450000);}
+.todayAuc button+button+button+button{background-image: linear-gradient(to right, #450000 , #300000);}
+.todayAuc button+button+button+button+button{background-image: linear-gradient(to right, #300000 , #000);}
+
+.aucSchedule{margin-top:30px;padding:60px 0 70px;background:#F3F5FA;}
+.aucSchedule ul{display:grid;grid-template-columns:repeat(5, 1fr);grid-template-rows:1fr 1fr;gap:24px;}
+.aucSchedule li{background:#fff;border-radius:8px;}
+.aucSchedule dl{width:100%;height:100%}
+.aucSchedule dt{padding:10px 0;font-size:14px;color:#fff;text-align:center;background:#101010;border-radius:8px 8px 0 0;}
+.aucSchedule dd{padding:12px 12px 16px;}
+.aucSchedule .none dd,
+.aucSchedule .off dd{position:relative;height:calc(100% - 41px);min-height:168px;padding:0;}
+.aucSchedule .none dd a,
+.aucSchedule .off dd a{display:none;font-size:0}
+.aucSchedule .off dd:before,
+.aucSchedule .none dd:before{content:'';position:absolute;top:50%;left:50%;width:80px;height:80px;background:url(https://image.autowini.com/cdn/auction/web/images/main/bg_symbol.svg) center no-repeat;background-size:40px;transform: translate(-50%, -50%)}
+.aucSchedule dd a{display:block;padding:6px 8px;font-size:15px;color:#707070;background:#fff;border-radius:4px}
+.aucSchedule dd a:before{display:inline-block;margin-right:8px;content:'';width:3px;height:3px;background:#909090;border-radius:3px;vertical-align:middle}
+.aucSchedule dd a:hover{background:#f5f5f5;color:#303030}
+.aucSchedule .on{box-shadow:0 4px 14px rgba(0,0,0,0.2)}
+.aucSchedule .on dt{background:#dd1f26}
+.aucSchedule .on a{color:#101010;font-weight:500;}
+.aucSchedule .on a:before{background:#303030}
+
+.mainSwiper{position:relative;padding:30px 0 40px;background:#fff;text-align:left}
+.mainSwiper .bigDataLoading{width:100%;padding-top:50px;vertical-align:middle;text-align:center}
+.mainSwiper .bigDataLoading img{display:block;margin:0 auto;opacity:0.3;width:50px;}
+.mainSwiper .img{display: flex;align-items: center;position:relative;width:100%;height:196px;border-radius:4px 4px 0 0;overflow:hidden}
+.mainSwiper .img img{width:100%;height:100%;object-fit:cover}
+.mainSwiper .img .new{position:absolute;top:8px;left:8px;font-size:0;}
+.mainSwiper .img .new:after{content:'';display:inline-block;width:32px;height:16px;background:url(https://image.autowini.com/resources/IMG/common/iconNew.svg) center no-repeat;background-size:cover}
+.mainSwiper .img .event{position:absolute;top:8px;left:8px;background-color:#E6BC5F;padding:0 20px;font-weight:500;}
+.mainSwiper .img .badge{display:flex;align-items:center;position:absolute;bottom:8px;left:8px}
+.mainSwiper .img .badge span{display:inline-block;padding:4px 5px;font-size:11px;line-height:11px;color:#fff;font-weight:400;background:rgba(17,17,17,0.8);border-radius:2px;letter-spacing:0.3px}
+.mainSwiper .img .badge .rental{background:#FB9600}
+.mainSwiper .img .badge .video{padding:4px 5px 3px;margin-right:4px;background:none;}
+.mainSwiper .img .badge .video:after{content:'';display:inline-block;width:18px;height:18px;background:url(https://image.autowini.com/resources/IMG/common/ico_videoStock.svg) center no-repeat;background-size:cover;border-radius:10px}
+.mainSwiper .info > span{display:inline-block;margin:-3px 0 3px;padding-left:16px;font-size:12px;font-weight:500;}
+.mainSwiper .info .inspected{background:url(https://image.autowini.com/resources/IMG/common/ic_inspected.png) 0 center no-repeat;background-size:12px;}
+.mainSwiper .info .dropped{background:url(https://image.autowini.com/resources/IMG/common/ic_dropped.png) 0 center no-repeat;background-size:12px;}
+.mainSwiper .info >span+span{margin-left:6px;}
+.mainSwiper .info{padding:12px;min-height:184px;border:1px solid #e4eaef;border-radius:0 0 4px 4px}
+.mainSwiper .info dt{position:relative;padding-right:26px;margin-bottom:6px;font-size:16px;font-weight:600;color:#0e0c0c;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.mainSwiper .info dt img{position:absolute;top:3px;right:0;height:18px;}
+.mainSwiper .info .damage span{display:inline-block;padding:2px 4px;font-size:12px;line-height:12px;color:#707578;background:#fff;border:1px solid #d0d0d0;border-radius:2px;}
+.mainSwiper .info .damage .hit{color:#0075D6;background:#E7F4FF;border:1px solid rgba(0, 117, 214, 0.3);}
+.mainSwiper .info .damage em{font-size:11px;color:#9b9292}
+.mainSwiper .infoDetail{display:flex;align-items: flex-end}
+.mainSwiper .infoDetail ul{flex:1;margin-top:8px;}
+.mainSwiper .infoDetail li{padding:2px 6px 2px 28px;font-size:12px;line-height:20px;color:#787070}
+.mainSwiper .infoDetail .info1{background:url(https://image.autowini.com/resources/IMG/common/new/ico_cc.svg) 0 center no-repeat}
+.mainSwiper .infoDetail .info2{background:url(https://image.autowini.com/resources/IMG/common/new/ico_engine.svg) 0 center no-repeat}
+.mainSwiper .infoDetail .info3{background:url(https://image.autowini.com/resources/IMG/common/new/ico_meter.svg) 0 center no-repeat}
+.mainSwiper .infoDetail .info4{background:url(https://image.autowini.com/resources/IMG/common/new/ico_handle.svg) 0 center no-repeat}
+.mainSwiper .infoDetail .price{flex:1;text-align:right}
+.mainSwiper .infoDetail .price span{font-size:11px;color:#9b9292;letter-spacing:0.2px}
+.mainSwiper .infoDetail .price b{display:block;margin-bottom:8px;font-size:20px;line-height:1.1;color:#0e0c0c;font-weight:700;letter-spacing: -.4px}
+.mainSwiper .infoDetail .price button{padding:6px 20px;font-size:12px;line-height:1;color:#fff;background:#dd1f26;letter-spacing:0.2px;border-radius:2px}
+.mainSwiper .swiper-button-next{background:url(https://image.autowini.com/resources/IMG/common/new/btn_swiprer_next.svg) center no-repeat;position: absolute;top: 272px;right: -15px;margin: 0;width: 34px;height: 34px;border-radius: 50%;box-shadow: 0 1px 10px rgba(0,0,0,0.15);background-size: 35px;}
+.mainSwiper .swiper-button-prev{background:url(https://image.autowini.com/resources/IMG/common/new/btn_swiprer_prev.svg) center no-repeat;position: absolute;top:272px;left: -15px;margin: 0;width: 34px;height: 34px;border-radius: 50%;box-shadow: 0 1px 10px rgba(0,0,0,0.15);background-size: 35px;}
+.mainSwiper .swiper-button-next:after,.mainSwiper .swiper-button-prev:after{display:none;}
+.mainSwiper .swiper-button-disabled{opacity:0}
+.columnList{display:flex;flex-wrap: wrap}
+.columnList li{width:320px;text-align:left;display: flex;align-items: center;min-height:52px;cursor: pointer;}
+.columnList li img{width:30px;max-height:30px}
+.columnList li span{margin-left:10px;font-size:18px;line-height:1;color:#4b4545;font-weight:600}
+.columnList li em{margin:0 24px 0 8px;font-size:16px;color: #707578;}
+.findByFeatures{padding:60px 0 50px}
+.featuresList .columnList li span{margin:0;}
+.featuresList .columnList li img{margin-right: 4px;}
+.featuresList .columnList li:first-child img,.featuresList .columnList li:nth-child(3) img{width:auto}
+.findByMakes{padding:50px 0}
+.findByMakes .columnList li{width:19%;margin-right:12px;}
+.findByMakes .columnList li span{font-size:16px}
+.findByMakes .columnList li:nth-last-child(n+15){display:none}
+.findByMakes .columnList li.C1720 span{font-size:15px}
+
+.mainVideo{padding:50px 0 100px;}
+.mainVideo .tit{padding-bottom:30px}
+.mainVideo .tit .btnWrap{float:right;display:flex;align-items:center;padding:0 20px;height:46px;background:#f5f5f5;border-radius:46px;}
+.mainVideo .tit a{float:inherit;width:24px;height:24px;margin:0;padding:0;font-size:0;}
+.mainVideo .tit a+a{margin-right:0}
+.mainVideo .tit .facebook{background:url(https://image.autowini.com/resources/IMG/common/new/ic_fb_on.svg) center no-repeat;background-size:10px;}
+.mainVideo .tit .youtube{margin-left:15px;background:url(https://image.autowini.com/resources/IMG/common/new/ic_yt_on.svg) center no-repeat;background-size: 20px;}
+.mainVideo .tit .insta{margin-left:18px;background:url(https://image.autowini.com/resources/IMG/common/new/ic_it_on.svg) center no-repeat;background-size: 19px;}
+.mainVideo .tit .tiktok{margin-left:18px;background:url(https://image.autowini.com/resources/IMG/common/new/ic_tk_on.svg) center no-repeat;background-size: 18px;}
+.mainVideo .flex{display:flex;align-items:flex-start}
+.mainVideo .left{flex:2;margin-right:20px}
+.mainVideo .left strong{display:block;margin-top:12px;font-size:16px;color:#303030}
+.mainVideo .right{flex:1;height:472px;}
+.mainVideo .right ul{margin:-22px 0;}
+.mainVideo .right li{display:flex;position:relative;align-items:center;margin:24px 0;padding:0 9px;cursor: pointer;}
+.mainVideo .right li span{flex:3;margin:0 18px;word-break: break-word;color:#303030;}
+.mainVideo .right li img{width:120px;height:74px;object-fit: cover;}
+.mainVideo .right li:hover{background:#f5f5f5}
+.mainVideo .right li.on{background:#fff3f3;}
+.mainVideo .right li.on span{color:#dd1f26;font-weight:500}
+.mainVideo .right li.on:before{content:'';position:absolute;top:-8px;left:-3px;width:30px;height:30px;background:url(https://image.autowini.com/resources/IMG/common/new/ico_checked.svg) center no-repeat;background-size: 32px;}
+
+.guideProcess .works{padding:100px 0;}
+.guideProcess .works .tit{font-size:34px;text-align:center}
+.guideProcess .works .worksCon{display:flex;justify-content: space-between;padding:40px 60px 0}
+.guideProcess .works li{flex:1;position:relative;padding:0 36px;text-align: center;border-top:1px dashed #dd1f26}
+.guideProcess .works li:before{display:block;position:relative;content:'1';margin:-12px auto 24px;width:24px;height:24px;line-height:25px;color:#fff;background:#dd1f26;border-radius:50%;z-index:2}
+.guideProcess .works li:nth-child(2):before{content:'2'}
+.guideProcess .works li:nth-child(3):before{content:'3'}
+.guideProcess .works li:first-child:after{content:'';position:absolute;top:-5px;left:0;width:208px;height:10px;background:#fff;z-index:1}
+.guideProcess .works li:nth-child(2):after{content:'';position:absolute;top:-5px;left:50%;margin-left:-15px;width:30px;height:10px;background:#fff;z-index:1}
+.guideProcess .works li:last-child:after{content:'';position:absolute;top:-5px;right:0;width:208px;height:10px;background:#fff;z-index:1}
+.guideProcess .works strong{display:block;margin-bottom:8px;font-size:18px;color:#0e0c0c;font-weight:600}
+.guideProcess .works strong img{display:block;margin:0 auto 18px;}
+.guideProcess .works span{display:block;font-size:14px;color:#787070;line-height:1.5}
+.guideProcess .works span b{color:#4b4545;font-weight:500}
+
+.guideProcess .memOption{padding:120px 0;text-align:center;background:#0E0C0C}
+.guideProcess .memOption .tit{color:#fff;font-size:34px}
+.guideProcess .memOption p{margin-bottom:40px;font-size:14px;color:#c9c1c1}
+.guideProcess .memOption button{display:block;width:280px;height:48px;font-size:16px;line-height:48px;background:#dd1f26;color:#fff;}
+.guideProcess .memOption .flex{display:flex;align-items: center}
+.guideProcess .memOption .left{flex:1;margin-right: 90px;}
+.guideProcess .memOption .innerBg{flex:1.5;padding:16px 0 24px;background: #0E0C0C;}
+.guideProcess .memOption li{display:flex;align-items: center;color:#fff;font-weight:300;font-size:18px}
+.guideProcess .memOption li span{flex: 2 1 0;text-align:left;padding:0 6px 0 48px;}
+.guideProcess .memOption li em{flex: 1 1 0;}
+.guideProcess .memOption .title1{font-size:26px;font-weight:600;text-align: center;}
+.guideProcess .memOption .title1 img{width: 26px;vertical-align: top;margin-right: 6px;margin-top: 8px;}
+.guideProcess .memOption .title2{font-size:18px;font-weight:300;text-align: center;}
+.guideProcess .memOption .title2 em{margin:6px 0 2px;padding:10px 0;background:#3f3939}
+.guideProcess .memOption .title2 em+em{background:none}
+.guideProcess .memOption .con {height:50px;background:#4b4545;border-bottom:2px solid #0e0c0c}
+.guideProcess .memOption .con em{height:48px;background:#3f3939;}
+.guideProcess .memOption .con em.checked{background-image:url(https://image.autowini.com/resources/IMG/common/new/ico_checked.svg);background-position:center;background-repeat:no-repeat;background-size:32px}
+.guideProcess .memOption .con em+em{background:#4b4545}
+
+.slick-dots{position: absolute;top:-37px;right: 0;text-align: right}
+.slick-dots li{margin-left: 8px;display: inline-block;}
+.slick-dots li button{width:8px;height: 8px;text-indent: -99999px;border-radius:50%;background: #aaaaaa}
+.slick-dots li.slick-active button{background-color:#df000b}
+
+.top_notice{display:block;}
+
+/* 1280 진입했을 때 */
+@media only all and (max-width:1280px){
+    .main_agent{padding:80px 50px 140px;box-sizing:border-box;}
+    .main_center{padding:80px 50px;box-sizing:border-box;}
+    .main_cs{padding:80px 50px 120px;box-sizing:border-box;}
+    .main_stock{padding:80px 50px 120px;box-sizing:border-box;}
+}
+
+/*header 개선*/
+header .inner{width:100%;max-width:1280px;padding:0;margin:0 auto;}
+header .headerGnb{border-bottom:0;}
+header .headerCon .right{right:0;}
+
+
+/* 메인 버튼 */
+.btn_info{margin:66px auto 40px}
+.btn_info a{display:block;width:100%;padding:36px 50px;text-align:left;background:url(../images/main/bg_domestic.png) 0 0 no-repeat;border-radius:10px}
+.btn_info a dl{padding-left:90px;height:68px;background:url(../images/main/ic_live.png) 0 center no-repeat;}
+.btn_info a dt{margin-bottom:4px;font-size:22px;color:#101010;font-weight:bold;}
+.btn_info a dd{font-size:16px;color:#606060;}
+
+.bigDataLoading {height: 130px}
+.bigDataLoading .loading {margin: -35px 0 0 -35px}
+.bigDataLoading .loading_logo,
+.bigDataLoading .loading_rotate {height: 70px;width: 70px;background-size: 70px 70px}
+

@@ -1,0 +1,9160 @@
+@charset "UTF-8";@import"https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700";a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
+    border: 0;
+    font-family: Roboto,맑은 고딕,AppleGothic,Dotum,sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol,ul {
+    list-style: none
+}
+
+blockquote,q {
+    quotes: none
+}
+
+blockquote:after,blockquote:before,q:after,q:before {
+    content: "";
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+    word-break: break-word;
+    -webkit-overflow-scrolling: touch;
+    -webkit-text-size-adjust: none
+}
+
+html {
+    margin: 0;
+    padding: 0
+}
+
+body,html {
+    height: 100%;
+    width: 100%
+}
+
+html {
+    font-weight: 400
+}
+
+button,html,input,select,textarea {
+    font-family: Roboto,맑은 고딕,AppleGothic,Dotum,sans-serif
+}
+
+button,input,select,textarea {
+    -webkit-appearance: none;
+    border-radius: 0;
+    color: #303030
+}
+
+body {
+    background-color: #fff;
+    color: #303030;
+    font-size: 14px;
+    height: auto;
+    letter-spacing: 0;
+    line-height: 1.3;
+    min-width: 320px;
+    position: relative
+}
+
+body,button,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,li,p,select,table,td,textarea,th,tr,ul {
+    margin: 0;
+    padding: 0
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
+    font-weight: 400
+}
+
+img {
+    border: 0;
+    vertical-align: top
+}
+
+hr {
+    display: none
+}
+
+dd,dl,dt,li,ol,ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+table,td,th {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-weight: 400
+}
+
+caption {
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    text-indent: -9999em
+}
+
+blockquote,button,fieldset,iframe {
+    border: none
+}
+
+cite,em,i,u {
+    font-style: normal
+}
+
+p {
+    vertical-align: middle
+}
+
+b,em,strong {
+    font-weight: 400
+}
+
+a {
+    color: #303030;
+    text-decoration: none
+}
+
+button {
+    background: transparent;
+    border: none;
+    border-image-width: 0;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle
+}
+
+button,input[type=button],input[type=reset],input[type=submit] {
+    -webkit-appearance: none;
+    cursor: pointer
+}
+
+article,aside,footer,header,main,nav,section {
+    display: block
+}
+
+input[type=date]::-webkit-calendar-picker-indicator,input[type=date]::-webkit-inner-spin-button {
+    display: none
+}
+
+input[type=date],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text] {
+    -webkit-appearance: none;
+    border-radius: 0;
+    color: #303030;
+    font-size: 14px
+}
+
+input[type=password]::-webkit-input-placeholder,input[type=tel]::-webkit-input-placeholder,input[type=text]::-webkit-input-placeholder {
+    color: #ccc
+}
+
+input[type=password]:-moz-placeholder,input[type=password]::-moz-placeholder,input[type=tel]:-moz-placeholder,input[type=tel]::-moz-placeholder,input[type=text]:-moz-placeholder,input[type=text]::-moz-placeholder {
+    color: #ccc
+}
+
+input[type=password]:-ms-input-placeholder,input[type=tel]:-ms-input-placeholder,input[type=text]:-ms-input-placeholder {
+    color: #ccc
+}
+
+textarea::-webkit-input-placeholder {
+    color: #181818
+}
+
+textarea:-moz-placeholder,textarea::-moz-placeholder {
+    color: #181818
+}
+
+textarea:-ms-input-placeholder {
+    color: #181818
+}
+
+::-ms-clear,::-ms-reveal {
+    display: none
+}
+
+button::-moz-focus-inner,input[type=button]::-moz-focus-inner,input[type=file]>input[type=button]::-moz-focus-inner,input[type=reset]::-moz-focus-inner,input[type=submit]::-moz-focus-inner {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+input[disabled] {
+    cursor: not-allowed
+}
+
+input[type=date],input[type=password],input[type=tel],input[type=text] {
+    background-color: inherit;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    vertical-align: middle;
+    width: 100%
+}
+
+textarea {
+    border: 0;
+    font-size: 16px;
+    line-height: 1.5em;
+    overflow: auto;
+    padding: 10px 6px;
+    resize: none;
+    width: 100%;
+    -webkit-overflow-scrolling: touch
+}
+
+textarea::-moz-placeholder {
+    color: #aaa
+}
+
+textarea::placeholder {
+    color: #aaa
+}
+
+input[type=search],input[type=text] {
+    -webkit-appearance: none;
+    border-radius: 0
+}
+
+input[type=password]:focus,input[type=tel]:focus,input[type=text]:focus,select:focus,textarea:focus {
+    outline: none;
+    position: relative;
+    z-index: 1
+}
+
+input[type=password]:focus,input[type=text]:focus {
+    background: #fff;
+    border-color: #303030;
+    color: #000
+}
+
+input:required:valid {
+    border-color: #303030;
+    color: #303030
+}
+
+input:required:invalid:not(:-moz-placeholder-shown) {
+    border-color: #303030
+}
+
+input:required:invalid:not(:placeholder-shown) {
+    border-color: #303030
+}
+
+textarea:required:valid {
+    border-color: #303030
+}
+
+textarea:required:invalid:not(:-moz-placeholder-shown) {
+    border-color: #303030
+}
+
+textarea:required:invalid:not(:placeholder-shown) {
+    border-color: #303030
+}
+
+textarea {
+    background: #f4f4f4;
+    border: 1px solid #f4f4f4;
+    color: #797979;
+    font-size: 14px;
+    padding: 10px
+}
+
+textarea:focus {
+    background: #fff;
+    border: 1px solid #000
+}
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden
+}
+
+* html .clearfix {
+    height: 1px
+}
+
+.clearfix {
+    display: block;
+    min-height: 1px
+}
+
+.err,input[type=password].err,input[type=tel].err,input[type=text].err,select.err {
+    border: 1px solid #e00001!important
+}
+
+.onlyNumber {
+    ime-mode: disabled!important
+}
+
+input::-ms-clear,input[type=text]::-ms-clear {
+    display: none
+}
+
+.safari input[type=password],.safari input[type=tel],.safari input[type=text],input[type=date] {
+    line-height: 1!important
+}
+
+.vis_show {
+    height: auto;
+    overflow: visible;
+    visibility: visible
+}
+
+.vis_hide {
+    height: 0;
+    overflow: hidden;
+    visibility: hidden
+}
+
+.ellips {
+    -webkit-line-clamp: 1
+}
+
+.ellips,.ellips2 {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word
+}
+
+.ellips2 {
+    -webkit-line-clamp: 2
+}
+
+input[type=checkbox] {
+    height: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 0
+}
+
+input[type=checkbox]+label {
+    color: #909090;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    padding-left: 24px;
+    position: relative;
+    word-break: break-all
+}
+
+input[type=checkbox]+label:after {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3E%3Crect width='19.2' height='19.2' x='2.4' y='2.4' fill='%23DDD' rx='3'/%3E%3Cpath fill='%23fff' d='M9.248 16.616a1.2 1.2 0 0 1-.39-.263l-2.305-2.304a1.205 1.205 0 0 1 1.704-1.704l1.452 1.464 4.044-4.056a1.205 1.205 0 1 1 1.704 1.704l-4.896 4.896a1.2 1.2 0 0 1-1.313.263'/%3E%3Cpath fill='%23fff' d='M15.602 7.884a1.25 1.25 0 1 1 1.767 1.768l-6.717 6.717a1.25 1.25 0 1 1-1.768-1.767z'/%3E%3C/svg%3E") no-repeat 0 0;
+    background-size: 18px 18px;
+    content: "";
+    display: block;
+    height: 18px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 18px
+}
+
+input[type=checkbox]:checked+label {
+    color: #303030
+}
+
+input[type=checkbox]:checked+label:after {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3E%3Crect width='19.2' height='19.2' x='2.4' y='2.4' fill='%23E82020' rx='3'/%3E%3Cpath fill='%23fff' d='M9.248 16.616a1.2 1.2 0 0 1-.39-.263l-2.305-2.304a1.205 1.205 0 0 1 1.704-1.704l1.452 1.464 4.044-4.056a1.205 1.205 0 1 1 1.704 1.704l-4.896 4.896a1.2 1.2 0 0 1-1.313.263'/%3E%3Cpath fill='%23fff' d='M15.602 7.884a1.25 1.25 0 1 1 1.767 1.768l-6.717 6.717a1.25 1.25 0 1 1-1.768-1.767z'/%3E%3C/svg%3E") no-repeat 0 0;
+    background-size: 18px 18px
+}
+
+input[type=checkbox]+label span {
+    text-decoration: underline
+}
+
+input[type=radio] {
+    height: 0;
+    opacity: 0;
+    width: 0
+}
+
+input[type=radio]+label {
+    color: #303030;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.3;
+    min-height: 19px;
+    padding-left: 23px;
+    padding-top: 3px;
+    position: relative;
+    text-indent: 0;
+    word-break: break-all
+}
+
+input[type=radio]+label:after {
+    background: url(https://image.autowini.com/cdn/auction/web/images/common/radiobtn_off.png) no-repeat 0 0;
+    background-size: 19px 19px;
+    content: "";
+    display: block;
+    height: 19px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 19px
+}
+
+input[type=radio]:checked+label:after {
+    background: url(https://image.autowini.com/cdn/auction/web/images/common/radiobtn_on.png) no-repeat 0 0;
+    background-size: 19px 19px
+}
+
+select {
+    background: url(https://image.autowini.com/resources/IMG/common/ico_drop.png) 100% no-repeat;
+    background-size: 30px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    height: 32px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0 24px 0 10px
+}
+
+select:focus {
+    border-color: #101010
+}
+
+.err,input[type=password].err,input[type=tel].err,input[type=text].err,select.err {
+    border: 1px solid #111!important
+}
+
+.err_msg {
+    display: block;
+    margin-top: 12px
+}
+
+.err_msg,.error_msg {
+    color: #e0000c;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    visibility: visible
+}
+
+.inputTx,.inputTx input {
+    position: relative
+}
+
+.inputTx input {
+    z-index: 1
+}
+
+.inputTx input[type=text] {
+    padding-right: 40px
+}
+
+.inputTx input[type=password] {
+    padding-right: 100px
+}
+
+.inputTx .btnReset {
+    background: url(https://image.autowini.com/resources/IMG/common/ico_close.png) no-repeat 50%;
+    background-size: 30px;
+    display: none;
+    height: 45px;
+    margin-top: -23px;
+    position: absolute;
+    right: 0;
+    text-indent: -99999px;
+    top: 50%;
+    width: 45px;
+    z-index: 1
+}
+
+.inputTx .active+.btnReset {
+    display: block
+}
+
+.inputPw .btnReset {
+    right: 48px
+}
+
+.inputPw .btnPw {
+    background: url(https://image.autowini.com/resources/IMG/common/icon_pw_view2.png) 50% no-repeat;
+    background-size: 25px;
+    height: 45px;
+    margin-top: -23px;
+    position: absolute;
+    right: 8px;
+    text-indent: -99999px;
+    top: 50%;
+    width: 45px;
+    z-index: 1
+}
+
+.inputPw .btnPw.on {
+    background-image: url(https://image.autowini.com/resources/IMG/common/icon_pw_view_on2.png)
+}
+
+.btn_area button {
+    border-radius: 2px;
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    height: 50px;
+    width: 100%
+}
+
+.btn_area button.btn_txt {
+    color: #dd1f26
+}
+
+.btn_area button.btn_txt,.btn_area button.btn_txtB {
+    font-size: 14px;
+    font-weight: 500;
+    height: auto;
+    padding: 10px 0;
+    width: 100%
+}
+
+.btn_area button.btn_txtB {
+    color: #303030
+}
+
+.btn_area button.btn_red {
+    background: #dd1f26;
+    border: 1px solid #dd1f26;
+    color: #fff;
+    font-weight: 400
+}
+
+.btn_area button.btn_black {
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+    font-weight: 400
+}
+
+.btn_area button.btn_white {
+    background: #fff;
+    border: 1px solid #dd1f26;
+    color: #dd1f26;
+    font-weight: 500
+}
+
+.btn_area button.btn_Bwhite {
+    background: #fff;
+    border: 1px solid #000;
+    color: #303030;
+    font-weight: 500
+}
+
+.btn_area button.btn_thin {
+    background: #fff;
+    border: 1px solid #dd1f26;
+    color: #dd1f26;
+    height: 30px
+}
+
+.btn_area button.btn_thinB {
+    background: #fff;
+    border: 1px solid #000;
+    color: #303030;
+    height: 30px
+}
+
+.btn_area button.btn_thinw {
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+    height: 30px
+}
+
+.btn_area button.btn_thinR {
+    background: #dd1f26;
+    border: 1px solid #dd1f26;
+    color: #fff;
+    height: 30px
+}
+
+.btn_area button.btn_mLgray {
+    background: #f4f4f4;
+    color: #303030;
+    height: 40px
+}
+
+.btn_area button.btn_gray {
+    background: #4a4a4a;
+    color: #fff
+}
+
+.btn_area button.btn_Lgray {
+    background: #f4f4f4;
+    color: #303030
+}
+
+.btn_area ul li {
+    margin-top: 5px
+}
+
+.btn_area ul li:first-child {
+    margin-top: 0!important
+}
+
+.btn_area button+button {
+    margin-top: 10px
+}
+
+.btn_half li {
+    float: left;
+    margin-top: 0!important;
+    padding-left: 10px;
+    width: 50%
+}
+
+.btn_half {
+    margin-left: -10px
+}
+
+#skipNav {
+    overflow: hidden;
+    position: relative;
+    width: 100%
+}
+
+#skipNav a {
+    color: #333;
+    display: block;
+    font-size: 12px;
+    height: 1px;
+    margin-bottom: -1px;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none
+}
+
+#skipNav a:active,#skipNav a:focus,#skipNav a:hover {
+    background: none repeat scroll 0 0 #f2f2f2;
+    display: block;
+    height: auto;
+    padding: 10px 0
+}
+
+.wrap {
+    min-width: 320px;
+    width: 100%
+}
+
+header {
+    background: #fff
+}
+
+header .inner {
+    margin: 0 auto;
+    padding: 0 32px;
+    width: 100%
+}
+
+header .headerTnb {
+    background: #f5f5f5;
+    height: 32px
+}
+
+header .headerTnb .inner {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end
+}
+
+header .headerTnb .inner>div {
+    align-items: center;
+    border-left: 1px solid #e3e3e3;
+    display: flex;
+    height: 32px
+}
+
+header .headerTnb .language {
+    background: url(https://image.autowini.com/resources/IMG/common/ico_arrDrop_gray.png) right 12px center no-repeat;
+    position: relative
+}
+
+header .headerTnb .language button {
+    background: url(https://image.autowini.com/resources/IMG/common/ic_lang.svg) 10px no-repeat;
+    background-size: 16px;
+    color: #505050;
+    font-size: 12px;
+    line-height: 32px;
+    padding: 0 32px;
+    text-align: left;
+    width: 164px
+}
+
+header .headerTnb .language ul {
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    border-top: 0;
+    display: none;
+    position: absolute;
+    right: -1px;
+    top: 32px;
+    width: 166px;
+    z-index: 300
+}
+
+header .headerTnb .language button.on {
+    color: #303030;
+    font-weight: 500
+}
+
+header .headerTnb .language button.on+ul {
+    display: block
+}
+
+header .headerTnb .language li a {
+    color: #505050;
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-left: 12px;
+    width: 100%
+}
+
+header .headerTnb .language li a:hover {
+    color: #1a1a1a;
+    font-weight: 700
+}
+
+header .headerTnb .language li a.act {
+    background: #ffe8e8;
+    color: #1a1a1a;
+    font-weight: 700
+}
+
+header .headerTnb .inner .myinfo {
+    border-left: none;
+    font-size: 12px
+}
+
+header .headerTnb .myinfo .userId {
+    color: #303030;
+    display: inline-block;
+    font-weight: 500;
+    margin-right: 10px
+}
+
+header .headerTnb .myinfo .userMember {
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    color: #303030;
+    display: inline-block;
+    font-weight: 700;
+    margin-right: 12px;
+    padding-left: 20px
+}
+
+header .headerTnb .myinfo .userMember.test,header .headerTnb .myinfo.seller .userMember {
+    border-left: 1px solid rgba(0,0,0,.1);
+    line-height: 8px;
+    padding-left: 10px
+}
+
+header .headerTnb .myinfo .userMember.vip {
+    background-image: url(https://image.autowini.com/resources/IMG/common/ic_vip.svg);
+    padding-left: 20px
+}
+
+header .headerTnb .myinfo .userMember.premium {
+    background-image: url(https://image.autowini.com/resources/IMG/common/ic_premium.svg);
+    padding-left: 20px
+}
+
+header .headerTnb .myinfo .userMember.basic {
+    background-image: url(https://image.autowini.com/resources/IMG/common/ic_basic.svg);
+    padding-left: 20px
+}
+
+header .headerTnb .myinfo .btn_member {
+    cursor: pointer
+}
+
+header .headerTnb .myinfo .btn_singOut {
+    border-left: 1px solid #e3e3e3;
+    color: #505050;
+    font-size: 13px;
+    line-height: 32px;
+    padding: 0 16px
+}
+
+header .headerAlert {
+    animation: bgColor 3s linear infinite;
+    background: #ffe5e5;
+    padding: 8px 4px;
+    text-align: center
+}
+
+header .headerAlert a {
+    align-items: center;
+    background: url(https://image.autowini.com/resources/IMG/common/ico_next.png) 100% 0 no-repeat;
+    background-size: 19px;
+    display: inline-flex;
+    justify-content: center;
+    padding-right: 22px
+}
+
+header .headerAlert strong {
+    color: #dd1f26;
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 8px
+}
+
+header .headerAlert span {
+    font-size: 13px;
+    text-align: left
+}
+
+header .headerAlert b {
+    color: #dd1f26
+}
+
+header .headerCon {
+    border-bottom: 1px solid #eee;
+    padding: 36px 0 42px
+}
+
+header .headerCon .inner {
+    position: relative
+}
+
+header .headerCon .left {
+    width: 880px
+}
+
+header .headerCon .right {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 200
+}
+
+header .headerCon .logo {
+    display: inline-block;
+    margin-right: 64px;
+    vertical-align: middle
+}
+
+header .headerCon .logo img {
+    vertical-align: middle;
+    width: 340px
+}
+
+header .headerCon .searchBox {
+    background: #fff;
+    border: 1px solid #1a1a1a;
+    border-radius: 60px;
+    display: inline-block
+}
+
+header .headerCon .searchBox input {
+    background: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    height: 48px;
+    padding-left: 20px;
+    width: 350px
+}
+
+header .headerCon .searchBox input::-moz-placeholder {
+    color: #777;
+    font-weight: 400
+}
+
+header .headerCon .searchBox input::placeholder {
+    color: #777;
+    font-weight: 400
+}
+
+header .headerCon .searchBox .btn_search {
+    background: url(https://image.autowini.com/resources/IMG/common/ico_search.svg) no-repeat 50%;
+    background-size: 26px;
+    border-left: 0;
+    display: inline-block;
+    height: 48px;
+    text-indent: -9999px;
+    width: 60px
+}
+
+header .headerCon .searchBox .btn_search:focus {
+    border: none
+}
+
+header .headerCon .btn_dmBid {
+    border: 1px solid #1f1f1f;
+    border-radius: 8px;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle
+}
+
+header .headerCon .quickMenu>li {
+    float: left;
+    margin-left: 30px;
+    padding: 10px 0;
+    position: relative
+}
+
+header .headerCon .quickMenu .alertMark:after {
+    background: #dd1f26;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 6px;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 6px
+}
+
+header .headerCon .quickMenu .accountModal .alertMark:after {
+    height: 5px;
+    right: -9px;
+    top: 1px;
+    width: 5px
+}
+
+header .headerCon .quickMenu i {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 34px;
+    display: block;
+    height: 45px;
+    margin: 0 auto;
+    padding: 0;
+    width: 34px
+}
+
+header .headerCon .quickMenu .label {
+    color: #999;
+    display: block;
+    font-size: 12px;
+    margin-top: -3px
+}
+
+header .headerCon .quickMenu.buyer .order i {
+    background-image: url(https://image.autowini.com/resources/IMG/common/ico_myOrder.svg)
+}
+
+header .headerCon .quickMenu.buyer .watch i {
+    background-image: url(https://image.autowini.com/resources/IMG/common/ico_watchlist.svg)
+}
+
+header .headerCon .quickMenu .account i {
+    background-image: url(https://image.autowini.com/resources/IMG/common/ico_myAccount.svg)
+}
+
+header .headerCon .quickMenu.seller .contact i {
+    background-image: url(https://image.autowini.com/resources/IMG/common/ico_contact.svg)
+}
+
+header .headerCon .quickMenu.seller .manage i {
+    background-image: url(https://image.autowini.com/resources/IMG/common/ico_edit.svg)
+}
+
+header .headerCon .quickMenu.seller .order i {
+    background-image: url(https://image.autowini.com/resources/IMG/common/ico_myOrder.svg)
+}
+
+header .headerCon .quickMenu.seller .biding i {
+    background-image: url(https://image.autowini.com/resources/IMG/common/ico_myBiding.svg)
+}
+
+header .headerCon .quickMenu.seller .regist i {
+    background-image: url(https://image.autowini.com/resources/IMG/common/ico_register.svg)
+}
+
+header .headerCon .quickMenu .account .accountModal {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    box-shadow: 0 8px 10px #292a2b33;
+    display: none;
+    padding: 15px;
+    position: absolute;
+    right: 50%;
+    top: 75px;
+    transform: translate(50%);
+    width: 160px
+}
+
+header .headerCon .quickMenu .account.order .accountModal {
+    right: 0;
+    transform: inherit
+}
+
+header .headerCon .quickMenu .account:hover .accountModal {
+    display: block;
+    text-align: left;
+    z-index: 11
+}
+
+header .headerCon .quickMenu .account .accountModal li {
+    margin-bottom: 10px
+}
+
+header .headerCon .quickMenu .account .accountModal li:last-child {
+    margin-bottom: 0
+}
+
+header .headerCon .quickMenu .account .accountModal li a {
+    display: block;
+    position: relative
+}
+
+header .headerCon .quickMenu .account .accountModal li a:hover {
+    color: #dd1f26
+}
+
+header .headerCon .signZone li {
+    display: inline-block
+}
+
+header .headerCon .signZone .singUp {
+    border-left: 2px solid #ddd;
+    line-height: 100%;
+    margin-left: 14px;
+    padding-left: 14px
+}
+
+header .headerCon .signZone li a {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400
+}
+
+header .headerCon .signZone .signIn a {
+    font-weight: 600
+}
+
+header .headerGnb {
+    background: #1a1a1a;
+    height: 55px
+}
+
+header .headerGnb .menuLive {
+    float: left;
+    margin-right: 20px
+}
+
+header .headerGnb .menuLive a {
+    background-color: #dd1f26;
+    color: #fff;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 500;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    width: 196px
+}
+
+header.mn .headerGnb .menuLive a {
+    font-size: 15px;
+    width: 240px
+}
+
+header.mn .headerGnb .menu .depth1>li>a {
+    font-size: 15px;
+    padding: 0 24px
+}
+
+header .headerGnb .menuLive .mark_new {
+    background: #ef3231;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 400;
+    height: 15px;
+    line-height: 15px;
+    position: relative;
+    right: -5px;
+    text-align: center;
+    top: -10px;
+    width: 15px
+}
+
+header .headerGnb .inner:after {
+    clear: both;
+    content: "";
+    display: block
+}
+
+header .headerGnb .menu {
+    display: inline-block;
+    float: left;
+    width: 100%
+}
+
+header .headerGnb .menu .depth1>li {
+    float: left;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 50px;
+    margin: 0 10px;
+    position: relative
+}
+
+header .headerGnb .menu .depth1>li.on .depth2 {
+    display: block
+}
+
+header .headerGnb .menu .depth1>li>a {
+    color: #fff;
+    display: block;
+    height: 55px;
+    padding: 0 32px;
+    text-align: center;
+    width: 100%
+}
+
+header .headerGnb .menu .depth1>li>a span {
+    color: #ff3102;
+    font-size: 10px;
+    font-weight: 600;
+    left: 50%;
+    letter-spacing: .5px;
+    line-height: 10px;
+    position: absolute;
+    top: 6px;
+    transform: translate(-50%)
+}
+
+header .headerGnb .menu .depth2 {
+    background: #fff;
+    border: 1px solid #eee;
+    display: none;
+    left: 16px;
+    min-width: 200px;
+    padding: 10px 0;
+    position: absolute;
+    top: 55px;
+    z-index: 400
+}
+
+header .headerGnb .menu .depth2 li {
+    line-height: 40px
+}
+
+header .headerGnb .menu .depth2 li a {
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0 20px
+}
+
+header .headerGnb .menu .depth2 li a:hover {
+    text-decoration: underline
+}
+
+header .headerGnb .right {
+    float: right
+}
+
+header .headerGnb .joinLive a {
+    background: #dd1f26;
+    color: #fff;
+    display: inline-block;
+    height: 55px;
+    padding: 0 20px;
+    text-align: center
+}
+
+header .headerGnb .joinLive a span {
+    display: block;
+    font-size: 12px;
+    letter-spacing: -.3px;
+    margin: 6px 0 0;
+    opacity: .8
+}
+
+header .headerGnb .joinLive a em {
+    display: block;
+    font-size: 17px;
+    font-weight: 700
+}
+
+header .headerGnb .aucCount {
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    display: inline-block;
+    height: 55px;
+    padding: 0 20px;
+    text-align: center
+}
+
+header .headerGnb .aucCount li {
+    float: left
+}
+
+header .headerGnb .aucCount span {
+    color: #999;
+    display: block;
+    font-size: 13px;
+    letter-spacing: -.3px;
+    margin: 6px 0 0
+}
+
+header .headerGnb .aucCount em {
+    display: block;
+    font-size: 16px;
+    font-weight: 700
+}
+
+.gmt {
+    border-right: 1px solid #e3e3e3;
+    position: relative
+}
+
+.gmt a {
+    background: url(https://image.autowini.com/resources/IMG/common/ic_clock.svg) 10px no-repeat;
+    background-size: 15px;
+    height: 36px;
+    line-height: 36px;
+    opacity: 1;
+    padding-left: 31px
+}
+
+.gmt a,.gmt a span {
+    color: #505050;
+    display: inline-block
+}
+
+.gmt a span {
+    background: url(https://image.autowini.com/resources/IMG/common/ico_arrDrop_gray.png) right 12px center no-repeat;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    padding-right: 6px;
+    width: 160px
+}
+
+.gmt.on a span {
+    color: #303030;
+    font-weight: 500
+}
+
+.gmt.on .set_gmt {
+    display: block
+}
+
+.gmt .set_gmt {
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    border-top: 0;
+    display: none;
+    padding: 18px 20px 10px;
+    position: absolute;
+    right: -1px;
+    top: 32px;
+    width: 358px;
+    z-index: 300
+}
+
+.gmt .set_gmt span {
+    display: block;
+    font-weight: 500;
+    line-height: 17px;
+    margin-bottom: 8px
+}
+
+.gmt .set_gmt span em {
+    background: url(https://image.autowini.com/resources/IMG/common/ico_clock_red.png) 0 no-repeat;
+    background-size: 18px;
+    color: #e0000c;
+    display: inline-block;
+    float: right;
+    font-weight: 500;
+    padding-left: 23px
+}
+
+.gmt .set_gmt .btn_area {
+    margin-top: 10px
+}
+
+.gmt .set_gmt .btn_area button {
+    color: #303030;
+    float: right;
+    font-size: 13px;
+    height: 35px;
+    width: auto
+}
+
+.gmt .set_gmt .btn_area .btn_sv {
+    text-decoration: underline
+}
+
+.gmt .set_gmt .btn_area .btn_cl {
+    color: silver;
+    font-weight: 300;
+    margin: 0 30px 0 0
+}
+
+.paging {
+    margin: 0 0 80px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 1
+}
+
+.paging li {
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: top
+}
+
+.paging li a {
+    display: block;
+    padding: 5px
+}
+
+.paging li a span {
+    color: #303030;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 0 2px
+}
+
+.paging li a.on span,.paging li a:hover span {
+    border-bottom: 1px solid #dd1f26;
+    color: #dd1f26
+}
+
+.paging li a.on span {
+    font-weight: 600
+}
+
+.paging li a img {
+    filter: alpha(opacity=20);
+    -ms-filter: "alpha(opacity=20)";
+    height: 20px;
+    margin-top: 1px;
+    -khtml-opacity: .2;
+    -moz-opacity: .2;
+    opacity: .2
+}
+
+.paging li a.act img {
+    filter: alpha(opacity=100);
+    -ms-filter: "alpha(opacity=100)";
+    -khtml-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1
+}
+
+.paging .arrow {
+    margin: 0
+}
+
+.headerTop_title {
+    background: #111;
+    display: none;
+    height: 50px;
+    position: relative;
+    text-align: center
+}
+
+.headerTop_title.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200
+}
+
+.headerTop_title>button {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 30px;
+    left: 16px;
+    margin-top: -15px;
+    position: absolute;
+    text-indent: -9999px;
+    top: 50%;
+    width: 30px
+}
+
+.headerTop_title>button.btn_right {
+    left: auto;
+    right: 10px
+}
+
+.headerTop_title .btn_JoinBack {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='16' fill='none'%3E%3Cpath fill='%23fff' d='M2 9a1 1 0 0 0 0-2zM.293 7.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L2.414 8l5.657-5.657A1 1 0 0 0 6.657.93zM2 7H1v2h1z'/%3E%3C/svg%3E")
+}
+
+.detailTop .btn_JoinBack {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='16' fill='none'%3E%3Cpath fill='%23101010' d='M2 9a1 1 0 0 0 0-2zM.293 7.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L2.414 8l5.657-5.657A1 1 0 0 0 6.657.93zM2 7H1v2h1z'/%3E%3C/svg%3E")
+}
+
+.detailTop h3 {
+    padding-left: 56px;
+    text-align: left
+}
+
+.headerTop_title .btnFilter {
+    background-image: url(./ic_filter_white.Ct2m4I7f.svg);
+    left: auto;
+    right: 16px
+}
+
+.headerTop_title .filterCnt {
+    color: #fff;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 8px;
+    position: fixed;
+    right: 6px;
+    top: 0
+}
+
+.headerTop_title .btnNewReg {
+    background: url(./ic_newReg.Cbqb2tgJ.svg) 0 no-repeat;
+    height: 40px;
+    left: inherit;
+    margin-top: -20px;
+    position: absolute;
+    right: 54px;
+    text-indent: -9999px;
+    top: 50%;
+    width: 40px
+}
+
+.headerTop_title h2,.headerTop_title h3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 52px
+}
+
+.headerTop_title.whiteVer {
+    background: #fff
+}
+
+.headerTop_title.whiteVer .btn_JoinBack {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='16' fill='none'%3E%3Cpath fill='%23101010' d='M2 9a1 1 0 0 0 0-2zM.293 7.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L2.414 8l5.657-5.657A1 1 0 0 0 6.657.93zM2 7H1v2h1z'/%3E%3C/svg%3E");
+    background-size: 10px;
+    left: 8px
+}
+
+.menu_left {
+    background: #fff;
+    left: -360px;
+    width: 360px;
+    z-index: 1000
+}
+
+.menu_left,.menu_left:before {
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0
+}
+
+.menu_left:before {
+    background: #000000b3;
+    content: "";
+    left: 0;
+    width: 100%;
+    z-index: -1
+}
+
+.menu_left.open {
+    display: block;
+    left: 0;
+    transition: all .4s ease-in-out
+}
+
+.menu_left.open:before {
+    display: block
+}
+
+.menu_left .navtop {
+    width: 100%
+}
+
+.menu_left .navtop .nav_hd {
+    background: #1f1f1f;
+    padding: 20px 20px 0
+}
+
+.menu_left .navtop .nav_tit {
+    color: #181818;
+    font-size: 19px;
+    font-weight: 700;
+    padding-bottom: 15px
+}
+
+.menu_left .navtop .leftN_close {
+    background: url(https://image.autowini.com/cdn/auction/mobile/images/common/ico_closeW.png) no-repeat 50%;
+    background-size: 45px;
+    height: 30px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 30px;
+    z-index: 10
+}
+
+.menu_left .navtop_box {
+    border-top: 1px solid #f0f0f0;
+    padding: 18px 20px 20px;
+    text-align: center
+}
+
+.menu_left .navtop_box a.join {
+    border: 1px solid #333;
+    color: #181818;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 20px auto;
+    padding: 14px 0
+}
+
+.menu_left .navtop_box>ul>li {
+    float: left;
+    width: 33.3%
+}
+
+.menu_left .navtop_box>ul>li a {
+    color: #181818;
+    display: block;
+    height: 100%;
+    position: relative;
+    width: 100%
+}
+
+.menu_left .navtop_box>ul>li a img {
+    width: 100%
+}
+
+.nav_count {
+    font-size: 12px;
+    margin-top: -11px;
+    position: absolute;
+    right: 0;
+    top: 50%
+}
+
+.nav_logout {
+    color: #333;
+    font-size: 12px;
+    margin-bottom: 50px;
+    padding-top: 20px!important
+}
+
+.logout a {
+    padding: 20px
+}
+
+.nextAc {
+    position: relative
+}
+
+.nextAc .btn_area {
+    margin: 10px 0 15px
+}
+
+.nextAc .nextAcTime {
+    color: #303030;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    top: -2px
+}
+
+.nextAc .nextAcTime ul>li {
+    color: #888;
+    float: left;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 2px 0 0 5px
+}
+
+.nextAc h3 {
+    color: #303030;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left
+}
+
+.btn_area button.btn_binLink {
+    border: 1px solid #fff
+}
+
+.new_join,.new_signin {
+    color: #fff;
+    display: inline-block;
+    font-weight: 300
+}
+
+.new_signin {
+    margin: 20px 20px 15px
+}
+
+.ntop_list {
+    margin: -15px
+}
+
+.ntop_list p span {
+    display: inline-block;
+    padding: 0 10px;
+    position: relative
+}
+
+.ntop_list p .new:after {
+    background: #e00001;
+    border-radius: 50%;
+    color: #e00001;
+    content: "";
+    display: block;
+    font-size: 10px;
+    height: 5px;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    width: 5px
+}
+
+.watch_mode .btn_area {
+    margin: 10px 0 0
+}
+
+.watch_mode .nextAc span {
+    color: gray;
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: left
+}
+
+.watch_mode .nextAc span strong {
+    color: #000
+}
+
+.btn_nonebid button {
+    background: #f5f5f5;
+    color: #ccc;
+    cursor: default;
+    font-weight: 300
+}
+
+.btn_gra button {
+    background: #fff;
+    border: 1px solid #dd1f26;
+    color: #dd1f26;
+    overflow: hidden;
+    position: relative
+}
+
+.mem_buyer .btn_gra button {
+    background: #dd1f26;
+    border: none;
+    color: #fff
+}
+
+.new_navtop .nav_st a {
+    display: block
+}
+
+.new_navtop .nav_st a em {
+    display: block;
+    font-weight: 700
+}
+
+.new_navtop .nav_st a span {
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+    margin: 15px 0
+}
+
+.new_navtop .nav_st a span em {
+    background: none;
+    color: #707070;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 300;
+    margin-left: 8px
+}
+
+.new_navtop .nav_st a span b {
+    background: url(/resources/images/common/ico_backBr.png) right 6px top 4px no-repeat;
+    background-size: 9px;
+    border: 1px solid grey;
+    border-radius: 30px;
+    color: gray;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .2px;
+    line-height: 17px;
+    margin-right: 8px;
+    padding: 1px 17px 0 10px
+}
+
+.new_navtop .nav_st .mem_status {
+    background: #f4f4f4;
+    display: block;
+    margin-bottom: 15px;
+    padding: 0 12px
+}
+
+.new_navtop .nav_st .mem_status em {
+    display: block;
+    float: left;
+    font-size: 12px;
+    padding: 12px 0;
+    width: 50%
+}
+
+.new_navtop .nav_st .mem_status .tag {
+    color: #1f1f1f;
+    font-weight: 500;
+    text-align: right
+}
+
+.menu_left .logined.buyer .navtop_box {
+    padding-bottom: 5px
+}
+
+.menu_left .logined .nav_hd {
+    background: #fff
+}
+
+.menu_left .logined .nav_hd .leftN_close {
+    background-image: url(https://image.autowini.com/cdn/auction/mobile/images/common/ico_close.png)
+}
+
+.menu_left .logined .nav_hd .nav_st a span {
+    color: #1f1f1f;
+    font-weight: 500
+}
+
+.menu_left .logined .nextAc .nextAcTime {
+    color: #606060;
+    font-size: 13px;
+    top: 0
+}
+
+.menu_left .ntop_list li:first-child a i {
+    height: 30px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 14px;
+    width: 30px
+}
+
+.menu_left .ntop_list li:nth-child(2) a {
+    background: url(https://image.autowini.com/cdn/auction/mobile/images/common/ico_navsaved.png) no-repeat center 14px;
+    background-size: 30px
+}
+
+.menu_left .ntop_list li:nth-child(3) a {
+    background: url(https://image.autowini.com/cdn/auction/mobile/images/common/ico_navbids.png) no-repeat center 14px;
+    background-size: 30px
+}
+
+.menu_left .ntop_list li a span {
+    color: #333;
+    display: block;
+    font-size: 11px;
+    line-height: 1.2;
+    padding: 50px 0 13px
+}
+
+.menu_left .ntop_list li.off a {
+    cursor: default;
+    pointer-events: none
+}
+
+.menu_left .ntop_list li.off a i {
+    opacity: .2
+}
+
+.menu_left .ntop_list li.off a p {
+    color: #0003
+}
+
+.nav_list {
+    background: #fff;
+    height: 100vh;
+    width: 100%;
+    z-index: 1000
+}
+
+.nav_list,.nav_list li,.nav_list li a {
+    position: relative
+}
+
+.nav_list li a {
+    color: #181818;
+    font-size: 14px
+}
+
+.nav_list>ul:after {
+    border-top: 1px solid #f0f0f0;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 20px;
+    margin: 0 auto;
+    position: absolute;
+    right: 20px
+}
+
+.nav_list>ul>li>a {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 0;
+    padding: 15px 60px 15px 20px
+}
+
+.nav_list>ul>li>a:after {
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    content: "";
+    display: inline-block;
+    height: 6px;
+    margin-top: -4px;
+    position: absolute;
+    right: 34px;
+    top: 50%;
+    transform: rotate(-45deg);
+    transition: all .3s;
+    width: 6px
+}
+
+.nav_list>ul>li.support>a:after {
+    display: none
+}
+
+.nav_list>ul>li.active>a:after {
+    border-color: #e00001;
+    transform: rotate(135deg)
+}
+
+.nav_list>ul>li.active:after {
+    left: 0;
+    right: 0
+}
+
+.nav_list>ul>li:after {
+    border-top: 1px solid #f0f0f0;
+    content: "";
+    display: block;
+    left: 20px;
+    margin: 0 auto;
+    position: absolute;
+    right: 20px;
+    top: 0
+}
+
+.nav_list li.active>a {
+    background: #f8f8f8
+}
+
+.nav_list .depth2 {
+    display: none;
+    padding: 10px 30px 15px
+}
+
+.nav_list .active .depth2 {
+    display: block
+}
+
+.nav_list .depth2 li a {
+    display: inline-block;
+    padding: 10px 0;
+    position: relative
+}
+
+.nav_list .depth2 li.new a:after {
+    background: #e00001;
+    border-radius: 50%;
+    color: #e00001;
+    content: "";
+    font-size: 10px;
+    height: 6px;
+    position: absolute;
+    right: -13px;
+    top: 14px;
+    width: 6px
+}
+
+.nav_list .depth2 li a em {
+    background: #dd1f26;
+    border-radius: 50px;
+    color: #fff;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 17px;
+    margin: -4px 0 0 5px;
+    padding: 0 7px;
+    vertical-align: middle
+}
+
+.nav_list .depth2 li.preBid a em {
+    background: #fff;
+    color: #dd1f26;
+    display: block;
+    font-weight: 500;
+    margin-left: 0;
+    padding: 0
+}
+
+.nav_list .depth2 li a .fx {
+    background: #1f1f1f
+}
+
+.nav_list .depth2.set_mn dl {
+    padding: 10px 0
+}
+
+.nav_list .depth2.set_mn dt {
+    float: left
+}
+
+.nav_list .depth2.set_mn dd {
+    color: #1f1f1f;
+    float: right;
+    font-weight: 600
+}
+
+.nav_list .depth2.set_mn .push_no {
+    color: #bbb;
+    font-weight: 300
+}
+
+.nav_list .depth2.set_mn .time {
+    font-size: 13px
+}
+
+.toolTipBox {
+    display: inline-block;
+    position: relative
+}
+
+.toolTipBtn {
+    background: url(https://image.autowini.com/resources/IMG/common/ico_info_w44.png) no-repeat 50%;
+    background-size: 14px;
+    cursor: help;
+    display: inline-block;
+    height: 16px;
+    vertical-align: text-top;
+    width: 16px
+}
+
+.toolTipBtn:hover+.toolTipCon {
+    display: block
+}
+
+.toolTipCon {
+    background: #fff;
+    border: 1px solid #92979b;
+    border-radius: 4px;
+    box-shadow: 0 3px 5px #0000001f;
+    display: none;
+    font-size: 12px;
+    left: -21px;
+    min-width: 150px;
+    padding: 10px;
+    position: absolute;
+    text-align: left;
+    top: 20px;
+    white-space: normal;
+    width: 280px;
+    word-break: break-word;
+    z-index: 9999
+}
+
+.toolTipCon li {
+    border: none!important;
+    color: #303030;
+    float: inherit!important;
+    font-weight: 400;
+    margin: 0!important;
+    width: auto!important
+}
+
+.toolTipCon li+li {
+    padding-top: 6px
+}
+
+.toolTipCon li strong {
+    display: block;
+    font-weight: 700
+}
+
+.toolTipCon:before {
+    border-color: #92979b transparent;
+    border-style: solid;
+    border-width: 0 9px 7px 8.5px;
+    top: -7px;
+    z-index: 0
+}
+
+.toolTipCon:after,.toolTipCon:before {
+    content: "";
+    display: block;
+    left: 20px;
+    position: absolute;
+    width: 0
+}
+
+.toolTipCon:after {
+    border-color: #fff transparent;
+    border-style: solid;
+    border-width: 0 9px 7px 8.5px;
+    top: -5.5px;
+    z-index: 1
+}
+
+.ft_nav {
+    background: #fff;
+    bottom: 0;
+    box-shadow: 0 -1px 20px #0000001a;
+    display: none;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 99
+}
+
+.ft_nav ul {
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    width: 95%
+}
+
+.ft_nav li {
+    flex: 1;
+    text-align: center
+}
+
+.ft_nav a {
+    background-position: center 8px;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    display: block;
+    font-size: 10px;
+    height: 52px;
+    padding-top: 31px;
+    position: relative;
+    width: 100%
+}
+
+.ft_nav .home a {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath fill='%23111' stroke='%23111' stroke-linejoin='round' stroke-width='1.5' d='M10.322 18.5H5.5v-9l7-6 7 6v9h-4.822v-4.294h-4.356z'/%3E%3C/svg%3E")
+}
+
+.ft_nav .item a {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='none' d='M241 193h32v32h-32z'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23a)' transform='translate(-241 -193)'%3E%3Cpath fill='%23111' d='m272.2 203.921-3.737.023-1.055-2.59a6.95 6.95 0 0 0-6.516-4.354l-7.926.048a6.96 6.96 0 0 0-6.463 4.434l-1.023 2.6-3.736.023a.748.748 0 0 0-.721.935l.384 1.5a.75.75 0 0 0 .73.563l1.252-.007a3.97 3.97 0 0 0-1.36 3l.019 3a3.96 3.96 0 0 0 1.014 2.611l.021 3.375a2 2 0 0 0 2.009 1.985l2-.012a2 2 0 0 0 1.985-2.009l-.012-2 15.977-.1.012 2a2 2 0 0 0 2.009 1.985l2-.012a2 2 0 0 0 1.985-2.009l-.02-3.375a3.96 3.96 0 0 0 .983-2.622l-.019-3a3.97 3.97 0 0 0-1.4-2.987l1.252-.008a.75.75 0 0 0 .723-.572l.366-1.5a.75.75 0 0 0-.733-.926Zm-21.979-.979a3 3 0 0 1 2.77-1.9l7.926-.049a3 3 0 0 1 2.793 1.866l1.263 3.1-15.976.1Zm-3.179 10.109a1.991 1.991 0 1 1-.025-3.982 3.84 3.84 0 0 1 3.014 2.968c.007 1.194-1.791 1.007-2.99 1.014Zm19.971-.121c-1.2.007-3 .217-3-.977a3.84 3.84 0 0 1 2.977-3 1.991 1.991 0 1 1 .025 3.982Z'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 23px
+}
+
+.ft_nav .mn a {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cg fill='none' stroke='%23111' stroke-linecap='round' stroke-width='1.6'%3E%3Cpath d='M3.843 6H20.28M3.843 11.932H20.28M3.843 17.865H20.28'/%3E%3C/g%3E%3C/svg%3E")
+}
+
+.ft_nav .myAuc a {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' id='Layer_1' x='0' y='0' version='1.0' viewBox='0 0 33 32'%3E%3Cstyle%3E.st1{fill:none;stroke:%23fff;stroke-width:2;stroke-linecap:round}.st2{fill:%23101010}%3C/style%3E%3Cg id='그룹_4'%3E%3Cg id='그룹_3'%3E%3Cg id='그룹_2'%3E%3Cpath id='사각형_1' d='M-1695.6-56h15.9c2.1 0 3.7 1.7 3.7 3.7v19.6c0 2.1-1.7 3.7-3.7 3.7h-15.9c-2.1 0-3.7-1.7-3.7-3.7v-19.6c0-2.1 1.7-3.7 3.7-3.7' style='fill:%231d1d1b' transform='translate(1701 59)'/%3E%3Cpath id='선_1' d='M6.8 9.6h13.1' class='st1'/%3E%3Cpath id='선_2' d='M6.8 15.7h13.1' class='st1'/%3E%3Cg id='그룹_5765-2' transform='translate(1478.269 -603.713)'%3E%3Cpath id='패스_1276-3' d='M-1456.2 623.7c-1.2-.1-2.3.4-3.1 1.3l-1.9 1.8c-.3.3-.7.5-1.1.5l-1.6.2c-1.7.2-3.6.5-3.6 2.7v1.6c0 1.1.6 1.6 1.8 1.6h1.7c-.1-1 .6-2 1.6-2.1s1.9.5 2.1 1.5v.6h6.7c-.2-1 .5-2 1.5-2.2s2 .5 2.2 1.5v.7h2c.9 0 1.2-.4 1.2-1.2v-4.4c0-2.2-1.8-4.1-4.1-4.1z' class='st2'/%3E%3Cpath id='패스_1276-4' d='M-1456.2 623.7c-1.2-.1-2.3.4-3.1 1.3l-1.9 1.8c-.3.3-.7.5-1.1.5l-1.6.2c-1.7.2-3.6.5-3.6 2.7v1.6c0 1.1.6 1.6 1.8 1.6h1.7c-.1-1 .6-2 1.6-2.1s1.9.5 2.1 1.5v.6h6.7c-.2-1 .5-2 1.5-2.2s2 .5 2.2 1.5v.7h2c.9 0 1.2-.4 1.2-1.2v-4.4c0-2.2-1.8-4.1-4.1-4.1z' style='fill:%23101010;stroke:%23fff;stroke-width:1.5;stroke-miterlimit:10'/%3E%3Ccircle id='타원_132-2' cx='-1451.6' cy='633.1' r='1.7' class='st2'/%3E%3Ccircle id='타원_132-2_1_' cx='-1462.1' cy='633.1' r='1.7' class='st2'/%3E%3C/g%3E%3Cpath id='사각형_3' d='M0 0h32v32H0z' style='fill:none'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+}
+
+.ft_nav .alertMark a:after {
+    background: #dd1f26;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 5px;
+    position: absolute;
+    right: 28px;
+    top: 8px;
+    width: 5px
+}
+
+.lnb {
+    background: #fff;
+    border-right: 1px solid #eee;
+    box-shadow: 0 10px 30px #9897a51a;
+    height: 100%;
+    left: 0;
+    overflow-y: auto;
+    padding-bottom: 40px;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    width: 260px;
+    z-index: 2
+}
+
+.lnb .inner {
+    padding: 16px 24px 0
+}
+
+.lnb .dep1>li {
+    margin-bottom: 8px
+}
+
+.lnb .dep1>li>a {
+    color: #111;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.1;
+    padding: 8px;
+    position: relative
+}
+
+.lnb .dep1>li>a:hover {
+    background-color: #f5f5f5;
+    border-radius: 4px
+}
+
+.lnb .dep1>li.on>a {
+    background-color: #f5f5f5;
+    color: #ef3231;
+    font-weight: 700
+}
+
+.lnb .dep1>li.on>a:first-child {
+    background-color: transparent
+}
+
+.lnb .dep2 li {
+    border-radius: 4px;
+    margin: 2px 0;
+    padding: 8px
+}
+
+.lnb .dep2 li.on,.lnb .dep2 li:hover {
+    background-color: #f5f5f5
+}
+
+.lnb .dep2 li a {
+    display: block;
+    font-size: 14px;
+    line-height: 1.2;
+    padding-left: 12px
+}
+
+.lnb .dep1_btn,.lnb .dep2 li a {
+    position: relative
+}
+
+.lnb .dep1_btn i {
+    background-position: 50%;
+    background-size: 70%;
+    display: inline-block;
+    height: 20px;
+    margin-top: -9px;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: rotate(180deg);
+    transition: .3s;
+    width: 20px
+}
+
+.mn .lnb .dep1_btn i {
+    right: -15px
+}
+
+.lnb .dep1_btn.on i {
+    transform: rotate(0)
+}
+
+.contents {
+    height: calc(100vh - 206px);
+    position: relative
+}
+
+.listWrap {
+    display: flex;
+    position: relative;
+    width: 100%
+}
+
+.listWrap .filterCon {
+    background: #fff;
+    border-right: 1px solid #e0e0e0;
+    text-align: left
+}
+
+.listWrap .filterCon.open {
+    background: #fff;
+    height: 100vh;
+    right: -1px;
+    transition: all .4s ease-in-out;
+    z-index: 1000
+}
+
+.listWrap .filterCon.open h3 button {
+    display: inline-block;
+    float: inherit;
+    margin-left: 8px
+}
+
+.listWrap .filterCon.open:before {
+    background: #000000b3;
+    content: "";
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1
+}
+
+.filterCon .mob_close {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath fill='%23111' d='m11.174 10 3.58-3.573a.836.836 0 0 0-1.182-1.182L10 8.825l-3.572-3.58a.836.836 0 1 0-1.182 1.182L8.826 10l-3.58 3.572a.833.833 0 0 0 .271 1.365.83.83 0 0 0 .911-.182L10 11.174l3.572 3.58a.834.834 0 0 0 1.364-.271.83.83 0 0 0-.182-.912z'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Crect width='20' height='20' fill='%23fff' rx='8'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E") 50% no-repeat;
+    font-size: 0;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px
+}
+
+.filterCon .btnFilter {
+    background: #101010 url(https://image.autowini.com/resources/IMG/common/ico_backw.png) right 1px center no-repeat;
+    background-size: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 0 3px #0003;
+    height: 55px;
+    position: absolute;
+    right: -20px;
+    top: 80px;
+    width: 30px
+}
+
+.filterCon .btnFilter.on {
+    background: #dd1f26 url(https://image.autowini.com/resources/IMG/common/ico_next_white.png) right 1px center no-repeat;
+    background-size: 20px
+}
+
+.listWrap .filterCon .inner {
+    background: #fff;
+    height: 100%;
+    padding: 24px 32px;
+    position: relative;
+    width: 360px
+}
+
+.filterCon h3 {
+    background: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    overflow: hidden;
+    padding: 10px 0
+}
+
+.filterCon h3 button {
+    color: #dd1f26;
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-size: 12px;
+    line-height: 24px
+}
+
+.filterCon ul>li {
+    border-top: 1px solid #eee
+}
+
+.filterCon li dt {
+    font-weight: 700
+}
+
+.filterCon li dt span {
+    font-size: 15px;
+    position: relative
+}
+
+.filterCon li dt span img {
+    display: inline-block;
+    margin-right: 4px;
+    vertical-align: middle
+}
+
+.filterCon li .lastChanceFlag_red_check img {
+    height: 24px
+}
+
+.filterCon li dt.chk span:after {
+    background: #dd1f26;
+    border-radius: 10px;
+    content: "";
+    display: block;
+    height: 5px;
+    left: -4px;
+    position: absolute;
+    top: -4px;
+    width: 5px
+}
+
+.filterCon li dt a {
+    display: block;
+    overflow: hidden;
+    padding: 16px 0;
+    position: relative
+}
+
+.filterCon li dt a em {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none'%3E%3Cpath fill='%23999' d='M8.13 11.827a.44.44 0 0 0 .16.127.5.5 0 0 0 .418 0 .44.44 0 0 0 .161-.127l4.05-5.2a.363.363 0 0 0 .03-.413.4.4 0 0 0-.166-.156A.5.5 0 0 0 12.55 6h-8.1a.5.5 0 0 0-.233.058.43.43 0 0 0-.165.157.36.36 0 0 0 .027.413z'/%3E%3C/svg%3E");
+    display: block;
+    float: right;
+    font-size: 0;
+    height: 18px;
+    transform: rotate(0);
+    transition: transform .1s ease-out;
+    width: 18px
+}
+
+.filterCon li.act dt a,.filterCon li.act dt em {
+    color: #dd1f26
+}
+
+.filterCon li.act dt a em {
+    transform: rotate(180deg);
+    transition: transform .1s ease-out
+}
+
+.filterCon li dd {
+    display: none;
+    position: relative
+}
+
+.filterCon li.act dd {
+    display: block
+}
+
+.filterCon li dd ol {
+    margin-bottom: 10px;
+    max-height: 160px;
+    overflow-y: scroll
+}
+
+.filterCon li dd ol:after {
+    clear: both;
+    content: "";
+    display: block
+}
+
+.filterCon li dd li {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0
+}
+
+.filterCon li dd li .count {
+    color: #666;
+    flex: none;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0 8px
+}
+
+.filterCon li dd p {
+    background: #fff;
+    color: #999;
+    font-size: 13px;
+    padding: 16px 8px 24px;
+    text-align: center
+}
+
+.filterCon .dbl dl:after {
+    clear: both;
+    content: "";
+    display: block
+}
+
+.filterCon .dbl dt {
+    float: left;
+    padding: 22px 0 0;
+    width: 40%
+}
+
+.filterCon .dbl dd {
+    display: block;
+    float: right;
+    width: 60%
+}
+
+.filterCon .tri dt {
+    padding: 16px 0 0
+}
+
+.filterCon .tri dd,.filterCon .tri dt {
+    float: inherit;
+    width: auto
+}
+
+.filterCon .dbl ol {
+    background: none;
+    margin: 0;
+    overflow-y: inherit;
+    padding: 10px 0 5px
+}
+
+.filterCon .dbl li {
+    float: left;
+    margin: 0 -1px 8px 0;
+    width: 50%
+}
+
+.filterCon .dbl li label {
+    display: block
+}
+
+.filterCon .year li:last-child {
+    float: right
+}
+
+.filterCon .dbl select {
+    width: 100%
+}
+
+.filterCon .dbl input[type=text] {
+    background: #f4f4f4;
+    border-color: #fff;
+    height: 38px;
+    line-height: 38px;
+    margin: 10px 0;
+    padding-left: 10px;
+    width: 100%
+}
+
+.filterCon .dbl input[type=text]:focus {
+    background: #fff;
+    border-color: #1f1f1f
+}
+
+.filterCon .dbl button {
+    background: #fff;
+    border: 1px solid #ddd;
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 1px;
+    position: relative;
+    width: 100%
+}
+
+.filterCon .dbl button:hover {
+    background: #f4f4f4
+}
+
+.filterCon .dbl button.act {
+    background: #ffe8e8;
+    border-color: #ed3939;
+    color: #e82020;
+    z-index: 1
+}
+
+.filterCon .filterVeri li {
+    width: 100%
+}
+
+.filterCon .badge_veri {
+    position: absolute;
+    right: 0;
+    top: 12px
+}
+
+.filterCon .badge_veri img {
+    width: 74px
+}
+
+.filterCon .auctionTypeFilter ol {
+    display: flex
+}
+
+.filterCon .auctionTypeFilter li {
+    flex: 1
+}
+
+.filterCon .btn_area {
+    padding-top: 16px
+}
+
+.listWrap .listCon {
+    text-align: left
+}
+
+.listWrap .listCon:after {
+    clear: both;
+    content: "";
+    display: block
+}
+
+.listWrap .popupVisual {
+    align-items: center;
+    background: #101010 url(./img_preBid.Q5UODnbr.png) right 0 no-repeat;
+    display: flex;
+    height: 239px;
+    padding-left: 60px
+}
+
+.listWrap .popupVisual dt {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700
+}
+
+.listWrap .popupVisual dt span {
+    display: block;
+    font-size: 18px;
+    font-weight: 400
+}
+
+.listWrap .popupVisual dd {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 8px
+}
+
+.listWrap .popupVisual dd a {
+    color: #ff6a6a;
+    display: block;
+    font-size: 16px;
+    margin-top: 32px;
+    text-decoration: underline
+}
+
+.listWrap .popupVisual.rental {
+    background: #101010 url(./img_rentalAuc.7WSEGe3X.png) right 0 no-repeat
+}
+
+.listWrap .popupVisual.liveAuc {
+    background: #101010 url(./img_liveAuc.CRiLCc4E.png) right 0 no-repeat
+}
+
+.listWrap .popupVisual.live dt span {
+    color: #dd1f26
+}
+
+.listWrap .popupVisual.live dd {
+    width: 560px
+}
+
+.listWrap .filterChk {
+    padding: 32px 40px 0
+}
+
+.listWrap .filterChk dl {
+    align-items: center;
+    display: flex
+}
+
+.listWrap .filterChk dt {
+    color: #333;
+    flex: 1;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 32px
+}
+
+.listWrap .filterChk dd {
+    flex: 8
+}
+
+.listWrap .filterChk dd span {
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    color: #999;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    padding: 6px 30px 6px 12px;
+    position: relative
+}
+
+.listWrap .filterChk dd span b {
+    color: #555;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 4px
+}
+
+.listWrap .filterChk dd span em {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath fill='%23999' d='m11.174 10 3.58-3.573a.836.836 0 0 0-1.182-1.182L10 8.825l-3.572-3.58a.836.836 0 1 0-1.182 1.182L8.826 10l-3.58 3.572a.833.833 0 0 0 .271 1.365.83.83 0 0 0 .911-.182L10 11.174l3.572 3.58a.834.834 0 0 0 1.364-.271.83.83 0 0 0-.182-.912z'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Crect width='20' height='20' fill='%23fff' rx='8'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E") 50% no-repeat;
+    background-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px
+}
+
+.listWrap .resultCon {
+    padding: 32px 40px 64px
+}
+
+.listWrap .resultCon .top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px
+}
+
+.listWrap .resultCon .left {
+    align-items: center;
+    display: flex;
+    gap: 4px;
+    min-width: 20%
+}
+
+.listWrap .resultCon .left span {
+    color: #555;
+    display: block;
+    font-size: 17px
+}
+
+.listWrap .resultCon .left b {
+    color: #e82020;
+    font-weight: 700
+}
+
+.listWrap .resultCon .right {
+    align-items: center;
+    display: flex;
+    gap: 8px
+}
+
+.listWrap .resultCon .select,.listWrap .resultCon .tab {
+    display: inline-flex;
+    vertical-align: middle
+}
+
+.listWrap .resultCon .select select+select {
+    margin-left: -1px
+}
+
+.resultCon .tab button {
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    height: 32px;
+    width: 38px
+}
+
+.resultCon .tab .btnGrid {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none'%3E%3Cpath stroke='%23999' stroke-linejoin='round' stroke-width='1.2' d='M18.333 2.5H1.667v8.333h16.666z'/%3E%3Cpath stroke='%23999' stroke-linecap='round' stroke-width='1.2' d='M1.667 14.167h16.666M1.667 17.5h16.666'/%3E%3C/svg%3E") 50% no-repeat
+}
+
+.resultCon .tab .btnGrid.active {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none'%3E%3Cpath stroke='%23D71E1E' stroke-linejoin='round' stroke-width='1.2' d='M18.333 2.5H1.667v8.333h16.666z'/%3E%3Cpath stroke='%23D71E1E' stroke-linecap='round' stroke-width='1.2' d='M1.667 14.167h16.666M1.667 17.5h16.666'/%3E%3C/svg%3E") 50% no-repeat
+}
+
+.resultCon .tab .btnList {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none'%3E%3Cpath stroke='%23999' stroke-linejoin='round' stroke-width='1.2' d='M7.579 11.944H2.222V17.5H7.58zM7.579 2.5H2.222v5.556H7.58z'/%3E%3Cpath stroke='%23999' stroke-linecap='round' stroke-width='1.2' d='M10.556 12.562h8.333M10.556 3.118h8.333M10.556 16.882h8.333M10.556 7.438h8.333'/%3E%3C/svg%3E") 50% no-repeat;
+    margin-left: -1px
+}
+
+.resultCon .tab .btnList.active {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none'%3E%3Cpath stroke='%23E82020' stroke-linejoin='round' stroke-width='1.2' d='M7.579 11.944H2.222V17.5H7.58zM7.579 2.5H2.222v5.556H7.58z'/%3E%3Cpath stroke='%23E82020' stroke-linecap='round' stroke-width='1.2' d='M10.556 12.562h8.333M10.556 3.118h8.333M10.556 16.882h8.333M10.556 7.438h8.333'/%3E%3C/svg%3E") 50% no-repeat
+}
+
+.gallery .itemList {
+    display: none
+}
+
+.gallery .itemList.show {
+    display: block
+}
+
+.gallery .grid.show {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -16px
+}
+
+.gallery .grid>li {
+    padding: 16px;
+    position: relative;
+    width: 25%
+}
+
+.gallery .nodata {
+    color: #909090;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 48px;
+    padding: 56px 0;
+    text-align: left
+}
+
+.gallery .nodata p {
+    border-bottom: 1px solid #e9e9e9;
+    color: #909090;
+    font-size: 16px;
+    letter-spacing: .3px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    padding-bottom: 40px
+}
+
+.gallery .nodata dt {
+    color: #505050;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 8px
+}
+
+.gallery .nodata dd {
+    font-size: 16px;
+    margin: 6px 0;
+    padding-left: 12px;
+    position: relative
+}
+
+.gallery .nodata dd:before {
+    background: #909090;
+    border-radius: 3px;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 9px;
+    width: 3px
+}
+
+.gallery .nodata b {
+    font-weight: 700
+}
+
+.gallery .pastBid .tit {
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px
+}
+
+.gallery .pastBid .inner {
+    width: 100%
+}
+
+.gallery .pastBid ul {
+    margin: 0 -16px
+}
+
+.gallery .pastBid ul:after {
+    clear: both;
+    content: "";
+    display: block
+}
+
+.gallery .pastBid li {
+    box-sizing: border-box;
+    float: left;
+    height: 280px;
+    padding: 0 16px 30px;
+    width: 20%
+}
+
+.gallery .pastBid .img {
+    border-radius: 4px;
+    height: 160px;
+    overflow: hidden;
+    position: relative
+}
+
+.gallery .pastBid img {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%
+}
+
+.gallery .pastBid dt {
+    color: #303030;
+    font-size: 15px;
+    font-weight: 700;
+    overflow: hidden;
+    padding: 12px 0 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all
+}
+
+.gallery .pastBid dd {
+    align-items: center;
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    margin: 5px 0
+}
+
+.gallery .pastBid dd b {
+    color: #dd1f26;
+    font-size: 16px;
+    font-weight: 700
+}
+
+.grid .img {
+    cursor: pointer;
+    position: relative
+}
+
+.slide {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    width: 100%
+}
+
+.slide_wrap {
+    background-color: #00000080
+}
+
+.slide_item {
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    height: 240px;
+    justify-content: center;
+    left: 0;
+    overflow: hidden;
+    position: relative;
+    transition: left .15s
+}
+
+.slide_item,.slide_item img {
+    border-radius: 4px;
+    width: 100%
+}
+
+.slide_item img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    z-index: 5
+}
+
+.slide_button {
+    align-items: center;
+    background-color: #cccc;
+    border-radius: 100%;
+    cursor: pointer;
+    display: none;
+    height: 32px;
+    justify-content: center;
+    position: absolute;
+    top: calc(50% - 16px);
+    width: 32px
+}
+
+.slide_prev_button {
+    left: 10px
+}
+
+.slide_next_button {
+    right: 10px
+}
+
+.slide_pagination {
+    bottom: 0;
+    display: flex;
+    gap: 4px;
+    position: absolute;
+    right: 16px
+}
+
+.slide_pagination>li {
+    color: #eeeeeec7;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 24px
+}
+
+.slide_pagination>li.active {
+    color: #dd1f26
+}
+
+.grid .subPhoto {
+    align-items: center;
+    display: flex;
+    gap: 6px;
+    margin-top: 6px
+}
+
+.grid .subPhoto img {
+    border-radius: 4px;
+    height: 56px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 25%
+}
+
+.gallery .badge {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    gap: 4px;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    z-index: 11
+}
+
+.gallery .badge .video {
+    background: url(https://image.autowini.com/resources/IMG/common/ico_videoStock.svg) 50% no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    height: 16px;
+    width: 16px
+}
+
+.gallery .badge .video img {
+    display: none
+}
+
+.gallery .badge .cnt,.gallery .badge .roro {
+    background: #1f1f1fe6
+}
+
+.gallery .badge .cnt,.gallery .badge .live,.gallery .badge .roro {
+    border-radius: 2px;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 5px;
+    vertical-align: middle
+}
+
+.gallery .badge .live {
+    background: #dd1f26;
+    font-weight: 500
+}
+
+.gallery .badge .rental {
+    background: #ffd43a;
+    color: #000
+}
+
+.gallery .badge .local,.gallery .badge .rental {
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2px 5px;
+    vertical-align: middle
+}
+
+.gallery .badge .local {
+    background: #5a00ec;
+    color: #fff
+}
+
+.gallery .topMark {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 12
+}
+
+.list .topMark {
+    width: 67%
+}
+
+.gallery .topMark .inspected {
+    background: url(./mk_inspected.CzCydJ5C.svg) 0 0 no-repeat;
+    height: 80px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 80px
+}
+
+.gallery .rgt {
+    display: flex;
+    gap: 4px
+}
+
+.gallery .mkNew {
+    background: #dd1f26;
+    padding: 0 4px;
+    z-index: 1
+}
+
+.gallery .hotLot,.gallery .mkNew {
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    height: 18px;
+    line-height: 18px
+}
+
+.gallery .hotLot {
+    background: #101010 url(https://image.autowini.com/cdn/auction/web/images/common/ic_hot.svg) 3px no-repeat;
+    background-size: 13px;
+    padding: 0 4px 0 18px
+}
+
+.gallery .mkLast {
+    background: #fff url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none'%3E%3Cpath fill='%23FFBC44' d='M2.167 21.5 8.333 16 13 24l-7.333 3.167z'/%3E%3Cpath fill='%23fff' d='M9.333 15.667 20.167 4.833l9.5 15.334-16 3.833z'/%3E%3Cpath fill='%23000' fill-opacity='.1' d='M3 24.333 26 14l3.833 6-15 4.333-8.666 2.834z'/%3E%3Cpath stroke='%23000' stroke-width='1.5' d='m9.895 14.936 8.81-9.085a2 2 0 0 1 3.141.348l7.177 11.722a2 2 0 0 1-1.29 3l-12.796 2.724q-.104.021-.2.065l-6.995 3.136A3 3 0 0 1 3.857 25.5l-1.15-2.194a3 3 0 0 1 .905-3.827l6.15-4.427q.071-.052.133-.116Z'/%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-width='1.5' d='m9.333 16.167 4.167 7.5c-.111 1.666 1.2 4.733 7.333 3.666'/%3E%3C/svg%3E") 3px no-repeat;
+    background-size: 15px;
+    border-radius: 2px;
+    color: #303030;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 4px 0 20px
+}
+
+.list .mkLast {
+    background-position: 10px;
+    padding-left: 28px;
+    position: relative;
+    top: -1px
+}
+
+.list .mkLast:before {
+    color: #e0e0e0;
+    content: "|";
+    display: inline-block;
+    font-size: 11px;
+    left: 2px;
+    line-height: 20px;
+    position: absolute;
+    top: 0
+}
+
+.gallery .mkHotLot {
+    background: #101010;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 8px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1
+}
+
+.gallery .mkHotLot:before {
+    background: url(https://image.autowini.com/cdn/auction/web/images/common/ic_hot.svg) 50% no-repeat;
+    background-size: 12px;
+    content: "";
+    display: inline-block;
+    height: 14px;
+    margin-right: 6px;
+    margin-top: -4px;
+    vertical-align: middle;
+    width: 14px
+}
+
+.gallery .damage {
+    padding: 16px 0 2px;
+    position: relative
+}
+
+.gallery .damage span {
+    background: #fff;
+    border: 1px solid #d0d0d0;
+    border-radius: 2px;
+    color: #707070;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 1;
+    max-width: 54%;
+    overflow: hidden;
+    padding: 2px 4px;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.gallery .damage span+span {
+    margin-left: 4px
+}
+
+.gallery .damage .hit.mk1 {
+    background: #e7f4ff;
+    border-color: #71bfff4d;
+    color: #0075d6
+}
+
+.gallery .damage .hit.mk2 {
+    background: #222;
+    border-color: #222;
+    color: #e5e5e5
+}
+
+.gallery .damage .hit.mk3 {
+    background: #ffedee;
+    border-color: #ef797f4d;
+    color: #dd1f26
+}
+
+.gallery .damage em {
+    color: #999;
+    display: inline-block;
+    font-size: 10px;
+    margin-left: 4px;
+    margin-top: 3px;
+    vertical-align: top
+}
+
+.gallery .damage .btnLike {
+    background: url(https://image.autowini.com/cdn/auction/web/images/content/ico_like.svg) 50% no-repeat;
+    background-size: 24px;
+    font-size: 0;
+    height: 46px;
+    position: absolute;
+    right: -10px;
+    top: 0;
+    width: 46px
+}
+
+.gallery .damage .btnLike.on {
+    background-image: url(https://image.autowini.com/cdn/auction/web/images/content/ico_like_on.svg)
+}
+
+.grid dl {
+    position: relative
+}
+
+.grid dt {
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 4px 0
+}
+
+.grid dd {
+    color: #707070;
+    font-size: 13px
+}
+
+.grid dd span {
+    display: inline-block
+}
+
+.grid dd span+span:before {
+    background: #ddd;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    margin: -2px 6px 0;
+    vertical-align: middle;
+    width: 3px
+}
+
+.grid dd .mr0:after {
+    display: none
+}
+
+.grid .sign {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 8px;
+    position: relative
+}
+
+.grid .sign span {
+    display: inline-block;
+    position: relative
+}
+
+.grid .sign span+span {
+    margin-left: 16px
+}
+
+.grid .sign span+span:before {
+    color: #ddd;
+    content: "|";
+    font-size: 10px;
+    font-weight: 300;
+    left: -11px;
+    position: absolute;
+    top: 0
+}
+
+.grid .sign .hot {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none'%3E%3Cpath fill='%23E82020' d='M8 1.714c3.429 0 6.286 2.857 6.286 6.286S11.429 14.286 8 14.286 1.714 11.428 1.714 8C1.714 4.57 4.571 1.714 8 1.714M8 .571A7.414 7.414 0 0 0 .571 8 7.414 7.414 0 0 0 8 15.428 7.414 7.414 0 0 0 15.429 8 7.414 7.414 0 0 0 8 .57'/%3E%3Cpath stroke='%23E82020' stroke-linecap='round' stroke-linejoin='round' d='M7.771 4.571V8.8l2.743 2.171'/%3E%3C/svg%3E") 0 3px no-repeat;
+    background-size: 15px;
+    color: #dd1f26;
+    padding-left: 18px
+}
+
+.grid .sign .inspected {
+    background: url(https://image.autowini.com/resources/IMG/common/ic_inspected.png) 0 no-repeat;
+    background-size: 14px;
+    padding-left: 19px
+}
+
+.grid .sign .accident {
+    background: url(../images/common/ic_inspected_green.png) 0 no-repeat;
+    background-size: 14px;
+    color: #1b8500;
+    padding-left: 19px
+}
+
+.grid .sign .painting {
+    background: url(../images/common/ic_inspected_blue.png) 0 no-repeat;
+    background-size: 14px;
+    color: #0052cc;
+    padding-left: 19px
+}
+
+.grid .sign .mkDrop {
+    background: url(https://image.autowini.com/resources/IMG/common/ic_dropped.png) 0 no-repeat;
+    background-size: 14px;
+    padding-left: 19px
+}
+
+.grid .bid {
+    border-top: 1px dashed #eee;
+    margin-top: 8px;
+    padding-top: 8px
+}
+
+.grid .date {
+    flex: 1.6;
+    font-size: 13px
+}
+
+.grid .date span {
+    color: #303030;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 3px 0;
+    min-height: 20px
+}
+
+.grid .date em {
+    color: #909090;
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 8px
+}
+
+.gallery .date .nth em {
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 0 2px
+}
+
+.gallery .date .auc1 em {
+    background-color: #ffed93;
+    border: 1px solid #7e5f0066;
+    color: #7e5f00
+}
+
+.gallery .date .auc2 em {
+    background-color: #ffedee;
+    border: 1px solid #dd1f2666;
+    color: #dd1f26
+}
+
+.gallery .date .auc3 em {
+    background-color: #d2e9ff;
+    border: 1px solid #0080ff66;
+    color: #0080ff
+}
+
+.gallery .date .auc4 em {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    color: #111
+}
+
+.gallery .date .auc5 em {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #111
+}
+
+.grid .price {
+    flex: 1;
+    text-align: right
+}
+
+.grid .price button {
+    background: #f7f7f7;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    color: #ccc;
+    flex: 1;
+    font-size: 12px;
+    height: 30px;
+    line-height: 28px
+}
+
+.grid .price button.now {
+    background: #ef3231;
+    border: 1px solid #c90a14;
+    color: #fff
+}
+
+.grid .price span {
+    color: #909090;
+    font-size: 12px
+}
+
+.grid .price b {
+    color: #dd1f26;
+    display: block;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -.8px
+}
+
+.grid .checkItem {
+    align-items: center;
+    bottom: 20px;
+    display: flex;
+    gap: 12px;
+    position: absolute
+}
+
+.gallery .checkItem span {
+    color: #707070;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    margin: 8px 0 0
+}
+
+.gallery .checkItem span.bidChk {
+    background: #dd1f26;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 10px;
+    height: 22px;
+    letter-spacing: .5px;
+    line-height: 22px;
+    text-align: center;
+    width: 22px
+}
+
+.gallery .checkItem img {
+    display: inline-block;
+    height: 15px;
+    margin-top: 3px
+}
+
+.list {
+    border-top: 1px solid #ddd
+}
+
+.list>li {
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    gap: 32px;
+    height: 142px
+}
+
+.list .img,.list>li {
+    position: relative
+}
+
+.list .imgWrap {
+    display: flex;
+    gap: 2px
+}
+
+.list .img1 {
+    height: 142px;
+    width: 190px
+}
+
+.list .img2 {
+    height: 70px;
+    width: 94px
+}
+
+.list .img2 img+img {
+    margin-top: 2px
+}
+
+.list .img1 img,.list .img2 img {
+    display: block;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%
+}
+
+.list .date,.list .info,.list .subInfo {
+    width: 30%
+}
+
+.list .checkItem {
+    width: 10%
+}
+
+.list .price {
+    width: 20%
+}
+
+.list .info dt span {
+    color: #606060;
+    display: inline-block;
+    font-size: 13px
+}
+
+.list .info dt .inspected {
+    color: #303030;
+    font-weight: 500
+}
+
+.list .info dt .inspected img {
+    display: inline-block;
+    height: 14px;
+    margin-right: 4px
+}
+
+.list .info dt .inspected:before {
+    background: #ddd;
+    border-radius: 3px;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    margin: 0 4px;
+    vertical-align: middle;
+    width: 3px
+}
+
+.list .info dt strong {
+    display: block;
+    display: -webkit-box;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -.2px;
+    margin: 4px 0 -4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word
+}
+
+.list .subInfo {
+    display: flex;
+    justify-content: flex-start
+}
+
+.list .subInfo li {
+    align-items: center;
+    display: flex;
+    margin: 8px 0
+}
+
+.list .subInfo span {
+    color: #909090;
+    width: 120px
+}
+
+.list .subInfo em {
+    font-weight: 500
+}
+
+.list .date {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    justify-content: flex-start
+}
+
+.list .date .nth em {
+    border-radius: 2px;
+    display: block;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px
+}
+
+.list .time span {
+    display: block;
+    margin: 4px 0
+}
+
+.list .time span+span {
+    background: url(https://image.autowini.com/cdn/auction/web/images/common/ico_clock.svg) -3px -3px no-repeat;
+    color: #101010;
+    font-weight: 700;
+    padding-left: 22px
+}
+
+.list .price {
+    text-align: center
+}
+
+.list .price span {
+    color: #909090;
+    display: block;
+    font-size: 13px
+}
+
+.list .price b {
+    color: #101010;
+    display: block;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -.7px
+}
+
+.list .price .mkDrop {
+    background: url(https://image.autowini.com/resources/IMG/common/ic_dropped.png) 0 no-repeat;
+    background-size: 14px;
+    color: #303030;
+    display: inline-block;
+    font-weight: 500;
+    margin-top: 4px;
+    padding-left: 19px
+}
+
+.list .checkItem {
+    margin-right: 16px;
+    text-align: center
+}
+
+.list .checkItem span {
+    display: block;
+    margin: 8px auto
+}
+
+.wideContents .listWrap .listCon {
+    width: 100%
+}
+
+.wideContents .listWrap .keyRed {
+    color: #101010;
+    font-weight: 500
+}
+
+.wideContents .gallery .grid>li {
+    width: 20%
+}
+
+.wideContents .grid .price b {
+    display: inline-block;
+    margin-left: 8px
+}
+
+.fixed_pop {
+    bottom: 24px;
+    display: none;
+    padding: 0 40px;
+    position: fixed;
+    right: 0;
+    width: calc(100% - 360px);
+    z-index: 999
+}
+
+.fixed_pop.open {
+    display: block
+}
+
+.fixed_pop .inner {
+    background: #000c;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px #00000026;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 50px;
+    position: relative
+}
+
+.fixed_pop .inner:before {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: blink;
+    background: #ffe97c;
+    border: 1px solid #ffe97c;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 1px #ffe97c;
+    content: "";
+    display: inline-block;
+    height: 5px;
+    left: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px
+}
+
+.fixed_pop p {
+    color: #fff;
+    font-size: 15px
+}
+
+.fixed_pop button,.fixed_pop p {
+    display: inline-block;
+    letter-spacing: .3px
+}
+
+.fixed_pop button {
+    color: #ffe97c;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 13px;
+    margin-left: 8px;
+    text-decoration: underline
+}
+
+.fixed_pop a {
+    background: url(https://image.autowini.com/cdn/auction/web/images/common/ico_close_white.svg) 50% no-repeat;
+    background-size: 12px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    z-index: 10000
+}
+
+.nDetail {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 32px;
+    position: relative;
+    width: 100%
+}
+
+.nDetail .carInfoLeft {
+    float: left;
+    width: 70%
+}
+
+.nDetail .carInfoRight {
+    float: right;
+    position: relative;
+    width: 30%
+}
+
+.nDetail.carDisabled {
+    padding: 0 32px 128rem;
+    width: 100%
+}
+
+.nDetail.carDisabled .carInfoLeft {
+    margin: 0;
+    width: 100%
+}
+
+.nDetail.carDisabled .carInfoRight {
+    display: none
+}
+
+.topAlert {
+    padding-top: 24px
+}
+
+.topAlert .dropped {
+    background: #ffe1e3 url(https://image.autowini.com/resources/IMG/common/ic_dropped.png) 8px no-repeat;
+    border-radius: 4px;
+    font-size: 13px;
+    padding: 8px 12px 8px 40px;
+    text-align: left
+}
+
+.topAlert .dropped strong {
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 16px
+}
+
+.nDetail a {
+    cursor: pointer
+}
+
+.carInfoTop {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+    position: relative
+}
+
+.carInfoTop .left {
+    align-items: center;
+    display: flex;
+    text-align: left
+}
+
+.carInfoTop .left .btnList {
+    background: #fff url(https://image.autowini.com/cdn/auction/web/images/content/ico_menu.png) no-repeat 50%;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px #7890a733;
+    height: 48px;
+    width: 48px
+}
+
+.carInfoTop .left h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 16px
+}
+
+.mobTitle {
+    padding: 24px 32px 0
+}
+
+.mobTitle dt {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px
+}
+
+.mobTitle dd {
+    text-align: right
+}
+
+.mobTitle dd span {
+    color: #909090;
+    margin-right: 8px
+}
+
+.mobTitle dd b {
+    color: #dd1f26;
+    font-size: 22px;
+    font-weight: 700
+}
+
+.carInfoTop .right {
+    display: flex;
+    justify-content: flex-end
+}
+
+.carInfoTop .right .btnShare>button,.carInfoTop .right>button {
+    background-color: #fff;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px #7890a733;
+    height: 48px;
+    margin-left: 4px;
+    width: 48px
+}
+
+.carInfoTop .right>button em {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 28px
+}
+
+.carInfoTop .right .reviewCntView {
+    background-image: url(https://image.autowini.com/cdn/auction/web/images/content/bg_view.png);
+    background-position: center 8px;
+    background-size: 1.6rem
+}
+
+.carInfoTop .right .btnWatch {
+    background-image: url(https://image.autowini.com/cdn/auction/web/images/content/btn_like_w40.png);
+    background-position: center 8px;
+    background-size: 1.6rem
+}
+
+.carInfoTop .right .btnWatch.on {
+    background-image: url(https://image.autowini.com/cdn/auction/web/images/content/btn_like_w40_on.png);
+    background-size: 1.6rem
+}
+
+.carInfoTop .right .btnShare {
+    position: relative
+}
+
+.carInfoTop .right .btnShare button {
+    background-image: url(https://image.autowini.com/cdn/auction/web/images/content/btn_share_w40.png)
+}
+
+.detailTop {
+    background: #fff;
+    border-bottom: 1px solid #e9e9e9
+}
+
+.detailTop b {
+    color: #101010;
+    text-align: left
+}
+
+.detailTop .right {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.detailTop .right button {
+    background-position: center 7px;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    font-size: 11px;
+    height: 50px;
+    width: 42px
+}
+
+.detailTop .right button em {
+    display: block;
+    padding-top: 20px
+}
+
+.detailTop .right .reviewCntView {
+    background-image: url(https://image.autowini.com/cdn/auction/web/images/content/bg_view.png)
+}
+
+.detailTop .right .btnWatch {
+    background-image: url(https://image.autowini.com/cdn/auction/web/images/content/btn_like_w40.png)
+}
+
+.detailTop .right .btnWatch.on {
+    background-image: url(https://image.autowini.com/cdn/auction/web/images/content/btn_like_w40_on.png)
+}
+
+.detailTop .right .btnShare {
+    background: url(https://image.autowini.com/cdn/auction/web/images/content/btn_share_w40.png) 50% no-repeat;
+    background-size: 28px
+}
+
+.carInfoTop .right .appArea {
+    display: none;
+    padding-top: 12px;
+    position: absolute;
+    right: 0;
+    top: 47px;
+    z-index: 5
+}
+
+.carInfoTop .right .appArea.on {
+    display: block
+}
+
+.carInfoTop .right .appArea ul {
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 3px 10px #7890a733;
+    overflow: hidden;
+    padding: 0 20px 17px;
+    width: 205px
+}
+
+.carInfoTop .right .appArea li {
+    float: left;
+    padding-top: 1rem;
+    text-align: center;
+    width: 50%
+}
+
+.carInfoTop .right .appArea li span {
+    font-size: .8em
+}
+
+.carInfoTop .right .appArea .kakao button {
+    background: url(https://image.autowini.com/cdn/auction/web/images/content/kakao.png) no-repeat top;
+    padding-top: 45px
+}
+
+.carInfoTop .right .appArea .kakao span {
+    border-bottom: 1px solid #9f9f9f
+}
+
+.carInfoTop .right .appArea .whats button {
+    background: url(https://image.autowini.com/cdn/auction/web/images/content/whats.png) no-repeat top;
+    padding-top: 45px
+}
+
+.detailTop .right .btnShare:hover>.appArea {
+    display: block
+}
+
+.nDetail .carInfo {
+    overflow: hidden
+}
+
+.carInfo .tit {
+    color: #1f1f1f;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.1;
+    padding: 24px 0 16px
+}
+
+.carInfoLeft .carPhoto {
+    background: #fff;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px
+}
+
+.carPhoto .carPhotoLeft {
+    width: 63%
+}
+
+.carPhoto .carPhotoRight {
+    padding: 0 32px;
+    width: 37%
+}
+
+.currentSd img {
+    display: block;
+    width: 100%
+}
+
+.mainView {
+    border-top-left-radius: 4px
+}
+
+.mainView,.mainView ul {
+    overflow: hidden;
+    position: relative
+}
+
+.mainView ul {
+    border-bottom: 1px solid #fff;
+    width: 100%
+}
+
+.mainView .thumb {
+    background: url(https://image.autowini.com/cdn/auction/web/images/etc/photo_empty720x540.png) 50% no-repeat;
+    background-size: cover
+}
+
+.mainView .imgSection {
+    background: #000;
+    height: 32rem;
+    position: relative;
+    text-align: center;
+    width: 100%
+}
+
+.mainView .imgSection img {
+    display: block;
+    height: auto;
+    left: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%
+}
+
+.mainView .imgSection .event {
+    background-color: #e6bc5f;
+    font-size: 30px;
+    font-weight: 500;
+    left: 8px;
+    padding: 0 20px;
+    position: absolute;
+    top: 8px
+}
+
+.currentSd .secondSd {
+    position: relative
+}
+
+.currentSd .secondSd ul {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.currentSd .secondSd ul .thumb {
+    background: url(https://image.autowini.com/cdn/auction/web/images/etc/photo_empty300x180.png) 50% no-repeat;
+    background-size: cover;
+    border: 1px solid #fff;
+    float: left;
+    height: 3.65rem;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    width: 10%
+}
+
+.currentSd .secondSd ul .thumb img {
+    display: block;
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%
+}
+
+.currentSd .secondSd ul li:after {
+    background-color: transparent;
+    bottom: 0;
+    content: "";
+    cursor: pointer;
+    display: block;
+    height: 98%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 99%;
+    z-index: 1
+}
+
+.currentSd .secondSd ul li.on:after {
+    background-color: transparent;
+    border: 2px solid #dd1f26;
+    box-sizing: border-box;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%
+}
+
+.tipboxWrap {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: -30px;
+    transform: translate(-50%);
+    width: 100%;
+    z-index: 500
+}
+
+.tipboxWrap .com_tipbox {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 5px #acadaf70;
+    color: #373a3d;
+    display: none;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -.2px;
+    padding: 8px 12px
+}
+
+.tipboxWrap .com_tipbox:after {
+    background: #fff;
+    content: "";
+    display: inline-block;
+    height: 16px;
+    left: 50%;
+    margin-left: -8px;
+    position: absolute;
+    top: 28px;
+    transform: rotate(45deg);
+    width: 16px
+}
+
+.secondSd .com_tipbox {
+    display: none
+}
+
+.secondSd:hover .com_tipbox {
+    display: inline-block;
+    line-height: 26px
+}
+
+.secondSd .com_tipbox strong {
+    color: #dd1f26;
+    font-weight: 700
+}
+
+.secondSd .com_tipbox .icon--3341 {
+    color: #616568;
+    font-size: 11px;
+    margin: -2px 0 0 12px
+}
+
+.com_tipbox .icofont_label {
+    background: url(https://image.autowini.com/resources/IMG/common/ico_del_grey_w24.svg) no-repeat 50%;
+    background-size: 12px;
+    display: block;
+    height: 14px;
+    margin-left: 8px;
+    width: 14px
+}
+
+.com_tipbox .key {
+    background: #e5e7e9 url(https://image.autowini.com/cdn/auction/web/images/content/ico_keyboard.png) no-repeat 50%;
+    border-radius: 4px;
+    display: inline-block;
+    height: 26px;
+    vertical-align: middle;
+    width: 26px
+}
+
+.com_tipbox .keyR {
+    margin: 0 4px 0 2px;
+    transform: rotate(180deg)
+}
+
+.zoomWindow {
+    border: 1px solid #101010!important
+}
+
+.youtube_video_dimm {
+    background: #000;
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100
+}
+
+.mainView .slick-slide {
+    width: 100%
+}
+
+.mainView .slick-arrow {
+    display: block;
+    height: 53px;
+    margin-top: -23px;
+    position: absolute;
+    text-indent: -9999px;
+    top: 50%;
+    width: 46px;
+    z-index: 101
+}
+
+.mainView .slick-prev {
+    background: url(https://image.autowini.com/cdn/auction/web/images/content/left_arrow.png) no-repeat 50% #00000080;
+    left: 0;
+    position: absolute
+}
+
+.mainView .slick-next {
+    background: url(https://image.autowini.com/cdn/auction/web/images/content/right_arrow.png) no-repeat 50% #00000080;
+    position: absolute;
+    right: 0
+}
+
+.mainView .top {
+    align-items: flex-start;
+    display: flex;
+    left: 0;
+    padding: 16px;
+    position: absolute;
+    top: 0
+}
+
+.mainView .top span+span {
+    margin-left: 8px
+}
+
+.mainView .mkNew {
+    background: #dd1f26;
+    border-radius: 3px;
+    color: #fff;
+    padding: 0 6px
+}
+
+.mainView .hotLot,.mainView .mkNew {
+    display: inline-block;
+    font-size: 15px;
+    height: 24px;
+    line-height: 24px
+}
+
+.mainView .hotLot {
+    background: #fff url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none'%3E%3Cpath fill='%23E82020' d='M8 1.714c3.429 0 6.286 2.857 6.286 6.286S11.429 14.286 8 14.286 1.714 11.428 1.714 8C1.714 4.57 4.571 1.714 8 1.714M8 .571A7.414 7.414 0 0 0 .571 8 7.414 7.414 0 0 0 8 15.428 7.414 7.414 0 0 0 15.429 8 7.414 7.414 0 0 0 8 .57'/%3E%3Cpath stroke='%23E82020' stroke-linecap='round' stroke-linejoin='round' d='M7.771 4.571V8.8l2.743 2.171'/%3E%3C/svg%3E") 5px no-repeat;
+    border-radius: 2px;
+    color: #dd1f26;
+    font-weight: 500;
+    padding: 0 6px 0 24px
+}
+
+.mainView .mkHotItem {
+    background: #101010;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1
+}
+
+.mainView .mkHotItem:before {
+    background: url(https://image.autowini.com/cdn/auction/web/images/common/ic_hot.svg) 50% no-repeat;
+    background-size: 18px;
+    content: "";
+    display: inline-block;
+    height: 20px;
+    margin-right: 6px;
+    vertical-align: middle;
+    width: 20px
+}
+
+.mainView .mkLast {
+    background: #fff url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none'%3E%3Cpath fill='%23FFBC44' d='M2.167 21.5 8.333 16 13 24l-7.333 3.167z'/%3E%3Cpath fill='%23fff' d='M9.333 15.667 20.167 4.833l9.5 15.334-16 3.833z'/%3E%3Cpath fill='%23000' fill-opacity='.1' d='M3 24.333 26 14l3.833 6-15 4.333-8.666 2.834z'/%3E%3Cpath stroke='%23000' stroke-width='1.5' d='m9.895 14.936 8.81-9.085a2 2 0 0 1 3.141.348l7.177 11.722a2 2 0 0 1-1.29 3l-12.796 2.724q-.104.021-.2.065l-6.995 3.136A3 3 0 0 1 3.857 25.5l-1.15-2.194a3 3 0 0 1 .905-3.827l6.15-4.427q.071-.052.133-.116Z'/%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-width='1.5' d='m9.333 16.167 4.167 7.5c-.111 1.666 1.2 4.733 7.333 3.666'/%3E%3C/svg%3E") 5px no-repeat;
+    background-size: 20px;
+    border-radius: 2px;
+    color: #303030;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    height: 24px;
+    letter-spacing: -.3px;
+    line-height: 24px;
+    padding: 0 6px 0 28px
+}
+
+.mainView .badge_rental {
+    display: none;
+    font-size: 18px;
+    padding: 4px 46px;
+    position: absolute;
+    right: -35px;
+    top: 20px;
+    transform: rotate(45deg);
+    z-index: 10
+}
+
+.mainView .mvBottom {
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    padding: 16px;
+    position: absolute;
+    width: 100%
+}
+
+.mainView .mvBottom>div {
+    flex: 1
+}
+
+.mvBottom .left {
+    align-items: center;
+    display: flex
+}
+
+.mvBottom .center {
+    text-align: Center
+}
+
+.mvBottom .cnt {
+    display: inline-block
+}
+
+.mvBottom .cnt,.mvBottom .mk_roro {
+    background-color: #282828cc;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px
+}
+
+.mvBottom .mk_roro {
+    display: none;
+    margin-right: 4px
+}
+
+.mvBottom .btn_video {
+    background: #282828cc url(https://image.autowini.com/resources/IMG/common/ico_videoStock.svg) left 8px center no-repeat;
+    background-size: 18px;
+    padding: 0 10px 0 32px
+}
+
+.mvBottom .btn_album,.mvBottom .btn_video {
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 6px
+}
+
+.mvBottom .btn_album {
+    background: #282828cc url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none'%3E%3Cpath fill='%23fff' d='M8.5 2a.5.5 0 1 0 0 1h3.793L3 12.293V8.5a.5.5 0 1 0-1 0v4.9a.6.6 0 0 0 .6.6h4.9a.5.5 0 0 0 0-1H3.707L13 3.707V7.5a.5.5 0 0 0 1 0V2.6a.6.6 0 0 0-.6-.6z'/%3E%3C/svg%3E") 50% no-repeat;
+    padding: 0 16px
+}
+
+.mvBottom .right {
+    text-align: right
+}
+
+.carInfoLeft .inspected {
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    margin-top: 24px;
+    padding: 8px 32px 16px;
+    text-align: left
+}
+
+.carInfoLeft .inspected .tit img {
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: middle
+}
+
+.inspected .inspected_mark {
+    padding: 48px 0;
+    text-align: center
+}
+
+.inspected .inspected_mark .mark_info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px
+}
+
+.inspected .inspected_mark .mark_info li {
+    color: #888;
+    font-size: 13px;
+    margin: 0 8px
+}
+
+.inspected .inspected_mark .mark_info li b {
+    background: #b3b3bf;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 2px;
+    text-align: center;
+    vertical-align: middle;
+    width: 18px
+}
+
+.inspected .inspected_mark .mark_info li .wind {
+    font-size: 18px;
+    line-height: 22px
+}
+
+.inspected .car_blueprint {
+    height: 311px;
+    margin: 0 auto;
+    position: relative;
+    width: 510px
+}
+
+.car_blueprint ul {
+    height: 311px;
+    position: absolute;
+    width: 106px
+}
+
+.car_blueprint ul li {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 0
+}
+
+.car_blueprint ul li.on {
+    display: block
+}
+
+.car_blueprint .p0101_0107 {
+    left: 0;
+    top: 0
+}
+
+.car_blueprint .p0201_0205 {
+    left: 107px;
+    top: 0;
+    width: 134px
+}
+
+.car_blueprint .p0301_0317 {
+    left: 255px;
+    top: 0;
+    width: 137px
+}
+
+.car_blueprint .p0401_0407 {
+    left: 404px;
+    top: 0
+}
+
+.box_checksheet {
+    margin-top: 20px
+}
+
+.box_checksheet label {
+    margin-right: 10px
+}
+
+.inspected .printinfo table {
+    width: 100%
+}
+
+.inspected .printinfo td {
+    border: 1px solid #e9e9e9;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 4px 8px;
+    vertical-align: middle;
+    word-break: break-word
+}
+
+.inspected .printinfo .print_tit {
+    background: #f6f6f6;
+    color: #303030;
+    font-size: 12px;
+    font-weight: 700;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle
+}
+
+.inspected .printinfo .subprint_bg {
+    background: #fff;
+    text-align: left
+}
+
+.inspected .printinfo ul {
+    display: flex
+}
+
+.inspected .printinfo li {
+    margin-right: 16px
+}
+
+.inspected .printinfo .significantend {
+    line-height: 1.7;
+    padding: 8px
+}
+
+.inspected .red {
+    color: #dd1f26;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 24px 0 16px
+}
+
+.inspected .btnInspected {
+    background: #101010;
+    border-radius: 3px;
+    color: #fff;
+    display: none;
+    font-size: 14px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    width: 100%
+}
+
+.chk_Box {
+    margin-bottom: 10px
+}
+
+.carInfoLeft .lotteOptionInfo {
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    margin-top: 24px;
+    padding: 8px 32px 16px;
+    text-align: left
+}
+
+.lotteOptionInfo ul {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(5,1fr);
+    padding: 1rem 0
+}
+
+.lotteOptionInfo li {
+    opacity: .2;
+    text-align: center
+}
+
+.lotteOptionInfo li.on {
+    opacity: 1
+}
+
+.lotteOptionInfo li span {
+    display: block;
+    font-size: .825rem;
+    font-weight: 500;
+    margin-top: .75rem
+}
+
+.lotteOptionInfo .otherOption {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5,1fr);
+    margin-top: 1rem
+}
+
+.lotteOptionInfo .otherOption .option {
+    background: #f5f5f5;
+    padding: .5rem 1rem
+}
+
+.lotteOptionInfo .otherOption .option span {
+    color: #303030;
+    display: block;
+    font-weight: 500;
+    margin: .325rem 0
+}
+
+.carInfoLeft .lotteAuctionInspected {
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    margin-top: 24px;
+    padding: 8px 32px 16px;
+    text-align: left
+}
+
+.lotteAuctionInspected .markInfo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1rem 0 2rem
+}
+
+.lotteAuctionInspected .markInfo li {
+    color: #888;
+    font-size: 13px
+}
+
+.lotteAuctionInspected .markInfo li b {
+    background: #b3b3bf;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 2px;
+    text-align: center;
+    vertical-align: middle;
+    width: 18px
+}
+
+.lotteAuctionInspected .car_blueprint {
+    position: relative;
+    text-align: center
+}
+
+.lotteAuctionInspected .detailInfo table {
+    margin: 2rem 0 1rem;
+    width: 100%
+}
+
+.lotteAuctionInspected .detailInfo td {
+    border: 1px solid #e9e9e9;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 4px 8px;
+    vertical-align: middle;
+    word-break: break-word
+}
+
+.lotteAuctionInspected .detailInfo .print_tit {
+    background: #f6f6f6;
+    color: #303030;
+    font-size: 12px;
+    font-weight: 700;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle
+}
+
+#clear_All {
+    margin-left: 20px
+}
+
+.carPhotoRight .infoArea {
+    text-align: left
+}
+
+.infoArea .imprint {
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    padding: .7rem 16px
+}
+
+.infoArea .imprint strong {
+    color: #606060;
+    display: block;
+    margin-bottom: 4px
+}
+
+.infoArea .imprint p {
+    color: #909090;
+    font-size: .8rem
+}
+
+.textList .infoBox {
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 8px 16px 4px
+}
+
+.textList dl {
+    border-bottom: 1px solid #fff;
+    display: flex;
+    padding: 6px 0
+}
+
+.textList dl:last-child {
+    border-bottom: 0
+}
+
+.textList dt {
+    color: #606060;
+    width: 8.5rem
+}
+
+.textList dd {
+    color: #202020;
+    flex: 4;
+    position: relative
+}
+
+.textList .retail {
+    overflow: hidden
+}
+
+.textList .retail .btnChk a {
+    background: url(https://image.autowini.com/cdn/auction/web/images/content/ic_link.svg) 100% no-repeat;
+    color: #007aff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 2px 10px 2px 0;
+    text-decoration: underline
+}
+
+.infoArea .btnPainting {
+    margin: 16px 0
+}
+
+.infoArea .btnPainting button {
+    background: linear-gradient(271deg,#082a58,#07479b);
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 16px;
+    position: relative;
+    text-align: left;
+    width: 100%
+}
+
+.infoArea .btnPainting button:before {
+    background: url(https://image.autowini.com/cdn/auction/web/images/common/ic_inspected_blueWhite.svg) 50% no-repeat;
+    background-size: 16px;
+    content: "";
+    display: inline-block;
+    height: 16px;
+    margin: -4px 6px 0 0;
+    vertical-align: middle;
+    width: 16px
+}
+
+.infoArea .btnPainting button img {
+    height: 12px;
+    position: absolute;
+    right: 16px;
+    top: 15px;
+    transform: rotate(180deg)
+}
+
+.infoArea .comment {
+    background: #f6f6f6;
+    border-radius: 8px;
+    margin-top: 16px;
+    padding: 16px
+}
+
+.infoArea .comment strong {
+    background: url(https://image.autowini.com/cdn/auction/web/images/content/ico_comment.png) no-repeat left top 3px;
+    background-size: 16px;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 4px;
+    padding-left: 24px
+}
+
+.infoArea .comment textarea {
+    background: #f6f6f6;
+    box-sizing: border-box;
+    color: #333;
+    margin-top: 8px;
+    padding: 0
+}
+
+.infoArea .comment textarea.on {
+    overflow-y: scroll
+}
+
+.infoArea .comment [placeholer] {
+    color: #a0a0a0
+}
+
+.carInfo .section {
+    margin-top: 48px;
+    text-align: left
+}
+
+.section .inner {
+    background: #fff;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px
+}
+
+.section .carTit {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px
+}
+
+.section .carTit b {
+    color: #1f1f1f;
+    font-size: 24px;
+    font-weight: 700
+}
+
+.section .carTit .more {
+    background: url(https://image.autowini.com/resources/IMG/common/ico_next_red.png) right 4px center no-repeat;
+    background-size: 1rem;
+    color: #dd1f26;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: .9;
+    padding-right: 24px
+}
+
+.carInfoHowToBuy .inner ul {
+    display: flex;
+    padding: 2.3rem 16px;
+    text-align: center
+}
+
+.carInfoHowToBuy .inner li {
+    cursor: pointer;
+    flex: 1;
+    font-weight: 500;
+    padding: 0 .5rem;
+    position: relative
+}
+
+.carInfoHowToBuy .inner li:before {
+    border-top: 1px dashed #eaeaea;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    top: .8rem;
+    width: 100%
+}
+
+.carInfoHowToBuy .inner li:last-child:before {
+    display: none
+}
+
+.carInfoHowToBuy .inner li span {
+    background: #fff;
+    border: 1px solid #101010;
+    border-radius: 50%;
+    display: block;
+    font-size: .8rem;
+    font-weight: 700;
+    height: 1.6rem;
+    line-height: 1.5rem;
+    margin: 0 auto 1rem;
+    position: relative;
+    width: 1.6rem;
+    z-index: 1
+}
+
+.carInfoHowToBuy .inner li:hover a {
+    color: #dd1f26
+}
+
+.carInfoHowToBuy .inner li:hover span {
+    border-color: #dd1f26;
+    color: #dd1f26
+}
+
+.aucLinkList {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem
+}
+
+.aucLinkList li {
+    flex: 1
+}
+
+.aucLinkList li+li {
+    margin-left: 1.5rem
+}
+
+.aucLinkList li a {
+    background: #fff;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    display: block;
+    height: 14rem;
+    padding: 1.3rem;
+    position: relative
+}
+
+.aucLinkList li a:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 1px 3px #0000001a
+}
+
+.aucLinkList li .nth {
+    background: #ffed93;
+    border: 1px solid #d4c06a;
+    border-radius: .2rem;
+    color: #654c00;
+    display: inline-block;
+    font-size: .7rem;
+    margin-bottom: 8px;
+    padding: 0 .2rem
+}
+
+.aucLinkList .auc1 a {
+    background: #fff 
+}
+
+.aucLinkList .auc2 .nth {
+    background: #ffedee;
+    border-color: #f7afb3;
+    color: #e0000c
+}
+
+.aucLinkList .auc2 a {
+    background: #fff 
+}
+
+.aucLinkList .auc3 .nth {
+    background: #d2e9ff;
+    border-color: #9bceff;
+    color: #0080ff
+}
+
+.aucLinkList .auc3 a {
+    background: #fff 
+}
+
+.aucLinkList .auc4 .nth {
+    background: #eee;
+    border-color: #ccc;
+    color: #101010
+}
+
+.aucLinkList .auc4 a {
+    background: #fff 
+}
+
+.aucLinkList .auc5 .nth {
+    background: #fff;
+    border-color: #ccc;
+    color: #101010
+}
+
+.aucLinkList .auc5 a {
+    background: #fff
+}
+
+.aucLinkList li strong {
+    color: #303030;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.2
+}
+
+.aucLinkList li strong em {
+    color: #505050;
+    display: block;
+    font-size: 15px;
+    font-weight: 500
+}
+
+.aucLinkList li .date {
+    bottom: 0;
+    padding: 1.3rem;
+    position: absolute;
+    right: 0
+}
+
+.aucLinkList li .date b {
+    color: #e9e9e9;
+    display: block;
+    font-size: 2.3rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1;
+    text-align: right
+}
+
+.aucLinkList li .date em {
+    font-weight: 300
+}
+
+.carInfoHowToBid .inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem
+}
+
+.carInfoHowToBid .right {
+    margin-left: 2.5rem;
+    position: relative
+}
+
+.carInfoHowToBid .right dt {
+    color: #1f1f1f;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: .5rem
+}
+
+.carInfoHowToBid .right dd {
+    color: #707070;
+    line-height: 1.6;
+    margin-top: .5rem
+}
+
+.carInfoHowToBid .right dl+dl {
+    bottom: 0;
+    left: 0;
+    position: absolute
+}
+
+.carInfoHowToBid .right a {
+    color: #0084f1;
+    display: block;
+    text-decoration: underline
+}
+
+.carInfoHowToBid .btnShipping {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem
+}
+
+.btnShipping a {
+    align-items: center;
+    background: #fff url(https://image.autowini.com/cdn/auction/web/images/content/ico_arrow70.svg) right 1.5rem center no-repeat;
+    background-size: 8px;
+    border: 1px solid #e9e9e9;
+    border-radius: .5rem;
+    display: flex;
+    flex: 1;
+    padding: 1.2rem 3rem 1.2rem 1.2rem
+}
+
+.btnShipping a:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 1px 3px #0000001a
+}
+
+.btnShipping a dl,.btnShipping a+a {
+    margin-left: 1.5rem
+}
+
+.btnShipping a dt {
+    color: #303030;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: .3rem
+}
+
+.btnShipping a dd {
+    color: #707070
+}
+
+.carInfoFaq .inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0
+}
+
+.carInfoFaq .inner ul {
+    flex: 0 0 50%;
+    padding: 0 2.5rem
+}
+
+.carInfoFaq .inner ul+ul {
+    border-left: 1px solid #f5f5f5
+}
+
+.carInfoFaq .inner li+li {
+    margin-top: 2rem
+}
+
+.carInfoFaq .inner strong {
+    color: #303030;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: .5rem
+}
+
+.carInfoFaq .inner span {
+    color: #606060;
+    display: block;
+    line-height: 1.5
+}
+
+.carSwiper {
+    position: relative
+}
+
+.carSwiper .bigDataLoading {
+    padding-top: 50px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%
+}
+
+.carSwiper .bigDataLoading img {
+    display: block;
+    margin: 0 auto;
+    opacity: .3;
+    width: 50px
+}
+
+.carSwiper .img {
+    align-items: center;
+    border-radius: 4px 4px 0 0;
+    display: flex;
+    height: 196px;
+    overflow: hidden;
+    position: relative;
+    width: 100%
+}
+
+.carSwiper .img img {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%
+}
+
+.carSwiper .img .new {
+    font-size: 0;
+    left: 8px;
+    position: absolute;
+    top: 8px
+}
+
+.carSwiper .img .new:after {
+    background: url(https://image.autowini.com/resources/IMG/common/iconNew.svg) 50% no-repeat;
+    background-size: cover;
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 32px
+}
+
+.carSwiper .img .event {
+    background-color: #e6bc5f;
+    font-weight: 500;
+    left: 8px;
+    padding: 0 20px;
+    position: absolute;
+    top: 8px
+}
+
+.carSwiper .img .badge {
+    align-items: center;
+    bottom: 8px;
+    display: flex;
+    left: 8px;
+    position: absolute
+}
+
+.carSwiper .img .badge span {
+    background: #121212b3;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 200;
+    line-height: 1;
+    padding: 6px 10px
+}
+
+.carSwiper .img .badge .video {
+    margin-right: 4px;
+    padding: 4px 5px 3px
+}
+
+.carSwiper .img .badge .video:after {
+    background: url(https://image.autowini.com/resources/IMG/common/ico_videoStock.svg) 50% no-repeat;
+    content: "";
+    display: inline-block;
+    height: 12px;
+    width: 16px
+}
+
+.carSwiper .info {
+    background: #fff;
+    border: 1px solid #e4eaef;
+    border-radius: 0 0 4px 4px;
+    padding: 12px
+}
+
+.carSwiper .info dt {
+    color: #0e0c0c;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    overflow: hidden;
+    padding-right: 26px;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.carSwiper .info dt img {
+    height: 18px;
+    position: absolute;
+    right: 0;
+    top: 3px
+}
+
+.carSwiper .info .damage span {
+    background: #f7f7f7;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    color: #707578;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    padding: 3px 8px
+}
+
+.carSwiper .info .damage .hit {
+    background: #e7f4ff;
+    border: 1px solid #0075d6;
+    color: #0075d6
+}
+
+.carSwiper .info .damage em {
+    color: #9b9292;
+    font-size: 11px
+}
+
+.carSwiper .infoDetail {
+    align-items: flex-end;
+    display: flex
+}
+
+.carSwiper .infoDetail ul {
+    flex: 1;
+    margin-top: 8px
+}
+
+.carSwiper .infoDetail li {
+    color: #787070;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 2px 6px 2px 28px
+}
+
+.carSwiper .infoDetail .info1 {
+    background: url(https://image.autowini.com/resources/IMG/common/new/ico_cc.svg) 0 no-repeat
+}
+
+.carSwiper .infoDetail .info2 {
+    background: url(https://image.autowini.com/resources/IMG/common/new/ico_engine.svg) 0 no-repeat
+}
+
+.carSwiper .infoDetail .info3 {
+    background: url(https://image.autowini.com/resources/IMG/common/new/ico_meter.svg) 0 no-repeat
+}
+
+.carSwiper .infoDetail .info4 {
+    background: url(https://image.autowini.com/resources/IMG/common/new/ico_handle.svg) 0 no-repeat
+}
+
+.carSwiper .infoDetail .price {
+    flex: 1;
+    text-align: right
+}
+
+.carSwiper .infoDetail .price span {
+    color: #9b9292;
+    font-size: 11px;
+    letter-spacing: .2px
+}
+
+.carSwiper .infoDetail .price b {
+    color: #0e0c0c;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -.4px;
+    line-height: 1.1;
+    margin-bottom: 8px
+}
+
+.carSwiper .infoDetail .price button {
+    background: #dd1f26;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: .2px;
+    padding: 4px 8px
+}
+
+.carSwiper .swiper-button-next {
+    background: url(https://image.autowini.com/resources/IMG/common/new/btn_swiprer_next.svg) 50% no-repeat;
+    background-size: 35px;
+    right: -15px
+}
+
+.carSwiper .swiper-button-next,.carSwiper .swiper-button-prev {
+    border-radius: 50%;
+    box-shadow: 0 1px 10px #00000026;
+    height: 34px;
+    margin: 0;
+    position: absolute;
+    top: 230px;
+    width: 34px
+}
+
+.carSwiper .swiper-button-prev {
+    background: url(https://image.autowini.com/resources/IMG/common/new/btn_swiprer_prev.svg) 50% no-repeat;
+    background-size: 35px;
+    left: -15px
+}
+
+.carSwiper .swiper-button-next:after,.carSwiper .swiper-button-prev:after {
+    display: none
+}
+
+.carSwiper .swiper-button-disabled {
+    opacity: 0
+}
+
+.carInfoAbout a {
+    align-items: center;
+    background: #0a2b46 url(https://image.autowini.com/cdn/auction/web/images/content/ico_arrowFF.svg) right 1.5rem center no-repeat;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem
+}
+
+.carInfoAbout dl {
+    width: 50%
+}
+
+.carInfoAbout dt {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: .4rem
+}
+
+.carInfoAbout dd {
+    color: #ffffffb3;
+    font-size: .8rem;
+    font-weight: 300;
+    letter-spacing: .3px
+}
+
+.carInfoAbout ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 2rem;
+    width: 50%
+}
+
+.carInfoAbout li {
+    margin: 0 4px
+}
+
+.carInfoAbout li strong {
+    color: #fff;
+    font-size: 34px;
+    font-weight: 700
+}
+
+.carInfoAbout li span {
+    color: #ffffffe6;
+    display: block
+}
+
+.carInfoReview .carReviews {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    padding-bottom: 2rem;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    width: 100%
+}
+
+.carInfoReview .reviewDetailList {
+    align-items: flex-start;
+    background: #fff;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    display: flex;
+    flex-shrink: 0;
+    left: 0;
+    margin: 0 5px;
+    overflow: hidden;
+    padding: 16px 0;
+    position: relative;
+    transition: left .15s;
+    width: calc(50% - 10px)
+}
+
+.reviewDetailList .video {
+    background: #101010;
+    flex: 1;
+    height: 8rem;
+    position: relative
+}
+
+.reviewDetailList .video img {
+    display: block;
+    height: auto;
+    left: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%
+}
+
+.reviewDetailList .imgText {
+    flex: 2;
+    padding: 0 1.5rem
+}
+
+.reviewDetailList .imgText .videoInfo {
+    margin-bottom: 10px;
+    overflow: hidden
+}
+
+.reviewDetailList .videoInfo .best {
+    background: url(../images/content/ico_like_gray.png) no-repeat 0;
+    background-size: 16px;
+    cursor: pointer;
+    margin-right: 15px;
+    padding-left: 24px
+}
+
+.reviewDetailList .videoInfo .best span {
+    color: #707070;
+    font-size: 14px;
+    margin-right: 10px
+}
+
+.reviewDetailList .videoInfo .comment {
+    background: url(../images/content/ico_comment02.png) no-repeat 50%;
+    background-size: 16px;
+    display: inline-block;
+    height: 20px;
+    margin-left: 10px;
+    position: relative;
+    vertical-align: middle;
+    width: 20px
+}
+
+.reviewDetailList .videoInfo span {
+    line-height: 1.5;
+    margin-right: 30px;
+    position: relative
+}
+
+.reviewDetailList .videoInfo span img {
+    display: inline-block;
+    height: 15px;
+    margin-right: 4px;
+    vertical-align: middle
+}
+
+.reviewDetailList .videoInfo>span:after {
+    background: #ddd;
+    content: "";
+    display: inline-block;
+    height: 12px;
+    left: -15px;
+    position: absolute;
+    top: 3px;
+    width: 1px
+}
+
+.reviewDetailList .videoInfo span.flag:after {
+    content: none
+}
+
+.reviewDetailList .viewIconBox .bestIcon {
+    background: #e82020;
+    color: #fff;
+    display: none;
+    font-size: 12px;
+    height: 18px;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 0 26px
+}
+
+.reviewDetailList .viewIconBox .bestIcon.on {
+    display: inline-block
+}
+
+.reviewDetailList .viewIconBox .youtubeIcon {
+    background: url(https://image.autowini.com/resources/IMG/common/ico_video.png) no-repeat 50%;
+    background-size: contain;
+    display: inline-block;
+    height: 18px;
+    vertical-align: middle;
+    width: 0;
+    width: 24px
+}
+
+.reviewDetailList.best .viewIconBox .bestIcon {
+    display: inline-block
+}
+
+.reviewDetailList.youtube .viewIconBox .youtubeIcon {
+    width: 26px
+}
+
+.reviewDetailList .contentBox {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    color: #707070;
+    line-height: 1.5em;
+    max-height: 3em;
+    overflow: hidden
+}
+
+.carReviews_pagination {
+    bottom: -8px;
+    display: flex;
+    gap: 5px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%)
+}
+
+.carReviews_pagination>li {
+    color: #e9e9e9;
+    cursor: pointer;
+    font-size: 30px
+}
+
+.carReviews_pagination>li.active {
+    color: #dd1f26
+}
+
+.carInfoRight .textList dl {
+    align-items: center;
+    border: none;
+    justify-content: space-between
+}
+
+.carInfoRight .textList dt {
+    width: auto
+}
+
+.carInfoRight .textList dd {
+    flex: 1;
+    font-weight: 500;
+    margin-left: 16px;
+    text-align: right
+}
+
+.carInfoRight .carBid {
+    background: #fff;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    padding: 0 32px 24px;
+    text-align: left
+}
+
+.carBid .tit {
+    align-items: center;
+    display: flex;
+    justify-content: space-between
+}
+
+.carBid .saleType {
+    color: #909090;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 17px
+}
+
+.carBid .infoBox dt {
+    background-position: left 0;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    padding-left: 24px
+}
+
+.carBid .schedule dt {
+    background-image: url(https://image.autowini.com/resources/IMG/common/ico_bid.svg)
+}
+
+.carBid .date dt {
+    background-image: url(https://image.autowini.com/resources/IMG/common/ico_date.svg)
+}
+
+.carBid .time dt {
+    background-image: url(https://image.autowini.com/resources/IMG/common/ico_clock.svg)
+}
+
+.carBid .bidderCountryFlag dt {
+    background-image: url(https://image.autowini.com/resources/IMG/common/ico_located.svg)
+}
+
+.carBid .bidderCountryFlag dd img {
+    box-shadow: 0 1px 3px #00000026;
+    display: inline-block;
+    height: .9rem;
+    vertical-align: middle
+}
+
+.carBid .bidderCountryFlag dd img+img {
+    margin-left: 6px
+}
+
+.carBid .bidder dt {
+    background-image: url(https://image.autowini.com/resources/IMG/common/ico_bidder.svg)
+}
+
+.carBid .timeLeft {
+    background: #1f1f1fc2;
+    border-radius: 4px;
+    color: #fff;
+    margin: 8px 0;
+    padding: 0 16px
+}
+
+.carBid .timeLeft dt {
+    color: #fff
+}
+
+.carBid .timeLeft dd {
+    color: #fffc;
+    font-size: 12px;
+    font-weight: 400
+}
+
+.carBid .timeLeft dd span {
+    color: #fff;
+    font-size: 14px;
+    margin: 0 1px 0 2px
+}
+
+.carBid .finish {
+    background: #0003;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin: 8px 0;
+    padding: 8px 0;
+    text-align: center
+}
+
+.carBid .finish.progress {
+    background: #ffe4e4;
+    border: 1px solid rgba(224,0,12,.2);
+    color: #dd1f26
+}
+
+.carBid .cost .pointFt {
+    color: #dd1f26;
+    font-size: 18px;
+    font-weight: 800
+}
+
+.carBid .cost .pointFt em {
+    color: #909090;
+    display: block;
+    font-size: 11px;
+    font-weight: 400
+}
+
+.carBid .maxBid {
+    padding: 8px 0
+}
+
+.carBid .maxBid span {
+    color: #a0a0a0;
+    display: block;
+    font-size: 11px;
+    font-weight: 400;
+    padding-top: 4px
+}
+
+.carBid .bid_option {
+    display: inline-block;
+    width: 50%
+}
+
+.bid_option .input {
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex
+}
+
+.bid_option input {
+    border: none;
+    color: #1f1f1f;
+    font-size: 18px;
+    font-weight: 800;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 12px;
+    text-align: center
+}
+
+.bid_option button {
+    font-size: 18px;
+    font-weight: 300;
+    height: 34px;
+    line-height: 1.6;
+    width: 54px
+}
+
+.bid_option button:hover {
+    background-color: #f5f5f5;
+    color: #dd1f26
+}
+
+.bid_option button.up {
+    border-left: 1px solid #ccc;
+    border-radius: 0 4px 4px 0
+}
+
+.bid_option button.down {
+    border-radius: 4px 0 0 4px;
+    border-right: 1px solid #ccc
+}
+
+.bid_option.disabledBox .input {
+    opacity: .3;
+    pointer-events: none
+}
+
+.carBid .btn_area {
+    margin-top: 8px
+}
+
+.carBid .btn_area button {
+    border-radius: 4px
+}
+
+.carBid .notiArea {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px
+}
+
+.carBid .notiArea .left {
+    color: #979ba1;
+    font-size: 13px;
+    margin-right: 8px;
+    width: 65%
+}
+
+.carBid .notiArea button {
+    color: #0b83e3;
+    text-align: right;
+    text-decoration: underline
+}
+
+.carBid .notiArea span {
+    display: inline-block;
+    margin: 1px 0 0 4px;
+    vertical-align: top
+}
+
+.carInfoCost {
+    background: #fff;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    margin-top: 24px;
+    padding: 0 32px 24px;
+    text-align: left
+}
+
+.carInfoCost .tit {
+    display: flex;
+    justify-content: space-between
+}
+
+.carInfoCost button {
+    color: #909090;
+    font-size: .9rem;
+    font-weight: 400;
+    margin-left: 8px;
+    text-align: right;
+    width: 240px
+}
+
+.carInfoCost .select_area li+li {
+    margin-top: 8px
+}
+
+.carInfoCost select {
+    background-color: #fff;
+    border-color: #e0e0e0;
+    border-radius: 3px;
+    height: 38px;
+    padding: 0 40px 0 10px;
+    width: 100%
+}
+
+.carInfoCost select:focus {
+    border-color: #101010
+}
+
+.carInfoCost .cost dl:first-child {
+    padding: 16px 0
+}
+
+.carInfoCost .cost dl:nth-child(2) {
+    border-top: 1px dashed #eaeaea;
+    padding-top: 8px
+}
+
+.carInfoCost .cost dd strong {
+    color: #303030;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+    vertical-align: middle
+}
+
+.carInfoCost .cost dd span {
+    color: #303030;
+    display: block;
+    font-size: 15px;
+    font-weight: 500
+}
+
+.carInfoCost .cost dd strong+span {
+    color: #909090;
+    font-size: .8rem;
+    font-weight: 400
+}
+
+.carInfoCost .cost .vip {
+    border: 1px solid #dd1f26;
+    border-radius: 4px;
+    color: #dd1f26;
+    display: inline-block;
+    font-size: .65rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-left: .4rem;
+    padding: .16px .15rem;
+    vertical-align: middle
+}
+
+.carInfoCost .cost a {
+    color: #909090;
+    display: block;
+    font-size: 12px;
+    font-weight: 400
+}
+
+.carInfoCost .cost a em {
+    margin: 1px 0 0 4px;
+    vertical-align: top
+}
+
+.carInfoCost .notiArea {
+    background: #f5f5f5;
+    border-radius: 2px;
+    margin-top: 16px;
+    padding: 10px 12px
+}
+
+.carInfoCost .notiArea p {
+    align-items: center;
+    color: #979ba1;
+    display: flex;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.4;
+    position: relative
+}
+
+.carInfoCost .notiArea p+p {
+    margin-top: 6px
+}
+
+.carInfoCost .notiArea p a {
+    color: #0b83e3;
+    display: inline-block;
+    text-decoration: underline
+}
+
+.carInfoCost .notiArea p span {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 2px;
+    color: #979ba1;
+    display: inline-block;
+    font-size: 10px;
+    margin: 0 2px;
+    padding: 1px 4px;
+    vertical-align: middle
+}
+
+.carInfoCost .notiArea p span:first-child {
+    margin-left: 0
+}
+
+.carInfoCost .logisLink {
+    margin-top: 16px
+}
+
+.carInfoCost .logisLink dl {
+    justify-content: center
+}
+
+.carInfoCost .logisLink dt {
+    color: gray;
+    font-size: 12px
+}
+
+.carInfoCost .logisLink dd {
+    flex: inherit
+}
+
+.carInfoCost .logisLink a {
+    border: 1px solid #f15d22;
+    border-radius: 30px;
+    color: #f15d22;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 2px 8px;
+    text-align: center
+}
+
+.carInfoRight .proxyNoti {
+    background: #fff7f7;
+    margin-top: 24px;
+    padding: 0 32px 24px
+}
+
+.carInfoRight .proxyNoti .tit {
+    color: #dd1f26
+}
+
+.carInfoRight .proxyNoti p {
+    color: gray;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4;
+    padding-left: 10px;
+    position: relative
+}
+
+.carInfoRight .proxyNoti p:before {
+    background: #909090;
+    border-radius: 3px;
+    content: "";
+    height: 2.5px;
+    left: 0;
+    position: absolute;
+    top: 6px;
+    width: 2.5px
+}
+
+.carInfoRight .proxyNoti p+p {
+    margin-top: 6px
+}
+
+.carInfoRight .fixedWrap {
+    margin-left: 32px
+}
+
+.mobBottom {
+    align-items: center;
+    background: #fff;
+    border-top: 1px solid #e9e9e9;
+    bottom: 0;
+    display: none;
+    left: 0;
+    padding: 16px;
+    position: fixed;
+    width: 100%
+}
+
+.mobBottom .btnCalculator {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29' height='29' fill='none'%3E%3Cpath stroke='%23333' stroke-width='1.5' d='M5.547 24.488c1.538 1.71 4.014 1.71 8.963 1.71 4.95 0 7.424 0 8.962-1.71 1.538-1.707 1.538-4.458 1.538-9.957s0-8.25-1.538-9.959-4.013-1.708-8.962-1.708c-4.95 0-7.425 0-8.963 1.708C4.01 6.282 4.01 9.031 4.01 14.531s0 8.25 1.537 9.957Z'/%3E%3Cpath stroke='%23333' stroke-width='1.5' d='M8.677 9.864c0-.543 0-.813.06-1.036a1.75 1.75 0 0 1 1.236-1.237c.225-.06.496-.06 1.037-.06h7c.543 0 .813 0 1.036.06a1.75 1.75 0 0 1 1.237 1.236c.06.225.06.496.06 1.037s0 .813-.06 1.036a1.75 1.75 0 0 1-1.236 1.237c-.224.06-.496.06-1.037.06h-7c-.542 0-.813 0-1.036-.06a1.75 1.75 0 0 1-1.237-1.236c-.06-.225-.06-.496-.06-1.037Z'/%3E%3Cpath fill='%23333' d='M9.843 16.864a1.167 1.167 0 1 0 0-2.333 1.167 1.167 0 0 0 0 2.333M9.843 21.53a1.167 1.167 0 1 0 0-2.333 1.167 1.167 0 0 0 0 2.334M14.51 16.864a1.167 1.167 0 1 0 0-2.333 1.167 1.167 0 0 0 0 2.333M14.51 21.53a1.167 1.167 0 1 0 0-2.333 1.167 1.167 0 0 0 0 2.334M19.176 16.864a1.167 1.167 0 1 0 0-2.333 1.167 1.167 0 0 0 0 2.333M19.176 21.53a1.167 1.167 0 1 0 0-2.333 1.167 1.167 0 0 0 0 2.334'/%3E%3C/svg%3E") 50% no-repeat;
+    border: 1px solid #e9e9e9;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 0;
+    height: 52px;
+    margin-right: 8px;
+    width: 62px
+}
+
+.mobBottom .btnPrebid {
+    border-radius: 4px;
+    margin: 0
+}
+
+.vipOnly {
+    height: calc(100vh - 206px);
+    position: relative;
+    width: 100%
+}
+
+.vipOnly dl {
+    left: 50%;
+    max-width: 520px;
+    min-width: 300px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.vipOnly dt {
+    color: #101010;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 12px
+}
+
+.vipOnly dt b {
+    font-weight: 700
+}
+
+.vipOnly dd {
+    color: #909090;
+    font-size: 17px;
+    line-height: 1.5
+}
+
+.vipOnly button {
+    background: #101010;
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    height: 45px;
+    margin: 40px auto 0;
+    width: 50%
+}
+
+.loading {
+    border-radius: 75px;
+    left: 50%;
+    margin: -75px 0 0 -75px;
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    z-index: 10040
+}
+
+.loading .loadingCover {
+    background-color: #fffc;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1
+}
+
+.loading .loading_logo {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='301' height='301' fill='none'%3E%3Cpath fill='%23101010' d='M109.321 108.285H79.622l29.699 92.149h25.969zM163.147 108.285h-25.925l27.812 92.149h25.969z'/%3E%3Cpath fill='%23DD2427' d='m191.003 108.285 13.254 51.05 16.444-51.05z'/%3E%3C/svg%3E");
+    position: relative;
+    z-index: 1005
+}
+
+.loading .loading_logo,.loading .loading_rotate {
+    background-size: 150px 150px;
+    height: 150px;
+    width: 150px
+}
+
+.loading .loading_rotate {
+    animation: spin 1s linear infinite;
+    background-image: url(./animate_rotate.BcSyclTm.png);
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1006
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+.getHelpWrap {
+    bottom: 40px;
+    position: fixed;
+    right: 32px
+}
+
+.getHelpWrap .getHelp {
+    background: #000c url(https://image.autowini.com/resources/IMG/common/ic_help.png) 28px no-repeat;
+    background-size: 22px;
+    border-radius: 53px;
+    box-shadow: 0 2px 8px #00000080;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    height: 52px;
+    line-height: 52px;
+    padding: 0 32px 0 64px;
+    z-index: 10
+}
+
+.member .section {
+    position: relative;
+    width: 100%
+}
+
+.member .section h3 img {
+    display: block;
+    margin: 0 auto 35px;
+    width: 240px
+}
+
+.member .login {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 320px
+}
+
+.member .login li {
+    margin: 15px 0;
+    position: relative
+}
+
+.member .login li input[type=password],.member .login li input[type=text] {
+    font-size: 15px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 16px
+}
+
+.member .dbl {
+    text-align: left
+}
+
+.member .dbl input[type=checkbox]+label {
+    font-size: 13px
+}
+
+.member .dbl button {
+    color: #999;
+    float: right;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 19px;
+    text-decoration: underline
+}
+
+.member .dbl button:hover {
+    font-weight: 700
+}
+
+.member .login .signup {
+    margin: 25px 0
+}
+
+.member .login .signup p {
+    padding-bottom: 8px
+}
+
+.member .login .signup a {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 15px;
+    margin-top: 15px;
+    padding: 15px 10px
+}
+
+.member .login .signup a:hover {
+    font-weight: 500
+}
+
+.member .login .signup a span {
+    color: #aaa;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 15px;
+    margin-left: 20px;
+    vertical-align: top
+}
+
+.member .error {
+    color: #e0000c;
+    display: none;
+    font-size: 12px;
+    margin-top: 8px;
+    text-align: left
+}
+
+.member .addT {
+    color: #666;
+    display: block;
+    font-size: 13px;
+    margin: 8px 0;
+    text-align: left
+}
+
+.member .result {
+    color: #000;
+    display: none;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 8px 0;
+    text-align: left
+}
+
+.member .login_limit {
+    border-bottom: 1px dashed #ccc;
+    margin: 0 auto 36px;
+    padding-bottom: 36px;
+    text-align: center
+}
+
+.member .login_limit p {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px
+}
+
+.member .login_limit .btn_area {
+    margin: 0 30px
+}
+
+.bidPwPop .btn_area {
+    margin-top: 32px
+}
+
+.bidPwPop .inputPw label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 4px
+}
+
+@media (max-width: 359px) {
+    header {
+        display:none
+    }
+
+    .member {
+        height: calc(100vh - 50px)
+    }
+
+    .ft_nav,.headerTop_title,.menu_left {
+        display: block
+    }
+
+    .filterCon {
+        position: fixed;
+        right: -360px;
+        top: 0
+    }
+
+    .listWrap .listCon {
+        width: 100%
+    }
+
+    .listWrap {
+        padding: 0 12px
+    }
+
+    .listWrap .filterChk,.listWrap .popupVisual {
+        display: none
+    }
+
+    .listWrap .resultCon {
+        padding: 16px 0 48px;
+        width: 100%
+    }
+
+    .gallery .grid>li,.wideContents .gallery .grid>li {
+        width: 100%
+    }
+
+    .listWrap .resultCon .top {
+        flex-wrap: wrap;
+        margin-bottom: 16px
+    }
+
+    .listWrap .resultCon .left {
+        margin-bottom: 12px;
+        width: 100%
+    }
+
+    .listWrap .resultCon .left span {
+        font-size: 14px
+    }
+
+    .listWrap .resultCon .right {
+        justify-content: space-between;
+        width: 100%
+    }
+
+    .nDetail {
+        padding: 0
+    }
+
+    .carInfoTop {
+        display: none
+    }
+
+    .detailTop,.mobTitle {
+        display: block!important
+    }
+
+    .mobTitle {
+        padding: 16px 16px 0
+    }
+
+    .mobTitle dd b,.mobTitle dt {
+        font-size: 20px
+    }
+
+    .mobTitle dd span {
+        font-size: 12px
+    }
+
+    .secondSd {
+        display: none
+    }
+
+    .nDetail .carInfoLeft {
+        margin-bottom: 0;
+        width: 100%
+    }
+
+    .nDetail .carInfoRight {
+        width: 100%
+    }
+
+    .nDetail .carInfoRight .fixedWrap {
+        margin: 0
+    }
+
+    .nDetail .carInfoRight .carInfoCost {
+        border: none;
+        margin: 0
+    }
+
+    .carInfoLeft .carPhoto {
+        border: none;
+        flex-wrap: wrap
+    }
+
+    .carPhoto .carPhotoLeft {
+        width: 100%
+    }
+
+    .carPhoto .carPhotoRight {
+        padding: 0 16px;
+        width: 100%
+    }
+
+    .carPhotoLeft .inspected {
+        border: 1px solid #d9d9d9;
+        border-radius: 8px;
+        margin: 24px 24px 0;
+        padding: 0 24px 24px
+    }
+
+    .mainView .imgSection {
+        height: 15rem
+    }
+
+    .mainView .slick-arrow {
+        display: none
+    }
+
+    .mainView .mvBottom {
+        padding: 8px
+    }
+
+    .mvBottom .btn_video {
+        background-color: transparent;
+        background-position: 50%;
+        background-size: cover;
+        border-radius: 30px;
+        padding: 0;
+        width: 30px
+    }
+
+    .mvBottom .btn_video span {
+        display: none
+    }
+
+    .carInfoRight .fixedWrap {
+        padding: 0 16px
+    }
+
+    .mobBottom {
+        display: flex
+    }
+
+    .carInfoCost .notiArea {
+        text-align: left
+    }
+
+    .carInfoCost .notiArea p span {
+        margin: 2px
+    }
+
+    .carInfoLeft .section {
+        margin: 0 16px 56px
+    }
+
+    .carInfoHowToBuy .inner ul {
+        display: block;
+        padding: 0;
+        text-align: left
+    }
+
+    .carInfoHowToBuy .inner li:before {
+        border-left: 1px dashed #e0e0e0;
+        height: 100%;
+        left: 12px;
+        top: 12px;
+        width: 1px
+    }
+
+    .carInfoHowToBuy .inner li {
+        padding: 12px 0
+    }
+
+    .carInfoHowToBuy .inner li a {
+        align-items: center;
+        display: flex;
+        font-size: 16px
+    }
+
+    .carInfoHowToBuy .inner li span {
+        margin: 0 12px 0 0;
+        text-align: center
+    }
+
+    .carInfoHowToBuy .inner {
+        border: none
+    }
+
+    .carInfoLeft .carInfoAbout {
+        margin: 0 0 56px
+    }
+
+    .carInfoAbout a {
+        background-position: right 1.5rem top 2.7rem;
+        border-radius: 0;
+        display: block;
+        padding: 40px 24px
+    }
+
+    .carInfoAbout dl {
+        line-height: 1.6;
+        width: 100%
+    }
+
+    .carInfoAbout dt {
+        font-size: 24px
+    }
+
+    .carInfoAbout a ul {
+        display: block;
+        margin: 24px 0 0;
+        width: 100%
+    }
+
+    .carInfoAbout a li {
+        margin: 12px 24px 0 0
+    }
+
+    .carInfoHowToBid .inner {
+        border: none;
+        display: block;
+        padding: 0
+    }
+
+    .carInfoHowToBid .inner iframe {
+        height: auto!important;
+        width: 100%!important
+    }
+
+    .carInfoHowToBid .inner .right {
+        display: block;
+        margin: 32px 0 0;
+        width: 100%
+    }
+
+    .carInfoHowToBid .inner .right dl {
+        width: 100%
+    }
+
+    .carInfoHowToBid .inner .right dl+dl {
+        margin-top: 24px;
+        position: inherit
+    }
+
+    .carInfoRight .proxyNoti,.carInfoRight .sRight {
+        border: none
+    }
+
+    .carBid .btn_area,.carBid .cost,.carBid .notiArea,.carInfoCost {
+        display: none
+    }
+
+    .carBid .tit {
+        font-size: 24px
+    }
+
+    .aucLinkListScroll {
+        overflow-y: scroll
+    }
+
+    .aucLinkListScroll .aucLinkList {
+        display: block;
+        white-space: nowrap
+    }
+
+    .aucLinkListScroll .aucLinkList li {
+        display: inline-block;
+        vertical-align: top;
+        width: 200px
+    }
+
+    .aucLinkListScroll .aucLinkList li a {
+        white-space: normal
+    }
+
+    .carInfoHowToBid .btnShipping {
+        display: block
+    }
+
+    .carInfoHowToBid .btnShipping a {
+        align-items: flex-start;
+        background-position: right top 6px;
+        background-size: 6px;
+        border: none;
+        padding: 0
+    }
+
+    .carInfoHowToBid .btnShipping a+a {
+        margin: 24px 0 0
+    }
+
+    .carInfoHowToBid .btnShipping a img {
+        width: 110px
+    }
+
+    .carInfoHowToBid .btnShipping a dl {
+        margin-left: 12px
+    }
+
+    .reviewDetailList .contentBox {
+        -webkit-line-clamp: 8;
+        max-height: 12rem
+    }
+
+    .reviewDetailList .imgText {
+        padding: 0 16px
+    }
+
+    .carInfoLeft .carInfoFaq {
+        background: #f5f5f5;
+        margin: 0;
+        padding: 56px 24px
+    }
+
+    .carInfoFaq .inner {
+        background: none;
+        border: none;
+        display: block;
+        padding: 16px 0
+    }
+
+    .carInfoFaq .inner ul {
+        padding: 0
+    }
+
+    .carInfoFaq .inner ul+ul {
+        border: none;
+        margin-top: 24px
+    }
+
+    .carInfoRight .carBid {
+        border: none;
+        padding: 0
+    }
+
+    .reviewDetailList .videoInfo>span:after {
+        display: none
+    }
+
+    .reviewDetailList .videoInfo .text02 {
+        display: block;
+        font-size: 12px;
+        margin-top: 10px
+    }
+
+    .carInfoLeft .inspected,.carInfoLeft .lotteAuctionInspected,.carInfoLeft .lotteOptionInfo {
+        margin: 0 16px 32px;
+        padding: 0 16px 8px
+    }
+
+    .lotteOptionInfo .otherOption {
+        grid-template-columns: repeat(1,1fr)
+    }
+
+    .carInfoLeft .lotteOptionInfo ul {
+        grid-template-columns: repeat(2,1fr)
+    }
+
+    .carInfoLeft .printinfo {
+        display: none
+    }
+
+    .inspected .btnInspected {
+        display: block
+    }
+
+    .inspected .inspected_mark {
+        padding: 24px 0
+    }
+
+    .inspected .inner_scroll,.lotteAuctionInspected .inner_scroll {
+        overflow-x: scroll
+    }
+
+    .inspected .mark_info {
+        flex-wrap: wrap
+    }
+
+    .inspected .inspected_mark .mark_info li {
+        margin: 3px 8px
+    }
+
+    .menu_left {
+        width: 320px
+    }
+
+    .listWrap .filterCon .inner {
+        overflow-y: scroll;
+        width: 320px
+    }
+
+    .filterCon li dt span {
+        font-size: 14px
+    }
+
+    .listWrap .resultCon .right select {
+        background-position: right -8px center;
+        font-size: 12px;
+        font-weight: 400;
+        padding: 0 16px 0 6px
+    }
+
+    .gallery .pastBid ul {
+        margin: 0 -8px
+    }
+
+    .gallery .pastBid li {
+        padding: 0 8px 30px;
+        width: 100%
+    }
+
+    .mainView .top {
+        padding: 8px
+    }
+
+    .mainView .hotLot,.mainView .mkLast,.mainView .mkNew {
+        font-size: 13px;
+        height: 20px;
+        line-height: 20px
+    }
+
+    .mainView .mkHotItem {
+        font-size: 14px;
+        height: 28px;
+        line-height: 28px;
+        padding: 0 8px
+    }
+
+    .mainView .mkHotItem:before {
+        margin-top: -4px
+    }
+
+    .loading {
+        margin: -40px 0 0 -40px
+    }
+
+    .loading .loading_logo,.loading .loading_rotate {
+        background-size: 80px 80px;
+        height: 80px;
+        width: 80px
+    }
+
+    .fixed_pop {
+        bottom: 64px;
+        padding: 0 12px;
+        width: 100%
+    }
+
+    .fixed_pop .inner {
+        height: auto;
+        line-height: 1.3;
+        padding: 8px 40px 12px
+    }
+
+    .fixed_pop .inner:before {
+        left: 18px
+    }
+
+    .fixed_pop p {
+        font-size: 13px
+    }
+
+    .fixed_pop button {
+        display: block;
+        font-size: 13px;
+        margin: 4px 0 0
+    }
+
+    .fixed_pop a {
+        height: 40px;
+        width: 40px
+    }
+
+    .topAlert {
+        padding: 0
+    }
+
+    .topAlert .dropped {
+        border-radius: 0
+    }
+
+    .getHelpWrap {
+        bottom: 96px;
+        right: 16px
+    }
+
+    .getHelpWrap .getHelp {
+        background-position: 50%;
+        font-size: 0;
+        height: 48px;
+        line-height: 48px;
+        padding: 0;
+        width: 48px
+    }
+
+    .gallery .itemList.list {
+        margin: 0 -16px
+    }
+
+    .list>li {
+        display: block;
+        gap: normal;
+        height: auto;
+        padding: 12px 12px 12px 116px
+    }
+
+    .list .img {
+        left: 12px;
+        position: absolute;
+        top: 12px
+    }
+
+    .list .img1 {
+        height: 72px;
+        width: 96px
+    }
+
+    .list .img2 {
+        display: none
+    }
+
+    .list .checkItem,.list .date,.list .info,.list .price,.list .subInfo {
+        width: auto
+    }
+
+    .list .badge {
+        bottom: -22px;
+        padding: 0
+    }
+
+    .list .badge .cnt,.list .badge .roro {
+        font-size: 11px
+    }
+
+    .gallery .list .topMark {
+        padding: 3px;
+        width: 100%
+    }
+
+    .list .mkHotLot {
+        position: relative
+    }
+
+    .list .topMark .inspected {
+        background-size: cover;
+        height: 50px;
+        width: 50px
+    }
+
+    .list .mkNew {
+        font-size: 10px;
+        height: 14px;
+        line-height: 14px;
+        padding: 0 2px
+    }
+
+    .list .info dt strong {
+        font-size: 15px;
+        margin-bottom: -8px
+    }
+
+    .list .info dt span {
+        font-size: 12px
+    }
+
+    .list .subInfo {
+        display: block;
+        margin: 0 0 4px
+    }
+
+    .list .subInfo li {
+        display: inline-block;
+        margin: 0
+    }
+
+    .list .subInfo li span {
+        display: none
+    }
+
+    .list .subInfo li em {
+        color: #606060;
+        font-size: 12px;
+        font-weight: 400
+    }
+
+    .list .subInfo li+li:before {
+        background: #d0d0d0;
+        border-radius: 3px;
+        content: "";
+        display: inline-block;
+        height: 2px;
+        margin: 0 2px;
+        vertical-align: middle;
+        width: 2px
+    }
+
+    .list .date {
+        align-items: flex-start;
+        gap: 4px;
+        justify-content: flex-end;
+        padding-top: 4px;
+        text-align: right;
+        width: 100%
+    }
+
+    .list .date .nth em {
+        font-size: 11px;
+        height: auto;
+        line-height: 1;
+        margin-top: 2px;
+        min-width: 24px;
+        width: auto
+    }
+
+    .list .time span {
+        font-size: 13px;
+        margin: 0
+    }
+
+    .list .time span+span {
+        background: none;
+        font-weight: 500;
+        margin-top: 4px;
+        padding: 0
+    }
+
+    .list .price {
+        margin-top: 10px;
+        text-align: right
+    }
+
+    .list .price span {
+        font-size: 12px
+    }
+
+    .list .price .mkDrop {
+        margin: 0
+    }
+
+    .list .price b {
+        color: #dd1f26;
+        display: inline-block;
+        font-size: 22px;
+        margin-left: 8px
+    }
+
+    .list .checkItem {
+        align-items: center;
+        bottom: 24px;
+        display: flex;
+        gap: 10px;
+        left: 16px;
+        position: absolute;
+        width: 160px
+    }
+
+    .list .checkItem span {
+        margin: 0
+    }
+
+    .gallery .nodata {
+        margin: 0 8px
+    }
+
+    .gallery .nodata p {
+        padding-bottom: 60px
+    }
+
+    .gallery .nodata dl {
+        text-align: left
+    }
+
+    .paging ul {
+        align-items: center;
+        display: flex;
+        justify-content: center
+    }
+}
+
+@media (min-width: 360px) and (max-width:768px) {
+    header {
+        display:none
+    }
+
+    .member {
+        height: calc(100vh - 50px)
+    }
+
+    .ft_nav,.headerTop_title,.menu_left {
+        display: block
+    }
+
+    .filterCon {
+        position: fixed;
+        right: -360px;
+        top: 0
+    }
+
+    .listWrap {
+        padding: 0 10px
+    }
+
+    .listWrap .listCon {
+        width: 100%
+    }
+
+    .listWrap .filterChk,.listWrap .popupVisual {
+        display: none
+    }
+
+    .listWrap .resultCon {
+        padding: 0 0 48px
+    }
+
+    .gallery .grid>li,.wideContents .gallery .grid>li {
+        width: 100%
+    }
+
+    .carInfoCost .notiArea {
+        text-align: left
+    }
+
+    .carInfoCost .notiArea p span {
+        margin: 2px
+    }
+
+    .nDetail {
+        padding: 0
+    }
+
+    .carInfoTop {
+        display: none
+    }
+
+    .detailTop,.mobTitle {
+        display: block!important
+    }
+
+    .secondSd {
+        display: none
+    }
+
+    .nDetail .carInfoLeft {
+        margin-bottom: 0;
+        width: 100%
+    }
+
+    .nDetail .carInfoRight {
+        width: 100%
+    }
+
+    .nDetail .carInfoRight .fixedWrap {
+        margin: 0
+    }
+
+    .nDetail .carInfoRight .carInfoCost {
+        border: none;
+        margin: 0
+    }
+
+    .carInfoLeft .carPhoto {
+        border: none;
+        flex-wrap: wrap
+    }
+
+    .carPhoto .carPhotoLeft {
+        width: 100%
+    }
+
+    .carPhoto .carPhotoRight {
+        padding: 0 16px;
+        width: 100%
+    }
+
+    .mainView .imgSection {
+        height: 19rem
+    }
+
+    .carPhotoLeft .inspected {
+        border: 1px solid #d9d9d9;
+        border-radius: 8px;
+        margin: 32px 32px 24px;
+        padding: 0 32px 24px
+    }
+
+    .mvBottom .btn_video {
+        background-color: transparent;
+        background-position: 50%;
+        background-size: cover;
+        border-radius: 30px;
+        padding: 0;
+        width: 30px
+    }
+
+    .mvBottom .btn_video span {
+        display: none
+    }
+
+    .carInfoRight .fixedWrap {
+        padding: 0 16px
+    }
+
+    .carInfoLeft .section {
+        margin: 0 16px 56px
+    }
+
+    .carInfoHowToBuy .inner ul {
+        display: block;
+        padding: 0;
+        text-align: left
+    }
+
+    .carInfoHowToBuy .inner li:before {
+        border-left: 1px dashed #e0e0e0;
+        height: 100%;
+        left: 12px;
+        top: 12px;
+        width: 1px
+    }
+
+    .carInfoHowToBuy .inner li {
+        padding: 12px 0
+    }
+
+    .carInfoHowToBuy .inner li a {
+        align-items: center;
+        display: flex;
+        font-size: 16px
+    }
+
+    .carInfoHowToBuy .inner li span {
+        margin: 0 12px 0 0;
+        text-align: center
+    }
+
+    .carInfoHowToBuy .inner {
+        border: none
+    }
+
+    .carInfoLeft .carInfoAbout {
+        margin: 0 0 56px
+    }
+
+    .carInfoAbout a {
+        background-position: right 1.5rem top 2.7rem;
+        border-radius: 0;
+        display: block;
+        padding: 40px 32px
+    }
+
+    .carInfoAbout dl {
+        line-height: 1.6;
+        width: 100%
+    }
+
+    .carInfoAbout dt {
+        font-size: 24px
+    }
+
+    .carInfoAbout a ul {
+        display: block;
+        margin: 24px 0 0;
+        width: 100%
+    }
+
+    .carInfoAbout a li {
+        margin: 12px 32px 0 0
+    }
+
+    .carInfoHowToBid .inner {
+        border: none;
+        display: block;
+        padding: 0
+    }
+
+    .carInfoHowToBid .inner iframe {
+        height: auto!important;
+        width: 100%!important
+    }
+
+    .carInfoHowToBid .inner .right {
+        display: block;
+        margin: 32px 0 0;
+        width: 100%
+    }
+
+    .carInfoHowToBid .inner .right dl {
+        width: 100%
+    }
+
+    .carInfoHowToBid .inner .right dl+dl {
+        margin-top: 24px;
+        position: inherit
+    }
+
+    .carInfoRight .proxyNoti,.carInfoRight .sRight {
+        border: none
+    }
+
+    .carBid .btn_area,.carBid .cost,.carBid .notiArea,.carInfoCost {
+        display: none
+    }
+
+    .carBid .tit {
+        font-size: 24px
+    }
+
+    .aucLinkListScroll {
+        overflow-y: scroll
+    }
+
+    .aucLinkListScroll .aucLinkList {
+        display: block;
+        white-space: nowrap
+    }
+
+    .aucLinkListScroll .aucLinkList li {
+        display: inline-block;
+        vertical-align: top;
+        width: 200px
+    }
+
+    .aucLinkListScroll .aucLinkList li a {
+        white-space: normal
+    }
+
+    .carInfoHowToBid .btnShipping {
+        display: block
+    }
+
+    .carInfoHowToBid .btnShipping a {
+        align-items: flex-start;
+        background-position: right top 6px;
+        background-size: 6px;
+        border: none;
+        padding: 0
+    }
+
+    .carInfoHowToBid .btnShipping a+a {
+        margin: 24px 0 0
+    }
+
+    .carInfoHowToBid .btnShipping dl {
+        margin-left: 16px
+    }
+
+    .reviewDetailList .contentBox {
+        -webkit-line-clamp: 8;
+        max-height: 12rem
+    }
+
+    .reviewDetailList .imgText {
+        padding: 0 16px
+    }
+
+    .carInfoLeft .carInfoFaq {
+        background: #f5f5f5;
+        margin: 0;
+        padding: 56px 32px
+    }
+
+    .carInfoFaq .inner {
+        background: none;
+        border: none;
+        display: block;
+        padding: 16px 0
+    }
+
+    .carInfoFaq .inner ul {
+        padding: 0
+    }
+
+    .carInfoFaq .inner ul+ul {
+        border: none;
+        margin-top: 24px
+    }
+
+    .carInfoRight .carBid {
+        border: none;
+        padding: 0
+    }
+
+    .reviewDetailList .videoInfo>span:after {
+        display: none
+    }
+
+    .reviewDetailList .videoInfo .text02 {
+        display: block;
+        font-size: 12px;
+        margin-top: 10px
+    }
+
+    .mainView .top {
+        padding: 8px
+    }
+
+    .mainView .hotLot,.mainView .mkLast,.mainView .mkNew {
+        font-size: 13px;
+        height: 20px;
+        line-height: 20px
+    }
+
+    .mainView .mkHotItem {
+        font-size: 14px;
+        height: 28px;
+        line-height: 28px;
+        padding: 0 8px
+    }
+
+    .mainView .mkHotItem:before {
+        margin-top: -4px
+    }
+
+    .mobBottom {
+        display: flex
+    }
+
+    .carInfoLeft .inspected {
+        margin: 0 16px 32px;
+        padding: 0 24px 8px
+    }
+
+    .carInfoLeft .printinfo {
+        display: none
+    }
+
+    .inspected .btnInspected {
+        display: block
+    }
+
+    .inspected .inspected_mark {
+        padding: 24px 0
+    }
+
+    .inspected .inner_scroll {
+        overflow-x: scroll
+    }
+
+    .inspected .mark_info {
+        flex-wrap: wrap
+    }
+
+    .inspected .inspected_mark .mark_info li {
+        margin: 3px 8px
+    }
+
+    .listWrap .filterCon .inner {
+        overflow-y: scroll
+    }
+
+    .listWrap .resultCon .top {
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 16px
+    }
+
+    .listWrap .resultCon .left span {
+        font-size: 14px;
+        margin: 10px 0
+    }
+
+    .listWrap .resultCon .right {
+        justify-content: space-between;
+        width: 100%
+    }
+
+    .listWrap .resultCon .right select {
+        background-position: right -8px center;
+        font-size: 12px;
+        font-weight: 400;
+        padding: 0 16px 0 6px
+    }
+
+    .gallery .pastBid ul {
+        margin: 0 -8px
+    }
+
+    .gallery .pastBid li {
+        padding: 0 8px 30px;
+        width: 50%
+    }
+
+    .loading {
+        margin: -40px 0 0 -40px
+    }
+
+    .loading .loading_logo,.loading .loading_rotate {
+        background-size: 80px 80px;
+        height: 80px;
+        width: 80px
+    }
+
+    .fixed_pop {
+        bottom: 64px;
+        padding: 0 16px;
+        width: 100%
+    }
+
+    .fixed_pop .inner {
+        height: auto;
+        line-height: 1.3;
+        padding: 8px 40px 12px
+    }
+
+    .fixed_pop .inner:before {
+        left: 18px
+    }
+
+    .fixed_pop p {
+        font-size: 13px
+    }
+
+    .fixed_pop button {
+        display: block;
+        font-size: 13px;
+        margin: 4px 0 0
+    }
+
+    .fixed_pop a {
+        height: 40px;
+        width: 40px
+    }
+
+    .topAlert {
+        padding: 0
+    }
+
+    .topAlert .dropped {
+        border-radius: 0
+    }
+
+    .getHelpWrap {
+        bottom: 96px;
+        right: 16px
+    }
+
+    .getHelpWrap .getHelp {
+        background-position: 50%;
+        font-size: 0;
+        height: 48px;
+        line-height: 48px;
+        padding: 0;
+        width: 48px
+    }
+
+    .gallery .itemList.list {
+        margin: 0 -16px
+    }
+
+    .list>li {
+        display: block;
+        gap: normal;
+        height: auto;
+        padding: 12px 14px 12px 144px
+    }
+
+    .list .img {
+        left: 16px;
+        position: absolute;
+        top: 12px
+    }
+
+    .list .img1 {
+        height: 80px;
+        width: 120px
+    }
+
+    .list .img2 {
+        display: none
+    }
+
+    .list .checkItem,.list .date,.list .info,.list .price,.list .subInfo {
+        width: auto
+    }
+
+    .list .badge {
+        bottom: -22px;
+        padding: 0
+    }
+
+    .list .badge .cnt,.list .badge .roro {
+        font-size: 11px
+    }
+
+    .gallery .list .topMark {
+        padding: 3px
+    }
+
+    .list .mkHotLot {
+        position: relative
+    }
+
+    .list .topMark .inspected {
+        background-size: cover;
+        height: 55px;
+        width: 55px
+    }
+
+    .list .mkNew {
+        font-size: 10px;
+        height: 14px;
+        line-height: 14px;
+        padding: 0 2px
+    }
+
+    .list .info dt strong {
+        font-size: 15px;
+        margin-bottom: -8px
+    }
+
+    .list .info dt span {
+        font-size: 12px
+    }
+
+    .list .subInfo {
+        display: block
+    }
+
+    .list .subInfo ul {
+        display: flex
+    }
+
+    .list .subInfo li {
+        margin-top: 4px
+    }
+
+    .list .subInfo li span {
+        display: none
+    }
+
+    .list .subInfo li em {
+        color: #606060;
+        font-size: 12px;
+        font-weight: 400
+    }
+
+    .list .subInfo li+li:before {
+        background: #d0d0d0;
+        border-radius: 4px;
+        content: "";
+        display: inline-block;
+        height: 3px;
+        margin: 0 4px;
+        width: 3px
+    }
+
+    .list .date {
+        align-items: flex-start;
+        gap: 4px;
+        justify-content: flex-end;
+        text-align: right;
+        width: 100%
+    }
+
+    .list .date .nth em {
+        font-size: 12px;
+        height: auto;
+        line-height: 1;
+        margin-top: 2px;
+        min-width: 24px;
+        width: auto
+    }
+
+    .list .time span {
+        font-size: 13px;
+        margin: 0
+    }
+
+    .list .time span+span {
+        background: none;
+        font-weight: 500;
+        margin-top: 4px;
+        padding: 0
+    }
+
+    .list .price {
+        margin-top: 10px;
+        text-align: right
+    }
+
+    .list .price span {
+        font-size: 12px
+    }
+
+    .list .price .mkDrop {
+        margin: 0
+    }
+
+    .list .price b {
+        color: #dd1f26;
+        display: inline-block;
+        font-size: 22px;
+        margin-left: 8px
+    }
+
+    .list .checkItem {
+        align-items: center;
+        bottom: 24px;
+        display: flex;
+        gap: 10px;
+        left: 16px;
+        position: absolute;
+        width: 160px
+    }
+
+    .list .checkItem span {
+        margin: 0
+    }
+
+    .gallery .nodata {
+        margin: 0 8px
+    }
+
+    .gallery .nodata p {
+        padding-bottom: 60px
+    }
+
+    .gallery .nodata dl {
+        text-align: left
+    }
+
+    .gallery .list .topMark {
+        width: 100%
+    }
+
+    .paging ul {
+        align-items: center;
+        display: flex;
+        justify-content: center
+    }
+}
+
+@media (min-width: 769px) and (max-width:1024px) {
+    header {
+        display:none
+    }
+
+    .member {
+        height: calc(100vh - 50px)
+    }
+
+    .ft_nav,.headerTop_title,.menu_left {
+        display: block
+    }
+
+    .filterCon {
+        position: fixed;
+        right: -360px;
+        top: 0
+    }
+
+    .listWrap .listCon {
+        width: 100%
+    }
+
+    .listWrap .filterChk,.listWrap .popupVisual {
+        display: none
+    }
+
+    .gallery .grid>li,.wideContents .gallery .grid>li {
+        width: 50%
+    }
+
+    .listWrap .resultCon {
+        padding: 24px 24px 48px
+    }
+
+    .nDetail {
+        padding: 0
+    }
+
+    .carInfoTop {
+        display: none
+    }
+
+    .detailTop,.mobTitle {
+        display: block!important
+    }
+
+    .secondSd {
+        display: none
+    }
+
+    .nDetail .carInfoLeft,.nDetail .carInfoRight {
+        width: 100%
+    }
+
+    .carPhotoRight .infoArea,.nDetail .carInfoRight .fixedWrap {
+        display: flex;
+        justify-content: space-between;
+        margin: 0
+    }
+
+    .carPhotoRight .infoArea>div,.nDetail .carInfoRight .fixedWrap>div {
+        flex: 1;
+        margin-right: 16px
+    }
+
+    .carPhotoRight .infoArea>div+div,.nDetail .carInfoRight .fixedWrap>div+div {
+        margin-left: 16px;
+        margin-right: 0
+    }
+
+    .nDetail .carInfoRight .carInfoCost {
+        margin: 0
+    }
+
+    .carInfoLeft .carPhoto {
+        border: none;
+        flex-wrap: wrap
+    }
+
+    .carPhoto .carPhotoLeft,.carPhoto .carPhotoRight {
+        width: 100%
+    }
+
+    .carPhotoLeft .inspected {
+        border: 1px solid #d9d9d9;
+        border-radius: 8px;
+        margin: 32px 32px 24px;
+        padding: 0 32px 24px
+    }
+
+    .mainView .imgSection {
+        height: 32rem
+    }
+
+    .carInfoRight .fixedWrap {
+        padding: 0 16px
+    }
+
+    .nDetail .carInfoRight .fixedWrap .carBid {
+        flex: inherit;
+        margin: 0 5px;
+        width: calc(50% - 10px)
+    }
+
+    .carInfoRight .proxyNoti,.carInfoRight .sRight {
+        border: none;
+        margin-top: 0!important
+    }
+
+    .carBid .btn_area,.carBid .cost,.carBid .notiArea,.carInfoCost {
+        display: none
+    }
+
+    .carInfoAbout a {
+        display: block
+    }
+
+    .carInfoAbout dl {
+        width: 80%
+    }
+
+    .carInfoAbout a ul {
+        justify-content: flex-start;
+        margin: 0;
+        width: 100%
+    }
+
+    .carInfoAbout a li {
+        margin: 12px 32px 0 0
+    }
+
+    .carInfoHowToBid .inner {
+        flex-wrap: wrap;
+        justify-content: center
+    }
+
+    .carInfoHowToBid .inner .right {
+        display: flex;
+        justify-content: space-between;
+        margin: 32px 0 0;
+        width: 100%
+    }
+
+    .carInfoHowToBid .inner .right dl {
+        width: 50%
+    }
+
+    .carInfoHowToBid .inner .right dl+dl {
+        margin-left: 42px;
+        position: inherit
+    }
+
+    .mobBottom {
+        display: flex
+    }
+
+    .carInfoLeft .inspected,.carInfoLeft .section {
+        margin: 0 16px 32px
+    }
+
+    .carInfoLeft .lotteOptionInfo ul {
+        grid-template-columns: repeat(4,1fr)
+    }
+
+    .carInfoCost .notiArea {
+        text-align: left
+    }
+
+    .carInfoCost .notiArea p span {
+        margin: 2px
+    }
+
+    .listWrap .filterCon .inner {
+        overflow-y: scroll
+    }
+
+    .gallery .pastBid li {
+        width: 33.3%
+    }
+
+    .loading {
+        margin: -40px 0 0 -40px
+    }
+
+    .loading .loading_logo,.loading .loading_rotate {
+        background-size: 80px 80px;
+        height: 80px;
+        width: 80px
+    }
+
+    .gallery .pastBid ul {
+        flex-wrap: wrap
+    }
+
+    .fixed_pop {
+        bottom: 64px;
+        width: 100%
+    }
+
+    .topAlert {
+        padding: 0
+    }
+
+    .topAlert .dropped {
+        border-radius: 0
+    }
+
+    .getHelpWrap {
+        bottom: 96px;
+        right: 16px
+    }
+
+    .getHelpWrap .getHelp {
+        background-position: 18px;
+        background-size: 20px;
+        font-size: 17px;
+        height: 42px;
+        line-height: 42px;
+        padding: 0 20px 0 48px
+    }
+
+    .gallery .itemList.list {
+        margin: 0 -40px
+    }
+
+    .list>li {
+        display: block;
+        gap: normal;
+        height: auto;
+        padding: 24px 16px 24px 176px
+    }
+
+    .list .img {
+        left: 16px;
+        position: absolute;
+        top: 24px
+    }
+
+    .list .img1 {
+        height: 110px;
+        width: 144px
+    }
+
+    .list .img2 {
+        display: none
+    }
+
+    .list .checkItem,.list .date,.list .info,.list .price,.list .subInfo {
+        width: auto
+    }
+
+    .list .info dt strong {
+        margin-bottom: -8px
+    }
+
+    .list .info dt span {
+        font-size: 12px
+    }
+
+    .list .subInfo {
+        display: block
+    }
+
+    .list .subInfo ul {
+        display: flex
+    }
+
+    .list .subInfo li {
+        margin-top: 4px
+    }
+
+    .list .subInfo li span {
+        display: none
+    }
+
+    .list .subInfo li em {
+        color: #606060;
+        font-size: 12px;
+        font-weight: 400
+    }
+
+    .list .subInfo li+li:before {
+        background: #d0d0d0;
+        border-radius: 4px;
+        content: "";
+        display: inline-block;
+        height: 3px;
+        margin: 0 6px;
+        width: 3px
+    }
+
+    .list .date {
+        align-items: flex-start;
+        gap: 4px;
+        justify-content: flex-end;
+        padding-top: 8px;
+        text-align: right;
+        width: 100%
+    }
+
+    .list .date .nth em {
+        font-size: 12px;
+        height: auto;
+        line-height: 1;
+        margin-top: 2px;
+        min-width: 24px;
+        width: auto
+    }
+
+    .list .time span {
+        font-size: 13px;
+        margin: 0
+    }
+
+    .list .time span+span {
+        background: none;
+        font-weight: 500;
+        margin-top: 4px;
+        padding: 0
+    }
+
+    .list .price {
+        margin-top: 10px;
+        text-align: right
+    }
+
+    .list .price span {
+        font-size: 12px
+    }
+
+    .list .price .mkDrop {
+        margin: 0
+    }
+
+    .list .price b {
+        color: #dd1f26;
+        display: inline-block;
+        font-size: 22px;
+        margin-left: 8px
+    }
+
+    .list .checkItem {
+        align-items: center;
+        bottom: 24px;
+        display: flex;
+        gap: 10px;
+        left: 16px;
+        position: absolute;
+        width: 160px
+    }
+
+    .list .checkItem span {
+        margin: 0
+    }
+
+    .gallery .list .topMark {
+        width: 100%
+    }
+}
+
+@media (min-width: 1025px) and (max-width:1280px) {
+    header {
+        display:none
+    }
+
+    .member {
+        height: calc(100vh - 50px)
+    }
+
+    .ft_nav,.headerTop_title,.menu_left {
+        display: block
+    }
+
+    .filterCon {
+        position: fixed;
+        right: -360px;
+        top: 0
+    }
+
+    .listWrap .listCon {
+        width: 100%
+    }
+
+    .listWrap .filterChk,.listWrap .popupVisual {
+        display: none
+    }
+
+    .gallery .grid>li {
+        width: 50%
+    }
+
+    .wideContents .gallery .grid>li {
+        width: 33.3%
+    }
+
+    .grid .price b {
+        font-size: 23px
+    }
+
+    .listWrap .resultCon {
+        padding: 24px 16px 48px
+    }
+
+    .nDetail {
+        padding: 0
+    }
+
+    .carInfoTop {
+        display: none
+    }
+
+    .detailTop,.mobTitle {
+        display: block!important
+    }
+
+    .secondSd {
+        display: none
+    }
+
+    .nDetail .carInfoLeft,.nDetail .carInfoRight {
+        width: 100%
+    }
+
+    .carPhotoRight .infoArea,.nDetail .carInfoRight .fixedWrap {
+        display: flex;
+        justify-content: space-between;
+        margin: 0
+    }
+
+    .carPhotoRight .infoArea>div,.nDetail .carInfoRight .fixedWrap>div {
+        flex: 1;
+        margin-right: 16px
+    }
+
+    .carPhotoRight .infoArea>div+div,.nDetail .carInfoRight .fixedWrap>div+div {
+        margin-left: 16px;
+        margin-right: 0
+    }
+
+    .nDetail .carInfoRight .carInfoCost {
+        margin: 0
+    }
+
+    .carInfoLeft .carPhoto {
+        border: none;
+        flex-wrap: wrap
+    }
+
+    .carPhoto .carPhotoLeft,.carPhoto .carPhotoRight {
+        width: 100%
+    }
+
+    .carPhotoLeft .inspected {
+        border: 1px solid #d9d9d9;
+        border-radius: 8px;
+        margin: 32px 32px 24px;
+        padding: 0 32px 24px
+    }
+
+    .mainView .imgSection {
+        height: 32rem
+    }
+
+    .carInfoRight .fixedWrap {
+        padding: 0 16px
+    }
+
+    .nDetail .carInfoRight .fixedWrap .carBid {
+        flex: inherit;
+        margin: 0 5px;
+        width: calc(50% - 10px)
+    }
+
+    .carInfoRight .proxyNoti,.carInfoRight .sRight {
+        border: none;
+        margin-top: 0!important
+    }
+
+    .carBid .btn_area,.carBid .cost,.carBid .notiArea,.carInfoCost {
+        display: none
+    }
+
+    .mobBottom {
+        display: flex
+    }
+
+    .carInfoLeft .inspected,.carInfoLeft .section {
+        margin: 0 16px 32px
+    }
+
+    .carInfoCost .notiArea {
+        text-align: left
+    }
+
+    .carInfoCost .notiArea p span {
+        margin: 2px
+    }
+
+    .listWrap .filterCon .inner {
+        overflow-y: scroll
+    }
+
+    .gallery .pastBid li {
+        width: 33.3%
+    }
+
+    .loading {
+        margin: -40px 0 0 -40px
+    }
+
+    .loading .loading_logo,.loading .loading_rotate {
+        background-size: 80px 80px;
+        height: 80px;
+        width: 80px
+    }
+
+    .gallery .pastBid ul {
+        flex-wrap: wrap
+    }
+
+    .fixed_pop {
+        bottom: 64px;
+        width: 100%
+    }
+
+    .topAlert {
+        padding: 0
+    }
+
+    .topAlert .dropped {
+        border-radius: 0
+    }
+
+    .getHelpWrap {
+        bottom: 96px;
+        right: 16px
+    }
+
+    .getHelpWrap .getHelp {
+        background-position: 18px;
+        background-size: 20px;
+        font-size: 17px;
+        height: 42px;
+        line-height: 42px;
+        padding: 0 20px 0 48px
+    }
+
+    .gallery .itemList.list {
+        margin: 0 -40px
+    }
+
+    .list>li {
+        display: block;
+        gap: normal;
+        height: auto;
+        padding: 24px 16px 24px 176px
+    }
+
+    .list .img {
+        left: 16px;
+        position: absolute;
+        top: 24px
+    }
+
+    .list .img1 {
+        height: 110px;
+        width: 144px
+    }
+
+    .list .img2 {
+        display: none
+    }
+
+    .list .checkItem,.list .date,.list .info,.list .price,.list .subInfo {
+        width: auto
+    }
+
+    .list .info dt strong {
+        margin-bottom: -8px
+    }
+
+    .list .info dt span {
+        font-size: 12px
+    }
+
+    .list .subInfo {
+        display: block
+    }
+
+    .list .subInfo ul {
+        display: flex
+    }
+
+    .list .subInfo li {
+        margin-top: 4px
+    }
+
+    .list .subInfo li span {
+        display: none
+    }
+
+    .list .subInfo li em {
+        color: #606060;
+        font-size: 12px;
+        font-weight: 400
+    }
+
+    .list .subInfo li+li:before {
+        background: #d0d0d0;
+        border-radius: 4px;
+        content: "";
+        display: inline-block;
+        height: 3px;
+        margin: 0 6px;
+        width: 3px
+    }
+
+    .list .date {
+        align-items: flex-start;
+        gap: 4px;
+        justify-content: flex-end;
+        padding-top: 8px;
+        text-align: right;
+        width: 100%
+    }
+
+    .list .date .nth em {
+        font-size: 12px;
+        height: auto;
+        line-height: 1;
+        margin-top: 2px;
+        min-width: 24px;
+        width: auto
+    }
+
+    .list .time span {
+        font-size: 13px;
+        margin: 0
+    }
+
+    .list .time span+span {
+        background: none;
+        font-weight: 500;
+        margin-top: 4px;
+        padding: 0
+    }
+
+    .list .price {
+        margin-top: 10px;
+        text-align: right
+    }
+
+    .list .price span {
+        font-size: 12px
+    }
+
+    .list .price .mkDrop {
+        margin: 0
+    }
+
+    .list .price b {
+        color: #dd1f26;
+        display: inline-block;
+        font-size: 22px;
+        margin-left: 8px
+    }
+
+    .list .checkItem {
+        align-items: center;
+        bottom: 24px;
+        display: flex;
+        gap: 10px;
+        left: 16px;
+        position: absolute;
+        width: 160px
+    }
+
+    .list .checkItem span {
+        margin: 0
+    }
+
+    .gallery .list .topMark {
+        width: 100%
+    }
+}
+
+@media (min-width: 1281px) and (max-width:1600px) {
+    .filterCon .mob_close {
+        display:none
+    }
+
+    .gallery .grid>li {
+        width: 33.3%
+    }
+
+    .wideContents .gallery .grid>li {
+        width: 25%
+    }
+
+    .listWrap .listCon {
+        width: calc(100% - 360px)
+    }
+
+    .gallery .pastBid li {
+        width: 33.3%
+    }
+
+    .grid .price b {
+        font-size: 23px
+    }
+
+    .slide_item {
+        height: 200px
+    }
+
+    .carInfoAbout ul {
+        margin: 0 1rem
+    }
+
+    .list>li {
+        display: block;
+        gap: normal;
+        height: auto;
+        padding: 24px 0 24px 168px
+    }
+
+    .list .img {
+        left: 0;
+        position: absolute;
+        top: 24px
+    }
+
+    .list .img1 {
+        height: 110px;
+        width: 144px
+    }
+
+    .list .img2 {
+        display: none
+    }
+
+    .list .checkItem,.list .date,.list .info,.list .price,.list .subInfo {
+        width: auto
+    }
+
+    .list .info dt strong {
+        margin-bottom: -8px
+    }
+
+    .list .info dt span {
+        font-size: 12px
+    }
+
+    .list .subInfo {
+        display: block
+    }
+
+    .list .subInfo ul {
+        display: flex
+    }
+
+    .list .subInfo li {
+        margin-top: 4px
+    }
+
+    .list .subInfo li span {
+        display: none
+    }
+
+    .list .subInfo li em {
+        color: #606060;
+        font-size: 12px;
+        font-weight: 400
+    }
+
+    .list .subInfo li+li:before {
+        background: #d0d0d0;
+        border-radius: 4px;
+        content: "";
+        display: inline-block;
+        height: 3px;
+        margin: 0 6px;
+        width: 3px
+    }
+
+    .list .date {
+        align-items: flex-start;
+        gap: 4px;
+        justify-content: flex-end;
+        padding-top: 8px;
+        text-align: right;
+        width: 100%
+    }
+
+    .list .date .nth em {
+        font-size: 12px;
+        height: auto;
+        line-height: 1;
+        margin-top: 2px;
+        min-width: 24px;
+        width: auto
+    }
+
+    .list .time span {
+        font-size: 13px;
+        margin: 0
+    }
+
+    .list .time span+span {
+        background: none;
+        font-weight: 500;
+        margin-top: 4px;
+        padding: 0
+    }
+
+    .list .price {
+        margin-top: 10px;
+        text-align: right
+    }
+
+    .list .price span {
+        font-size: 12px
+    }
+
+    .list .price .mkDrop {
+        margin: 0
+    }
+
+    .list .price b {
+        color: #dd1f26;
+        display: inline-block;
+        font-size: 22px;
+        margin-left: 8px
+    }
+
+    .list .checkItem {
+        align-items: center;
+        bottom: 24px;
+        display: flex;
+        gap: 10px;
+        left: 16px;
+        position: absolute;
+        width: 160px
+    }
+
+    .list .checkItem span {
+        margin: 0
+    }
+
+    .gallery .list .topMark {
+        width: 100%
+    }
+}
+
+@media (min-width: 1601px) and (max-width:1980px) {
+    .filterCon .mob_close {
+        display:none
+    }
+
+    .gallery .grid>li {
+        width: 25%
+    }
+
+    .listWrap .listCon {
+        width: calc(100% - 360px)
+    }
+
+    .list>li {
+        gap: 24px
+    }
+
+    .list .checkItem {
+        width: 8%
+    }
+}
+
+@media (min-width: 1981px) {
+    .filterCon .mob_close {
+        display:none
+    }
+
+    .listWrap .listCon {
+        width: calc(100% - 360px)
+    }
+
+    .contents .nDetail {
+        margin: 0 auto;
+        width: 1980px
+    }
+
+    .gallery .grid>li {
+        width: 20%
+    }
+
+    .wideContents .gallery .grid>li {
+        width: 16.6%
+    }
+}
+
+body.full,body.open {
+    height: 100vh;
+    overflow: hidden;
+    width: 100%
+}
+
+.modal {
+    overflow: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    display: none;
+    height: 100%;
+    z-index: 10001
+}
+
+.modal,.modal:before {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.modal:before {
+    background: #000000b3;
+    content: "";
+    height: 100vh;
+    z-index: -1
+}
+
+.modal.full,.modal.open {
+    display: block
+}
+
+.modalInner {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px 5px #00000026;
+    left: 50%;
+    margin: 0 auto;
+    max-width: 340px;
+    min-width: 340px;
+    padding: 24px 32px;
+    -o-perspective: 1000;
+    perspective: 1000;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: all .5s ease;
+    width: 100%
+}
+
+.modal.full .modalInner {
+    left: 0;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 0;
+    top: 0;
+    transform: inherit
+}
+
+.modal .tit {
+    color: #303030;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 16px;
+    padding-right: 24px;
+    text-align: left
+}
+
+.modal .tit_sub {
+    color: #505050;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: left
+}
+
+.modal .btn_area button {
+    font-size: 14px;
+    height: 42px
+}
+
+.modalClose {
+    background: url(https://image.autowini.com/resources/IMG/common/ico_close_black.svg) no-repeat 50%;
+    background-size: 20px;
+    color: #fff;
+    display: block;
+    font-size: 0;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px
+}
+
+.modalClose:hover {
+    background-color: #f5f5f5;
+    border-radius: 4px
+}
+
+.modalWeek {
+    bottom: -40px;
+    color: #d0d0d0;
+    font-size: 16px;
+    font-weight: 300;
+    left: 50%;
+    line-height: 32px;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%)
+}
+
+.modalWeek img {
+    display: inline-block;
+    margin-right: 6px;
+    margin-top: 6px;
+    vertical-align: top
+}
+
+.popVideo .modalInner {
+    background: none;
+    box-shadow: none;
+    height: 80vh;
+    max-width: 60vw;
+    min-width: 60vw
+}
+
+.popVideo .modalInner iframe {
+    left: 0;
+    position: absolute;
+    top: 0
+}
+
+.popVideo .modalClose {
+    background: #ffffffe6 url(https://image.autowini.com/resources/IMG/common/ico_close_black.svg) no-repeat 50%;
+    background-size: 20px;
+    border-radius: 4px;
+    z-index: 1
+}
+
+.appPop .modalInner {
+    max-width: 280px;
+    min-width: 280px;
+    padding: 32px
+}
+
+.appPop ul {
+    overflow: hidden
+}
+
+.appPop li {
+    float: left;
+    padding-top: 16px;
+    text-align: center;
+    width: 50%
+}
+
+.appPop li span {
+    font-size: 13px
+}
+
+.appPop .kakao button {
+    background: url(https://image.autowini.com/cdn/auction/web/images/content/kakao.png) no-repeat top;
+    padding-top: 45px
+}
+
+.appPop .kakao span {
+    border-bottom: 1px solid #9f9f9f
+}
+
+.appPop .whats button {
+    background: url(https://image.autowini.com/cdn/auction/web/images/content/whats.png) no-repeat top;
+    padding-top: 45px
+}
+
+.popTotalImg .modalInner {
+    background: #101010
+}
+
+.popTotalImg .modalInner img {
+    width: 100%
+}
+
+.popTotalImg .modalClose {
+    background: #282828cc url(https://image.autowini.com/resources/IMG/common/ico_close_white.svg) no-repeat 50%;
+    background-size: 20px;
+    border-radius: 4px;
+    position: fixed;
+    right: 8px;
+    top: 8px;
+    z-index: 1
+}
+
+.policyPop h2 {
+    color: #111;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    text-align: left
+}
+
+.policyPop a {
+    display: inline-block;
+    font-size: 14px;
+    margin: 24px 0 8px
+}
+
+.policyPop a span {
+    color: #0b83e6;
+    display: inline-block;
+    margin-left: 4px;
+    text-decoration: underline
+}
+
+.calculatorPop {
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0
+}
+
+.calculatorPop .modalClose {
+    margin: 0;
+    width: 40px
+}
+
+.calculatorPop .cost {
+    text-align: left
+}
+
+.calculatorPop .cost dl {
+    display: flex;
+    justify-content: space-between
+}
+
+.calculatorPop .cost dd {
+    text-align: right
+}
+
+.calculatorPop .logisLink dd {
+    margin-top: 8px
+}
+
+.calculatorPop .notiArea p {
+    flex-wrap: wrap
+}
+
+.bidPop dt {
+    color: #303030;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left
+}
+
+.bidPop dt span {
+    color: #909090;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 4px
+}
+
+.bidPop dd {
+    margin: 16px 0;
+    position: relative;
+    text-align: left
+}
+
+.bidPop dd label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 6px
+}
+
+.bidPop dd .editPrice {
+    align-items: center;
+    border: 1px solid #e9e9e9;
+    border-radius: 4px;
+    display: flex;
+    position: relative
+}
+
+.bidPop dd .editPrice button {
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 58px
+}
+
+.bidPop dd .editPrice .up {
+    border-left: 1px solid #e9e9e9
+}
+
+.bidPop dd .editPrice .down {
+    border-right: 1px solid #e9e9e9
+}
+
+.bidPop dd input {
+    background: #fff;
+    border: none;
+    border-radius: 2px;
+    color: #303030;
+    font-size: 18px;
+    font-weight: 700;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 16px;
+    text-align: center
+}
+
+.bidPop dd input:focus {
+    border: 1px solid #101010
+}
+
+.bidPop dd span {
+    color: #d0d0d0;
+    font-size: 16px;
+    left: 14px;
+    position: absolute;
+    top: 33px;
+    z-index: 1
+}
+
+.bidPwPop dt {
+    background: #f6f6f6;
+    border-radius: 8px;
+    color: #303030;
+    font-size: 15px;
+    padding: 8px 0
+}
+
+.bidPwPop dt span {
+    color: #e0000c;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 800;
+    margin-left: 5px
+}
+
+.bidPwPop dd {
+    color: #707070;
+    font-size: 13px;
+    line-height: 1.4;
+    padding-top: 12px;
+    text-align: left
+}
+
+.bidPwPop .btn_area {
+    margin-top: 16px
+}
+
+.bidPwPop .inputPw {
+    position: relative
+}
+
+.bidPwPop .inputPw input {
+    background: #fff;
+    border: 1px solid #e9e9e9;
+    border-radius: 2px;
+    color: #00000080;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 12px
+}
+
+.bidPwPop .inputPw input:focus {
+    border: 1px solid #101010
+}
+
+.bidPwPop .inputPw .btnPw {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3E%3Cpath fill='%23DDD' d='M4.148 13.262C4.94 9.66 8.245 7.1 11.963 7.1s7.023 2.56 7.815 6.162a.55.55 0 0 0 .25.348c.129.08.286.109.436.079a.58.58 0 0 0 .367-.237.53.53 0 0 0 .083-.414C20.014 8.94 16.245 6 11.964 6c-4.283 0-8.05 2.94-8.952 7.038a.53.53 0 0 0 .083.414.58.58 0 0 0 .367.237c.15.03.308.002.436-.079a.55.55 0 0 0 .25-.348M11.963 9.3a4.17 4.17 0 0 0-2.87 1.128 3.75 3.75 0 0 0-1.188 2.722c0 1.021.428 2 1.189 2.722A4.17 4.17 0 0 0 11.964 17a4.17 4.17 0 0 0 2.869-1.128 3.75 3.75 0 0 0 1.188-2.722c0-1.021-.427-2-1.188-2.722a4.17 4.17 0 0 0-2.87-1.128m-2.898 3.85c0-.73.305-1.429.849-1.944a2.98 2.98 0 0 1 2.05-.806c.768 0 1.505.29 2.049.806a2.68 2.68 0 0 1 .849 1.944 2.68 2.68 0 0 1-.85 1.944 2.98 2.98 0 0 1-2.049.806 2.98 2.98 0 0 1-2.05-.806 2.68 2.68 0 0 1-.848-1.944'/%3E%3C/svg%3E") 50% no-repeat;
+    background-size: 22px;
+    height: 40px;
+    position: absolute;
+    text-indent: -99999px;
+    top: 0;
+    width: 40px;
+    z-index: 1
+}
+
+.bidPwPop .inputPw .btnPw.on {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3E%3Cpath fill='%23111' d='M4.148 13.262C4.94 9.66 8.245 7.1 11.963 7.1s7.023 2.56 7.815 6.162a.55.55 0 0 0 .25.348c.129.08.286.109.436.079a.58.58 0 0 0 .367-.237.53.53 0 0 0 .083-.414C20.014 8.94 16.245 6 11.964 6c-4.283 0-8.05 2.94-8.952 7.038a.53.53 0 0 0 .083.414.58.58 0 0 0 .367.237c.15.03.308.002.436-.079a.55.55 0 0 0 .25-.348M11.963 9.3a4.17 4.17 0 0 0-2.87 1.128 3.75 3.75 0 0 0-1.188 2.722c0 1.021.428 2 1.189 2.722A4.17 4.17 0 0 0 11.964 17a4.17 4.17 0 0 0 2.869-1.128 3.75 3.75 0 0 0 1.188-2.722c0-1.021-.427-2-1.188-2.722a4.17 4.17 0 0 0-2.87-1.128m-2.898 3.85c0-.73.305-1.429.849-1.944a2.98 2.98 0 0 1 2.05-.806c.768 0 1.505.29 2.049.806a2.68 2.68 0 0 1 .849 1.944 2.68 2.68 0 0 1-.85 1.944 2.98 2.98 0 0 1-2.049.806 2.98 2.98 0 0 1-2.05-.806 2.68 2.68 0 0 1-.848-1.944'/%3E%3C/svg%3E") 50% no-repeat
+}
+
+.bidPwPop .inputPw label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 6px
+}
+
+.bidPwPop .inputPw .btnPw {
+    bottom: 0;
+    margin: 0;
+    right: 0;
+    top: auto
+}
+
+.bidPwPop .err_msg {
+    color: #e0000c;
+    font-size: 12px;
+    margin: 8px 0 0;
+    padding: 0
+}
+
+.bidCompPop {
+    text-align: center
+}
+
+.bidCompPop .btn_area {
+    margin-top: 16px
+}
+
+.bidCompPop dt {
+    background: #f6f6f6;
+    border-radius: 8px;
+    color: #303030;
+    font-size: 15px;
+    padding: 8px 0
+}
+
+.bidCompPop dt span {
+    color: #e0000c;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 800;
+    margin-left: 5px
+}
+
+.bidCompPop dd {
+    color: #707070;
+    font-size: 13px;
+    line-height: 1.4;
+    padding-top: 12px;
+    text-align: left
+}
+
+.popInspected .tit {
+    background: #fff;
+    border-bottom: 1px solid #e9e9e9;
+    font-size: 18px;
+    height: 50px;
+    left: 0;
+    line-height: 50px;
+    padding: 0 16px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1
+}
+
+.popInspected.full .modalInner {
+    border-radius: 0;
+    padding-top: 49px
+}
+
+.popInspected .modalClose {
+    right: 6px;
+    top: 6px
+}
+
+.popInspected table {
+    width: 100%
+}
+
+.popInspected td {
+    border: 1px solid #e9e9e9;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 4px 8px;
+    text-align: left;
+    vertical-align: middle;
+    word-break: break-word
+}
+
+.popInspected .print_tit {
+    background: #f6f6f6;
+    font-size: 12px;
+    text-align: center
+}
+
+.popInspected .print_tit,.popInspected .print_tit_mob {
+    color: #303030;
+    font-weight: 700;
+    height: 30px;
+    vertical-align: middle
+}
+
+.popInspected .print_tit_mob {
+    background: #fff;
+    font-size: 14px;
+    padding: 24px 8px 8px;
+    text-align: left
+}
+
+.popInspected ul {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.popInspected li {
+    margin-right: 16px
+}
+
+.popInspected .significantend {
+    line-height: 1.7;
+    padding: 8px
+}
+
+.staffPop .modalInner {
+    padding: 24px 28px
+}
+
+.staffPop p {
+    margin-top: -12px;
+    text-align: left
+}
+
+.staffList li {
+    margin-top: 12px;
+    text-align: left
+}
+
+.staffList li+li {
+    border-top: 1px dashed #e0e0e0;
+    padding-top: 8px
+}
+
+.staffList .profile {
+    align-items: center;
+    display: flex;
+    justify-content: space-between
+}
+
+.staffList .profile .profile_content {
+    margin-left: 12px;
+    width: 60%
+}
+
+.staffList .profile_name {
+    font-size: 17px;
+    font-weight: 500
+}
+
+.staffList .profile_languages {
+    color: #909090;
+    font-size: 12px
+}
+
+.staffList .profile_link {
+    align-items: center;
+    display: flex
+}
+
+.staffList .profile_link a {
+    display: inline-block;
+    height: 32px;
+    width: 32px
+}
+
+.staffList .profile_link a+a {
+    margin-left: 6px
+}
+
+.staffList .profile_link .green {
+    background: url(https://image.autowini.com/resources/IMG/common/ico_green_call.png) 50% no-repeat;
+    background-size: 28px
+}
+
+.staffList .profile_link .purple {
+    background: url(https://image.autowini.com/resources/IMG/common/ico_purple_call.png) 50% no-repeat;
+    background-size: 28px
+}
+
+.imgPop .modalInner {
+    background: none;
+    max-width: 842px;
+    padding: 0
+}
+
+.imgPop .modalInner .img {
+    width: 100%
+}
+
+.imgPop .modalInner .img img {
+    border-radius: 4px;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    width: 100%
+}
+
+.imgPop .modalClose {
+    background-color: #ffffffe6;
+    border-radius: 4px;
+    right: -54px;
+    top: 8px
+}
+
+@media (max-width: 360px) {
+    .popVideo .modalClose {
+        top:-50px
+    }
+
+    .popVideo .modalInner {
+        height: auto;
+        max-width: 100%;
+        min-width: 100%;
+        padding: 56.25% 0 0
+    }
+
+    .imgPop .modalInner {
+        max-width: 100vw
+    }
+
+    .imgPop .modalClose {
+        right: 10px;
+        top: -50px
+    }
+}
+
+@media (min-width: 361px) and (max-width:768px) {
+    .popVideo .modalInner {
+        height:auto;
+        max-width: 100%;
+        min-width: 100%;
+        padding: 56.25% 0 0
+    }
+
+    .imgPop .modalInner {
+        max-width: 90vw
+    }
+
+    .imgPop .modalClose {
+        right: 0;
+        top: -50px
+    }
+}
+
+@media (min-width: 769px) and (max-width:1280px) {
+    .popVideo .modalInner {
+        height:auto;
+        max-width: 80vw;
+        min-width: 80vw;
+        padding: 46.25% 0 0
+    }
+
+    .imgPop .modalInner {
+        max-width: 90vw
+    }
+
+    .imgPop .modalClose {
+        right: 0;
+        top: -50px
+    }
+}

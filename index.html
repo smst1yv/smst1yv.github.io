@@ -1,0 +1,1901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auctionwini</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/popup.css">
+    <link rel="stylesheet" href="./assets/css/two.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="wrap en">
+        <!-- HEADER  -->
+        <header class="header en">
+            <!-- HEADER LANGUAGE -->
+            <div class="headerTnb clearfix">
+                <div class="inner">
+
+
+                    <div class="language">
+                        <button type="button" id="lang" class="btnLang">English</button>
+                        <ul class="clearfix">
+                            <li id="en" class="on"><a href="javscript:;" class="btn_language btn_only_buyer lang_en act"
+                                    style="display: inline-block;">English</a></li>
+                            <li id="es"><a href="javscript:;" class="btn_language btn_only_buyer lang_es"
+                                    style="display: inline-block;">Español</a></li>
+                            <li id="ru"><a href="javscript:;" class="btn_language btn_only_buyer lang_ru"
+                                    style="display: inline-block;">Русский</a></li>
+                            <li id="ar"><a href="javscript:;" class="btn_language btn_only_buyer lang_ar"
+                                    style="display: inline-block;">العربية</a></li>
+                            <li id="mn"><a href="javscript:;" class="btn_language btn_only_buyer lang_mn"
+                                    style="display: inline-block;">Монгол</a></li>
+                            <li id="ko" class="ko"><a href="javscript:;" class="btn_language lang_ko"
+                                    style="display: inline-block;">한국어</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="gmt" id="gmt">
+                        <a href="javascript:;"><span id="headerTime">22:11 pm London</span></a>
+                        <div class="set_gmt">
+                            <span class="clearfix">Set Your Time Zone<em id="timeChg">22:11 pm London</em></span>
+                            <select id="set_timeZone" name="set_tz">
+                                <option data-sub="GMT" value="Europe/London">(GMT+00:00) U.K London</option>
+                                <option data-sub="PYST" value="America/Asuncion">(GMT-03:00) Paraguay Asuncion</option>
+                                <option data-sub="CLST" value="America/Santiago">(GMT-03:00) Chile Santiago</option>
+                                <option data-sub="AST" value="America/Santo_Domingo">(GMT-04:00) Rep Dominicana Santo
+                                    Domingo</option>
+                                <option data-sub="CST" value="America/Tegucigalpa">(GMT-06:00) Honduras Tegucigalpa
+                                </option>
+                                <option data-sub="CST" value="America/Guatemala">(GMT-06:00) Guatemala Guatemala
+                                </option>
+                                <option data-sub="GMT" value="Africa/Accra">(GMT+00:00) Ghana Accra</option>
+                                <option data-sub="WAT" value="Africa/Lagos">(GMT+01:00) Nigeria Lagos</option>
+                                <option data-sub="WAT" value="Africa/Libreville">(GMT+01:00) Gabon libreville</option>
+                                <option data-sub="CET" value="Europe/Tirane">(GMT+01:00) Albania Tirane</option>
+                                <option data-sub="CET" value="Europe/Warsaw">(GMT+01:00) Poland Warsaw</option>
+                                <option data-sub="EET" value="Africa/Tripoli">(GMT+02:00) Libya Tripoli</option>
+                                <option data-sub="CAT" value="Africa/Kigali">(GMT+02:00) Rwanda Kigali</option>
+                                <option data-sub="EET" value="Europe/Kiev">(GMT+02:00) Ukraine Kiev</option>
+                                <option data-sub="AST" value="Asia/Riyadh">(GMT+03:00) Saudi Arabia Riyadh</option>
+                                <option data-sub="MSK" value="Europe/Moscow">(GMT+03:00) Russia Moscow</option>
+                                <option data-sub="EAT" value="Indian/Antananarivo">(GMT+03:00) Madagascar Antananarivo
+                                </option>
+                                <option data-sub="GET" value="Asia/Tbilisi">(GMT+04:00) Georgia Tbilisi</option>
+                                <option data-sub="AZT" value="Asia/Baku">(GMT+04:00) Azerbaijan Baku</option>
+                                <option data-sub="UZT" value="Asia/Tashkent">(GMT+05:00) Uzbekistan Tashkent</option>
+                                <option data-sub="ICT" value="Asia/Phnom_Penh">(GMT+07:00) Cambodia Phnom Penh</option>
+                                <option data-sub="ULAT" value="Asia/Ulaanbaatar">(GMT+08:00) Mongolia Ulaanbaatar
+                                </option>
+                                <option data-sub="KST" value="Asia/Seoul">(GMT+09:00) Korea Seoul</option>
+                            </select>
+                            <div class="btn_area clearfix">
+                                <button type="button" id="btn_sv" class="btn_sv">Save My Time Zone</button>
+                                <button type="button" id="btn_cl" class="btn_cl">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- END HEADER LANGUAGE -->
+
+            <!-- SEARCH HEADER -->
+            <div class="headerCon">
+                <div class="inner">
+
+                    <div class="left">
+                        <h1 class="logo">
+                            <a href="/main"><img src="https://image.autowini.com/resources/IMG/common/img_logo.svg"></a>
+                        </h1>
+                        <div class="searchBox">
+                            <input id="i_skeyword_header_Search" type="text" class="ui-autocomplete-input"
+                                placeholder="Enter Make, Model, Year" autocomplete="off">
+                            <button id="btnheaderSearch" type="button" class="btn_search"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="right" id="headMenuArea">
+                        <ul class="quickMeun buyer clearfix" style="display:none;">
+                            <li class="account">
+                                <a href="javascript:;">
+                                    <i></i>
+                                    <span class="label">My Account</span>
+                                </a>
+                                <div class="accountModal">
+                                    <ul>
+                                        <li><a href="/mypage/info/my-account-view">My Information</a></li>
+                                        <li id="btnMembership"><a href="javscript:;">Membership Status</a></li>
+                                        <li id="btnPhotoId"><a href="javscript:;">Photo ID</a></li>
+                                        <li id="btnDeposit"><a href="javscript:;">Deposit</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="watch btn_subList" data-flag="WL">
+                                <a href="javascript:;">
+                                    <i></i>
+                                    <span class="label">Watch List</span>
+                                </a>
+                            </li>
+                            <li class="order account alertCheck ">
+                                <a href="javascript:;">
+                                    <i></i>
+                                    <span class="label">My Auction</span>
+                                </a>
+                                <div class="accountModal">
+                                    <ul>
+                                        <li><a href="/mybids/get-bidding-list/live">My Bidding (Live)</a></li>
+                                        <li><a href="/mybids/get-bidding-list/local">My Bidding (Rental/Local)</a></li>
+                                        <li><a href="/mybids/order-list" class="alertCheck ">My Order</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="quickMeun seller clearfix" style="display: none">
+                            <li class="account">
+                                <a href="javascript:;">
+                                    <i></i>
+                                    <span class="label">마이페이지</span>
+                                </a>
+
+                                <div class="accountModal">
+                                    <ul>
+                                        <li class="sub_my_info">
+                                            <a href="javscript:;" class="">내 정보</a>
+                                        </li>
+                                        <li class="sub_employee_manage ceo" style="display: none">
+                                            <a href="javscript:;">직원 관리</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="contact btn_sale_contact">
+                                <a href="javascript:;">
+                                    <i></i>
+                                    <span class="label">가입문의</span>
+                                </a>
+                            </li>
+                            <li class="regist btn_sale_reg">
+                                <a href="javascript:;">
+                                    <i></i>
+                                    <span class="label">매물등록</span>
+                                </a>
+                            </li>
+                            <li class="manage btn_sale_manage">
+                                <a href="javascript:;">
+                                    <i></i>
+                                    <span class="label">매물관리</span>
+                                </a>
+                            </li>
+                            <li class="biding btn_sale_biding">
+                                <a href="javascript:;">
+                                    <i></i>
+                                    <span class="label">입찰내역</span>
+                                </a>
+                            </li>
+                            <li class="order btn_sale_order">
+                                <a href="javascript:;">
+                                    <i></i>
+                                    <span class="label">거래내역</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="signZone nologin" style="" id="noLoginMenu">
+                            <li class="signIn"><a href="/login">SIGN IN</a></li>
+                            <li class="singUp"><a href="/join/joinus">SIGN UP</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- END SEARCH HEADER -->
+            <div class="headerGnb">
+                <div class="inner">
+                    <div class="menu buyer">
+                        <div class="menuLive"><a href="/entry/carsale/get-carsale-pc-list-on">Auctions</a></div>
+
+                        <ul class="depth1">
+                            <li class="rentalAuc">
+                                <a href="javascript:;" style="line-height: 62px;" id="rentalAucEvent">
+                                    <span
+                                        style="display:block;position:absolute;top:8px;left:50%;text-align:center;width:100%;font-size:11px;line-height:1;color:#FF3102;transform: translateX(-50%);">
+                                        EVENT
+                                    </span>
+                                    Rental Auction
+                                </a>
+                                <a href="javascript:;" id="rentalAucNoneEvent" style="display: none;">
+                                    Rental Auction
+                                </a>
+                            </li>
+                            <li class="localAuc">
+                                <a href="javascript:;" style="line-height:62px; display:none;" id="localAucEvent">
+                                    <span
+                                        style="display:block;position:absolute;top:8px;left:50%;text-align:center;width:100%;font-size:11px;line-height:1;color:#dd1f26;transform: translateX(-50%);">
+                                        EVENT
+                                    </span>
+                                    Local Auction
+                                </a>
+                                <a href="javascript:;" id="localAucNoneEvent">
+                                    Local Auction
+                                </a>
+                            </li>
+                            <li class="memuKo"> <a href="/support/howtobuy/overview" class="btn_menu">Support</a>
+                                <ul class="depth2">
+                                    <li><a href="/support/how-to-start" class="">How to Start</a></li>
+                                    <li><a href="/support/howtobuy/overview" class="">How to Buy</a></li>
+                                    <li><a href="/support/terms-guides" class="">Terms and Guides</a></li>
+                                    <li><a href="/support/fee-cost" class="">Fees &amp; Costs</a></li>
+                                    <li><a href="/support/rule-policy" class="">Rules &amp; Policies</a></li>
+                                    <li><a href="/support/shipping" class="">Shipping</a></li>
+                                    <li><a href="/support/cutting-service" class="">Cutting Services</a></li>
+                                    <li><a href="/support/local-auction" class="">Rental and Local Auctions</a></li>
+                                    <li><a href="/support/contactus" class="">Contact Us</a></li>
+                                </ul>
+                            </li>
+                            <li class="reviewsmenu">
+                                <a href="/community/reviews" class="btn_menu">Reviews</a>
+                                <ul class="depth2">
+                                    <li><a href="/community/reviews">Buyer's review</a></li>
+                                </ul>
+                            </li>
+                            <li class="aboutusmenu">
+                                <a href="/about/aboutus/about-auctionwini" class="btn_menu">About Us</a>
+                                <ul class="depth2">
+                                    <li><a href="/about/aboutus/about-auctionwini">About Us</a></li>
+                                    <li><a href="/support/notice" class="">Notice</a></li>
+
+
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <!-- END  HEADER -->
+
+
+        <!-- Main  -->
+        <div class="contents main_wrap en" id="contents">
+            <div class="slideWrap">
+                <div class="inner1280">
+                    <div class="aucLine">
+                        <div class="aucTit" id="mainList">
+                            <b>Live Auction Tuesday </b><b id="totalCount">(940)</b>
+                            <span class="mkDday" id="liveDayN" style="">D-1</span>
+                            <span class="mkDday none" id="liveDayY" style="display: none;">D-day</span>
+                        </div>
+                        <ul id="mainAuctionTimeTable">
+                            <li class="auc1 " data-seq="WA202406171002"> <a id="auc1" class="btn_view">Inspected (97)
+                                    <span class="date" id="auctionTime1">24/06/2024 <em>22:00 PM / London</em> </span>
+                                </a></li>
+                            <li class="auc2 " data-seq="WA202406171003"> <a id="auc2" class="btn_view">Truck &amp; Bus
+                                    (97) <span class="date" id="auctionTime2">25/06/2024 <em>07:00 AM / London</em>
+                                    </span> </a></li>
+                            <li class="auc3 " data-seq="WA202406171004"> <a id="auc3" class="btn_view">Run &amp; Drive -
+                                    Non damaged (395) <span class="date" id="auctionTime3">25/06/2024 <em>09:00 AM /
+                                            London</em> </span> </a></li>
+                            <li class="auc4 " data-seq="WA202406171005"> <a id="auc4" class="btn_view">Run &amp; Drive -
+                                    Damaged (264) <span class="date" id="auctionTime4">25/06/2024 <em>12:00 PM /
+                                            London</em> </span> </a></li>
+                            <li class="auc5 " data-seq="WA202406171006"> <a id="auc5" class="btn_view">Non-drivable (87)
+                                    <span class="date" id="auctionTime5">25/06/2024 <em>15:00 PM / London</em> </span>
+                                </a></li>
+                        </ul>
+                        <div class="aucTit rentalAuc">
+                            <b>Rental Auction </b><b id="rentalCount">(16)</b>
+                            <span class="mkToday" id="rentalToday" style="">Ending today</span>
+                        </div>
+                        <div class="aucTit localAuc">
+                            <b>Local Auction </b><b id="localCount">(343)</b>
+                            <span class="mkToday" id="localToday" style="display: none;">Ending today</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mainSlide slick-initialized slick-slider slick-dotted">
+                    <div class="single-item">
+                        <div>
+                            <div class="slick-img">
+                                <img src="https://image.autowini.com/cdn/auction/web/images/main/wbn_rentalAuc5_en.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slick-img">
+                                <img src="https://image.autowini.com/cdn/auction/web/images/main/wbn_rentalAuc5_en.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slick-img">
+                                <img src="https://image.autowini.com/cdn/auction/web/images/main/wbn_rentalAuc5_en.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sliderBtn s-btn-sl">
+                        <div class="inner">
+                            <div class="btn_box">
+                                <a href="javascript:;" class="prev">이전</a>
+                                <a href="javascript:;" class="next">다음</a>
+                                <a href="javascript:;" class="pause">정지</a>
+                                <span class="pagingInfo">
+                                    <span class="currenNum">4</span>
+                                    <span class="total"> / 13</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="todayAuc">
+                <div class="tit">Today's Auction</div>
+                <div class="btnLink">
+                    <button type="button" onclick="mainshow.switchProxy('rental','2024.06.24')">Rental
+                        Auction - Car Auction (16)</button>
+                </div>
+            </div>
+
+
+
+            <div class="mainSwiper inner1280">
+                <div class="tit">
+                    Rental Auction
+                    <a href="javascript:;" class="btnMore rentalAuc">View More</a>
+                </div>
+                <div
+                    class="swiper mySwiper swiper-container rentalAuctionList swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+                    <ul class="swiper-wrapper" id="rentalAuctionList" aria-live="polite">
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mainSwiper inner1280">
+                <div class="tit">
+                    Rental Auction
+                    <a href="javascript:;" class="btnMore rentalAuc">View More</a>
+                </div>
+                <div
+                    class="swiper mySwiper swiper-container rentalAuctionList swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+                    <ul class="swiper-wrapper" id="rentalAuctionList" aria-live="polite">
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a href="javascript:;" onclick="mainshow.goProxyDetail('rental', '2406242120');">
+                                <div class="img">
+                                    <div class="new">New</div>
+                                    <img src="https://file.auctionwini.com/proxy-files/2024/06/24/a3ef9db0-4b09-4a1e-8125-3c00de209987.jpg"
+                                        loading="lazy">
+                                    <div class="badge">
+                                        <span class="roro">RO-RO</span>
+                                        <span class="rental">RENTAL</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>2020 Hyundai SantaFe</dt>
+                                        <dd class="damage">
+                                            <span class="hit">Run&amp;Drive</span>
+                                            <span>(일반적인 노후) 부식</span>
+                                        </dd>
+                                    </dl>
+                                    <div class="infoDetail">
+                                        <ul>
+                                            <li class="info1">2,200cc</li>
+                                            <li class="info2">Diesel</li>
+                                            <li class="info3">120,447km</li>
+                                            <li class="info4">LHD</li>
+                                        </ul>
+                                        <div class="price">
+                                            <span>Current Bid<b>USD 11,528</b></span>
+                                            <button type="button" class="" data-id="fix_mmBox">Bid Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="aucSchedule">
+                <div class="inner1280">
+                    <div class="tit">
+                        <strong>Auction Schedule</strong>
+                    </div>
+                    <ul class="mainSchedule">
+                        <li class="on">
+                            <dl>
+                                <dt>2024.06.24 Mon</dt>
+                                <dd>
+                                    <a href="javascript:;" onclick="mainshow.switchProxy('rental','2024.06.27')">SK
+                                        Rental(148) </a>
+                                    <a href="javascript:;" onclick="mainshow.switchProxy('live','2024.06.25')">Live
+                                        Auction(972) </a>
+                                    <a href="javascript:;" onclick="mainshow.switchProxy('local','2024.06.25')">K Car
+                                        A(343) </a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="">
+                            <dl>
+                                <dt>2024.06.24 Mon</dt>
+                                <dd>
+                                    <a href="javascript:;" onclick="mainshow.switchProxy('rental','2024.06.27')">SK
+                                        Rental(148) </a>
+                                    <a href="javascript:;" onclick="mainshow.switchProxy('live','2024.06.25')">Live
+                                        Auction(972) </a>
+                                    <a href="javascript:;" onclick="mainshow.switchProxy('local','2024.06.25')">K Car
+                                        A(343) </a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="none">
+                            <dl>
+                                <dt>2024.06.24 Mon</dt>
+                                <dd></dd>
+                            </dl>
+                        </li>
+                        <li class="none">
+                            <dl>
+                                <dt>2024.06.24 Mon</dt>
+                                <dd></dd>
+                            </dl>
+                        </li>
+                        <li class="none">
+                            <dl>
+                                <dt>2024.06.24 Mon</dt>
+                                <dd></dd>
+                            </dl>
+                        </li>
+                        <li class="none">
+                            <dl>
+                                <dt>2024.06.24 Mon</dt>
+                                <dd></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="findByFeatures inner1280">
+                <div class="tit">
+                    <strong>Find by Features</strong>
+                    <a href="#">View All</a>
+                </div>
+                <div class="featuresList">
+                    <div class="columnList">
+                        <li>
+                            <span>Run &amp; Drive</span><em id="STATUS_DRIVE">(875)</em>
+                        </li>
+                        <li>
+                            <span>Run &amp; Drive</span><em id="STATUS_DRIVE">(875)</em>
+                        </li>
+                        <li>
+                            <span>Run &amp; Drive</span><em id="STATUS_DRIVE">(875)</em>
+                        </li>
+                        <li>
+                            <span>Run &amp; Drive</span><em id="STATUS_DRIVE">(875)</em>
+                        </li>
+                        <li>
+                            <span>Run &amp; Drive</span><em id="STATUS_DRIVE">(875)</em>
+                        </li>
+                        <li>
+                            <span>Run &amp; Drive</span><em id="STATUS_DRIVE">(875)</em>
+                        </li>
+                        <li>
+                            <span>Run &amp; Drive</span><em id="STATUS_DRIVE">(875)</em>
+                        </li>
+                        <li>
+                            <span>Run &amp; Drive</span><em id="STATUS_DRIVE">(875)</em>
+                        </li>
+                        <li>
+                            <span>Run &amp; Drive</span><em id="STATUS_DRIVE">(875)</em>
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner1280 findByMakes">
+                <div class="tit">
+                    <strong>Find by Makes</strong>
+                    <a href="#">View All</a>
+                </div>
+                <div class="makeList">
+                    <ul class="columnList makeListBox">
+                        <li class="C0680">
+                            <img src="https://image.autowini.com/resources/IMG/common/brands/C0680.png">
+                            <span>Hyundai</span>
+                            <em>(270)</em>
+                        </li>
+                        <li class="C0810">
+                            <img src="https://image.autowini.com/resources/IMG/common/brands/C0810.png">
+                            <span>Kia</span>
+                            <em>(186)</em>
+                        </li>
+                        <li class="C0810">
+                            <img src="https://image.autowini.com/resources/IMG/common/brands/C0120.png">
+                            <span>BMW</span>
+                            <em>(69)</em>
+                        </li>
+                        <li class="C0810">
+                            <img src="https://image.autowini.com/resources/IMG/common/brands/C0120.png">
+                            <span>BMW</span>
+                            <em>(69)</em>
+                        </li>
+                        <li class="C0810">
+                            <img src="https://image.autowini.com/resources/IMG/common/brands/C0120.png">
+                            <span>BMW</span>
+                            <em>(69)</em>
+                        </li>
+                        <li class="C0810">
+                            <img src="https://image.autowini.com/resources/IMG/common/brands/C0120.png">
+                            <span>BMW</span>
+                            <em>(69)</em>
+                        </li>
+                        <li class="C0810">
+                            <img src="https://image.autowini.com/resources/IMG/common/brands/C0120.png">
+                            <span>BMW</span>
+                            <em>(69)</em>
+                        </li>
+                        <li class="C0810">
+                            <img src="https://image.autowini.com/resources/IMG/common/brands/C0120.png">
+                            <span>BMW</span>
+                            <em>(69)</em>
+                        </li>
+                        <li class="C0810">
+                            <img src="https://image.autowini.com/resources/IMG/common/brands/C0120.png">
+                            <span>BMW</span>
+                            <em>(69)</em>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="inner1280 mainVideo">
+                <div class="tit">
+                    <strong>Video from Auctionwini</strong>
+                    <div class="btnWrap">
+                        <a class="facebook" href="https://www.facebook.com/Official.Auctionwini"
+                            target="_blank">Facebook</a>
+                        <a class="youtube" href="https://www.facebook.com/Official.Auctionwini"
+                            target="_blank">Youtube</a>
+                        <a class="insta" href="https://www.facebook.com/Official.Auctionwini"
+                            target="_blank">Instagram</a>
+                        <a class="tiktok" href="https://www.facebook.com/Official.Auctionwini"
+                            target="_blank">TikTok</a>
+                    </div>
+                </div>
+                <div class="flex">
+
+                    <div class="left">
+                        <iframe width="100%" height="472"
+                            src="https://www.youtube.com/embed/yZqhBHPeuGc?si=wWQUNKG7NaTqMx1L"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <strong id="maxScreenTxt">Bmw - Stromae Alors On Danse Aman DJ Remix Gold M4 Drifting | 4K BMW |
+                            M4</strong>
+                    </div>
+                    <div class="right">
+                        <ul class="videoList">
+                            <li class="on" data-url="78-StFwwX6w">
+                                <img src="http://img.youtube.com/vi/78-StFwwX6w/2.jpg">
+                                <span>Auctionwini - Korea's No.1 Global Auto Auction</span>
+                            </li>
+
+                            <li class="off" data-url="n-8Us1wsHIk">
+                                <img src="http://img.youtube.com/vi/n-8Us1wsHIk/2.jpg">
+                                <span>Rental Auction OPENS! - SK Rental Car in Auctionwi</span>
+                            </li>
+
+                            <li class="off" data-url="n-8Us1wsHIk">
+                                <img src="http://img.youtube.com/vi/n-8Us1wsHIk/2.jpg">
+                                <span>Rental Auction OPENS! - SK Rental Car in Auctionwi</span>
+                            </li>
+
+                            <li class="off" data-url="n-8Us1wsHIk">
+                                <img src="http://img.youtube.com/vi/n-8Us1wsHIk/2.jpg">
+                                <span>Rental Auction OPENS! - SK Rental Car in Auctionwi</span>
+                            </li>
+                            <li class="off" data-url="n-8Us1wsHIk">
+                                <img src="http://img.youtube.com/vi/n-8Us1wsHIk/2.jpg">
+                                <span>Rental Auction OPENS! - SK Rental Car in Auctionwi</span>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="main_sold">
+                <h4>
+                    <img src="https://image.autowini.com/resources/IMG/common/flag2/C0130.png" alt="">
+                    These are real deals!
+                </h4>
+                <div class="sold solds">
+                    <div class="item" id="banner1">
+                        <dl>
+                            <dt class="markItem">
+                                <img src="https://auctionwini-files.s3.amazonaws.com/media-files/2024/3/20/4a8110c8-c525-45ad-979e-99ae936cce7d.jpg"
+                                    alt="">
+                            </dt>
+                            <dd class="price">
+                                <strong class="ell1">2022 Mercedes Benz CLS Class C257</strong>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="item" id="banner2">
+                        <dl>
+                            <dt class="markItem">
+                                <img src="https://auctionwini-files.s3.amazonaws.com/media-files/2024/3/20/4a8110c8-c525-45ad-979e-99ae936cce7d.jpg"
+                                    alt="">
+                            </dt>
+                            <dd class="price">
+                                <strong class="ell1">2022 Mercedes Benz CLS Class C257</strong>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="item">
+                        <dl>
+                            <dt class="markItem">
+                                <img src="https://auctionwini-files.s3.amazonaws.com/media-files/2024/3/20/4a8110c8-c525-45ad-979e-99ae936cce7d.jpg"
+                                    alt="">
+                            </dt>
+                            <dd class="price">
+                                <strong class="ell1">2022 Mercedes Benz CLS Class C257</strong>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="item">
+                        <dl>
+                            <dt class="markItem">
+                                <img src="https://auctionwini-files.s3.amazonaws.com/media-files/2024/3/20/4a8110c8-c525-45ad-979e-99ae936cce7d.jpg"
+                                    alt="">
+                            </dt>
+                            <dd class="price">
+                                <strong class="ell1">2022 Mercedes Benz CLS Class C257</strong>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="item">
+                        <dl>
+                            <dt class="markItem">
+                                <img src="https://auctionwini-files.s3.amazonaws.com/media-files/2024/3/20/4a8110c8-c525-45ad-979e-99ae936cce7d.jpg"
+                                    alt="">
+                            </dt>
+                            <dd class="price">
+                                <strong class="ell1">2022 Mercedes Benz CLS Class C257</strong>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="item">
+                        <dl>
+                            <dt class="markItem">
+                                <img src="https://auctionwini-files.s3.amazonaws.com/media-files/2024/3/20/4a8110c8-c525-45ad-979e-99ae936cce7d.jpg"
+                                    alt="">
+                            </dt>
+                            <dd class="price">
+                                <strong class="ell1">2022 Mercedes Benz CLS Class C257</strong>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="item">
+                        <dl>
+                            <dt class="markItem">
+                                <img src="https://auctionwini-files.s3.amazonaws.com/media-files/2024/3/20/4a8110c8-c525-45ad-979e-99ae936cce7d.jpg"
+                                    alt="">
+                            </dt>
+                            <dd class="price">
+                                <strong class="ell1">2022 Mercedes Benz CLS Class C257</strong>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="item">
+                        <dl>
+                            <dt class="markItem">
+                                <img src="https://auctionwini-files.s3.amazonaws.com/media-files/2024/3/20/4a8110c8-c525-45ad-979e-99ae936cce7d.jpg"
+                                    alt="">
+                            </dt>
+                            <dd class="price">
+                                <strong class="ell1">2022 Mercedes Benz CLS Class C257</strong>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="item">
+                        <dl>
+                            <dt class="markItem">
+                                <img src="https://auctionwini-files.s3.amazonaws.com/media-files/2024/3/20/4a8110c8-c525-45ad-979e-99ae936cce7d.jpg"
+                                    alt="">
+                            </dt>
+                            <dd class="price">
+                                <strong class="ell1">2022 Mercedes Benz CLS Class C257</strong>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <a href="/entry/carsale/get-carsale-pc-list-on/">Browse the vehicles</a>
+            </div>
+
+            <div class="guideProcess">
+                <div class="inner1280 works">
+                    <div class="tit">
+                        How does it works?
+                    </div>
+                    <ul class="worksCon">
+                        <li>
+                            <strong><img src="https://image.autowini.com/resources/IMG/common/new/ic_premium.svg">Get a
+                                premium membership</strong>
+                            <span>After signing up as a basic member, you should become a premium member to start
+                                bidding.<b> You only need to place once refundable USD 300 deposit to get unlimited
+                                    bidding power.</b></span>
+                        </li>
+                        <li>
+                            <strong><img src="https://image.autowini.com/resources/IMG/common/new/ic_bidVehicle.svg">Bid
+                                on your vehicles</strong>
+                            <span><b>You can join our regular live auction once a week.</b> Have other plans at auction
+                                time? Use preliminary-bidding (pre-bid) until 15 minutes before the live auction starts.
+                                Don’t miss our great deals only on Auctionwini.</span>
+                        </li>
+                        <li>
+                            <strong><img src="https://image.autowini.com/resources/IMG/common/new/ic_shipVehicle.svg">We
+                                ship your vehicle</strong>
+                            <span><b>Auctionwini can be your shipping agent to provide on-demand shipping service.</b>
+                                Just ask your shipping request, we can handle your shipping from schedule to
+                                documents.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!-- END MAIN  -->
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="inner clearfix">
+
+                <div class="footL">
+                    <h2>
+                        <a href="javascript:;">
+                            <img
+                                src="https://image.autowini.com/cdn/auction/web/images/common/bottom-logo.png"
+                                alt="logo">
+                        </a>
+                    </h2>
+                </div>
+
+                <div class="footR">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt><a href="javascript:;">Find Vehicles</a></dt>
+                                <dd><a href="javascript:;" class="on_auction">Live Auction</a></dd>
+                                
+                                
+                            </dl>
+                        </li>                            
+                        <li>
+                            <dl>
+                                
+                                    
+                                        <dt><a href="javascript:;">Support</a></dt>
+                                        <dd><a href="/support/how-to-start">How to Start</a></dd>
+                                        <dd><a href="/support/howtobuy/overview">How to Buy</a></dd>
+                                        <dd><a href="/support/terms-guides">Terms and Guides</a></dd>
+                                        <dd><a href="/support/fee-cost">Fees &amp; Costs</a></dd>
+                                        <dd><a href="/support/rule-policy">Rules &amp; Policies</a></dd>
+                                        <dd><a href="/support/shipping">Shipping</a></dd>
+                                        <dd><a href="/support/cutting-service">Cutting Services</a></dd>
+                                        <dd><a href="/support/contactus">Contact Us</a></dd>
+                                    
+                                    
+                                
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                
+                                    <dt><a href="javascript:;">Community</a></dt>
+                                    
+                                
+                                <dd><a href="/community/reviews">Buyer's Review</a></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="javascript:;">About Us</a></dt>
+                                <dd><a href="javascript:;" class="ftr_link_auctionwini">Auctionwini?</a></dd>
+                                <dd><a href="/support/notice">Notice</a></dd>
+                                
+                                    
+                                
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="copyright">
+                <p>COPYRIGHT ⓒ AUTOWINI <span id="yearTime">2024</span> ALL RIGHTS RESERVED
+                    <a href="https://winilogis.com/" target="_blank" class="winiLogis"><img src="https://image.autowini.com/resources/IMG/common/logo_winiLogis_white.svg" alt="partwini"></a>
+                    <a href="https://www.autowini.com/Parts/parts-search" target="_blank" class="partswini"><img src="https://image.autowini.com/resources/IMG/common/img_partswiniLogo.png" alt="partwini"></a>
+                    <a href="https://www.autowini.com" target="_blank"><img src="https://image.autowini.com/resources/IMG/common/logo_autowini_white.svg" alt="autowini"></a>
+                </p>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+
+
+
+
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/other.js"></script>
+    <script src="./assets/js/home.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auctionwini News Cars</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/cars.css">
+    <link rel="stylesheet" href="./assets/css/popup.css">
+    <link rel="stylesheet" href="./assets/css/two.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header en">
+        <!-- HEADER LANGUAGE -->
+        <div class="headerTnb clearfix">
+            <div class="inner">
+
+
+                <div class="language">
+                    <button type="button" id="lang" class="btnLang">English</button>
+                    <ul class="clearfix">
+                        <li id="en" class="on"><a href="javscript:;" class="btn_language btn_only_buyer lang_en act"
+                                style="display: inline-block;">English</a></li>
+                        <li id="es"><a href="javscript:;" class="btn_language btn_only_buyer lang_es"
+                                style="display: inline-block;">Español</a></li>
+                        <li id="ru"><a href="javscript:;" class="btn_language btn_only_buyer lang_ru"
+                                style="display: inline-block;">Русский</a></li>
+                        <li id="ar"><a href="javscript:;" class="btn_language btn_only_buyer lang_ar"
+                                style="display: inline-block;">العربية</a></li>
+                        <li id="mn"><a href="javscript:;" class="btn_language btn_only_buyer lang_mn"
+                                style="display: inline-block;">Монгол</a></li>
+                        <li id="ko" class="ko"><a href="javscript:;" class="btn_language lang_ko"
+                                style="display: inline-block;">한국어</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="gmt" id="gmt">
+                    <a href="javascript:;"><span id="headerTime">22:11 pm London</span></a>
+                    <div class="set_gmt">
+                        <span class="clearfix">Set Your Time Zone<em id="timeChg">22:11 pm London</em></span>
+                        <select id="set_timeZone" name="set_tz">
+                            <option data-sub="GMT" value="Europe/London">(GMT+00:00) U.K London</option>
+                            <option data-sub="PYST" value="America/Asuncion">(GMT-03:00) Paraguay Asuncion</option>
+                            <option data-sub="CLST" value="America/Santiago">(GMT-03:00) Chile Santiago</option>
+                            <option data-sub="AST" value="America/Santo_Domingo">(GMT-04:00) Rep Dominicana Santo
+                                Domingo</option>
+                            <option data-sub="CST" value="America/Tegucigalpa">(GMT-06:00) Honduras Tegucigalpa
+                            </option>
+                            <option data-sub="CST" value="America/Guatemala">(GMT-06:00) Guatemala Guatemala
+                            </option>
+                            <option data-sub="GMT" value="Africa/Accra">(GMT+00:00) Ghana Accra</option>
+                            <option data-sub="WAT" value="Africa/Lagos">(GMT+01:00) Nigeria Lagos</option>
+                            <option data-sub="WAT" value="Africa/Libreville">(GMT+01:00) Gabon libreville</option>
+                            <option data-sub="CET" value="Europe/Tirane">(GMT+01:00) Albania Tirane</option>
+                            <option data-sub="CET" value="Europe/Warsaw">(GMT+01:00) Poland Warsaw</option>
+                            <option data-sub="EET" value="Africa/Tripoli">(GMT+02:00) Libya Tripoli</option>
+                            <option data-sub="CAT" value="Africa/Kigali">(GMT+02:00) Rwanda Kigali</option>
+                            <option data-sub="EET" value="Europe/Kiev">(GMT+02:00) Ukraine Kiev</option>
+                            <option data-sub="AST" value="Asia/Riyadh">(GMT+03:00) Saudi Arabia Riyadh</option>
+                            <option data-sub="MSK" value="Europe/Moscow">(GMT+03:00) Russia Moscow</option>
+                            <option data-sub="EAT" value="Indian/Antananarivo">(GMT+03:00) Madagascar Antananarivo
+                            </option>
+                            <option data-sub="GET" value="Asia/Tbilisi">(GMT+04:00) Georgia Tbilisi</option>
+                            <option data-sub="AZT" value="Asia/Baku">(GMT+04:00) Azerbaijan Baku</option>
+                            <option data-sub="UZT" value="Asia/Tashkent">(GMT+05:00) Uzbekistan Tashkent</option>
+                            <option data-sub="ICT" value="Asia/Phnom_Penh">(GMT+07:00) Cambodia Phnom Penh</option>
+                            <option data-sub="ULAT" value="Asia/Ulaanbaatar">(GMT+08:00) Mongolia Ulaanbaatar
+                            </option>
+                            <option data-sub="KST" value="Asia/Seoul">(GMT+09:00) Korea Seoul</option>
+                        </select>
+                        <div class="btn_area clearfix">
+                            <button type="button" id="btn_sv" class="btn_sv">Save My Time Zone</button>
+                            <button type="button" id="btn_cl" class="btn_cl">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- END HEADER LANGUAGE -->
+
+        <!-- SEARCH HEADER -->
+        <div class="headerCon">
+            <div class="inner">
+
+                <div class="left">
+                    <h1 class="logo">
+                        <a href="/main"><img src="https://image.autowini.com/resources/IMG/common/img_logo.svg"></a>
+                    </h1>
+                    <div class="searchBox">
+                        <input id="i_skeyword_header_Search" type="text" class="ui-autocomplete-input"
+                            placeholder="Enter Make, Model, Year" autocomplete="off">
+                        <button id="btnheaderSearch" type="button" class="btn_search"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+
+                <div class="right" id="headMenuArea">
+                    <ul class="quickMeun buyer clearfix" style="display:none;">
+                        <li class="account">
+                            <a href="javascript:;">
+                                <i></i>
+                                <span class="label">My Account</span>
+                            </a>
+                            <div class="accountModal">
+                                <ul>
+                                    <li><a href="/mypage/info/my-account-view">My Information</a></li>
+                                    <li id="btnMembership"><a href="javscript:;">Membership Status</a></li>
+                                    <li id="btnPhotoId"><a href="javscript:;">Photo ID</a></li>
+                                    <li id="btnDeposit"><a href="javscript:;">Deposit</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="watch btn_subList" data-flag="WL">
+                            <a href="javascript:;">
+                                <i></i>
+                                <span class="label">Watch List</span>
+                            </a>
+                        </li>
+                        <li class="order account alertCheck ">
+                            <a href="javascript:;">
+                                <i></i>
+                                <span class="label">My Auction</span>
+                            </a>
+                            <div class="accountModal">
+                                <ul>
+                                    <li><a href="/mybids/get-bidding-list/live">My Bidding (Live)</a></li>
+                                    <li><a href="/mybids/get-bidding-list/local">My Bidding (Rental/Local)</a></li>
+                                    <li><a href="/mybids/order-list" class="alertCheck ">My Order</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="quickMeun seller clearfix" style="display: none">
+                        <li class="account">
+                            <a href="javascript:;">
+                                <i></i>
+                                <span class="label">마이페이지</span>
+                            </a>
+
+                            <div class="accountModal">
+                                <ul>
+                                    <li class="sub_my_info">
+                                        <a href="javscript:;" class="">내 정보</a>
+                                    </li>
+                                    <li class="sub_employee_manage ceo" style="display: none">
+                                        <a href="javscript:;">직원 관리</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="contact btn_sale_contact">
+                            <a href="javascript:;">
+                                <i></i>
+                                <span class="label">가입문의</span>
+                            </a>
+                        </li>
+                        <li class="regist btn_sale_reg">
+                            <a href="javascript:;">
+                                <i></i>
+                                <span class="label">매물등록</span>
+                            </a>
+                        </li>
+                        <li class="manage btn_sale_manage">
+                            <a href="javascript:;">
+                                <i></i>
+                                <span class="label">매물관리</span>
+                            </a>
+                        </li>
+                        <li class="biding btn_sale_biding">
+                            <a href="javascript:;">
+                                <i></i>
+                                <span class="label">입찰내역</span>
+                            </a>
+                        </li>
+                        <li class="order btn_sale_order">
+                            <a href="javascript:;">
+                                <i></i>
+                                <span class="label">거래내역</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="signZone nologin" style="" id="noLoginMenu">
+                        <li class="signIn"><a href="/login">SIGN IN</a></li>
+                        <li class="singUp"><a href="/join/joinus">SIGN UP</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- END SEARCH HEADER -->
+        <div class="headerGnb">
+            <div class="inner">
+                <div class="menu buyer">
+                    <div class="menuLive"><a href="/entry/carsale/get-carsale-pc-list-on">Auctions</a></div>
+
+                    <ul class="depth1">
+                        <li class="rentalAuc">
+                            <a href="javascript:;" style="line-height: 62px;" id="rentalAucEvent">
+                                <span
+                                    style="display:block;position:absolute;top:8px;left:50%;text-align:center;width:100%;font-size:11px;line-height:1;color:#FF3102;transform: translateX(-50%);">
+                                    EVENT
+                                </span>
+                                Rental Auction
+                            </a>
+                            <a href="javascript:;" id="rentalAucNoneEvent" style="display: none;">
+                                Rental Auction
+                            </a>
+                        </li>
+                        <li class="localAuc">
+                            <a href="javascript:;" style="line-height:62px; display:none;" id="localAucEvent">
+                                <span
+                                    style="display:block;position:absolute;top:8px;left:50%;text-align:center;width:100%;font-size:11px;line-height:1;color:#dd1f26;transform: translateX(-50%);">
+                                    EVENT
+                                </span>
+                                Local Auction
+                            </a>
+                            <a href="javascript:;" id="localAucNoneEvent">
+                                Local Auction
+                            </a>
+                        </li>
+                        <li class="memuKo"> <a href="/support/howtobuy/overview" class="btn_menu">Support</a>
+                            <ul class="depth2">
+                                <li><a href="/support/how-to-start" class="">How to Start</a></li>
+                                <li><a href="/support/howtobuy/overview" class="">How to Buy</a></li>
+                                <li><a href="/support/terms-guides" class="">Terms and Guides</a></li>
+                                <li><a href="/support/fee-cost" class="">Fees &amp; Costs</a></li>
+                                <li><a href="/support/rule-policy" class="">Rules &amp; Policies</a></li>
+                                <li><a href="/support/shipping" class="">Shipping</a></li>
+                                <li><a href="/support/cutting-service" class="">Cutting Services</a></li>
+                                <li><a href="/support/local-auction" class="">Rental and Local Auctions</a></li>
+                                <li><a href="/support/contactus" class="">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="reviewsmenu">
+                            <a href="/community/reviews" class="btn_menu">Reviews</a>
+                            <ul class="depth2">
+                                <li><a href="/community/reviews">Buyer's review</a></li>
+                            </ul>
+                        </li>
+                        <li class="aboutusmenu">
+                            <a href="/about/aboutus/about-auctionwini" class="btn_menu">About Us</a>
+                            <ul class="depth2">
+                                <li><a href="/about/aboutus/about-auctionwini">About Us</a></li>
+                                <li><a href="/support/notice" class="">Notice</a></li>
+
+
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- MAIN -->
+    <div class="wrap">
+        <div class="contents" id="contents" style="background-color: #fff;">
+            <div class="listWrap">
+
+                <div class="filterCon">
+                    <div class="inner">
+                        <h3>
+                            Filter Option
+                            <button type="button" id="filter_clear" class="filter_clear">Clear All</button>
+                            <button type="button" class="mob_close">Close</button>
+                        </h3>
+                        <ul>
+                            <li class="dbl tri">
+                                <dl>
+                                    <dt class="hilight_red_check"><span>Highlights</span>
+                                        <div class="toolTipBox">
+                                            <div class="toolTipBtn"></div>
+                                            <div class="toolTipCon">
+                                                <ul>
+                                                    <li><strong>Run &amp; Drive</strong> The vehicle was capable of
+                                                        moving forward under its own power at the time of the vehicle
+                                                        arrived at the seller’s yard.</li>
+                                                    <li><strong>Non Drivable</strong> The vehicle was not capable of
+                                                        being driven. Engine was not started and not working.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dd class="hilight_inner_box">
+                                        <ol>
+                                            <li>
+                                                <input type="checkbox" id="highlightRun and Drive" value="A0010">
+                                                <label for="highlightRun and Drive">Run and Drive
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="highlightNon-Drivable" value="A0030">
+                                                <label for="highlightNon-Drivable">Non-Drivable</label>
+                                            </li>
+                                        </ol>
+                                    </dd>
+                                </dl>
+                            </li><!---->
+                            <li class="dbl tri filterVeri">
+                                <dl>
+                                    <dt class="inspectedFlag_red_check"><span><img
+                                                src="https://image.autowini.com/resources/IMG/common/ic_inspected.png"
+                                                alt="inspected.vehicle">Inspected</span></dt>
+                                    <dd>
+                                        <ol>
+                                            <li><input type="checkbox" id="inspected" checked=""><label
+                                                    for="inspected">Inspected Vehicle</label></li>
+                                        </ol>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="dbl tri filterVeri">
+                                <dl>
+                                    <dt class="aNew_red_check"><span><img
+                                                src="https://image.autowini.com/resources/IMG/common/iconNew.svg"
+                                                alt="newly added vehicle">Newly added vehicle</span></dt>
+                                    <dd>
+                                        <ol>
+                                            <li><input type="checkbox" id="newlyAdded" checked=""><label
+                                                    for="newlyAdded">Newly added vehicle</label></li>
+                                        </ol>
+                                    </dd>
+                                </dl>
+                            </li><!----><!---->
+                            <li class="dbl tri filterVeri">
+                                <dl>
+                                    <dt class=""><span>Bidding Deadline (KST)</span></dt>
+                                    <dd>
+                                        <ol><!--[-->
+                                            <li><input type="checkbox" id="deadline2024-06-28 09:00"
+                                                    value="2024-06-28 09:00"><label
+                                                    for="deadline2024-06-28 09:00">2024-06-28 09:00</label></li><!--]-->
+                                        </ol>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="dbl">
+                                <dl>
+                                    <dt><span>Year</span></dt>
+                                    <dd class="year">
+                                        <ol>
+                                            <li><select>
+                                                    <option value="" selected="">From</option><!--[-->
+                                                    <option value="1995">1995</option>
+                                                    <option value="1996">1996</option>
+                                                    <option value="1997">1997</option>
+                                                    <option value="1998">1998</option>
+                                                    <option value="1999">1999</option>
+                                                    <option value="2000">2000</option>
+                                                    <option value="2001">2001</option>
+                                                    <option value="2002">2002</option>
+                                                    <option value="2003">2003</option>
+                                                    <option value="2004">2004</option>
+                                                    <option value="2005">2005</option>
+                                                    <option value="2006">2006</option>
+                                                    <option value="2007">2007</option>
+                                                    <option value="2008">2008</option>
+                                                    <option value="2009">2009</option>
+                                                    <option value="2010">2010</option>
+                                                    <option value="2011">2011</option>
+                                                    <option value="2012">2012</option>
+                                                    <option value="2013">2013</option>
+                                                    <option value="2014">2014</option>
+                                                    <option value="2015">2015</option>
+                                                    <option value="2016">2016</option>
+                                                    <option value="2017">2017</option>
+                                                    <option value="2018">2018</option>
+                                                    <option value="2019">2019</option>
+                                                    <option value="2020">2020</option>
+                                                    <option value="2021">2021</option>
+                                                    <option value="2022">2022</option>
+                                                    <option value="2023">2023</option>
+                                                    <option value="2024">2024</option><!--]-->
+                                                </select></li>
+                                            <li><select>
+                                                    <option value="" selected="">To</option><!--[-->
+                                                    <option value="1995">1995</option>
+                                                    <option value="1996">1996</option>
+                                                    <option value="1997">1997</option>
+                                                    <option value="1998">1998</option>
+                                                    <option value="1999">1999</option>
+                                                    <option value="2000">2000</option>
+                                                    <option value="2001">2001</option>
+                                                    <option value="2002">2002</option>
+                                                    <option value="2003">2003</option>
+                                                    <option value="2004">2004</option>
+                                                    <option value="2005">2005</option>
+                                                    <option value="2006">2006</option>
+                                                    <option value="2007">2007</option>
+                                                    <option value="2008">2008</option>
+                                                    <option value="2009">2009</option>
+                                                    <option value="2010">2010</option>
+                                                    <option value="2011">2011</option>
+                                                    <option value="2012">2012</option>
+                                                    <option value="2013">2013</option>
+                                                    <option value="2014">2014</option>
+                                                    <option value="2015">2015</option>
+                                                    <option value="2016">2016</option>
+                                                    <option value="2017">2017</option>
+                                                    <option value="2018">2018</option>
+                                                    <option value="2019">2019</option>
+                                                    <option value="2020">2020</option>
+                                                    <option value="2021">2021</option>
+                                                    <option value="2022">2022</option>
+                                                    <option value="2023">2023</option>
+                                                    <option value="2024">2024</option><!--]-->
+                                                </select></li>
+                                        </ol>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="maker_container">
+                                <dl>
+                                    <dt class="maker_red_check"><a href="#" class="btnF"><span>Make</span><em
+                                                class="maker_plus">+</em></a></dt>
+                                    <dd class="maker_inner_container">
+                                        <p style="display: none;">no search maker</p>
+                                        <ol title="제조사"><!--[-->
+                                            <li><input type="checkbox" title="제조사" id="makeC0810" value="C0810"><label
+                                                    for="makeC0810">Kia</label><span class="count">17</span></li>
+                                            <li><input type="checkbox" title="제조사" id="makeC0680" value="C0680"><label
+                                                    for="makeC0680">Hyundai</label><span class="count">15</span></li>
+                                            <li><input type="checkbox" title="제조사" id="makeC1300" value="C1300"><label
+                                                    for="makeC1300">Renault Samsung</label><span class="count">5</span>
+                                            </li>
+                                            <li><input type="checkbox" title="제조사" id="makeC1710" value="C1710"><label
+                                                    for="makeC1710">Genesis</label><span class="count">3</span></li>
+                                            <li><input type="checkbox" title="제조사" id="makeC1500" value="C1500"><label
+                                                    for="makeC1500">Ssangyong</label><span class="count">2</span></li>
+                                            <li><input type="checkbox" title="제조사" id="makeC0480" value="C0480"><label
+                                                    for="makeC0480">Ford</label><span class="count">1</span></li>
+                                            <li><input type="checkbox" title="제조사" id="makeC1720" value="C1720"><label
+                                                    for="makeC1720">GM Daewoo (Chevrolet)</label><span
+                                                    class="count">1</span></li><!--]-->
+                                        </ol>
+                                        <div class="filter_loading"></div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="model_container">
+                                <dl>
+                                    <dt class="model_red_check"><a href="#" class="btnF"><span>Model</span><em
+                                                class="model_plus">+</em></a></dt>
+                                    <dd class="model_inner_container">
+                                        <p style="">Select Make</p>
+                                        <ol title="모델"><!--[--><!--]--></ol>
+                                        <div class="filter_loading"></div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="subModel_container">
+                                <dl>
+                                    <dt class="subModel_red_check"><a href="#" class="btnF"><span>Detail Model</span><em
+                                                class="submodel_plus">+</em></a></dt>
+                                    <dd class="subModel_inner_container">
+                                        <p style="">Select Model</p>
+                                        <ol title="상세모델"><!--[--><!--]--></ol>
+                                        <div class="filter_loading"></div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="damage_container">
+                                <dl>
+                                    <dt class="damage_red_check"><a href="#" class="btnF"><span>Damages</span><em
+                                                class="damage_plus">+</em></a></dt>
+                                    <dd class="damage_inner_container">
+                                        <ol><!--[-->
+                                            <li><input type="checkbox" id="damage(COLLISION) All over"
+                                                    value="SC0150"><label for="damage(COLLISION) All over">(COLLISION)
+                                                    All over</label></li>
+                                            <li><input type="checkbox" id="damage(COLLISION) Front end"
+                                                    value="SC0160"><label for="damage(COLLISION) Front end">(COLLISION)
+                                                    Front end</label></li>
+                                            <li><input type="checkbox" id="damage(COLLISION) Side" value="SC0170"><label
+                                                    for="damage(COLLISION) Side">(COLLISION) Side</label></li>
+                                            <li><input type="checkbox" id="damage(COLLISION) Rear end"
+                                                    value="SC0180"><label for="damage(COLLISION) Rear end">(COLLISION)
+                                                    Rear end</label></li>
+                                            <li><input type="checkbox" id="damage(COLLISION) Roof" value="SC0181"><label
+                                                    for="damage(COLLISION) Roof">(COLLISION) Roof</label></li>
+                                            <li><input type="checkbox" id="damage(COLLISION) Underbody"
+                                                    value="SC0182"><label for="damage(COLLISION) Underbody">(COLLISION)
+                                                    Underbody</label></li>
+                                            <li><input type="checkbox" id="damage(ENGINE DAMAGE) Unstable RPM"
+                                                    value="SC0330"><label
+                                                    for="damage(ENGINE DAMAGE) Unstable RPM">(ENGINE DAMAGE) Unstable
+                                                    RPM</label></li>
+                                            <li><input type="checkbox" id="damage(ENGINE DAMAGE) Rough Idle"
+                                                    value="SC0331"><label for="damage(ENGINE DAMAGE) Rough Idle">(ENGINE
+                                                    DAMAGE) Rough Idle</label></li>
+                                            <li><input type="checkbox" id="damage(ENGINE DAMAGE) High temperature"
+                                                    value="SC0329"><label
+                                                    for="damage(ENGINE DAMAGE) High temperature">(ENGINE DAMAGE) High
+                                                    temperature</label></li>
+                                            <li><input type="checkbox" id="damage(ENGINE DAMAGE) Serious Smoke"
+                                                    value="SC0328"><label
+                                                    for="damage(ENGINE DAMAGE) Serious Smoke">(ENGINE DAMAGE) Serious
+                                                    Smoke</label></li>
+                                            <li><input type="checkbox" id="damage(ENGINE DAMAGE) RPM Malfunction"
+                                                    value="SC0332"><label
+                                                    for="damage(ENGINE DAMAGE) RPM Malfunction">(ENGINE DAMAGE) RPM
+                                                    Malfunction</label></li>
+                                            <li><input type="checkbox" id="damage(ENGINE DAMAGE) Unknown"
+                                                    value="SC0333"><label for="damage(ENGINE DAMAGE) Unknown">(ENGINE
+                                                    DAMAGE) Unknown</label></li>
+                                            <li><input type="checkbox" id="damage(TRANSMISSION DAMAGE) Unable 4 wheel"
+                                                    value="SC0130"><label
+                                                    for="damage(TRANSMISSION DAMAGE) Unable 4 wheel">(TRANSMISSION
+                                                    DAMAGE) Unable 4 wheel</label></li>
+                                            <li><input type="checkbox" id="damage(TRANSMISSION DAMAGE) Unable D"
+                                                    value="SC0100"><label
+                                                    for="damage(TRANSMISSION DAMAGE) Unable D">(TRANSMISSION DAMAGE)
+                                                    Unable D</label></li>
+                                            <li><input type="checkbox" id="damage(TRANSMISSION DAMAGE) Unable R"
+                                                    value="SC0110"><label
+                                                    for="damage(TRANSMISSION DAMAGE) Unable R">(TRANSMISSION DAMAGE)
+                                                    Unable R</label></li>
+                                            <li><input type="checkbox" id="damage(TRANSMISSION DAMAGE) Oil Leak"
+                                                    value="SC0120"><label
+                                                    for="damage(TRANSMISSION DAMAGE) Oil Leak">(TRANSMISSION DAMAGE) Oil
+                                                    Leak</label></li>
+                                            <li><input type="checkbox"
+                                                    id="damage(TRANSMISSION DAMAGE) Noise &amp;#38; Oil Leak"
+                                                    value="SC0140"><label
+                                                    for="damage(TRANSMISSION DAMAGE) Noise &amp;#38; Oil Leak">(TRANSMISSION
+                                                    DAMAGE) Noise &amp;#38; Oil Leak</label></li>
+                                            <li><input type="checkbox" id="damage(TRANSMISSION DAMAGE) Unknown"
+                                                    value="SC0141"><label
+                                                    for="damage(TRANSMISSION DAMAGE) Unknown">(TRANSMISSION DAMAGE)
+                                                    Unknown</label></li>
+                                            <li><input type="checkbox" id="damage(INTERIOR DAMAGE) Air-conditioner"
+                                                    value="SC0070"><label
+                                                    for="damage(INTERIOR DAMAGE) Air-conditioner">(INTERIOR DAMAGE)
+                                                    Air-conditioner</label></li>
+                                            <li><input type="checkbox" id="damage(INTERIOR DAMAGE) Light"
+                                                    value="SC0060"><label for="damage(INTERIOR DAMAGE) Light">(INTERIOR
+                                                    DAMAGE) Light</label></li>
+                                            <li><input type="checkbox" id="damage(INTERIOR DAMAGE) Instrument Panel"
+                                                    value="SC0050"><label
+                                                    for="damage(INTERIOR DAMAGE) Instrument Panel">(INTERIOR DAMAGE)
+                                                    Instrument Panel</label></li>
+                                            <li><input type="checkbox" id="damage(INTERIOR DAMAGE) Door Lock"
+                                                    value="SC0040"><label
+                                                    for="damage(INTERIOR DAMAGE) Door Lock">(INTERIOR DAMAGE) Door
+                                                    Lock</label></li>
+                                            <li><input type="checkbox" id="damage(INTERIOR DAMAGE) Audio"
+                                                    value="SC0090"><label for="damage(INTERIOR DAMAGE) Audio">(INTERIOR
+                                                    DAMAGE) Audio</label></li>
+                                            <li><input type="checkbox" id="damage(INTERIOR DAMAGE) Window"
+                                                    value="SC0080"><label for="damage(INTERIOR DAMAGE) Window">(INTERIOR
+                                                    DAMAGE) Window</label></li>
+                                            <li><input type="checkbox" id="damage(INTERIOR DAMAGE) Interior"
+                                                    value="SC0091"><label
+                                                    for="damage(INTERIOR DAMAGE) Interior">(INTERIOR DAMAGE)
+                                                    Interior</label></li>
+                                            <li><input type="checkbox" id="damage(INTERIOR DAMAGE) Seat"
+                                                    value="SC0092"><label for="damage(INTERIOR DAMAGE) Seat">(INTERIOR
+                                                    DAMAGE) Seat</label></li>
+                                            <li><input type="checkbox" id="damage(INTERIOR DAMAGE) Brake"
+                                                    value="SC0093"><label for="damage(INTERIOR DAMAGE) Brake">(INTERIOR
+                                                    DAMAGE) Brake</label></li>
+                                            <li><input type="checkbox" id="damage(INTERIOR DAMAGE) Steering"
+                                                    value="SC0094"><label
+                                                    for="damage(INTERIOR DAMAGE) Steering">(INTERIOR DAMAGE)
+                                                    Steering</label></li>
+                                            <li><input type="checkbox" id="damage(INTERIOR DAMAGE) Others"
+                                                    value="SC0095"><label for="damage(INTERIOR DAMAGE) Others">(INTERIOR
+                                                    DAMAGE) Others</label></li>
+                                            <li><input type="checkbox" id="damage(WATER) Whole" value="SC0191"><label
+                                                    for="damage(WATER) Whole">(WATER) Whole</label></li>
+                                            <li><input type="checkbox" id="damage(WATER) Engine Room"
+                                                    value="SC0192"><label for="damage(WATER) Engine Room">(WATER) Engine
+                                                    Room</label></li>
+                                            <li><input type="checkbox" id="damage(WATER) Seat" value="SC0193"><label
+                                                    for="damage(WATER) Seat">(WATER) Seat</label></li>
+                                            <li><input type="checkbox" id="damage(WATER) Floor" value="SC0194"><label
+                                                    for="damage(WATER) Floor">(WATER) Floor</label></li>
+                                            <li><input type="checkbox" id="damage(BURN) Whole" value="SC0230"><label
+                                                    for="damage(BURN) Whole">(BURN) Whole</label></li>
+                                            <li><input type="checkbox" id="damage(BURN) Partially" value="SC0240"><label
+                                                    for="damage(BURN) Partially">(BURN) Partially</label></li>
+                                            <li><input type="checkbox" id="damage(BURN) Engine Room"
+                                                    value="SC0241"><label for="damage(BURN) Engine Room">(BURN) Engine
+                                                    Room</label></li>
+                                            <li><input type="checkbox" id="damage(BURN) Interior" value="SC0242"><label
+                                                    for="damage(BURN) Interior">(BURN) Interior</label></li>
+                                            <li><input type="checkbox" id="damage(MECHANICAL) DRIVING PART"
+                                                    value="SC0250"><label
+                                                    for="damage(MECHANICAL) DRIVING PART">(MECHANICAL) DRIVING
+                                                    PART</label></li>
+                                            <li><input type="checkbox" id="damage(MECHANICAL) INTERIOR"
+                                                    value="SC0260"><label for="damage(MECHANICAL) INTERIOR">(MECHANICAL)
+                                                    INTERIOR</label></li>
+                                            <li><input type="checkbox" id="damage(OTHER DAMAGE) Chemical"
+                                                    value="SC0270"><label for="damage(OTHER DAMAGE) Chemical">(OTHER
+                                                    DAMAGE) Chemical</label></li>
+                                            <li><input type="checkbox" id="damage(OTHER DAMAGE) Hail"
+                                                    value="SC0280"><label for="damage(OTHER DAMAGE) Hail">(OTHER DAMAGE)
+                                                    Hail</label></li>
+                                            <li><input type="checkbox" id="damage(OTHER DAMAGE) Lightning"
+                                                    value="SC0290"><label for="damage(OTHER DAMAGE) Lightning">(OTHER
+                                                    DAMAGE) Lightning</label></li>
+                                            <li><input type="checkbox" id="damage(NORMAL WEAR) Rust"
+                                                    value="SC0310"><label for="damage(NORMAL WEAR) Rust">(NORMAL WEAR)
+                                                    Rust</label></li>
+                                            <li><input type="checkbox" id="damage(NORMAL WEAR) No Rust"
+                                                    value="SC0320"><label for="damage(NORMAL WEAR) No Rust">(NORMAL
+                                                    WEAR) No Rust</label></li><!--]-->
+                                        </ol>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="odometer_container">
+                                <dl>
+                                    <dt class="odometer_red_check"><a href="#" class="btnF"><span>Odometer
+                                                Reading</span><em class="odometer_plus">+</em></a></dt>
+                                    <dd class="odometer_inner_container">
+                                        <ol><!--[-->
+                                            <li><input type="checkbox" id="Less than 50,000km"
+                                                    value="[object Object]"><label for="Less than 50,000km">Less than
+                                                    50,000km</label></li>
+                                            <li><input type="checkbox" id="50,001km ~ 100,000km"
+                                                    value="[object Object]"><label for="50,001km ~ 100,000km">50,001km ~
+                                                    100,000km</label></li>
+                                            <li><input type="checkbox" id="100,001km ~ 150,000km"
+                                                    value="[object Object]"><label for="100,001km ~ 150,000km">100,001km
+                                                    ~ 150,000km</label></li>
+                                            <li><input type="checkbox" id="150,001km ~ 200,000km"
+                                                    value="[object Object]"><label for="150,001km ~ 200,000km">150,001km
+                                                    ~ 200,000km</label></li>
+                                            <li><input type="checkbox" id="Over 200,001km"
+                                                    value="[object Object]"><label for="Over 200,001km">Over
+                                                    200,001km</label></li>
+                                            <li><input type="checkbox" id="Not Actual" value="[object Object]"><label
+                                                    for="Not Actual">Not Actual</label></li><!--]-->
+                                        </ol>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="dbl key_container">
+                                <dl>
+                                    <dt class="key_red_check"><span>Key</span></dt>
+                                    <dd class="area_key">
+                                        <ol>
+                                            <li><button type="button" class="btn">Yes</button></li>
+                                            <li><button type="button" class="btn">No</button></li>
+                                        </ol>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="fuel_container">
+                                <dl>
+                                    <dt class="fuelType_red_check"><a href="#" class="btnF"><span>Fuel Type</span><em
+                                                class="fuelType_plus">+</em></a></dt>
+                                    <dd class="fuel_inner_container">
+                                        <ol id="i_sFuelType"><!--[-->
+                                            <li><input type="checkbox" id="fuelGasoline" value="C010"><label
+                                                    for="fuelGasoline">Gasoline</label></li>
+                                            <li><input type="checkbox" id="fuelDiesel" value="C060"><label
+                                                    for="fuelDiesel">Diesel</label></li>
+                                            <li><input type="checkbox" id="fuelLPG" value="C070"><label
+                                                    for="fuelLPG">LPG</label></li>
+                                            <li><input type="checkbox" id="fuelGasoline LPG" value="C080"><label
+                                                    for="fuelGasoline LPG">Gasoline LPG</label></li>
+                                            <li><input type="checkbox" id="fuelOthers" value="C090"><label
+                                                    for="fuelOthers">Others</label></li>
+                                            <li><input type="checkbox" id="fuelCNG" value="C030"><label
+                                                    for="fuelCNG">CNG</label></li>
+                                            <li><input type="checkbox" id="fuelDiesel + Electric Hybrid"
+                                                    value="C065"><label for="fuelDiesel + Electric Hybrid">Diesel +
+                                                    Electric Hybrid</label></li>
+                                            <li><input type="checkbox" id="fuelElectric" value="C040"><label
+                                                    for="fuelElectric">Electric</label></li>
+                                            <li><input type="checkbox" id="fuelGasoline + Electric Hybrid"
+                                                    value="C050"><label for="fuelGasoline + Electric Hybrid">Gasoline +
+                                                    Electric Hybrid</label></li>
+                                            <li><input type="checkbox" id="fuelBiodiesel" value="C020"><label
+                                                    for="fuelBiodiesel">Biodiesel</label></li>
+                                            <li><input type="checkbox" id="fuelLPG + Electric Hybrid"
+                                                    value="C100"><label for="fuelLPG + Electric Hybrid">LPG + Electric
+                                                    Hybrid</label></li>
+                                            <li><input type="checkbox" id="fuelHydrogen + Electric Hybrid"
+                                                    value="C110"><label for="fuelHydrogen + Electric Hybrid">Hydrogen +
+                                                    Electric Hybrid</label></li><!--]-->
+                                        </ol>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="dbl handle_container">
+                                <dl>
+                                    <dt class="handle_red_check"><span>Steering wheel</span></dt>
+                                    <dd class="area_handle">
+                                        <ol><!--[-->
+                                            <li><button type="button" class="btn">LHD</button></li>
+                                            <li><button type="button" class="btn">RHD</button></li><!--]-->
+                                        </ol>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="cylinder_container">
+                                <dl>
+                                    <dt class="cylinder_red_check"><a href="#" class="btnF"><span>Cylinder</span><em
+                                                class="cylinder_plus">+</em></a></dt>
+                                    <dd class="cylinder_inner_container">
+                                        <ol id="i_sCylinder"><!--[-->
+                                            <li><input type="checkbox" id="cylinder8" value="A0030"><label
+                                                    for="cylinder8">8</label></li>
+                                            <li><input type="checkbox" id="cylinderU" value="A0010"><label
+                                                    for="cylinderU">U</label></li>
+                                            <li><input type="checkbox" id="cylinderR" value="A0020"><label
+                                                    for="cylinderR">R</label></li>
+                                            <li><input type="checkbox" id="cylinder6" value="A0040"><label
+                                                    for="cylinder6">6</label></li>
+                                            <li><input type="checkbox" id="cylinder5" value="A0050"><label
+                                                    for="cylinder5">5</label></li>
+                                            <li><input type="checkbox" id="cylinder4" value="A0060"><label
+                                                    for="cylinder4">4</label></li>
+                                            <li><input type="checkbox" id="cylinder3" value="A0070"><label
+                                                    for="cylinder3">3</label></li>
+                                            <li><input type="checkbox" id="cylinder2" value="A0080"><label
+                                                    for="cylinder2">2</label></li>
+                                            <li><input type="checkbox" id="cylinder12" value="A0090"><label
+                                                    for="cylinder12">12</label></li>
+                                            <li><input type="checkbox" id="cylinder10" value="A0100"><label
+                                                    for="cylinder10">10</label></li>
+                                            <li><input type="checkbox" id="cylinder1" value="A0110"><label
+                                                    for="cylinder1">1</label></li><!--]-->
+                                        </ol>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="dbl transmission_container">
+                                <dl>
+                                    <dt class="transmission_red_check"><span>Transmission</span></dt>
+                                    <dd class="area_transmission">
+                                        <ol><!--[-->
+                                            <li><button type="button" class="btn">Automatic</button></li>
+                                            <li><button type="button" class="btn">Manual</button></li><!--]-->
+                                        </ol>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="drive_container">
+                                <dl>
+                                    <dt class="drive_red_check"><a href="#" class="btnF"><span>Drive</span><em
+                                                class="drive_plus">+</em></a></dt>
+                                    <dd class="drive_inner_container">
+                                        <ol id="i_sDrive"><!--[-->
+                                            <li><input type="checkbox" id="driveTypeFront 2WD" value="C010"><label
+                                                    for="driveTypeFront 2WD">Front 2WD</label></li>
+                                            <li><input type="checkbox" id="driveTypeRear 2WD" value="C020"><label
+                                                    for="driveTypeRear 2WD">Rear 2WD</label></li>
+                                            <li><input type="checkbox" id="driveType4 Wheel Drive" value="C040"><label
+                                                    for="driveType4 Wheel Drive">4 Wheel Drive</label></li>
+                                            <li><input type="checkbox" id="driveTypeUnspecific" value="C999"><label
+                                                    for="driveTypeUnspecific">Unspecific</label></li><!--]-->
+                                        </ol>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="dbl tri">
+                                <dl>
+                                    <dt>Keyword Search</dt>
+                                    <dd><input type="text" placeholder="Keyword Search" value=""></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <div class="btn_area"><button type="button" class="btn_red" id="btn_new_search">Search</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="listCon">
+                    <div class="popupVisual rental"
+                        style="background-image: url('./assets/img/img_rentalAuc.7WSEGe3X\ \(1\).png');">
+                        <dl>
+                            <dt>Rental Auction</dt>
+                            <dd>Bid and win for rental cars from major fleet partners! </dd>
+                            <dd>
+                                <a aria-current="page" href="/rentalAuction#"
+                                    class="router-link-active router-link-exact-active">Go to Learn How to Bid and
+                                    Win</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="filterChk">
+                        <dl>
+                            <dt>Filter applied</dt>
+                            <dd></dd>
+                        </dl>
+                    </div>
+
+                    <div class="resultCon">
+                        <div class="top">
+                            <div class="left">
+                                <span>Result <b>44</b> lots</span>
+                            </div>
+                            <div class="right">
+                                <select>
+                                    <option value="81">Mostly Viewed</option>
+                                    <option value="71">Most Saved</option>
+                                    <option value="20" selected="">Price: Low to High</option>
+                                    <option value="21">Price: High to Low</option>
+                                    <option value="40">Year: Low to High</option>
+                                    <option value="41">Year: High to Low</option>
+                                </select>
+                                <select>
+                                    <option value="50" selected="">50 per page</option>
+                                    <option value="70">70 per page</option>
+                                    <option value="100">100 per page</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="gallery">
+                            <ul class="itemList grid show">
+                                <li>
+                                    <div class="img">
+                                        <div class="slide slide_wrap">
+                                            <div class="slide_item">
+                                                <img alt="BMW M4" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_prev_button slide_button">◀</div>
+                                            <div class="slide_next_button slide_button">▶</div>
+                                            <ul class="slide_pagination"></ul>
+                                        </div>
+                                        <div class="badge"><span class="cnt">54+</span><span
+                                                class="rental">RENTAL</span></div>
+                                        <div class="topMark">
+                                            <div class="lft"><span class="inspected"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="71" viewBox="0 0 72 71" fill="none">
+                                                <g filter="url(#filter0_d_391_2711)">
+                                                <path d="M0.17157 69.799V35.8284L36.1152 1.25732H69.0564L0.17157 69.799Z" fill="#D10023"/>
+                                                <path d="M4.37045 44.5011L10.3176 50.4932L9.08709 51.7144L3.13993 45.7224L4.37045 44.5011Z" fill="white"/>
+                                                <path d="M10.2351 38.6804L16.1823 44.6725L14.9477 45.8978L8.55356 44.2706L12.5401 48.2873L11.3055 49.5127L5.35832 43.5206L6.59296 42.2952L12.9953 43.9224L9.00461 39.9017L10.2351 38.6804Z" fill="white"/>
+                                                <path d="M18.6511 39.1096C18.5449 39.0026 18.4332 38.9229 18.3158 38.8705C18.1985 38.8127 18.0619 38.7903 17.9061 38.8034C17.7475 38.8137 17.556 38.8595 17.3315 38.9406C17.1071 39.0218 16.8347 39.1451 16.5142 39.3106C16.1555 39.4924 15.7995 39.6496 15.4464 39.7822C15.0961 39.9121 14.7555 39.9969 14.4246 40.0367C14.0937 40.071 13.7781 40.0438 13.4778 39.9552C13.1802 39.8639 12.9034 39.6893 12.6474 39.4314C12.3996 39.1817 12.2298 38.9009 12.1381 38.589C12.0436 38.2743 12.023 37.9462 12.0762 37.6047C12.1267 37.2605 12.2469 36.9152 12.4368 36.5687C12.6294 36.2196 12.8876 35.8844 13.2114 35.563C13.6531 35.1246 14.1176 34.8216 14.6047 34.654C15.0919 34.4863 15.5635 34.4512 16.0197 34.5486C16.4785 34.6433 16.8849 34.8689 17.2389 35.2256L16.0125 36.4428C15.8382 36.2672 15.6487 36.1503 15.4439 36.0922C15.2392 36.0285 15.0246 36.0318 14.8002 36.102C14.5785 36.1695 14.3566 36.3136 14.1343 36.5341C13.9203 36.7465 13.7747 36.9565 13.6974 37.1639C13.6173 37.3686 13.5961 37.5612 13.6337 37.7418C13.6686 37.9196 13.7527 38.0757 13.8861 38.2101C13.9869 38.3116 14.1028 38.379 14.2339 38.4123C14.3677 38.4429 14.5208 38.4435 14.6931 38.4141C14.8654 38.3846 15.0569 38.328 15.2677 38.244C15.4785 38.1601 15.7113 38.0516 15.966 37.9187C16.3905 37.6934 16.7875 37.5199 17.1569 37.3983C17.5292 37.274 17.8752 37.2056 18.195 37.1931C18.5149 37.1807 18.814 37.2296 19.0924 37.34C19.3708 37.4504 19.6325 37.629 19.8776 37.876C20.1363 38.1366 20.317 38.4202 20.4197 38.7267C20.5224 39.0333 20.5486 39.3532 20.4981 39.6864C20.4476 40.0197 20.3261 40.3555 20.1335 40.6937C19.9409 41.0319 19.68 41.3644 19.3507 41.6912C19.0544 41.9852 18.7241 42.2368 18.3598 42.4459C17.9927 42.6523 17.6123 42.793 17.2184 42.8681C16.8272 42.9404 16.4391 42.9225 16.0541 42.8145C15.6691 42.7064 15.3092 42.4837 14.9742 42.1462L16.213 40.9167C16.3982 41.1033 16.5835 41.2325 16.7691 41.3042C16.9547 41.376 17.1392 41.3999 17.3224 41.376C17.5083 41.3494 17.6917 41.2817 17.8726 41.1731C18.0561 41.0617 18.2357 40.9189 18.4113 40.7446C18.6253 40.5322 18.7709 40.3278 18.8482 40.1312C18.9282 39.932 18.948 39.7462 18.9077 39.5739C18.8701 39.3988 18.7846 39.244 18.6511 39.1096Z" fill="white"/>
+                                                <path d="M22.3265 34.3344L20.7997 35.8497L19.8439 34.8867L21.3707 33.3713C21.6067 33.1372 21.7606 32.9081 21.8325 32.6843C21.9017 32.4577 21.9012 32.2404 21.8309 32.0324C21.7606 31.8243 21.6383 31.6326 21.4641 31.457C21.2871 31.2786 21.088 31.1467 20.8669 31.0611C20.6458 30.9755 20.4149 30.9596 20.1742 31.0134C19.9335 31.0672 19.6951 31.2111 19.4592 31.4453L18.3603 32.5359L23.3476 37.5609L22.113 38.7862L16.1658 32.7941L18.4993 30.4782C18.9684 30.0125 19.4548 29.6987 19.9583 29.5366C20.4619 29.369 20.9499 29.3449 21.4223 29.4642C21.8948 29.5835 22.3202 29.8338 22.6987 30.2152C23.0827 30.602 23.3257 31.0253 23.4279 31.4848C23.53 31.9444 23.4886 32.4185 23.3036 32.9071C23.1214 33.393 22.7957 33.8687 22.3265 34.3344Z" fill="white"/>
+                                                <path d="M30.4418 28.6082L31.3976 29.5712L28.2081 32.7368L27.2523 31.7738L30.4418 28.6082ZM22.6643 26.3444L28.6114 32.3365L27.3768 33.5619L21.4296 27.5698L22.6643 26.3444ZM27.4569 26.4322L28.3882 27.3705L25.6144 30.1235L24.6831 29.1852L27.4569 26.4322ZM25.4463 23.5832L26.4062 24.5504L23.2208 27.7118L22.261 26.7447L25.4463 23.5832Z" fill="white"/>
+                                                <path d="M33.4498 23.5886L34.6803 22.3673C35.0559 22.7951 35.3002 23.2635 35.4131 23.7723C35.5287 24.2784 35.498 24.7935 35.3211 25.3177C35.147 25.8391 34.8143 26.3435 34.3232 26.8309C33.9391 27.2122 33.5294 27.4881 33.0942 27.6586C32.6562 27.8265 32.205 27.8931 31.7404 27.8585C31.2786 27.8213 30.8158 27.6815 30.3521 27.4392C29.8883 27.1969 29.4386 26.8563 29.0029 26.4173L28.5903 26.0017C28.1546 25.5627 27.8188 25.109 27.5827 24.6407C27.3467 24.167 27.2132 23.6977 27.1821 23.2329C27.1538 22.7654 27.2252 22.3133 27.3963 21.8766C27.5675 21.4399 27.8409 21.035 28.2168 20.6619C28.7162 20.1664 29.2272 19.8389 29.7499 19.6796C30.2753 19.5176 30.7906 19.5017 31.2958 19.6321C31.8037 19.7598 32.2784 20.0076 32.7198 20.3755L31.4852 21.6009C31.2318 21.373 30.9809 21.2163 30.7325 21.1306C30.4814 21.0422 30.2299 21.0385 29.9781 21.1196C29.7264 21.1952 29.4633 21.3691 29.189 21.6414C28.9832 21.8457 28.8416 22.0624 28.7642 22.2917C28.6868 22.5211 28.6736 22.7656 28.7245 23.0255C28.7755 23.2854 28.8934 23.5605 29.0781 23.8509C29.2629 24.1359 29.5133 24.4375 29.8291 24.7558L30.2499 25.1797C30.5576 25.4897 30.8518 25.7396 31.1327 25.9292C31.4108 26.1161 31.6782 26.2429 31.9348 26.3094C32.1915 26.3705 32.4376 26.366 32.6729 26.2958C32.9083 26.2202 33.1357 26.0734 33.3552 25.8556C33.6131 25.5996 33.7849 25.3474 33.8705 25.099C33.9562 24.8506 33.9626 24.6019 33.8897 24.3529C33.8196 24.1011 33.673 23.8464 33.4498 23.5886Z" fill="white"/>
+                                                <path d="M33.9039 15.1891L39.8511 21.1812L38.6205 22.4025L35.647 19.4064L32.6734 16.4104L33.9039 15.1891ZM35.7476 13.3592L36.7075 14.3263L31.8183 19.1788L30.8585 18.2117L35.7476 13.3592Z" fill="white"/>
+                                                <path d="M45.2949 13.8665L46.2507 14.8295L43.0613 17.995L42.1055 17.032L45.2949 13.8665ZM37.5174 11.6027L43.4646 17.5947L42.2299 18.8201L36.2828 12.828L37.5174 11.6027ZM42.3101 11.6904L43.2414 12.6287L40.4676 15.3817L39.5363 14.4434L42.3101 11.6904ZM40.2995 8.84148L41.2593 9.80861L38.074 12.9701L37.1141 12.0029L40.2995 8.84148Z" fill="white"/>
+                                                <path d="M48.642 12.4562L47.3374 13.751L46.3898 12.7798L47.6862 11.4932C48.0099 11.1718 48.2108 10.8282 48.2887 10.4622C48.3639 10.0935 48.3175 9.71201 48.1495 9.31777C47.9842 8.9208 47.7028 8.52204 47.3053 8.12147L47.0153 7.82927C46.7103 7.52198 46.4091 7.28441 46.1118 7.11656C45.8173 6.94598 45.5279 6.84375 45.2438 6.80988C44.9596 6.77601 44.6862 6.81052 44.4234 6.9134C44.1578 7.01353 43.9057 7.18206 43.667 7.41896L42.3254 8.75054L41.3655 7.78341L42.7072 6.45183C43.1077 6.05426 43.5421 5.75933 44.0102 5.56702C44.4784 5.36924 44.9598 5.27539 45.4545 5.28545C45.9492 5.29551 46.4367 5.41078 46.9169 5.63126C47.3972 5.84627 47.8497 6.16778 48.2745 6.59579L48.5564 6.87975C48.9784 7.30502 49.2965 7.75995 49.5106 8.24457C49.7275 8.72646 49.8391 9.21479 49.8454 9.70956C49.8518 10.1989 49.7543 10.6796 49.553 11.1517C49.3517 11.6183 49.048 12.0532 48.642 12.4562ZM42.0898 7.06452L48.037 13.0566L46.8024 14.282L40.8552 8.28989L42.0898 7.06452Z" fill="white"/>
+                                                </g>
+                                                <defs>
+                                                <filter id="filter0_d_391_2711" x="0" y="0" width="72" height="72" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                                <feOffset dx="1"/>
+                                                <feGaussianBlur stdDeviation="0.5"/>
+                                                <feComposite in2="hardAlpha" operator="out"/>
+                                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.22 0"/>
+                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_391_2711"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_391_2711" result="shape"/>
+                                                </filter>
+                                                </defs>
+                                                </svg> </span></div>
+                                            <div class="rgt"><span class="mkNew">NEW</span><!----></div>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <div class="damage"><span class="hit mk1">Run and Drive</span><span>(NORMAL
+                                                WEAR) Rust</span><!----></div>
+                                        <dl>
+                                            <dt>2020 Hyundai Avante</dt>
+                                            <dd><span>2406263323</span><span>1,591cc</span><span>LPG</span><span>99,238km</span>
+                                            </dd>
+                                        </dl>
+                                        <div class="sign"></div>
+                                        <div class="bid">
+                                            <div class="date"><span><em>Deadline</em> 06-28 06:00
+                                                    London</span><span><em>Time Left</em>23h 18m</span></div>
+                                            <div class="price"><span>Current Bid<b>USD 4,714</b></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="checkItem">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M13.5362 6.85125C13.0216 5.52022 12.1283 4.36914 10.9667 3.54029C9.80502 2.71143 8.42596 2.24113 6.99994 2.1875C5.57391 2.24113 4.19486 2.71143 3.03321 3.54029C1.87157 4.36914 0.978256 5.52022 0.463686 6.85125C0.428934 6.94737 0.428934 7.05263 0.463686 7.14875C0.978256 8.47978 1.87157 9.63086 3.03321 10.4597C4.19486 11.2886 5.57391 11.7589 6.99994 11.8125C8.42596 11.7589 9.80502 11.2886 10.9667 10.4597C12.1283 9.63086 13.0216 8.47978 13.5362 7.14875C13.5709 7.05263 13.5709 6.94737 13.5362 6.85125V6.85125ZM6.99994 10.9375C4.68119 10.9375 2.23119 9.21813 1.34306 7C2.23119 4.78187 4.68119 3.0625 6.99994 3.0625C9.31869 3.0625 11.7687 4.78187 12.6568 7C11.7687 9.21813 9.31869 10.9375 6.99994 10.9375Z" fill="#707070"/><path d="M7 4.375C6.48083 4.375 5.97331 4.52895 5.54163 4.81739C5.10995 5.10583 4.7735 5.5158 4.57482 5.99546C4.37614 6.47511 4.32415 7.00291 4.42544 7.51211C4.52673 8.02131 4.77673 8.48904 5.14385 8.85616C5.51096 9.22327 5.97869 9.47328 6.48789 9.57456C6.99709 9.67585 7.52489 9.62386 8.00454 9.42518C8.4842 9.2265 8.89417 8.89005 9.18261 8.45837C9.47105 8.02669 9.625 7.51918 9.625 7C9.625 6.30381 9.34844 5.63613 8.85616 5.14384C8.36387 4.65156 7.69619 4.375 7 4.375ZM7 8.75C6.65388 8.75 6.31554 8.64736 6.02775 8.45507C5.73997 8.26278 5.51567 7.98947 5.38321 7.6697C5.25076 7.34992 5.2161 6.99806 5.28363 6.65859C5.35115 6.31913 5.51782 6.0073 5.76256 5.76256C6.00731 5.51782 6.31913 5.35115 6.65859 5.28363C6.99806 5.2161 7.34993 5.25076 7.6697 5.38321C7.98947 5.51566 8.26278 5.73997 8.45507 6.02775C8.64736 6.31554 8.75 6.65388 8.75 7C8.75 7.46413 8.56563 7.90925 8.23744 8.23744C7.90925 8.56562 7.46413 8.75 7 8.75Z" fill="#707070"/></svg>
+                                            9</span>
+                                            <span class="bidChk">BID</span>
+                                        </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <div class="slide slide_wrap">
+                                            <div class="slide_item">
+                                                <img alt="BMW M4" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_prev_button slide_button">◀</div>
+                                            <div class="slide_next_button slide_button">▶</div>
+                                            <ul class="slide_pagination"></ul>
+                                        </div>
+                                        <div class="badge"><span class="cnt">54+</span><span
+                                                class="rental">RENTAL</span></div>
+                                        <div class="topMark">
+                                            <div class="lft"><span class="inspected"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="71" viewBox="0 0 72 71" fill="none">
+                                                <g filter="url(#filter0_d_391_2711)">
+                                                <path d="M0.17157 69.799V35.8284L36.1152 1.25732H69.0564L0.17157 69.799Z" fill="#D10023"/>
+                                                <path d="M4.37045 44.5011L10.3176 50.4932L9.08709 51.7144L3.13993 45.7224L4.37045 44.5011Z" fill="white"/>
+                                                <path d="M10.2351 38.6804L16.1823 44.6725L14.9477 45.8978L8.55356 44.2706L12.5401 48.2873L11.3055 49.5127L5.35832 43.5206L6.59296 42.2952L12.9953 43.9224L9.00461 39.9017L10.2351 38.6804Z" fill="white"/>
+                                                <path d="M18.6511 39.1096C18.5449 39.0026 18.4332 38.9229 18.3158 38.8705C18.1985 38.8127 18.0619 38.7903 17.9061 38.8034C17.7475 38.8137 17.556 38.8595 17.3315 38.9406C17.1071 39.0218 16.8347 39.1451 16.5142 39.3106C16.1555 39.4924 15.7995 39.6496 15.4464 39.7822C15.0961 39.9121 14.7555 39.9969 14.4246 40.0367C14.0937 40.071 13.7781 40.0438 13.4778 39.9552C13.1802 39.8639 12.9034 39.6893 12.6474 39.4314C12.3996 39.1817 12.2298 38.9009 12.1381 38.589C12.0436 38.2743 12.023 37.9462 12.0762 37.6047C12.1267 37.2605 12.2469 36.9152 12.4368 36.5687C12.6294 36.2196 12.8876 35.8844 13.2114 35.563C13.6531 35.1246 14.1176 34.8216 14.6047 34.654C15.0919 34.4863 15.5635 34.4512 16.0197 34.5486C16.4785 34.6433 16.8849 34.8689 17.2389 35.2256L16.0125 36.4428C15.8382 36.2672 15.6487 36.1503 15.4439 36.0922C15.2392 36.0285 15.0246 36.0318 14.8002 36.102C14.5785 36.1695 14.3566 36.3136 14.1343 36.5341C13.9203 36.7465 13.7747 36.9565 13.6974 37.1639C13.6173 37.3686 13.5961 37.5612 13.6337 37.7418C13.6686 37.9196 13.7527 38.0757 13.8861 38.2101C13.9869 38.3116 14.1028 38.379 14.2339 38.4123C14.3677 38.4429 14.5208 38.4435 14.6931 38.4141C14.8654 38.3846 15.0569 38.328 15.2677 38.244C15.4785 38.1601 15.7113 38.0516 15.966 37.9187C16.3905 37.6934 16.7875 37.5199 17.1569 37.3983C17.5292 37.274 17.8752 37.2056 18.195 37.1931C18.5149 37.1807 18.814 37.2296 19.0924 37.34C19.3708 37.4504 19.6325 37.629 19.8776 37.876C20.1363 38.1366 20.317 38.4202 20.4197 38.7267C20.5224 39.0333 20.5486 39.3532 20.4981 39.6864C20.4476 40.0197 20.3261 40.3555 20.1335 40.6937C19.9409 41.0319 19.68 41.3644 19.3507 41.6912C19.0544 41.9852 18.7241 42.2368 18.3598 42.4459C17.9927 42.6523 17.6123 42.793 17.2184 42.8681C16.8272 42.9404 16.4391 42.9225 16.0541 42.8145C15.6691 42.7064 15.3092 42.4837 14.9742 42.1462L16.213 40.9167C16.3982 41.1033 16.5835 41.2325 16.7691 41.3042C16.9547 41.376 17.1392 41.3999 17.3224 41.376C17.5083 41.3494 17.6917 41.2817 17.8726 41.1731C18.0561 41.0617 18.2357 40.9189 18.4113 40.7446C18.6253 40.5322 18.7709 40.3278 18.8482 40.1312C18.9282 39.932 18.948 39.7462 18.9077 39.5739C18.8701 39.3988 18.7846 39.244 18.6511 39.1096Z" fill="white"/>
+                                                <path d="M22.3265 34.3344L20.7997 35.8497L19.8439 34.8867L21.3707 33.3713C21.6067 33.1372 21.7606 32.9081 21.8325 32.6843C21.9017 32.4577 21.9012 32.2404 21.8309 32.0324C21.7606 31.8243 21.6383 31.6326 21.4641 31.457C21.2871 31.2786 21.088 31.1467 20.8669 31.0611C20.6458 30.9755 20.4149 30.9596 20.1742 31.0134C19.9335 31.0672 19.6951 31.2111 19.4592 31.4453L18.3603 32.5359L23.3476 37.5609L22.113 38.7862L16.1658 32.7941L18.4993 30.4782C18.9684 30.0125 19.4548 29.6987 19.9583 29.5366C20.4619 29.369 20.9499 29.3449 21.4223 29.4642C21.8948 29.5835 22.3202 29.8338 22.6987 30.2152C23.0827 30.602 23.3257 31.0253 23.4279 31.4848C23.53 31.9444 23.4886 32.4185 23.3036 32.9071C23.1214 33.393 22.7957 33.8687 22.3265 34.3344Z" fill="white"/>
+                                                <path d="M30.4418 28.6082L31.3976 29.5712L28.2081 32.7368L27.2523 31.7738L30.4418 28.6082ZM22.6643 26.3444L28.6114 32.3365L27.3768 33.5619L21.4296 27.5698L22.6643 26.3444ZM27.4569 26.4322L28.3882 27.3705L25.6144 30.1235L24.6831 29.1852L27.4569 26.4322ZM25.4463 23.5832L26.4062 24.5504L23.2208 27.7118L22.261 26.7447L25.4463 23.5832Z" fill="white"/>
+                                                <path d="M33.4498 23.5886L34.6803 22.3673C35.0559 22.7951 35.3002 23.2635 35.4131 23.7723C35.5287 24.2784 35.498 24.7935 35.3211 25.3177C35.147 25.8391 34.8143 26.3435 34.3232 26.8309C33.9391 27.2122 33.5294 27.4881 33.0942 27.6586C32.6562 27.8265 32.205 27.8931 31.7404 27.8585C31.2786 27.8213 30.8158 27.6815 30.3521 27.4392C29.8883 27.1969 29.4386 26.8563 29.0029 26.4173L28.5903 26.0017C28.1546 25.5627 27.8188 25.109 27.5827 24.6407C27.3467 24.167 27.2132 23.6977 27.1821 23.2329C27.1538 22.7654 27.2252 22.3133 27.3963 21.8766C27.5675 21.4399 27.8409 21.035 28.2168 20.6619C28.7162 20.1664 29.2272 19.8389 29.7499 19.6796C30.2753 19.5176 30.7906 19.5017 31.2958 19.6321C31.8037 19.7598 32.2784 20.0076 32.7198 20.3755L31.4852 21.6009C31.2318 21.373 30.9809 21.2163 30.7325 21.1306C30.4814 21.0422 30.2299 21.0385 29.9781 21.1196C29.7264 21.1952 29.4633 21.3691 29.189 21.6414C28.9832 21.8457 28.8416 22.0624 28.7642 22.2917C28.6868 22.5211 28.6736 22.7656 28.7245 23.0255C28.7755 23.2854 28.8934 23.5605 29.0781 23.8509C29.2629 24.1359 29.5133 24.4375 29.8291 24.7558L30.2499 25.1797C30.5576 25.4897 30.8518 25.7396 31.1327 25.9292C31.4108 26.1161 31.6782 26.2429 31.9348 26.3094C32.1915 26.3705 32.4376 26.366 32.6729 26.2958C32.9083 26.2202 33.1357 26.0734 33.3552 25.8556C33.6131 25.5996 33.7849 25.3474 33.8705 25.099C33.9562 24.8506 33.9626 24.6019 33.8897 24.3529C33.8196 24.1011 33.673 23.8464 33.4498 23.5886Z" fill="white"/>
+                                                <path d="M33.9039 15.1891L39.8511 21.1812L38.6205 22.4025L35.647 19.4064L32.6734 16.4104L33.9039 15.1891ZM35.7476 13.3592L36.7075 14.3263L31.8183 19.1788L30.8585 18.2117L35.7476 13.3592Z" fill="white"/>
+                                                <path d="M45.2949 13.8665L46.2507 14.8295L43.0613 17.995L42.1055 17.032L45.2949 13.8665ZM37.5174 11.6027L43.4646 17.5947L42.2299 18.8201L36.2828 12.828L37.5174 11.6027ZM42.3101 11.6904L43.2414 12.6287L40.4676 15.3817L39.5363 14.4434L42.3101 11.6904ZM40.2995 8.84148L41.2593 9.80861L38.074 12.9701L37.1141 12.0029L40.2995 8.84148Z" fill="white"/>
+                                                <path d="M48.642 12.4562L47.3374 13.751L46.3898 12.7798L47.6862 11.4932C48.0099 11.1718 48.2108 10.8282 48.2887 10.4622C48.3639 10.0935 48.3175 9.71201 48.1495 9.31777C47.9842 8.9208 47.7028 8.52204 47.3053 8.12147L47.0153 7.82927C46.7103 7.52198 46.4091 7.28441 46.1118 7.11656C45.8173 6.94598 45.5279 6.84375 45.2438 6.80988C44.9596 6.77601 44.6862 6.81052 44.4234 6.9134C44.1578 7.01353 43.9057 7.18206 43.667 7.41896L42.3254 8.75054L41.3655 7.78341L42.7072 6.45183C43.1077 6.05426 43.5421 5.75933 44.0102 5.56702C44.4784 5.36924 44.9598 5.27539 45.4545 5.28545C45.9492 5.29551 46.4367 5.41078 46.9169 5.63126C47.3972 5.84627 47.8497 6.16778 48.2745 6.59579L48.5564 6.87975C48.9784 7.30502 49.2965 7.75995 49.5106 8.24457C49.7275 8.72646 49.8391 9.21479 49.8454 9.70956C49.8518 10.1989 49.7543 10.6796 49.553 11.1517C49.3517 11.6183 49.048 12.0532 48.642 12.4562ZM42.0898 7.06452L48.037 13.0566L46.8024 14.282L40.8552 8.28989L42.0898 7.06452Z" fill="white"/>
+                                                </g>
+                                                <defs>
+                                                <filter id="filter0_d_391_2711" x="0" y="0" width="72" height="72" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                                <feOffset dx="1"/>
+                                                <feGaussianBlur stdDeviation="0.5"/>
+                                                <feComposite in2="hardAlpha" operator="out"/>
+                                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.22 0"/>
+                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_391_2711"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_391_2711" result="shape"/>
+                                                </filter>
+                                                </defs>
+                                                </svg> </span></div>
+                                            <div class="rgt"><span class="mkNew">NEW</span><!----></div>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <div class="damage"><span class="hit mk1">Run and Drive</span><span>(NORMAL
+                                                WEAR) Rust</span><!----></div>
+                                        <dl>
+                                            <dt>2020 Hyundai Avante</dt>
+                                            <dd><span>2406263323</span><span>1,591cc</span><span>LPG</span><span>99,238km</span>
+                                            </dd>
+                                        </dl>
+                                        <div class="sign"></div>
+                                        <div class="bid">
+                                            <div class="date"><span><em>Deadline</em> 06-28 06:00
+                                                    London</span><span><em>Time Left</em>23h 18m</span></div>
+                                            <div class="price"><span>Current Bid<b>USD 4,714</b></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="checkItem">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M13.5362 6.85125C13.0216 5.52022 12.1283 4.36914 10.9667 3.54029C9.80502 2.71143 8.42596 2.24113 6.99994 2.1875C5.57391 2.24113 4.19486 2.71143 3.03321 3.54029C1.87157 4.36914 0.978256 5.52022 0.463686 6.85125C0.428934 6.94737 0.428934 7.05263 0.463686 7.14875C0.978256 8.47978 1.87157 9.63086 3.03321 10.4597C4.19486 11.2886 5.57391 11.7589 6.99994 11.8125C8.42596 11.7589 9.80502 11.2886 10.9667 10.4597C12.1283 9.63086 13.0216 8.47978 13.5362 7.14875C13.5709 7.05263 13.5709 6.94737 13.5362 6.85125V6.85125ZM6.99994 10.9375C4.68119 10.9375 2.23119 9.21813 1.34306 7C2.23119 4.78187 4.68119 3.0625 6.99994 3.0625C9.31869 3.0625 11.7687 4.78187 12.6568 7C11.7687 9.21813 9.31869 10.9375 6.99994 10.9375Z" fill="#707070"/><path d="M7 4.375C6.48083 4.375 5.97331 4.52895 5.54163 4.81739C5.10995 5.10583 4.7735 5.5158 4.57482 5.99546C4.37614 6.47511 4.32415 7.00291 4.42544 7.51211C4.52673 8.02131 4.77673 8.48904 5.14385 8.85616C5.51096 9.22327 5.97869 9.47328 6.48789 9.57456C6.99709 9.67585 7.52489 9.62386 8.00454 9.42518C8.4842 9.2265 8.89417 8.89005 9.18261 8.45837C9.47105 8.02669 9.625 7.51918 9.625 7C9.625 6.30381 9.34844 5.63613 8.85616 5.14384C8.36387 4.65156 7.69619 4.375 7 4.375ZM7 8.75C6.65388 8.75 6.31554 8.64736 6.02775 8.45507C5.73997 8.26278 5.51567 7.98947 5.38321 7.6697C5.25076 7.34992 5.2161 6.99806 5.28363 6.65859C5.35115 6.31913 5.51782 6.0073 5.76256 5.76256C6.00731 5.51782 6.31913 5.35115 6.65859 5.28363C6.99806 5.2161 7.34993 5.25076 7.6697 5.38321C7.98947 5.51566 8.26278 5.73997 8.45507 6.02775C8.64736 6.31554 8.75 6.65388 8.75 7C8.75 7.46413 8.56563 7.90925 8.23744 8.23744C7.90925 8.56562 7.46413 8.75 7 8.75Z" fill="#707070"/></svg>
+                                            9</span>
+                                            <span class="bidChk">BID</span>
+                                        </div>
+                                </li>
+
+                                <li>
+                                    <div class="img">
+                                        <div class="slide slide_wrap">
+                                            <div class="slide_item">
+                                                <img alt="BMW M4" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_prev_button slide_button">◀</div>
+                                            <div class="slide_next_button slide_button">▶</div>
+                                            <ul class="slide_pagination"></ul>
+                                        </div>
+                                        <div class="badge"><span class="cnt">54+</span><span
+                                                class="rental">RENTAL</span></div>
+                                        <div class="topMark">
+                                            <div class="lft"><span class="inspected"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="71" viewBox="0 0 72 71" fill="none">
+                                                <g filter="url(#filter0_d_391_2711)">
+                                                <path d="M0.17157 69.799V35.8284L36.1152 1.25732H69.0564L0.17157 69.799Z" fill="#D10023"/>
+                                                <path d="M4.37045 44.5011L10.3176 50.4932L9.08709 51.7144L3.13993 45.7224L4.37045 44.5011Z" fill="white"/>
+                                                <path d="M10.2351 38.6804L16.1823 44.6725L14.9477 45.8978L8.55356 44.2706L12.5401 48.2873L11.3055 49.5127L5.35832 43.5206L6.59296 42.2952L12.9953 43.9224L9.00461 39.9017L10.2351 38.6804Z" fill="white"/>
+                                                <path d="M18.6511 39.1096C18.5449 39.0026 18.4332 38.9229 18.3158 38.8705C18.1985 38.8127 18.0619 38.7903 17.9061 38.8034C17.7475 38.8137 17.556 38.8595 17.3315 38.9406C17.1071 39.0218 16.8347 39.1451 16.5142 39.3106C16.1555 39.4924 15.7995 39.6496 15.4464 39.7822C15.0961 39.9121 14.7555 39.9969 14.4246 40.0367C14.0937 40.071 13.7781 40.0438 13.4778 39.9552C13.1802 39.8639 12.9034 39.6893 12.6474 39.4314C12.3996 39.1817 12.2298 38.9009 12.1381 38.589C12.0436 38.2743 12.023 37.9462 12.0762 37.6047C12.1267 37.2605 12.2469 36.9152 12.4368 36.5687C12.6294 36.2196 12.8876 35.8844 13.2114 35.563C13.6531 35.1246 14.1176 34.8216 14.6047 34.654C15.0919 34.4863 15.5635 34.4512 16.0197 34.5486C16.4785 34.6433 16.8849 34.8689 17.2389 35.2256L16.0125 36.4428C15.8382 36.2672 15.6487 36.1503 15.4439 36.0922C15.2392 36.0285 15.0246 36.0318 14.8002 36.102C14.5785 36.1695 14.3566 36.3136 14.1343 36.5341C13.9203 36.7465 13.7747 36.9565 13.6974 37.1639C13.6173 37.3686 13.5961 37.5612 13.6337 37.7418C13.6686 37.9196 13.7527 38.0757 13.8861 38.2101C13.9869 38.3116 14.1028 38.379 14.2339 38.4123C14.3677 38.4429 14.5208 38.4435 14.6931 38.4141C14.8654 38.3846 15.0569 38.328 15.2677 38.244C15.4785 38.1601 15.7113 38.0516 15.966 37.9187C16.3905 37.6934 16.7875 37.5199 17.1569 37.3983C17.5292 37.274 17.8752 37.2056 18.195 37.1931C18.5149 37.1807 18.814 37.2296 19.0924 37.34C19.3708 37.4504 19.6325 37.629 19.8776 37.876C20.1363 38.1366 20.317 38.4202 20.4197 38.7267C20.5224 39.0333 20.5486 39.3532 20.4981 39.6864C20.4476 40.0197 20.3261 40.3555 20.1335 40.6937C19.9409 41.0319 19.68 41.3644 19.3507 41.6912C19.0544 41.9852 18.7241 42.2368 18.3598 42.4459C17.9927 42.6523 17.6123 42.793 17.2184 42.8681C16.8272 42.9404 16.4391 42.9225 16.0541 42.8145C15.6691 42.7064 15.3092 42.4837 14.9742 42.1462L16.213 40.9167C16.3982 41.1033 16.5835 41.2325 16.7691 41.3042C16.9547 41.376 17.1392 41.3999 17.3224 41.376C17.5083 41.3494 17.6917 41.2817 17.8726 41.1731C18.0561 41.0617 18.2357 40.9189 18.4113 40.7446C18.6253 40.5322 18.7709 40.3278 18.8482 40.1312C18.9282 39.932 18.948 39.7462 18.9077 39.5739C18.8701 39.3988 18.7846 39.244 18.6511 39.1096Z" fill="white"/>
+                                                <path d="M22.3265 34.3344L20.7997 35.8497L19.8439 34.8867L21.3707 33.3713C21.6067 33.1372 21.7606 32.9081 21.8325 32.6843C21.9017 32.4577 21.9012 32.2404 21.8309 32.0324C21.7606 31.8243 21.6383 31.6326 21.4641 31.457C21.2871 31.2786 21.088 31.1467 20.8669 31.0611C20.6458 30.9755 20.4149 30.9596 20.1742 31.0134C19.9335 31.0672 19.6951 31.2111 19.4592 31.4453L18.3603 32.5359L23.3476 37.5609L22.113 38.7862L16.1658 32.7941L18.4993 30.4782C18.9684 30.0125 19.4548 29.6987 19.9583 29.5366C20.4619 29.369 20.9499 29.3449 21.4223 29.4642C21.8948 29.5835 22.3202 29.8338 22.6987 30.2152C23.0827 30.602 23.3257 31.0253 23.4279 31.4848C23.53 31.9444 23.4886 32.4185 23.3036 32.9071C23.1214 33.393 22.7957 33.8687 22.3265 34.3344Z" fill="white"/>
+                                                <path d="M30.4418 28.6082L31.3976 29.5712L28.2081 32.7368L27.2523 31.7738L30.4418 28.6082ZM22.6643 26.3444L28.6114 32.3365L27.3768 33.5619L21.4296 27.5698L22.6643 26.3444ZM27.4569 26.4322L28.3882 27.3705L25.6144 30.1235L24.6831 29.1852L27.4569 26.4322ZM25.4463 23.5832L26.4062 24.5504L23.2208 27.7118L22.261 26.7447L25.4463 23.5832Z" fill="white"/>
+                                                <path d="M33.4498 23.5886L34.6803 22.3673C35.0559 22.7951 35.3002 23.2635 35.4131 23.7723C35.5287 24.2784 35.498 24.7935 35.3211 25.3177C35.147 25.8391 34.8143 26.3435 34.3232 26.8309C33.9391 27.2122 33.5294 27.4881 33.0942 27.6586C32.6562 27.8265 32.205 27.8931 31.7404 27.8585C31.2786 27.8213 30.8158 27.6815 30.3521 27.4392C29.8883 27.1969 29.4386 26.8563 29.0029 26.4173L28.5903 26.0017C28.1546 25.5627 27.8188 25.109 27.5827 24.6407C27.3467 24.167 27.2132 23.6977 27.1821 23.2329C27.1538 22.7654 27.2252 22.3133 27.3963 21.8766C27.5675 21.4399 27.8409 21.035 28.2168 20.6619C28.7162 20.1664 29.2272 19.8389 29.7499 19.6796C30.2753 19.5176 30.7906 19.5017 31.2958 19.6321C31.8037 19.7598 32.2784 20.0076 32.7198 20.3755L31.4852 21.6009C31.2318 21.373 30.9809 21.2163 30.7325 21.1306C30.4814 21.0422 30.2299 21.0385 29.9781 21.1196C29.7264 21.1952 29.4633 21.3691 29.189 21.6414C28.9832 21.8457 28.8416 22.0624 28.7642 22.2917C28.6868 22.5211 28.6736 22.7656 28.7245 23.0255C28.7755 23.2854 28.8934 23.5605 29.0781 23.8509C29.2629 24.1359 29.5133 24.4375 29.8291 24.7558L30.2499 25.1797C30.5576 25.4897 30.8518 25.7396 31.1327 25.9292C31.4108 26.1161 31.6782 26.2429 31.9348 26.3094C32.1915 26.3705 32.4376 26.366 32.6729 26.2958C32.9083 26.2202 33.1357 26.0734 33.3552 25.8556C33.6131 25.5996 33.7849 25.3474 33.8705 25.099C33.9562 24.8506 33.9626 24.6019 33.8897 24.3529C33.8196 24.1011 33.673 23.8464 33.4498 23.5886Z" fill="white"/>
+                                                <path d="M33.9039 15.1891L39.8511 21.1812L38.6205 22.4025L35.647 19.4064L32.6734 16.4104L33.9039 15.1891ZM35.7476 13.3592L36.7075 14.3263L31.8183 19.1788L30.8585 18.2117L35.7476 13.3592Z" fill="white"/>
+                                                <path d="M45.2949 13.8665L46.2507 14.8295L43.0613 17.995L42.1055 17.032L45.2949 13.8665ZM37.5174 11.6027L43.4646 17.5947L42.2299 18.8201L36.2828 12.828L37.5174 11.6027ZM42.3101 11.6904L43.2414 12.6287L40.4676 15.3817L39.5363 14.4434L42.3101 11.6904ZM40.2995 8.84148L41.2593 9.80861L38.074 12.9701L37.1141 12.0029L40.2995 8.84148Z" fill="white"/>
+                                                <path d="M48.642 12.4562L47.3374 13.751L46.3898 12.7798L47.6862 11.4932C48.0099 11.1718 48.2108 10.8282 48.2887 10.4622C48.3639 10.0935 48.3175 9.71201 48.1495 9.31777C47.9842 8.9208 47.7028 8.52204 47.3053 8.12147L47.0153 7.82927C46.7103 7.52198 46.4091 7.28441 46.1118 7.11656C45.8173 6.94598 45.5279 6.84375 45.2438 6.80988C44.9596 6.77601 44.6862 6.81052 44.4234 6.9134C44.1578 7.01353 43.9057 7.18206 43.667 7.41896L42.3254 8.75054L41.3655 7.78341L42.7072 6.45183C43.1077 6.05426 43.5421 5.75933 44.0102 5.56702C44.4784 5.36924 44.9598 5.27539 45.4545 5.28545C45.9492 5.29551 46.4367 5.41078 46.9169 5.63126C47.3972 5.84627 47.8497 6.16778 48.2745 6.59579L48.5564 6.87975C48.9784 7.30502 49.2965 7.75995 49.5106 8.24457C49.7275 8.72646 49.8391 9.21479 49.8454 9.70956C49.8518 10.1989 49.7543 10.6796 49.553 11.1517C49.3517 11.6183 49.048 12.0532 48.642 12.4562ZM42.0898 7.06452L48.037 13.0566L46.8024 14.282L40.8552 8.28989L42.0898 7.06452Z" fill="white"/>
+                                                </g>
+                                                <defs>
+                                                <filter id="filter0_d_391_2711" x="0" y="0" width="72" height="72" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                                <feOffset dx="1"/>
+                                                <feGaussianBlur stdDeviation="0.5"/>
+                                                <feComposite in2="hardAlpha" operator="out"/>
+                                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.22 0"/>
+                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_391_2711"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_391_2711" result="shape"/>
+                                                </filter>
+                                                </defs>
+                                                </svg> </span></div>
+                                            <div class="rgt"><span class="mkNew">NEW</span><!----></div>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <div class="damage"><span class="hit mk1">Run and Drive</span><span>(NORMAL
+                                                WEAR) Rust</span><!----></div>
+                                        <dl>
+                                            <dt>2020 Hyundai Avante</dt>
+                                            <dd><span>2406263323</span><span>1,591cc</span><span>LPG</span><span>99,238km</span>
+                                            </dd>
+                                        </dl>
+                                        <div class="sign"></div>
+                                        <div class="bid">
+                                            <div class="date"><span><em>Deadline</em> 06-28 06:00
+                                                    London</span><span><em>Time Left</em>23h 18m</span></div>
+                                            <div class="price"><span>Current Bid<b>USD 4,714</b></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="checkItem">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M13.5362 6.85125C13.0216 5.52022 12.1283 4.36914 10.9667 3.54029C9.80502 2.71143 8.42596 2.24113 6.99994 2.1875C5.57391 2.24113 4.19486 2.71143 3.03321 3.54029C1.87157 4.36914 0.978256 5.52022 0.463686 6.85125C0.428934 6.94737 0.428934 7.05263 0.463686 7.14875C0.978256 8.47978 1.87157 9.63086 3.03321 10.4597C4.19486 11.2886 5.57391 11.7589 6.99994 11.8125C8.42596 11.7589 9.80502 11.2886 10.9667 10.4597C12.1283 9.63086 13.0216 8.47978 13.5362 7.14875C13.5709 7.05263 13.5709 6.94737 13.5362 6.85125V6.85125ZM6.99994 10.9375C4.68119 10.9375 2.23119 9.21813 1.34306 7C2.23119 4.78187 4.68119 3.0625 6.99994 3.0625C9.31869 3.0625 11.7687 4.78187 12.6568 7C11.7687 9.21813 9.31869 10.9375 6.99994 10.9375Z" fill="#707070"/><path d="M7 4.375C6.48083 4.375 5.97331 4.52895 5.54163 4.81739C5.10995 5.10583 4.7735 5.5158 4.57482 5.99546C4.37614 6.47511 4.32415 7.00291 4.42544 7.51211C4.52673 8.02131 4.77673 8.48904 5.14385 8.85616C5.51096 9.22327 5.97869 9.47328 6.48789 9.57456C6.99709 9.67585 7.52489 9.62386 8.00454 9.42518C8.4842 9.2265 8.89417 8.89005 9.18261 8.45837C9.47105 8.02669 9.625 7.51918 9.625 7C9.625 6.30381 9.34844 5.63613 8.85616 5.14384C8.36387 4.65156 7.69619 4.375 7 4.375ZM7 8.75C6.65388 8.75 6.31554 8.64736 6.02775 8.45507C5.73997 8.26278 5.51567 7.98947 5.38321 7.6697C5.25076 7.34992 5.2161 6.99806 5.28363 6.65859C5.35115 6.31913 5.51782 6.0073 5.76256 5.76256C6.00731 5.51782 6.31913 5.35115 6.65859 5.28363C6.99806 5.2161 7.34993 5.25076 7.6697 5.38321C7.98947 5.51566 8.26278 5.73997 8.45507 6.02775C8.64736 6.31554 8.75 6.65388 8.75 7C8.75 7.46413 8.56563 7.90925 8.23744 8.23744C7.90925 8.56562 7.46413 8.75 7 8.75Z" fill="#707070"/></svg>
+                                            9</span>
+                                            <span class="bidChk">BID</span>
+                                        </div>
+                                </li>
+
+                                <li>
+                                    <div class="img">
+                                        <div class="slide slide_wrap">
+                                            <div class="slide_item">
+                                                <img alt="BMW M4" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_prev_button slide_button">◀</div>
+                                            <div class="slide_next_button slide_button">▶</div>
+                                            <ul class="slide_pagination"></ul>
+                                        </div>
+                                        <div class="badge"><span class="cnt">54+</span><span
+                                                class="rental">RENTAL</span></div>
+                                        <div class="topMark">
+                                            <div class="lft"><span class="inspected"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="71" viewBox="0 0 72 71" fill="none">
+                                                <g filter="url(#filter0_d_391_2711)">
+                                                <path d="M0.17157 69.799V35.8284L36.1152 1.25732H69.0564L0.17157 69.799Z" fill="#D10023"/>
+                                                <path d="M4.37045 44.5011L10.3176 50.4932L9.08709 51.7144L3.13993 45.7224L4.37045 44.5011Z" fill="white"/>
+                                                <path d="M10.2351 38.6804L16.1823 44.6725L14.9477 45.8978L8.55356 44.2706L12.5401 48.2873L11.3055 49.5127L5.35832 43.5206L6.59296 42.2952L12.9953 43.9224L9.00461 39.9017L10.2351 38.6804Z" fill="white"/>
+                                                <path d="M18.6511 39.1096C18.5449 39.0026 18.4332 38.9229 18.3158 38.8705C18.1985 38.8127 18.0619 38.7903 17.9061 38.8034C17.7475 38.8137 17.556 38.8595 17.3315 38.9406C17.1071 39.0218 16.8347 39.1451 16.5142 39.3106C16.1555 39.4924 15.7995 39.6496 15.4464 39.7822C15.0961 39.9121 14.7555 39.9969 14.4246 40.0367C14.0937 40.071 13.7781 40.0438 13.4778 39.9552C13.1802 39.8639 12.9034 39.6893 12.6474 39.4314C12.3996 39.1817 12.2298 38.9009 12.1381 38.589C12.0436 38.2743 12.023 37.9462 12.0762 37.6047C12.1267 37.2605 12.2469 36.9152 12.4368 36.5687C12.6294 36.2196 12.8876 35.8844 13.2114 35.563C13.6531 35.1246 14.1176 34.8216 14.6047 34.654C15.0919 34.4863 15.5635 34.4512 16.0197 34.5486C16.4785 34.6433 16.8849 34.8689 17.2389 35.2256L16.0125 36.4428C15.8382 36.2672 15.6487 36.1503 15.4439 36.0922C15.2392 36.0285 15.0246 36.0318 14.8002 36.102C14.5785 36.1695 14.3566 36.3136 14.1343 36.5341C13.9203 36.7465 13.7747 36.9565 13.6974 37.1639C13.6173 37.3686 13.5961 37.5612 13.6337 37.7418C13.6686 37.9196 13.7527 38.0757 13.8861 38.2101C13.9869 38.3116 14.1028 38.379 14.2339 38.4123C14.3677 38.4429 14.5208 38.4435 14.6931 38.4141C14.8654 38.3846 15.0569 38.328 15.2677 38.244C15.4785 38.1601 15.7113 38.0516 15.966 37.9187C16.3905 37.6934 16.7875 37.5199 17.1569 37.3983C17.5292 37.274 17.8752 37.2056 18.195 37.1931C18.5149 37.1807 18.814 37.2296 19.0924 37.34C19.3708 37.4504 19.6325 37.629 19.8776 37.876C20.1363 38.1366 20.317 38.4202 20.4197 38.7267C20.5224 39.0333 20.5486 39.3532 20.4981 39.6864C20.4476 40.0197 20.3261 40.3555 20.1335 40.6937C19.9409 41.0319 19.68 41.3644 19.3507 41.6912C19.0544 41.9852 18.7241 42.2368 18.3598 42.4459C17.9927 42.6523 17.6123 42.793 17.2184 42.8681C16.8272 42.9404 16.4391 42.9225 16.0541 42.8145C15.6691 42.7064 15.3092 42.4837 14.9742 42.1462L16.213 40.9167C16.3982 41.1033 16.5835 41.2325 16.7691 41.3042C16.9547 41.376 17.1392 41.3999 17.3224 41.376C17.5083 41.3494 17.6917 41.2817 17.8726 41.1731C18.0561 41.0617 18.2357 40.9189 18.4113 40.7446C18.6253 40.5322 18.7709 40.3278 18.8482 40.1312C18.9282 39.932 18.948 39.7462 18.9077 39.5739C18.8701 39.3988 18.7846 39.244 18.6511 39.1096Z" fill="white"/>
+                                                <path d="M22.3265 34.3344L20.7997 35.8497L19.8439 34.8867L21.3707 33.3713C21.6067 33.1372 21.7606 32.9081 21.8325 32.6843C21.9017 32.4577 21.9012 32.2404 21.8309 32.0324C21.7606 31.8243 21.6383 31.6326 21.4641 31.457C21.2871 31.2786 21.088 31.1467 20.8669 31.0611C20.6458 30.9755 20.4149 30.9596 20.1742 31.0134C19.9335 31.0672 19.6951 31.2111 19.4592 31.4453L18.3603 32.5359L23.3476 37.5609L22.113 38.7862L16.1658 32.7941L18.4993 30.4782C18.9684 30.0125 19.4548 29.6987 19.9583 29.5366C20.4619 29.369 20.9499 29.3449 21.4223 29.4642C21.8948 29.5835 22.3202 29.8338 22.6987 30.2152C23.0827 30.602 23.3257 31.0253 23.4279 31.4848C23.53 31.9444 23.4886 32.4185 23.3036 32.9071C23.1214 33.393 22.7957 33.8687 22.3265 34.3344Z" fill="white"/>
+                                                <path d="M30.4418 28.6082L31.3976 29.5712L28.2081 32.7368L27.2523 31.7738L30.4418 28.6082ZM22.6643 26.3444L28.6114 32.3365L27.3768 33.5619L21.4296 27.5698L22.6643 26.3444ZM27.4569 26.4322L28.3882 27.3705L25.6144 30.1235L24.6831 29.1852L27.4569 26.4322ZM25.4463 23.5832L26.4062 24.5504L23.2208 27.7118L22.261 26.7447L25.4463 23.5832Z" fill="white"/>
+                                                <path d="M33.4498 23.5886L34.6803 22.3673C35.0559 22.7951 35.3002 23.2635 35.4131 23.7723C35.5287 24.2784 35.498 24.7935 35.3211 25.3177C35.147 25.8391 34.8143 26.3435 34.3232 26.8309C33.9391 27.2122 33.5294 27.4881 33.0942 27.6586C32.6562 27.8265 32.205 27.8931 31.7404 27.8585C31.2786 27.8213 30.8158 27.6815 30.3521 27.4392C29.8883 27.1969 29.4386 26.8563 29.0029 26.4173L28.5903 26.0017C28.1546 25.5627 27.8188 25.109 27.5827 24.6407C27.3467 24.167 27.2132 23.6977 27.1821 23.2329C27.1538 22.7654 27.2252 22.3133 27.3963 21.8766C27.5675 21.4399 27.8409 21.035 28.2168 20.6619C28.7162 20.1664 29.2272 19.8389 29.7499 19.6796C30.2753 19.5176 30.7906 19.5017 31.2958 19.6321C31.8037 19.7598 32.2784 20.0076 32.7198 20.3755L31.4852 21.6009C31.2318 21.373 30.9809 21.2163 30.7325 21.1306C30.4814 21.0422 30.2299 21.0385 29.9781 21.1196C29.7264 21.1952 29.4633 21.3691 29.189 21.6414C28.9832 21.8457 28.8416 22.0624 28.7642 22.2917C28.6868 22.5211 28.6736 22.7656 28.7245 23.0255C28.7755 23.2854 28.8934 23.5605 29.0781 23.8509C29.2629 24.1359 29.5133 24.4375 29.8291 24.7558L30.2499 25.1797C30.5576 25.4897 30.8518 25.7396 31.1327 25.9292C31.4108 26.1161 31.6782 26.2429 31.9348 26.3094C32.1915 26.3705 32.4376 26.366 32.6729 26.2958C32.9083 26.2202 33.1357 26.0734 33.3552 25.8556C33.6131 25.5996 33.7849 25.3474 33.8705 25.099C33.9562 24.8506 33.9626 24.6019 33.8897 24.3529C33.8196 24.1011 33.673 23.8464 33.4498 23.5886Z" fill="white"/>
+                                                <path d="M33.9039 15.1891L39.8511 21.1812L38.6205 22.4025L35.647 19.4064L32.6734 16.4104L33.9039 15.1891ZM35.7476 13.3592L36.7075 14.3263L31.8183 19.1788L30.8585 18.2117L35.7476 13.3592Z" fill="white"/>
+                                                <path d="M45.2949 13.8665L46.2507 14.8295L43.0613 17.995L42.1055 17.032L45.2949 13.8665ZM37.5174 11.6027L43.4646 17.5947L42.2299 18.8201L36.2828 12.828L37.5174 11.6027ZM42.3101 11.6904L43.2414 12.6287L40.4676 15.3817L39.5363 14.4434L42.3101 11.6904ZM40.2995 8.84148L41.2593 9.80861L38.074 12.9701L37.1141 12.0029L40.2995 8.84148Z" fill="white"/>
+                                                <path d="M48.642 12.4562L47.3374 13.751L46.3898 12.7798L47.6862 11.4932C48.0099 11.1718 48.2108 10.8282 48.2887 10.4622C48.3639 10.0935 48.3175 9.71201 48.1495 9.31777C47.9842 8.9208 47.7028 8.52204 47.3053 8.12147L47.0153 7.82927C46.7103 7.52198 46.4091 7.28441 46.1118 7.11656C45.8173 6.94598 45.5279 6.84375 45.2438 6.80988C44.9596 6.77601 44.6862 6.81052 44.4234 6.9134C44.1578 7.01353 43.9057 7.18206 43.667 7.41896L42.3254 8.75054L41.3655 7.78341L42.7072 6.45183C43.1077 6.05426 43.5421 5.75933 44.0102 5.56702C44.4784 5.36924 44.9598 5.27539 45.4545 5.28545C45.9492 5.29551 46.4367 5.41078 46.9169 5.63126C47.3972 5.84627 47.8497 6.16778 48.2745 6.59579L48.5564 6.87975C48.9784 7.30502 49.2965 7.75995 49.5106 8.24457C49.7275 8.72646 49.8391 9.21479 49.8454 9.70956C49.8518 10.1989 49.7543 10.6796 49.553 11.1517C49.3517 11.6183 49.048 12.0532 48.642 12.4562ZM42.0898 7.06452L48.037 13.0566L46.8024 14.282L40.8552 8.28989L42.0898 7.06452Z" fill="white"/>
+                                                </g>
+                                                <defs>
+                                                <filter id="filter0_d_391_2711" x="0" y="0" width="72" height="72" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                                <feOffset dx="1"/>
+                                                <feGaussianBlur stdDeviation="0.5"/>
+                                                <feComposite in2="hardAlpha" operator="out"/>
+                                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.22 0"/>
+                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_391_2711"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_391_2711" result="shape"/>
+                                                </filter>
+                                                </defs>
+                                                </svg> </span></div>
+                                            <div class="rgt"><span class="mkNew">NEW</span><!----></div>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <div class="damage"><span class="hit mk1">Run and Drive</span><span>(NORMAL
+                                                WEAR) Rust</span><!----></div>
+                                        <dl>
+                                            <dt>2020 Hyundai Avante</dt>
+                                            <dd><span>2406263323</span><span>1,591cc</span><span>LPG</span><span>99,238km</span>
+                                            </dd>
+                                        </dl>
+                                        <div class="sign"></div>
+                                        <div class="bid">
+                                            <div class="date"><span><em>Deadline</em> 06-28 06:00
+                                                    London</span><span><em>Time Left</em>23h 18m</span></div>
+                                            <div class="price"><span>Current Bid<b>USD 4,714</b></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="checkItem">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M13.5362 6.85125C13.0216 5.52022 12.1283 4.36914 10.9667 3.54029C9.80502 2.71143 8.42596 2.24113 6.99994 2.1875C5.57391 2.24113 4.19486 2.71143 3.03321 3.54029C1.87157 4.36914 0.978256 5.52022 0.463686 6.85125C0.428934 6.94737 0.428934 7.05263 0.463686 7.14875C0.978256 8.47978 1.87157 9.63086 3.03321 10.4597C4.19486 11.2886 5.57391 11.7589 6.99994 11.8125C8.42596 11.7589 9.80502 11.2886 10.9667 10.4597C12.1283 9.63086 13.0216 8.47978 13.5362 7.14875C13.5709 7.05263 13.5709 6.94737 13.5362 6.85125V6.85125ZM6.99994 10.9375C4.68119 10.9375 2.23119 9.21813 1.34306 7C2.23119 4.78187 4.68119 3.0625 6.99994 3.0625C9.31869 3.0625 11.7687 4.78187 12.6568 7C11.7687 9.21813 9.31869 10.9375 6.99994 10.9375Z" fill="#707070"/><path d="M7 4.375C6.48083 4.375 5.97331 4.52895 5.54163 4.81739C5.10995 5.10583 4.7735 5.5158 4.57482 5.99546C4.37614 6.47511 4.32415 7.00291 4.42544 7.51211C4.52673 8.02131 4.77673 8.48904 5.14385 8.85616C5.51096 9.22327 5.97869 9.47328 6.48789 9.57456C6.99709 9.67585 7.52489 9.62386 8.00454 9.42518C8.4842 9.2265 8.89417 8.89005 9.18261 8.45837C9.47105 8.02669 9.625 7.51918 9.625 7C9.625 6.30381 9.34844 5.63613 8.85616 5.14384C8.36387 4.65156 7.69619 4.375 7 4.375ZM7 8.75C6.65388 8.75 6.31554 8.64736 6.02775 8.45507C5.73997 8.26278 5.51567 7.98947 5.38321 7.6697C5.25076 7.34992 5.2161 6.99806 5.28363 6.65859C5.35115 6.31913 5.51782 6.0073 5.76256 5.76256C6.00731 5.51782 6.31913 5.35115 6.65859 5.28363C6.99806 5.2161 7.34993 5.25076 7.6697 5.38321C7.98947 5.51566 8.26278 5.73997 8.45507 6.02775C8.64736 6.31554 8.75 6.65388 8.75 7C8.75 7.46413 8.56563 7.90925 8.23744 8.23744C7.90925 8.56562 7.46413 8.75 7 8.75Z" fill="#707070"/></svg>
+                                            9</span>
+                                            <span class="bidChk">BID</span>
+                                        </div>
+                                </li>
+
+                                <li>
+                                    <div class="img">
+                                        <div class="slide slide_wrap">
+                                            <div class="slide_item">
+                                                <img alt="BMW M4" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_prev_button slide_button">◀</div>
+                                            <div class="slide_next_button slide_button">▶</div>
+                                            <ul class="slide_pagination"></ul>
+                                        </div>
+                                        <div class="badge"><span class="cnt">54+</span><span
+                                                class="rental">RENTAL</span></div>
+                                        <div class="topMark">
+                                            <div class="lft"><span class="inspected"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="71" viewBox="0 0 72 71" fill="none">
+                                                <g filter="url(#filter0_d_391_2711)">
+                                                <path d="M0.17157 69.799V35.8284L36.1152 1.25732H69.0564L0.17157 69.799Z" fill="#D10023"/>
+                                                <path d="M4.37045 44.5011L10.3176 50.4932L9.08709 51.7144L3.13993 45.7224L4.37045 44.5011Z" fill="white"/>
+                                                <path d="M10.2351 38.6804L16.1823 44.6725L14.9477 45.8978L8.55356 44.2706L12.5401 48.2873L11.3055 49.5127L5.35832 43.5206L6.59296 42.2952L12.9953 43.9224L9.00461 39.9017L10.2351 38.6804Z" fill="white"/>
+                                                <path d="M18.6511 39.1096C18.5449 39.0026 18.4332 38.9229 18.3158 38.8705C18.1985 38.8127 18.0619 38.7903 17.9061 38.8034C17.7475 38.8137 17.556 38.8595 17.3315 38.9406C17.1071 39.0218 16.8347 39.1451 16.5142 39.3106C16.1555 39.4924 15.7995 39.6496 15.4464 39.7822C15.0961 39.9121 14.7555 39.9969 14.4246 40.0367C14.0937 40.071 13.7781 40.0438 13.4778 39.9552C13.1802 39.8639 12.9034 39.6893 12.6474 39.4314C12.3996 39.1817 12.2298 38.9009 12.1381 38.589C12.0436 38.2743 12.023 37.9462 12.0762 37.6047C12.1267 37.2605 12.2469 36.9152 12.4368 36.5687C12.6294 36.2196 12.8876 35.8844 13.2114 35.563C13.6531 35.1246 14.1176 34.8216 14.6047 34.654C15.0919 34.4863 15.5635 34.4512 16.0197 34.5486C16.4785 34.6433 16.8849 34.8689 17.2389 35.2256L16.0125 36.4428C15.8382 36.2672 15.6487 36.1503 15.4439 36.0922C15.2392 36.0285 15.0246 36.0318 14.8002 36.102C14.5785 36.1695 14.3566 36.3136 14.1343 36.5341C13.9203 36.7465 13.7747 36.9565 13.6974 37.1639C13.6173 37.3686 13.5961 37.5612 13.6337 37.7418C13.6686 37.9196 13.7527 38.0757 13.8861 38.2101C13.9869 38.3116 14.1028 38.379 14.2339 38.4123C14.3677 38.4429 14.5208 38.4435 14.6931 38.4141C14.8654 38.3846 15.0569 38.328 15.2677 38.244C15.4785 38.1601 15.7113 38.0516 15.966 37.9187C16.3905 37.6934 16.7875 37.5199 17.1569 37.3983C17.5292 37.274 17.8752 37.2056 18.195 37.1931C18.5149 37.1807 18.814 37.2296 19.0924 37.34C19.3708 37.4504 19.6325 37.629 19.8776 37.876C20.1363 38.1366 20.317 38.4202 20.4197 38.7267C20.5224 39.0333 20.5486 39.3532 20.4981 39.6864C20.4476 40.0197 20.3261 40.3555 20.1335 40.6937C19.9409 41.0319 19.68 41.3644 19.3507 41.6912C19.0544 41.9852 18.7241 42.2368 18.3598 42.4459C17.9927 42.6523 17.6123 42.793 17.2184 42.8681C16.8272 42.9404 16.4391 42.9225 16.0541 42.8145C15.6691 42.7064 15.3092 42.4837 14.9742 42.1462L16.213 40.9167C16.3982 41.1033 16.5835 41.2325 16.7691 41.3042C16.9547 41.376 17.1392 41.3999 17.3224 41.376C17.5083 41.3494 17.6917 41.2817 17.8726 41.1731C18.0561 41.0617 18.2357 40.9189 18.4113 40.7446C18.6253 40.5322 18.7709 40.3278 18.8482 40.1312C18.9282 39.932 18.948 39.7462 18.9077 39.5739C18.8701 39.3988 18.7846 39.244 18.6511 39.1096Z" fill="white"/>
+                                                <path d="M22.3265 34.3344L20.7997 35.8497L19.8439 34.8867L21.3707 33.3713C21.6067 33.1372 21.7606 32.9081 21.8325 32.6843C21.9017 32.4577 21.9012 32.2404 21.8309 32.0324C21.7606 31.8243 21.6383 31.6326 21.4641 31.457C21.2871 31.2786 21.088 31.1467 20.8669 31.0611C20.6458 30.9755 20.4149 30.9596 20.1742 31.0134C19.9335 31.0672 19.6951 31.2111 19.4592 31.4453L18.3603 32.5359L23.3476 37.5609L22.113 38.7862L16.1658 32.7941L18.4993 30.4782C18.9684 30.0125 19.4548 29.6987 19.9583 29.5366C20.4619 29.369 20.9499 29.3449 21.4223 29.4642C21.8948 29.5835 22.3202 29.8338 22.6987 30.2152C23.0827 30.602 23.3257 31.0253 23.4279 31.4848C23.53 31.9444 23.4886 32.4185 23.3036 32.9071C23.1214 33.393 22.7957 33.8687 22.3265 34.3344Z" fill="white"/>
+                                                <path d="M30.4418 28.6082L31.3976 29.5712L28.2081 32.7368L27.2523 31.7738L30.4418 28.6082ZM22.6643 26.3444L28.6114 32.3365L27.3768 33.5619L21.4296 27.5698L22.6643 26.3444ZM27.4569 26.4322L28.3882 27.3705L25.6144 30.1235L24.6831 29.1852L27.4569 26.4322ZM25.4463 23.5832L26.4062 24.5504L23.2208 27.7118L22.261 26.7447L25.4463 23.5832Z" fill="white"/>
+                                                <path d="M33.4498 23.5886L34.6803 22.3673C35.0559 22.7951 35.3002 23.2635 35.4131 23.7723C35.5287 24.2784 35.498 24.7935 35.3211 25.3177C35.147 25.8391 34.8143 26.3435 34.3232 26.8309C33.9391 27.2122 33.5294 27.4881 33.0942 27.6586C32.6562 27.8265 32.205 27.8931 31.7404 27.8585C31.2786 27.8213 30.8158 27.6815 30.3521 27.4392C29.8883 27.1969 29.4386 26.8563 29.0029 26.4173L28.5903 26.0017C28.1546 25.5627 27.8188 25.109 27.5827 24.6407C27.3467 24.167 27.2132 23.6977 27.1821 23.2329C27.1538 22.7654 27.2252 22.3133 27.3963 21.8766C27.5675 21.4399 27.8409 21.035 28.2168 20.6619C28.7162 20.1664 29.2272 19.8389 29.7499 19.6796C30.2753 19.5176 30.7906 19.5017 31.2958 19.6321C31.8037 19.7598 32.2784 20.0076 32.7198 20.3755L31.4852 21.6009C31.2318 21.373 30.9809 21.2163 30.7325 21.1306C30.4814 21.0422 30.2299 21.0385 29.9781 21.1196C29.7264 21.1952 29.4633 21.3691 29.189 21.6414C28.9832 21.8457 28.8416 22.0624 28.7642 22.2917C28.6868 22.5211 28.6736 22.7656 28.7245 23.0255C28.7755 23.2854 28.8934 23.5605 29.0781 23.8509C29.2629 24.1359 29.5133 24.4375 29.8291 24.7558L30.2499 25.1797C30.5576 25.4897 30.8518 25.7396 31.1327 25.9292C31.4108 26.1161 31.6782 26.2429 31.9348 26.3094C32.1915 26.3705 32.4376 26.366 32.6729 26.2958C32.9083 26.2202 33.1357 26.0734 33.3552 25.8556C33.6131 25.5996 33.7849 25.3474 33.8705 25.099C33.9562 24.8506 33.9626 24.6019 33.8897 24.3529C33.8196 24.1011 33.673 23.8464 33.4498 23.5886Z" fill="white"/>
+                                                <path d="M33.9039 15.1891L39.8511 21.1812L38.6205 22.4025L35.647 19.4064L32.6734 16.4104L33.9039 15.1891ZM35.7476 13.3592L36.7075 14.3263L31.8183 19.1788L30.8585 18.2117L35.7476 13.3592Z" fill="white"/>
+                                                <path d="M45.2949 13.8665L46.2507 14.8295L43.0613 17.995L42.1055 17.032L45.2949 13.8665ZM37.5174 11.6027L43.4646 17.5947L42.2299 18.8201L36.2828 12.828L37.5174 11.6027ZM42.3101 11.6904L43.2414 12.6287L40.4676 15.3817L39.5363 14.4434L42.3101 11.6904ZM40.2995 8.84148L41.2593 9.80861L38.074 12.9701L37.1141 12.0029L40.2995 8.84148Z" fill="white"/>
+                                                <path d="M48.642 12.4562L47.3374 13.751L46.3898 12.7798L47.6862 11.4932C48.0099 11.1718 48.2108 10.8282 48.2887 10.4622C48.3639 10.0935 48.3175 9.71201 48.1495 9.31777C47.9842 8.9208 47.7028 8.52204 47.3053 8.12147L47.0153 7.82927C46.7103 7.52198 46.4091 7.28441 46.1118 7.11656C45.8173 6.94598 45.5279 6.84375 45.2438 6.80988C44.9596 6.77601 44.6862 6.81052 44.4234 6.9134C44.1578 7.01353 43.9057 7.18206 43.667 7.41896L42.3254 8.75054L41.3655 7.78341L42.7072 6.45183C43.1077 6.05426 43.5421 5.75933 44.0102 5.56702C44.4784 5.36924 44.9598 5.27539 45.4545 5.28545C45.9492 5.29551 46.4367 5.41078 46.9169 5.63126C47.3972 5.84627 47.8497 6.16778 48.2745 6.59579L48.5564 6.87975C48.9784 7.30502 49.2965 7.75995 49.5106 8.24457C49.7275 8.72646 49.8391 9.21479 49.8454 9.70956C49.8518 10.1989 49.7543 10.6796 49.553 11.1517C49.3517 11.6183 49.048 12.0532 48.642 12.4562ZM42.0898 7.06452L48.037 13.0566L46.8024 14.282L40.8552 8.28989L42.0898 7.06452Z" fill="white"/>
+                                                </g>
+                                                <defs>
+                                                <filter id="filter0_d_391_2711" x="0" y="0" width="72" height="72" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                                <feOffset dx="1"/>
+                                                <feGaussianBlur stdDeviation="0.5"/>
+                                                <feComposite in2="hardAlpha" operator="out"/>
+                                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.22 0"/>
+                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_391_2711"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_391_2711" result="shape"/>
+                                                </filter>
+                                                </defs>
+                                                </svg> </span></div>
+                                            <div class="rgt"><span class="mkNew">NEW</span><!----></div>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <div class="damage"><span class="hit mk1">Run and Drive</span><span>(NORMAL
+                                                WEAR) Rust</span><!----></div>
+                                        <dl>
+                                            <dt>2020 Hyundai Avante</dt>
+                                            <dd><span>2406263323</span><span>1,591cc</span><span>LPG</span><span>99,238km</span>
+                                            </dd>
+                                        </dl>
+                                        <div class="sign"></div>
+                                        <div class="bid">
+                                            <div class="date"><span><em>Deadline</em> 06-28 06:00
+                                                    London</span><span><em>Time Left</em>23h 18m</span></div>
+                                            <div class="price"><span>Current Bid<b>USD 4,714</b></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="checkItem">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M13.5362 6.85125C13.0216 5.52022 12.1283 4.36914 10.9667 3.54029C9.80502 2.71143 8.42596 2.24113 6.99994 2.1875C5.57391 2.24113 4.19486 2.71143 3.03321 3.54029C1.87157 4.36914 0.978256 5.52022 0.463686 6.85125C0.428934 6.94737 0.428934 7.05263 0.463686 7.14875C0.978256 8.47978 1.87157 9.63086 3.03321 10.4597C4.19486 11.2886 5.57391 11.7589 6.99994 11.8125C8.42596 11.7589 9.80502 11.2886 10.9667 10.4597C12.1283 9.63086 13.0216 8.47978 13.5362 7.14875C13.5709 7.05263 13.5709 6.94737 13.5362 6.85125V6.85125ZM6.99994 10.9375C4.68119 10.9375 2.23119 9.21813 1.34306 7C2.23119 4.78187 4.68119 3.0625 6.99994 3.0625C9.31869 3.0625 11.7687 4.78187 12.6568 7C11.7687 9.21813 9.31869 10.9375 6.99994 10.9375Z" fill="#707070"/><path d="M7 4.375C6.48083 4.375 5.97331 4.52895 5.54163 4.81739C5.10995 5.10583 4.7735 5.5158 4.57482 5.99546C4.37614 6.47511 4.32415 7.00291 4.42544 7.51211C4.52673 8.02131 4.77673 8.48904 5.14385 8.85616C5.51096 9.22327 5.97869 9.47328 6.48789 9.57456C6.99709 9.67585 7.52489 9.62386 8.00454 9.42518C8.4842 9.2265 8.89417 8.89005 9.18261 8.45837C9.47105 8.02669 9.625 7.51918 9.625 7C9.625 6.30381 9.34844 5.63613 8.85616 5.14384C8.36387 4.65156 7.69619 4.375 7 4.375ZM7 8.75C6.65388 8.75 6.31554 8.64736 6.02775 8.45507C5.73997 8.26278 5.51567 7.98947 5.38321 7.6697C5.25076 7.34992 5.2161 6.99806 5.28363 6.65859C5.35115 6.31913 5.51782 6.0073 5.76256 5.76256C6.00731 5.51782 6.31913 5.35115 6.65859 5.28363C6.99806 5.2161 7.34993 5.25076 7.6697 5.38321C7.98947 5.51566 8.26278 5.73997 8.45507 6.02775C8.64736 6.31554 8.75 6.65388 8.75 7C8.75 7.46413 8.56563 7.90925 8.23744 8.23744C7.90925 8.56562 7.46413 8.75 7 8.75Z" fill="#707070"/></svg>
+                                            9</span>
+                                            <span class="bidChk">BID</span>
+                                        </div>
+                                </li>
+
+                                <li>
+                                    <div class="img">
+                                        <div class="slide slide_wrap">
+                                            <div class="slide_item">
+                                                <img alt="BMW M4" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_prev_button slide_button">◀</div>
+                                            <div class="slide_next_button slide_button">▶</div>
+                                            <ul class="slide_pagination"></ul>
+                                        </div>
+                                        <div class="badge"><span class="cnt">54+</span><span
+                                                class="rental">RENTAL</span></div>
+                                        <div class="topMark">
+                                            <div class="lft"><span class="inspected"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="71" viewBox="0 0 72 71" fill="none">
+                                                <g filter="url(#filter0_d_391_2711)">
+                                                <path d="M0.17157 69.799V35.8284L36.1152 1.25732H69.0564L0.17157 69.799Z" fill="#D10023"/>
+                                                <path d="M4.37045 44.5011L10.3176 50.4932L9.08709 51.7144L3.13993 45.7224L4.37045 44.5011Z" fill="white"/>
+                                                <path d="M10.2351 38.6804L16.1823 44.6725L14.9477 45.8978L8.55356 44.2706L12.5401 48.2873L11.3055 49.5127L5.35832 43.5206L6.59296 42.2952L12.9953 43.9224L9.00461 39.9017L10.2351 38.6804Z" fill="white"/>
+                                                <path d="M18.6511 39.1096C18.5449 39.0026 18.4332 38.9229 18.3158 38.8705C18.1985 38.8127 18.0619 38.7903 17.9061 38.8034C17.7475 38.8137 17.556 38.8595 17.3315 38.9406C17.1071 39.0218 16.8347 39.1451 16.5142 39.3106C16.1555 39.4924 15.7995 39.6496 15.4464 39.7822C15.0961 39.9121 14.7555 39.9969 14.4246 40.0367C14.0937 40.071 13.7781 40.0438 13.4778 39.9552C13.1802 39.8639 12.9034 39.6893 12.6474 39.4314C12.3996 39.1817 12.2298 38.9009 12.1381 38.589C12.0436 38.2743 12.023 37.9462 12.0762 37.6047C12.1267 37.2605 12.2469 36.9152 12.4368 36.5687C12.6294 36.2196 12.8876 35.8844 13.2114 35.563C13.6531 35.1246 14.1176 34.8216 14.6047 34.654C15.0919 34.4863 15.5635 34.4512 16.0197 34.5486C16.4785 34.6433 16.8849 34.8689 17.2389 35.2256L16.0125 36.4428C15.8382 36.2672 15.6487 36.1503 15.4439 36.0922C15.2392 36.0285 15.0246 36.0318 14.8002 36.102C14.5785 36.1695 14.3566 36.3136 14.1343 36.5341C13.9203 36.7465 13.7747 36.9565 13.6974 37.1639C13.6173 37.3686 13.5961 37.5612 13.6337 37.7418C13.6686 37.9196 13.7527 38.0757 13.8861 38.2101C13.9869 38.3116 14.1028 38.379 14.2339 38.4123C14.3677 38.4429 14.5208 38.4435 14.6931 38.4141C14.8654 38.3846 15.0569 38.328 15.2677 38.244C15.4785 38.1601 15.7113 38.0516 15.966 37.9187C16.3905 37.6934 16.7875 37.5199 17.1569 37.3983C17.5292 37.274 17.8752 37.2056 18.195 37.1931C18.5149 37.1807 18.814 37.2296 19.0924 37.34C19.3708 37.4504 19.6325 37.629 19.8776 37.876C20.1363 38.1366 20.317 38.4202 20.4197 38.7267C20.5224 39.0333 20.5486 39.3532 20.4981 39.6864C20.4476 40.0197 20.3261 40.3555 20.1335 40.6937C19.9409 41.0319 19.68 41.3644 19.3507 41.6912C19.0544 41.9852 18.7241 42.2368 18.3598 42.4459C17.9927 42.6523 17.6123 42.793 17.2184 42.8681C16.8272 42.9404 16.4391 42.9225 16.0541 42.8145C15.6691 42.7064 15.3092 42.4837 14.9742 42.1462L16.213 40.9167C16.3982 41.1033 16.5835 41.2325 16.7691 41.3042C16.9547 41.376 17.1392 41.3999 17.3224 41.376C17.5083 41.3494 17.6917 41.2817 17.8726 41.1731C18.0561 41.0617 18.2357 40.9189 18.4113 40.7446C18.6253 40.5322 18.7709 40.3278 18.8482 40.1312C18.9282 39.932 18.948 39.7462 18.9077 39.5739C18.8701 39.3988 18.7846 39.244 18.6511 39.1096Z" fill="white"/>
+                                                <path d="M22.3265 34.3344L20.7997 35.8497L19.8439 34.8867L21.3707 33.3713C21.6067 33.1372 21.7606 32.9081 21.8325 32.6843C21.9017 32.4577 21.9012 32.2404 21.8309 32.0324C21.7606 31.8243 21.6383 31.6326 21.4641 31.457C21.2871 31.2786 21.088 31.1467 20.8669 31.0611C20.6458 30.9755 20.4149 30.9596 20.1742 31.0134C19.9335 31.0672 19.6951 31.2111 19.4592 31.4453L18.3603 32.5359L23.3476 37.5609L22.113 38.7862L16.1658 32.7941L18.4993 30.4782C18.9684 30.0125 19.4548 29.6987 19.9583 29.5366C20.4619 29.369 20.9499 29.3449 21.4223 29.4642C21.8948 29.5835 22.3202 29.8338 22.6987 30.2152C23.0827 30.602 23.3257 31.0253 23.4279 31.4848C23.53 31.9444 23.4886 32.4185 23.3036 32.9071C23.1214 33.393 22.7957 33.8687 22.3265 34.3344Z" fill="white"/>
+                                                <path d="M30.4418 28.6082L31.3976 29.5712L28.2081 32.7368L27.2523 31.7738L30.4418 28.6082ZM22.6643 26.3444L28.6114 32.3365L27.3768 33.5619L21.4296 27.5698L22.6643 26.3444ZM27.4569 26.4322L28.3882 27.3705L25.6144 30.1235L24.6831 29.1852L27.4569 26.4322ZM25.4463 23.5832L26.4062 24.5504L23.2208 27.7118L22.261 26.7447L25.4463 23.5832Z" fill="white"/>
+                                                <path d="M33.4498 23.5886L34.6803 22.3673C35.0559 22.7951 35.3002 23.2635 35.4131 23.7723C35.5287 24.2784 35.498 24.7935 35.3211 25.3177C35.147 25.8391 34.8143 26.3435 34.3232 26.8309C33.9391 27.2122 33.5294 27.4881 33.0942 27.6586C32.6562 27.8265 32.205 27.8931 31.7404 27.8585C31.2786 27.8213 30.8158 27.6815 30.3521 27.4392C29.8883 27.1969 29.4386 26.8563 29.0029 26.4173L28.5903 26.0017C28.1546 25.5627 27.8188 25.109 27.5827 24.6407C27.3467 24.167 27.2132 23.6977 27.1821 23.2329C27.1538 22.7654 27.2252 22.3133 27.3963 21.8766C27.5675 21.4399 27.8409 21.035 28.2168 20.6619C28.7162 20.1664 29.2272 19.8389 29.7499 19.6796C30.2753 19.5176 30.7906 19.5017 31.2958 19.6321C31.8037 19.7598 32.2784 20.0076 32.7198 20.3755L31.4852 21.6009C31.2318 21.373 30.9809 21.2163 30.7325 21.1306C30.4814 21.0422 30.2299 21.0385 29.9781 21.1196C29.7264 21.1952 29.4633 21.3691 29.189 21.6414C28.9832 21.8457 28.8416 22.0624 28.7642 22.2917C28.6868 22.5211 28.6736 22.7656 28.7245 23.0255C28.7755 23.2854 28.8934 23.5605 29.0781 23.8509C29.2629 24.1359 29.5133 24.4375 29.8291 24.7558L30.2499 25.1797C30.5576 25.4897 30.8518 25.7396 31.1327 25.9292C31.4108 26.1161 31.6782 26.2429 31.9348 26.3094C32.1915 26.3705 32.4376 26.366 32.6729 26.2958C32.9083 26.2202 33.1357 26.0734 33.3552 25.8556C33.6131 25.5996 33.7849 25.3474 33.8705 25.099C33.9562 24.8506 33.9626 24.6019 33.8897 24.3529C33.8196 24.1011 33.673 23.8464 33.4498 23.5886Z" fill="white"/>
+                                                <path d="M33.9039 15.1891L39.8511 21.1812L38.6205 22.4025L35.647 19.4064L32.6734 16.4104L33.9039 15.1891ZM35.7476 13.3592L36.7075 14.3263L31.8183 19.1788L30.8585 18.2117L35.7476 13.3592Z" fill="white"/>
+                                                <path d="M45.2949 13.8665L46.2507 14.8295L43.0613 17.995L42.1055 17.032L45.2949 13.8665ZM37.5174 11.6027L43.4646 17.5947L42.2299 18.8201L36.2828 12.828L37.5174 11.6027ZM42.3101 11.6904L43.2414 12.6287L40.4676 15.3817L39.5363 14.4434L42.3101 11.6904ZM40.2995 8.84148L41.2593 9.80861L38.074 12.9701L37.1141 12.0029L40.2995 8.84148Z" fill="white"/>
+                                                <path d="M48.642 12.4562L47.3374 13.751L46.3898 12.7798L47.6862 11.4932C48.0099 11.1718 48.2108 10.8282 48.2887 10.4622C48.3639 10.0935 48.3175 9.71201 48.1495 9.31777C47.9842 8.9208 47.7028 8.52204 47.3053 8.12147L47.0153 7.82927C46.7103 7.52198 46.4091 7.28441 46.1118 7.11656C45.8173 6.94598 45.5279 6.84375 45.2438 6.80988C44.9596 6.77601 44.6862 6.81052 44.4234 6.9134C44.1578 7.01353 43.9057 7.18206 43.667 7.41896L42.3254 8.75054L41.3655 7.78341L42.7072 6.45183C43.1077 6.05426 43.5421 5.75933 44.0102 5.56702C44.4784 5.36924 44.9598 5.27539 45.4545 5.28545C45.9492 5.29551 46.4367 5.41078 46.9169 5.63126C47.3972 5.84627 47.8497 6.16778 48.2745 6.59579L48.5564 6.87975C48.9784 7.30502 49.2965 7.75995 49.5106 8.24457C49.7275 8.72646 49.8391 9.21479 49.8454 9.70956C49.8518 10.1989 49.7543 10.6796 49.553 11.1517C49.3517 11.6183 49.048 12.0532 48.642 12.4562ZM42.0898 7.06452L48.037 13.0566L46.8024 14.282L40.8552 8.28989L42.0898 7.06452Z" fill="white"/>
+                                                </g>
+                                                <defs>
+                                                <filter id="filter0_d_391_2711" x="0" y="0" width="72" height="72" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                                <feOffset dx="1"/>
+                                                <feGaussianBlur stdDeviation="0.5"/>
+                                                <feComposite in2="hardAlpha" operator="out"/>
+                                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.22 0"/>
+                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_391_2711"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_391_2711" result="shape"/>
+                                                </filter>
+                                                </defs>
+                                                </svg> </span></div>
+                                            <div class="rgt"><span class="mkNew">NEW</span><!----></div>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <div class="damage"><span class="hit mk1">Run and Drive</span><span>(NORMAL
+                                                WEAR) Rust</span><!----></div>
+                                        <dl>
+                                            <dt>2020 Hyundai Avante</dt>
+                                            <dd><span>2406263323</span><span>1,591cc</span><span>LPG</span><span>99,238km</span>
+                                            </dd>
+                                        </dl>
+                                        <div class="sign"></div>
+                                        <div class="bid">
+                                            <div class="date"><span><em>Deadline</em> 06-28 06:00
+                                                    London</span><span><em>Time Left</em>23h 18m</span></div>
+                                            <div class="price"><span>Current Bid<b>USD 4,714</b></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="checkItem">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M13.5362 6.85125C13.0216 5.52022 12.1283 4.36914 10.9667 3.54029C9.80502 2.71143 8.42596 2.24113 6.99994 2.1875C5.57391 2.24113 4.19486 2.71143 3.03321 3.54029C1.87157 4.36914 0.978256 5.52022 0.463686 6.85125C0.428934 6.94737 0.428934 7.05263 0.463686 7.14875C0.978256 8.47978 1.87157 9.63086 3.03321 10.4597C4.19486 11.2886 5.57391 11.7589 6.99994 11.8125C8.42596 11.7589 9.80502 11.2886 10.9667 10.4597C12.1283 9.63086 13.0216 8.47978 13.5362 7.14875C13.5709 7.05263 13.5709 6.94737 13.5362 6.85125V6.85125ZM6.99994 10.9375C4.68119 10.9375 2.23119 9.21813 1.34306 7C2.23119 4.78187 4.68119 3.0625 6.99994 3.0625C9.31869 3.0625 11.7687 4.78187 12.6568 7C11.7687 9.21813 9.31869 10.9375 6.99994 10.9375Z" fill="#707070"/><path d="M7 4.375C6.48083 4.375 5.97331 4.52895 5.54163 4.81739C5.10995 5.10583 4.7735 5.5158 4.57482 5.99546C4.37614 6.47511 4.32415 7.00291 4.42544 7.51211C4.52673 8.02131 4.77673 8.48904 5.14385 8.85616C5.51096 9.22327 5.97869 9.47328 6.48789 9.57456C6.99709 9.67585 7.52489 9.62386 8.00454 9.42518C8.4842 9.2265 8.89417 8.89005 9.18261 8.45837C9.47105 8.02669 9.625 7.51918 9.625 7C9.625 6.30381 9.34844 5.63613 8.85616 5.14384C8.36387 4.65156 7.69619 4.375 7 4.375ZM7 8.75C6.65388 8.75 6.31554 8.64736 6.02775 8.45507C5.73997 8.26278 5.51567 7.98947 5.38321 7.6697C5.25076 7.34992 5.2161 6.99806 5.28363 6.65859C5.35115 6.31913 5.51782 6.0073 5.76256 5.76256C6.00731 5.51782 6.31913 5.35115 6.65859 5.28363C6.99806 5.2161 7.34993 5.25076 7.6697 5.38321C7.98947 5.51566 8.26278 5.73997 8.45507 6.02775C8.64736 6.31554 8.75 6.65388 8.75 7C8.75 7.46413 8.56563 7.90925 8.23744 8.23744C7.90925 8.56562 7.46413 8.75 7 8.75Z" fill="#707070"/></svg>
+                                            9</span>
+                                            <span class="bidChk">BID</span>
+                                        </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <div class="slide slide_wrap">
+                                            <div class="slide_item">
+                                                <img alt="BMW M4" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_prev_button slide_button">◀</div>
+                                            <div class="slide_next_button slide_button">▶</div>
+                                            <ul class="slide_pagination"></ul>
+                                        </div>
+                                        <div class="badge"><span class="cnt">54+</span><span
+                                                class="rental">RENTAL</span></div>
+                                        <div class="topMark">
+                                            <div class="lft"><span class="inspected"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="71" viewBox="0 0 72 71" fill="none">
+                                                <g filter="url(#filter0_d_391_2711)">
+                                                <path d="M0.17157 69.799V35.8284L36.1152 1.25732H69.0564L0.17157 69.799Z" fill="#D10023"/>
+                                                <path d="M4.37045 44.5011L10.3176 50.4932L9.08709 51.7144L3.13993 45.7224L4.37045 44.5011Z" fill="white"/>
+                                                <path d="M10.2351 38.6804L16.1823 44.6725L14.9477 45.8978L8.55356 44.2706L12.5401 48.2873L11.3055 49.5127L5.35832 43.5206L6.59296 42.2952L12.9953 43.9224L9.00461 39.9017L10.2351 38.6804Z" fill="white"/>
+                                                <path d="M18.6511 39.1096C18.5449 39.0026 18.4332 38.9229 18.3158 38.8705C18.1985 38.8127 18.0619 38.7903 17.9061 38.8034C17.7475 38.8137 17.556 38.8595 17.3315 38.9406C17.1071 39.0218 16.8347 39.1451 16.5142 39.3106C16.1555 39.4924 15.7995 39.6496 15.4464 39.7822C15.0961 39.9121 14.7555 39.9969 14.4246 40.0367C14.0937 40.071 13.7781 40.0438 13.4778 39.9552C13.1802 39.8639 12.9034 39.6893 12.6474 39.4314C12.3996 39.1817 12.2298 38.9009 12.1381 38.589C12.0436 38.2743 12.023 37.9462 12.0762 37.6047C12.1267 37.2605 12.2469 36.9152 12.4368 36.5687C12.6294 36.2196 12.8876 35.8844 13.2114 35.563C13.6531 35.1246 14.1176 34.8216 14.6047 34.654C15.0919 34.4863 15.5635 34.4512 16.0197 34.5486C16.4785 34.6433 16.8849 34.8689 17.2389 35.2256L16.0125 36.4428C15.8382 36.2672 15.6487 36.1503 15.4439 36.0922C15.2392 36.0285 15.0246 36.0318 14.8002 36.102C14.5785 36.1695 14.3566 36.3136 14.1343 36.5341C13.9203 36.7465 13.7747 36.9565 13.6974 37.1639C13.6173 37.3686 13.5961 37.5612 13.6337 37.7418C13.6686 37.9196 13.7527 38.0757 13.8861 38.2101C13.9869 38.3116 14.1028 38.379 14.2339 38.4123C14.3677 38.4429 14.5208 38.4435 14.6931 38.4141C14.8654 38.3846 15.0569 38.328 15.2677 38.244C15.4785 38.1601 15.7113 38.0516 15.966 37.9187C16.3905 37.6934 16.7875 37.5199 17.1569 37.3983C17.5292 37.274 17.8752 37.2056 18.195 37.1931C18.5149 37.1807 18.814 37.2296 19.0924 37.34C19.3708 37.4504 19.6325 37.629 19.8776 37.876C20.1363 38.1366 20.317 38.4202 20.4197 38.7267C20.5224 39.0333 20.5486 39.3532 20.4981 39.6864C20.4476 40.0197 20.3261 40.3555 20.1335 40.6937C19.9409 41.0319 19.68 41.3644 19.3507 41.6912C19.0544 41.9852 18.7241 42.2368 18.3598 42.4459C17.9927 42.6523 17.6123 42.793 17.2184 42.8681C16.8272 42.9404 16.4391 42.9225 16.0541 42.8145C15.6691 42.7064 15.3092 42.4837 14.9742 42.1462L16.213 40.9167C16.3982 41.1033 16.5835 41.2325 16.7691 41.3042C16.9547 41.376 17.1392 41.3999 17.3224 41.376C17.5083 41.3494 17.6917 41.2817 17.8726 41.1731C18.0561 41.0617 18.2357 40.9189 18.4113 40.7446C18.6253 40.5322 18.7709 40.3278 18.8482 40.1312C18.9282 39.932 18.948 39.7462 18.9077 39.5739C18.8701 39.3988 18.7846 39.244 18.6511 39.1096Z" fill="white"/>
+                                                <path d="M22.3265 34.3344L20.7997 35.8497L19.8439 34.8867L21.3707 33.3713C21.6067 33.1372 21.7606 32.9081 21.8325 32.6843C21.9017 32.4577 21.9012 32.2404 21.8309 32.0324C21.7606 31.8243 21.6383 31.6326 21.4641 31.457C21.2871 31.2786 21.088 31.1467 20.8669 31.0611C20.6458 30.9755 20.4149 30.9596 20.1742 31.0134C19.9335 31.0672 19.6951 31.2111 19.4592 31.4453L18.3603 32.5359L23.3476 37.5609L22.113 38.7862L16.1658 32.7941L18.4993 30.4782C18.9684 30.0125 19.4548 29.6987 19.9583 29.5366C20.4619 29.369 20.9499 29.3449 21.4223 29.4642C21.8948 29.5835 22.3202 29.8338 22.6987 30.2152C23.0827 30.602 23.3257 31.0253 23.4279 31.4848C23.53 31.9444 23.4886 32.4185 23.3036 32.9071C23.1214 33.393 22.7957 33.8687 22.3265 34.3344Z" fill="white"/>
+                                                <path d="M30.4418 28.6082L31.3976 29.5712L28.2081 32.7368L27.2523 31.7738L30.4418 28.6082ZM22.6643 26.3444L28.6114 32.3365L27.3768 33.5619L21.4296 27.5698L22.6643 26.3444ZM27.4569 26.4322L28.3882 27.3705L25.6144 30.1235L24.6831 29.1852L27.4569 26.4322ZM25.4463 23.5832L26.4062 24.5504L23.2208 27.7118L22.261 26.7447L25.4463 23.5832Z" fill="white"/>
+                                                <path d="M33.4498 23.5886L34.6803 22.3673C35.0559 22.7951 35.3002 23.2635 35.4131 23.7723C35.5287 24.2784 35.498 24.7935 35.3211 25.3177C35.147 25.8391 34.8143 26.3435 34.3232 26.8309C33.9391 27.2122 33.5294 27.4881 33.0942 27.6586C32.6562 27.8265 32.205 27.8931 31.7404 27.8585C31.2786 27.8213 30.8158 27.6815 30.3521 27.4392C29.8883 27.1969 29.4386 26.8563 29.0029 26.4173L28.5903 26.0017C28.1546 25.5627 27.8188 25.109 27.5827 24.6407C27.3467 24.167 27.2132 23.6977 27.1821 23.2329C27.1538 22.7654 27.2252 22.3133 27.3963 21.8766C27.5675 21.4399 27.8409 21.035 28.2168 20.6619C28.7162 20.1664 29.2272 19.8389 29.7499 19.6796C30.2753 19.5176 30.7906 19.5017 31.2958 19.6321C31.8037 19.7598 32.2784 20.0076 32.7198 20.3755L31.4852 21.6009C31.2318 21.373 30.9809 21.2163 30.7325 21.1306C30.4814 21.0422 30.2299 21.0385 29.9781 21.1196C29.7264 21.1952 29.4633 21.3691 29.189 21.6414C28.9832 21.8457 28.8416 22.0624 28.7642 22.2917C28.6868 22.5211 28.6736 22.7656 28.7245 23.0255C28.7755 23.2854 28.8934 23.5605 29.0781 23.8509C29.2629 24.1359 29.5133 24.4375 29.8291 24.7558L30.2499 25.1797C30.5576 25.4897 30.8518 25.7396 31.1327 25.9292C31.4108 26.1161 31.6782 26.2429 31.9348 26.3094C32.1915 26.3705 32.4376 26.366 32.6729 26.2958C32.9083 26.2202 33.1357 26.0734 33.3552 25.8556C33.6131 25.5996 33.7849 25.3474 33.8705 25.099C33.9562 24.8506 33.9626 24.6019 33.8897 24.3529C33.8196 24.1011 33.673 23.8464 33.4498 23.5886Z" fill="white"/>
+                                                <path d="M33.9039 15.1891L39.8511 21.1812L38.6205 22.4025L35.647 19.4064L32.6734 16.4104L33.9039 15.1891ZM35.7476 13.3592L36.7075 14.3263L31.8183 19.1788L30.8585 18.2117L35.7476 13.3592Z" fill="white"/>
+                                                <path d="M45.2949 13.8665L46.2507 14.8295L43.0613 17.995L42.1055 17.032L45.2949 13.8665ZM37.5174 11.6027L43.4646 17.5947L42.2299 18.8201L36.2828 12.828L37.5174 11.6027ZM42.3101 11.6904L43.2414 12.6287L40.4676 15.3817L39.5363 14.4434L42.3101 11.6904ZM40.2995 8.84148L41.2593 9.80861L38.074 12.9701L37.1141 12.0029L40.2995 8.84148Z" fill="white"/>
+                                                <path d="M48.642 12.4562L47.3374 13.751L46.3898 12.7798L47.6862 11.4932C48.0099 11.1718 48.2108 10.8282 48.2887 10.4622C48.3639 10.0935 48.3175 9.71201 48.1495 9.31777C47.9842 8.9208 47.7028 8.52204 47.3053 8.12147L47.0153 7.82927C46.7103 7.52198 46.4091 7.28441 46.1118 7.11656C45.8173 6.94598 45.5279 6.84375 45.2438 6.80988C44.9596 6.77601 44.6862 6.81052 44.4234 6.9134C44.1578 7.01353 43.9057 7.18206 43.667 7.41896L42.3254 8.75054L41.3655 7.78341L42.7072 6.45183C43.1077 6.05426 43.5421 5.75933 44.0102 5.56702C44.4784 5.36924 44.9598 5.27539 45.4545 5.28545C45.9492 5.29551 46.4367 5.41078 46.9169 5.63126C47.3972 5.84627 47.8497 6.16778 48.2745 6.59579L48.5564 6.87975C48.9784 7.30502 49.2965 7.75995 49.5106 8.24457C49.7275 8.72646 49.8391 9.21479 49.8454 9.70956C49.8518 10.1989 49.7543 10.6796 49.553 11.1517C49.3517 11.6183 49.048 12.0532 48.642 12.4562ZM42.0898 7.06452L48.037 13.0566L46.8024 14.282L40.8552 8.28989L42.0898 7.06452Z" fill="white"/>
+                                                </g>
+                                                <defs>
+                                                <filter id="filter0_d_391_2711" x="0" y="0" width="72" height="72" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                                <feOffset dx="1"/>
+                                                <feGaussianBlur stdDeviation="0.5"/>
+                                                <feComposite in2="hardAlpha" operator="out"/>
+                                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.22 0"/>
+                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_391_2711"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_391_2711" result="shape"/>
+                                                </filter>
+                                                </defs>
+                                                </svg> </span></div>
+                                            <div class="rgt"><span class="mkNew">NEW</span><!----></div>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <div class="damage"><span class="hit mk1">Run and Drive</span><span>(NORMAL
+                                                WEAR) Rust</span><!----></div>
+                                        <dl>
+                                            <dt>2020 Hyundai Avante</dt>
+                                            <dd><span>2406263323</span><span>1,591cc</span><span>LPG</span><span>99,238km</span>
+                                            </dd>
+                                        </dl>
+                                        <div class="sign"></div>
+                                        <div class="bid">
+                                            <div class="date"><span><em>Deadline</em> 06-28 06:00
+                                                    London</span><span><em>Time Left</em>23h 18m</span></div>
+                                            <div class="price"><span>Current Bid<b>USD 4,714</b></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="checkItem">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M13.5362 6.85125C13.0216 5.52022 12.1283 4.36914 10.9667 3.54029C9.80502 2.71143 8.42596 2.24113 6.99994 2.1875C5.57391 2.24113 4.19486 2.71143 3.03321 3.54029C1.87157 4.36914 0.978256 5.52022 0.463686 6.85125C0.428934 6.94737 0.428934 7.05263 0.463686 7.14875C0.978256 8.47978 1.87157 9.63086 3.03321 10.4597C4.19486 11.2886 5.57391 11.7589 6.99994 11.8125C8.42596 11.7589 9.80502 11.2886 10.9667 10.4597C12.1283 9.63086 13.0216 8.47978 13.5362 7.14875C13.5709 7.05263 13.5709 6.94737 13.5362 6.85125V6.85125ZM6.99994 10.9375C4.68119 10.9375 2.23119 9.21813 1.34306 7C2.23119 4.78187 4.68119 3.0625 6.99994 3.0625C9.31869 3.0625 11.7687 4.78187 12.6568 7C11.7687 9.21813 9.31869 10.9375 6.99994 10.9375Z" fill="#707070"/><path d="M7 4.375C6.48083 4.375 5.97331 4.52895 5.54163 4.81739C5.10995 5.10583 4.7735 5.5158 4.57482 5.99546C4.37614 6.47511 4.32415 7.00291 4.42544 7.51211C4.52673 8.02131 4.77673 8.48904 5.14385 8.85616C5.51096 9.22327 5.97869 9.47328 6.48789 9.57456C6.99709 9.67585 7.52489 9.62386 8.00454 9.42518C8.4842 9.2265 8.89417 8.89005 9.18261 8.45837C9.47105 8.02669 9.625 7.51918 9.625 7C9.625 6.30381 9.34844 5.63613 8.85616 5.14384C8.36387 4.65156 7.69619 4.375 7 4.375ZM7 8.75C6.65388 8.75 6.31554 8.64736 6.02775 8.45507C5.73997 8.26278 5.51567 7.98947 5.38321 7.6697C5.25076 7.34992 5.2161 6.99806 5.28363 6.65859C5.35115 6.31913 5.51782 6.0073 5.76256 5.76256C6.00731 5.51782 6.31913 5.35115 6.65859 5.28363C6.99806 5.2161 7.34993 5.25076 7.6697 5.38321C7.98947 5.51566 8.26278 5.73997 8.45507 6.02775C8.64736 6.31554 8.75 6.65388 8.75 7C8.75 7.46413 8.56563 7.90925 8.23744 8.23744C7.90925 8.56562 7.46413 8.75 7 8.75Z" fill="#707070"/></svg>
+                                            9</span>
+                                            <span class="bidChk">BID</span>
+                                        </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <div class="slide slide_wrap">
+                                            <div class="slide_item">
+                                                <img alt="BMW M4" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_item">
+                                                <img alt="2020 Hyundai Avante" loading="lazy"
+                                                    data-nuxt-img=""
+                                                    srcset="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg"
+                                                    src="https://oscarjacobs.co.uk/wp-content/uploads/2022/08/38-M4-Ultimate-.jpg">
+                                            </div>
+                                            <div class="slide_prev_button slide_button">◀</div>
+                                            <div class="slide_next_button slide_button">▶</div>
+                                            <ul class="slide_pagination"></ul>
+                                        </div>
+                                        <div class="badge"><span class="cnt">54+</span><span
+                                                class="rental">RENTAL</span></div>
+                                        <div class="topMark">
+                                            <div class="lft"><span class="inspected"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="71" viewBox="0 0 72 71" fill="none">
+                                                <g filter="url(#filter0_d_391_2711)">
+                                                <path d="M0.17157 69.799V35.8284L36.1152 1.25732H69.0564L0.17157 69.799Z" fill="#D10023"/>
+                                                <path d="M4.37045 44.5011L10.3176 50.4932L9.08709 51.7144L3.13993 45.7224L4.37045 44.5011Z" fill="white"/>
+                                                <path d="M10.2351 38.6804L16.1823 44.6725L14.9477 45.8978L8.55356 44.2706L12.5401 48.2873L11.3055 49.5127L5.35832 43.5206L6.59296 42.2952L12.9953 43.9224L9.00461 39.9017L10.2351 38.6804Z" fill="white"/>
+                                                <path d="M18.6511 39.1096C18.5449 39.0026 18.4332 38.9229 18.3158 38.8705C18.1985 38.8127 18.0619 38.7903 17.9061 38.8034C17.7475 38.8137 17.556 38.8595 17.3315 38.9406C17.1071 39.0218 16.8347 39.1451 16.5142 39.3106C16.1555 39.4924 15.7995 39.6496 15.4464 39.7822C15.0961 39.9121 14.7555 39.9969 14.4246 40.0367C14.0937 40.071 13.7781 40.0438 13.4778 39.9552C13.1802 39.8639 12.9034 39.6893 12.6474 39.4314C12.3996 39.1817 12.2298 38.9009 12.1381 38.589C12.0436 38.2743 12.023 37.9462 12.0762 37.6047C12.1267 37.2605 12.2469 36.9152 12.4368 36.5687C12.6294 36.2196 12.8876 35.8844 13.2114 35.563C13.6531 35.1246 14.1176 34.8216 14.6047 34.654C15.0919 34.4863 15.5635 34.4512 16.0197 34.5486C16.4785 34.6433 16.8849 34.8689 17.2389 35.2256L16.0125 36.4428C15.8382 36.2672 15.6487 36.1503 15.4439 36.0922C15.2392 36.0285 15.0246 36.0318 14.8002 36.102C14.5785 36.1695 14.3566 36.3136 14.1343 36.5341C13.9203 36.7465 13.7747 36.9565 13.6974 37.1639C13.6173 37.3686 13.5961 37.5612 13.6337 37.7418C13.6686 37.9196 13.7527 38.0757 13.8861 38.2101C13.9869 38.3116 14.1028 38.379 14.2339 38.4123C14.3677 38.4429 14.5208 38.4435 14.6931 38.4141C14.8654 38.3846 15.0569 38.328 15.2677 38.244C15.4785 38.1601 15.7113 38.0516 15.966 37.9187C16.3905 37.6934 16.7875 37.5199 17.1569 37.3983C17.5292 37.274 17.8752 37.2056 18.195 37.1931C18.5149 37.1807 18.814 37.2296 19.0924 37.34C19.3708 37.4504 19.6325 37.629 19.8776 37.876C20.1363 38.1366 20.317 38.4202 20.4197 38.7267C20.5224 39.0333 20.5486 39.3532 20.4981 39.6864C20.4476 40.0197 20.3261 40.3555 20.1335 40.6937C19.9409 41.0319 19.68 41.3644 19.3507 41.6912C19.0544 41.9852 18.7241 42.2368 18.3598 42.4459C17.9927 42.6523 17.6123 42.793 17.2184 42.8681C16.8272 42.9404 16.4391 42.9225 16.0541 42.8145C15.6691 42.7064 15.3092 42.4837 14.9742 42.1462L16.213 40.9167C16.3982 41.1033 16.5835 41.2325 16.7691 41.3042C16.9547 41.376 17.1392 41.3999 17.3224 41.376C17.5083 41.3494 17.6917 41.2817 17.8726 41.1731C18.0561 41.0617 18.2357 40.9189 18.4113 40.7446C18.6253 40.5322 18.7709 40.3278 18.8482 40.1312C18.9282 39.932 18.948 39.7462 18.9077 39.5739C18.8701 39.3988 18.7846 39.244 18.6511 39.1096Z" fill="white"/>
+                                                <path d="M22.3265 34.3344L20.7997 35.8497L19.8439 34.8867L21.3707 33.3713C21.6067 33.1372 21.7606 32.9081 21.8325 32.6843C21.9017 32.4577 21.9012 32.2404 21.8309 32.0324C21.7606 31.8243 21.6383 31.6326 21.4641 31.457C21.2871 31.2786 21.088 31.1467 20.8669 31.0611C20.6458 30.9755 20.4149 30.9596 20.1742 31.0134C19.9335 31.0672 19.6951 31.2111 19.4592 31.4453L18.3603 32.5359L23.3476 37.5609L22.113 38.7862L16.1658 32.7941L18.4993 30.4782C18.9684 30.0125 19.4548 29.6987 19.9583 29.5366C20.4619 29.369 20.9499 29.3449 21.4223 29.4642C21.8948 29.5835 22.3202 29.8338 22.6987 30.2152C23.0827 30.602 23.3257 31.0253 23.4279 31.4848C23.53 31.9444 23.4886 32.4185 23.3036 32.9071C23.1214 33.393 22.7957 33.8687 22.3265 34.3344Z" fill="white"/>
+                                                <path d="M30.4418 28.6082L31.3976 29.5712L28.2081 32.7368L27.2523 31.7738L30.4418 28.6082ZM22.6643 26.3444L28.6114 32.3365L27.3768 33.5619L21.4296 27.5698L22.6643 26.3444ZM27.4569 26.4322L28.3882 27.3705L25.6144 30.1235L24.6831 29.1852L27.4569 26.4322ZM25.4463 23.5832L26.4062 24.5504L23.2208 27.7118L22.261 26.7447L25.4463 23.5832Z" fill="white"/>
+                                                <path d="M33.4498 23.5886L34.6803 22.3673C35.0559 22.7951 35.3002 23.2635 35.4131 23.7723C35.5287 24.2784 35.498 24.7935 35.3211 25.3177C35.147 25.8391 34.8143 26.3435 34.3232 26.8309C33.9391 27.2122 33.5294 27.4881 33.0942 27.6586C32.6562 27.8265 32.205 27.8931 31.7404 27.8585C31.2786 27.8213 30.8158 27.6815 30.3521 27.4392C29.8883 27.1969 29.4386 26.8563 29.0029 26.4173L28.5903 26.0017C28.1546 25.5627 27.8188 25.109 27.5827 24.6407C27.3467 24.167 27.2132 23.6977 27.1821 23.2329C27.1538 22.7654 27.2252 22.3133 27.3963 21.8766C27.5675 21.4399 27.8409 21.035 28.2168 20.6619C28.7162 20.1664 29.2272 19.8389 29.7499 19.6796C30.2753 19.5176 30.7906 19.5017 31.2958 19.6321C31.8037 19.7598 32.2784 20.0076 32.7198 20.3755L31.4852 21.6009C31.2318 21.373 30.9809 21.2163 30.7325 21.1306C30.4814 21.0422 30.2299 21.0385 29.9781 21.1196C29.7264 21.1952 29.4633 21.3691 29.189 21.6414C28.9832 21.8457 28.8416 22.0624 28.7642 22.2917C28.6868 22.5211 28.6736 22.7656 28.7245 23.0255C28.7755 23.2854 28.8934 23.5605 29.0781 23.8509C29.2629 24.1359 29.5133 24.4375 29.8291 24.7558L30.2499 25.1797C30.5576 25.4897 30.8518 25.7396 31.1327 25.9292C31.4108 26.1161 31.6782 26.2429 31.9348 26.3094C32.1915 26.3705 32.4376 26.366 32.6729 26.2958C32.9083 26.2202 33.1357 26.0734 33.3552 25.8556C33.6131 25.5996 33.7849 25.3474 33.8705 25.099C33.9562 24.8506 33.9626 24.6019 33.8897 24.3529C33.8196 24.1011 33.673 23.8464 33.4498 23.5886Z" fill="white"/>
+                                                <path d="M33.9039 15.1891L39.8511 21.1812L38.6205 22.4025L35.647 19.4064L32.6734 16.4104L33.9039 15.1891ZM35.7476 13.3592L36.7075 14.3263L31.8183 19.1788L30.8585 18.2117L35.7476 13.3592Z" fill="white"/>
+                                                <path d="M45.2949 13.8665L46.2507 14.8295L43.0613 17.995L42.1055 17.032L45.2949 13.8665ZM37.5174 11.6027L43.4646 17.5947L42.2299 18.8201L36.2828 12.828L37.5174 11.6027ZM42.3101 11.6904L43.2414 12.6287L40.4676 15.3817L39.5363 14.4434L42.3101 11.6904ZM40.2995 8.84148L41.2593 9.80861L38.074 12.9701L37.1141 12.0029L40.2995 8.84148Z" fill="white"/>
+                                                <path d="M48.642 12.4562L47.3374 13.751L46.3898 12.7798L47.6862 11.4932C48.0099 11.1718 48.2108 10.8282 48.2887 10.4622C48.3639 10.0935 48.3175 9.71201 48.1495 9.31777C47.9842 8.9208 47.7028 8.52204 47.3053 8.12147L47.0153 7.82927C46.7103 7.52198 46.4091 7.28441 46.1118 7.11656C45.8173 6.94598 45.5279 6.84375 45.2438 6.80988C44.9596 6.77601 44.6862 6.81052 44.4234 6.9134C44.1578 7.01353 43.9057 7.18206 43.667 7.41896L42.3254 8.75054L41.3655 7.78341L42.7072 6.45183C43.1077 6.05426 43.5421 5.75933 44.0102 5.56702C44.4784 5.36924 44.9598 5.27539 45.4545 5.28545C45.9492 5.29551 46.4367 5.41078 46.9169 5.63126C47.3972 5.84627 47.8497 6.16778 48.2745 6.59579L48.5564 6.87975C48.9784 7.30502 49.2965 7.75995 49.5106 8.24457C49.7275 8.72646 49.8391 9.21479 49.8454 9.70956C49.8518 10.1989 49.7543 10.6796 49.553 11.1517C49.3517 11.6183 49.048 12.0532 48.642 12.4562ZM42.0898 7.06452L48.037 13.0566L46.8024 14.282L40.8552 8.28989L42.0898 7.06452Z" fill="white"/>
+                                                </g>
+                                                <defs>
+                                                <filter id="filter0_d_391_2711" x="0" y="0" width="72" height="72" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                                <feOffset dx="1"/>
+                                                <feGaussianBlur stdDeviation="0.5"/>
+                                                <feComposite in2="hardAlpha" operator="out"/>
+                                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.22 0"/>
+                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_391_2711"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_391_2711" result="shape"/>
+                                                </filter>
+                                                </defs>
+                                                </svg> </span></div>
+                                            <div class="rgt"><span class="mkNew">NEW</span><!----></div>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <div class="damage"><span class="hit mk1">Run and Drive</span><span>(NORMAL
+                                                WEAR) Rust</span><!----></div>
+                                        <dl>
+                                            <dt>2020 Hyundai Avante</dt>
+                                            <dd><span>2406263323</span><span>1,591cc</span><span>LPG</span><span>99,238km</span>
+                                            </dd>
+                                        </dl>
+                                        <div class="sign"></div>
+                                        <div class="bid">
+                                            <div class="date"><span><em>Deadline</em> 06-28 06:00
+                                                    London</span><span><em>Time Left</em>23h 18m</span></div>
+                                            <div class="price"><span>Current Bid<b>USD 4,714</b></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="checkItem">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M13.5362 6.85125C13.0216 5.52022 12.1283 4.36914 10.9667 3.54029C9.80502 2.71143 8.42596 2.24113 6.99994 2.1875C5.57391 2.24113 4.19486 2.71143 3.03321 3.54029C1.87157 4.36914 0.978256 5.52022 0.463686 6.85125C0.428934 6.94737 0.428934 7.05263 0.463686 7.14875C0.978256 8.47978 1.87157 9.63086 3.03321 10.4597C4.19486 11.2886 5.57391 11.7589 6.99994 11.8125C8.42596 11.7589 9.80502 11.2886 10.9667 10.4597C12.1283 9.63086 13.0216 8.47978 13.5362 7.14875C13.5709 7.05263 13.5709 6.94737 13.5362 6.85125V6.85125ZM6.99994 10.9375C4.68119 10.9375 2.23119 9.21813 1.34306 7C2.23119 4.78187 4.68119 3.0625 6.99994 3.0625C9.31869 3.0625 11.7687 4.78187 12.6568 7C11.7687 9.21813 9.31869 10.9375 6.99994 10.9375Z" fill="#707070"/><path d="M7 4.375C6.48083 4.375 5.97331 4.52895 5.54163 4.81739C5.10995 5.10583 4.7735 5.5158 4.57482 5.99546C4.37614 6.47511 4.32415 7.00291 4.42544 7.51211C4.52673 8.02131 4.77673 8.48904 5.14385 8.85616C5.51096 9.22327 5.97869 9.47328 6.48789 9.57456C6.99709 9.67585 7.52489 9.62386 8.00454 9.42518C8.4842 9.2265 8.89417 8.89005 9.18261 8.45837C9.47105 8.02669 9.625 7.51918 9.625 7C9.625 6.30381 9.34844 5.63613 8.85616 5.14384C8.36387 4.65156 7.69619 4.375 7 4.375ZM7 8.75C6.65388 8.75 6.31554 8.64736 6.02775 8.45507C5.73997 8.26278 5.51567 7.98947 5.38321 7.6697C5.25076 7.34992 5.2161 6.99806 5.28363 6.65859C5.35115 6.31913 5.51782 6.0073 5.76256 5.76256C6.00731 5.51782 6.31913 5.35115 6.65859 5.28363C6.99806 5.2161 7.34993 5.25076 7.6697 5.38321C7.98947 5.51566 8.26278 5.73997 8.45507 6.02775C8.64736 6.31554 8.75 6.65388 8.75 7C8.75 7.46413 8.56563 7.90925 8.23744 8.23744C7.90925 8.56562 7.46413 8.75 7 8.75Z" fill="#707070"/></svg>
+                                            9</span>
+                                            <span class="bidChk">BID</span>
+                                        </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="paging">
+                        <ul>
+                            <li class="arrow"><a href="#" class=""><img src="https://image.autowini.com/cdn/auction/web/images/common/ico_backEnd.png" alt=""></a></li>
+                            <li class="arrow"><a href="#" class=""><img src="https://image.autowini.com/cdn/auction/web/images/common/ico_back.png" alt=""></a></li>
+                            <li><a href="#" class="on"><span class="">1</span></a></li>
+                            <li class="arrow"><a href="#" class=""><img src="https://image.autowini.com/cdn/auction/web/images/common/ico_next.png" class="" data-type="next" alt=""></a></li>
+                            <li class="arrow"><a href="#" class=""><img src="https://image.autowini.com/cdn/auction/web/images/common/ico_nextEnd.png" class="" data-type="end" alt=""></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- END MAIN -->
+</body>
+
+</html>

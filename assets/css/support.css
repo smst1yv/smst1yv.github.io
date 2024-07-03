@@ -1,0 +1,3877 @@
+.lnb_layout h1,
+.lnb_layout h2,
+.lnb_layout h3,
+.lnb_layout h4,
+.lnb_layout dt {
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.lnb_layout p,
+.lnb_layout dd,
+.lnb_layout a,
+.lnb_layout div,
+.lnb_layout span,
+.lnb_layout em,
+.lnb_layout strong {
+    font-size: 16px;
+    color: #505050;
+    line-height: 1.7
+}
+
+.lnb_layout strong {
+    font-weight: 500;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*전체레이아웃*/
+body {
+    background: #fff;
+}
+
+.wrap {
+    height: 100vh;
+    background: #fff;
+}
+
+.header .gnb {
+    border-bottom: 1px solid #eee;
+}
+
+.footer {
+    display: none;
+}
+
+.contents {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    min-height: auto;
+    padding-bottom: 0;
+    text-align: left;
+    box-sizing: border-box;
+    border-top: none;
+    background: #fff;
+}
+
+.lnb_layout .inner {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.lnb_layout .mt10 {
+    margin-top: 10px;
+}
+
+.lnb_layout .mt20 {
+    margin-top: 20px;
+}
+
+.lnb_layout .mt30 {
+    margin-top: 30px;
+}
+
+.lnb_layout .mt40 {
+    margin-top: 40px;
+}
+
+.lnb_layout .mt50 {
+    margin-top: 50px;
+}
+
+.txt_red {
+    color: #e0000c !important;
+}
+
+.txt_tit {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 22px !important;
+}
+
+.txt_line {
+    display: inline-block;
+    margin-bottom: 6px;
+    position: relative;
+    font-size: 22px !important;
+    color: #111;
+    z-index: 10;
+}
+
+.txt_line:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3px;
+    height: 10px;
+    background: #e0000c;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/*support 페이지 기본 레이아웃*/
+.ar .lnb_layout {
+    padding-left: 0;
+    padding-right: 260px;
+}
+
+.lnb_layout h3.page_tit {
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #111;
+    text-align: left;
+}
+
+.lnb_layout.spt_overview h3.page_tit {
+    margin-bottom: 80px;
+}
+
+.lnb_layout h4 {
+    margin-bottom: 16px;
+    font-size: 24px;
+    color: #111;
+    font-weight: 500;
+}
+
+.ar .lnb_layout h3,
+.ar .lnb_layout h4 {
+    text-align: right
+}
+
+.lnb_layout .section {
+    margin-bottom: 80px;
+}
+
+.ar .lnb_layout .section {
+    text-align: right
+}
+
+.lnb_layout .section:last-child {
+    margin-bottom: 0;
+}
+
+.lnb_layout .txt_sub {
+    color: #999;
+}
+
+.lnb_layout p strong {
+    color: #e0000c;
+}
+
+.lnb_layout .mk_shipping {
+    display: inline-block;
+    padding: 3px 10px;
+    background: #fff;
+    border: 2px solid #1f1f1f;
+    color: #1f1f1f;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    vertical-align: middle
+}
+
+/*스크린샷 리스트*/
+.app_step {
+    margin-top: 24px;
+    padding: 60px 40px;
+    background: #f5f5f5
+}
+
+.app_step ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center
+}
+
+.app_step li {
+    flex: 1;
+    margin: 0 18px;
+    text-align: center;
+}
+
+.app_step li .txt {
+    margin: 12px 0 18px;
+    min-height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.app_step li img {
+    width: 100%;
+    max-width: 270px;
+    border-radius: 12px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1)
+}
+
+.app_step .num {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 30px;
+    font-size: 14px;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.spt_membership .app_step li .txt {
+    font-size: 13px
+}
+
+.spt_now .app_step li .txt {
+    font-size: 13px;
+    min-height: 62px
+}
+
+.spt_aucTime .twice li {
+    flex: inherit;
+    margin: 0 30px
+}
+
+/*링크 버튼*/
+.btn_txtLink {
+    display: inline-block !important;
+    color: #0B83E6 !important;
+    text-decoration: underline !important;
+}
+
+/*===How to buy===*/
+/*공통 스텝*/
+.step_zone {
+    margin-bottom: 80px;
+}
+
+.step_zone li {
+    position: relative;
+    float: left;
+    width: 20%;
+    margin: 12px 0
+}
+
+.step_zone li:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 42px;
+    right: 3px;
+    width: 12px;
+    height: 22px;
+    background: url(https://image.autowini.com/resources/IMG/common/ico_arr_black.svg) no-repeat;
+    background-size: 5px;
+    opacity: .2;
+}
+
+.step_zone li:last-child:before {
+    display: none;
+}
+
+.step_zone li a {
+    display: block;
+    position: relative;
+    min-height: 100px;
+    font-size: 14px;
+    margin-right: 24px;
+    padding: 12px 12px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 1px 8px rgba(99, 99, 99, 0.12)
+}
+
+.step_zone li a:hover {
+    box-shadow: 0 0 0 2px rgba(224, 0, 12, 0.4) inset;
+}
+
+.step_zone li.on a {
+    border: 1px solid rgba(224, 0, 12, 0.11);
+    background: rgba(224, 0, 12, 0.1);
+}
+
+.step_zone li.on dt {
+    color: rgba(224, 0, 12, 0.5);
+}
+
+.step_zone li a dt {
+    margin-bottom: 4px;
+    font-size: 13px;
+    color: #999;
+    font-weight: 400;
+}
+
+.step_zone li a dd {
+    font-size: 15px;
+    color: #101010;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.mn .step_zone li a {
+    min-height: 134px
+}
+
+.es .step_zone li a,
+.ru .step_zone li a {
+    min-height: 114px
+}
+
+.step_zone li img {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    opacity: 0.5;
+}
+
+.float_box li {
+    width: 45%;
+}
+
+.float_box li.left {
+    float: left;
+}
+
+.float_box li.left p {
+    line-height: 1.7;
+}
+
+.float_box li.right {
+    float: right;
+}
+
+.gray_box {
+    background: #f5f5f5;
+    text-align: center;
+}
+
+/*table*/
+.table_style2 table {
+    margin-top: 20px;
+    width: 100%;
+    border-left: 1px solid #d0d0d0;
+    border-top: 1px solid #ddd
+}
+
+.table_style2 thead th {
+    padding: 12px 0;
+    background: #eee;
+    color: #1f1f1f;
+    text-align: center;
+    border-right: 1px solid #d0d0d0;
+    border-bottom: 1px solid #ddd
+}
+
+.table_style2 tbody td {
+    padding: 12px 0;
+    border-right: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+    font-size: 15px;
+    text-align: center;
+}
+
+.dot_list li {
+    position: relative;
+    padding-left: 14px;
+    margin-top: 12px;
+}
+
+.dot_list li:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #bbb;
+}
+
+.ar .dot_list li:after {
+    left: auto;
+    right: 0;
+}
+
+.ar .dot_list li {
+    padding-left: 0;
+    padding-right: 14px;
+}
+
+.ico_step {
+    display: flex;
+    margin-top: 30px;
+}
+
+.ico_step li {
+    position: relative;
+    width: 20%;
+    text-align: center;
+}
+
+.ico_step li:after {
+    content: '';
+    position: absolute;
+    top: 36px;
+    left: -5px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(https://image.autowini.com/resources/IMG/common/ico_arr_black.svg) no-repeat;
+    background-size: 15px;
+    opacity: 0.2;
+}
+
+.ico_step li:first-child:after {
+    display: none;
+}
+
+/*달력*/
+#calendar {
+    width: 100%;
+    margin: 20px 0;
+}
+
+#calendar a {
+    color: #8e352e;
+    text-decoration: none;
+}
+
+#calendar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#calendar li {
+    display: block;
+    float: left;
+    width: 14.342%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    margin-right: -1px;
+    margin-bottom: -1px;
+}
+
+#calendar ul.weekdays li {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 8px 0;
+    border: none;
+    font-weight: 500;
+    color: #111;
+    font-size: 13px;
+    border-top: 2px solid #111;
+    background: #f5f5f5;
+}
+
+#calendar .days li {
+    height: 85px;
+}
+
+#calendar .date {
+    position: relative;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #999;
+    float: left;
+    font-size: 14px;
+}
+
+.ar #calendar .date {
+    float: right;
+}
+
+#calendar .event {
+    clear: both;
+    display: block;
+    font-size: 14px;
+    color: #111;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+#calendar .event-desc {
+    color: #666;
+    margin: 3px 0 7px 0;
+    text-decoration: none;
+}
+
+#calendar .other-month {
+    background: #f5f5f5;
+    color: #666;
+}
+
+.day.on .date {
+    color: #fff !important;
+    z-index: 100;
+    ;
+    width: 23px;
+    height: 23px;
+    line-height: 25px;
+    background: #e00001;
+    border-radius: 50%;
+}
+
+#calendar .event em {
+    font-size: 14px;
+}
+
+.img_fees {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 42px 110px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.img_fees li {
+    flex: 1
+}
+
+.img_fees li a {
+    font-size: 14px
+}
+
+.img_fees li:nth-child(2),
+.img_fees li:nth-child(5) {
+    flex: 0.5
+}
+
+.img_fees li img {
+    display: block;
+    margin: 0 auto 8px;
+}
+
+/* fee-cost */
+.auctionFee .grayBox {
+    margin: 40px 0;
+    padding: 22px 60px;
+    background: #f5f5f5;
+    border-radius: 12px
+}
+
+.auctionFee .grayBox dl {
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+}
+
+.auctionFee .grayBox dt {
+    flex: 1;
+    padding-left: 18px;
+    color: #101010;
+    background: url(https://image.autowini.com/resources/IMG/common/radiobtn_off.png) 0 center no-repeat;
+    background-size: 6px;
+}
+
+.auctionFee .grayBox dd {
+    flex: 4;
+    text-align: left
+}
+
+.auctionFee .chk {
+    position: relative;
+    display: inline-block;
+    color: #101010;
+    z-index: 1
+}
+
+.auctionFee .chk:before {
+    display: inline-block;
+    content: '';
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    background: #e0000c;
+    opacity: 0.3;
+    z-index: -1
+}
+
+.auctionFee th .chk {
+    font-size: 15px
+}
+
+/*overview*/
+.spt_overview .step_zone {
+    margin-bottom: 20px;
+}
+
+.spt_overview .step_list li {
+    margin-bottom: 8px;
+}
+
+.ar .spt_overview .step_list li {
+    text-align: right
+}
+
+.spt_overview .step_list li:last-child {
+    margin-bottom: 0;
+}
+
+.spt_overview .appdown_box {
+    display: flex;
+    position: relative;
+    margin-top: 120px;
+    height: 500px;
+    align-items: center;
+    background: #f5f5f5;
+    background-size: 310px
+}
+
+.spt_overview .appdown_box h4 {
+    display: inline-block;
+    width: 500px;
+    font-size: 26px;
+    font-weight: bold
+}
+
+.spt_overview .appdown_box .txt {
+    width: 500px
+}
+
+.spt_overview .appdown_box:after {
+    content: '';
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    width: 320px;
+    height: 380px;
+    margin-left: 100px;
+    background: url(../images/content/bg_overviewApp.png) center no-repeat;
+    background-size: cover
+}
+
+.spt_overview .btn_zone {
+    margin-top: 30px;
+}
+
+.spt_overview .btn_zone .btn {
+    display: inline-block;
+    padding: 4px 31px 12px 61px;
+    border-radius: 6px;
+}
+
+.spt_overview .btn_zone .btn span {
+    font-size: 12px;
+    color: #fff;
+}
+
+.spt_overview .btn_zone .btn p {
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.spt_overview .btn_apple {
+    margin-right: 8px;
+    background: #111 url(../images/content/ico_appstore.svg) no-repeat 15px center;
+}
+
+.spt_overview .btn_google {
+    background: #111 url(../images/content/ico_googleplay.svg) no-repeat 17px center;
+}
+
+.ar .spt_overview .appdown_box .txt {
+    width: auto;
+}
+
+.ar .spt_overview .appdown_box:after {
+    right: 50%;
+    margin-left: 0;
+    left: auto
+}
+
+/*Register For Free*/
+.spt_regist .benefits {
+    display: flex;
+    margin-top: 28px;
+    padding: 30px 30px 30px 0;
+    border: 3px solid #eee;
+    border-radius: 12px;
+}
+
+.spt_regist .benefits li {
+    flex: 1;
+    width: 50%;
+}
+
+.spt_regist .benefits li:first-child {
+    border-right: 2px solid #eee;
+    background: url('../images/content/ico_can.svg') no-repeat bottom -6px right 32px
+}
+
+.spt_regist .benefits li:last-child {
+    background: url('../images/content/ico_cannot.svg') no-repeat bottom -11px right;
+}
+
+.spt_regist .benefits dl {
+    margin-left: 32px;
+}
+
+.spt_regist .benefits dt {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.spt_regist .benefits dd {
+    position: relative;
+    margin-top: 6px;
+    padding-left: 12px;
+    font-size: 15px;
+}
+
+.spt_regist .benefits dd:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #bbb;
+}
+
+/*멤버십*/
+.spt_membership .step_list li {
+    margin-bottom: 8px;
+}
+
+.spt_membership .step_list span {
+    display: inline-block;
+    padding: 0 4px;
+    margin-right: 4px;
+    color: #999;
+    border: 1px solid #eee;
+}
+
+.spt_membership .eximg_box li {
+    float: left;
+    width: 31%;
+    margin-right: 2%;
+    text-align: left;
+}
+
+.spt_membership .eximg_box li p {
+    color: #999;
+    text-align: center;
+    font-size: 14px;
+}
+
+.spt_membership p+p {
+    margin-top: 30px
+}
+
+.spt_membership p a {
+    font-weight: 500
+}
+
+.spt_membership p a span {
+    text-decoration: underline;
+    color: #0B83E3
+}
+
+/*Search Vehicles and Check Auction Time*/
+.spt_aucTime .table_style1 {
+    margin-top: 24px;
+}
+
+.spt_aucTime .aucTime_list {
+    display: table;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.spt_aucTime .aucTime_list .aucTime_badge1 dt span {
+    background: #ffed93;
+    color: #7e5f00
+}
+
+.spt_aucTime .aucTime_list .aucTime_badge2 dt span {
+    background: #D2E9FF;
+    color: #0080FF;
+}
+
+.spt_aucTime .aucTime_list .aucTime_badge3 dt span {
+    background: #ffedee;
+    color: #e0000c;
+}
+
+.spt_aucTime .aucTime_list .aucTime_badge4 dt span {
+    background: #eee;
+    color: #111;
+}
+
+.spt_aucTime .aucTime_list .aucTime_badge5 dt span {
+    background: #fff;
+    color: #111;
+    border: 1px solid #eee;
+}
+
+.spt_aucTime .aucTime_list li {
+    position: relative;
+    margin-bottom: 16px;
+    padding: 12px 20px;
+    background: #f5f5f5;
+}
+
+.spt_aucTime .aucTime_list dt {
+    display: table-cell;
+    padding-right: 20px;
+}
+
+.spt_aucTime .aucTime_list dt span {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #f5f5f5;
+    border-radius: 50px;
+}
+
+.spt_aucTime .aucTime_list dd {
+    display: table-cell;
+}
+
+.spt_aucTime .aucTime_list .time {
+    margin-right: 20px;
+}
+
+.spt_aucTime .aucTime_list .btn_txtLink {
+    margin-left: 20px;
+}
+
+.spt_aucTime .txt_sub {
+    display: block;
+    font-size: 14px;
+    text-align: right;
+}
+
+.spt_aucTime .txt_sub a {
+    font-size: 14px;
+}
+
+/*Terms & Guides*/
+.spt_guide .section {
+    padding-bottom: 80px;
+    border-bottom: 1px solid #eee;
+}
+
+.spt_guide .section:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.spt_guide .float_box h5 {
+    margin-bottom: 16px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #111;
+}
+
+.spt_guide .float_box .left {
+    width: 400px;
+}
+
+.spt_guide .float_box .right {
+    width: 550px;
+}
+
+.spt_guide .float_box .right dl {
+    margin-bottom: 16px;
+}
+
+.spt_guide .float_box .right dt {
+    font-size: 15px;
+    color: #111;
+}
+
+.spt_guide .float_box .right dd {
+    font-size: 15px;
+    color: #555;
+}
+
+/*Rule & Policy*/
+.spt_terms .section {
+    margin: 0 0 30px;
+}
+
+.spt_terms h4 {
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.spt_terms .page_sub {
+    margin: 60px 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.spt_terms p {
+    font-size: 15px;
+}
+
+.spt_terms .txt_list {
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+.spt_terms .txt_list li {
+    padding: 2px 0;
+    font-size: 15px;
+    list-style: disc;
+}
+
+/*faq*/
+.spt_faq .faq_box {
+    border-top: 1px solid #111;
+}
+
+.spt_faq li.on .question i {
+    transform: rotate(180deg) translateY(50%);
+}
+
+.spt_faq .question {
+    position: relative;
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    font-weight: 500;
+    color: #111;
+}
+
+.spt_faq .question i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    display: inline-block;
+    transition: 0.3s;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+    background-position: center;
+}
+
+.spt_faq .answer {
+    display: none;
+    padding: 20px 20px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #eee;
+}
+
+.ico_arr {
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgNDggNDgiPjxkZWZzPjxzdHlsZT4uY2xzLTEgeyBmaWxsOiAjYWFhZmIzOyBmaWxsLXJ1bGU6IGV2ZW5vZGQ7IH08L3N0eWxlPjwvZGVmcz48ZyBpZD0iYXJ0Ym9hcmQtMSI+PHBhdGggZD0iTTQxLjM4MCwyMS41MjQgTDI1LjcyMCwzNy4yMTggQzI1LjY3NSwzNy4yNzMgMjUuNjU1LDM3LjM0MCAyNS42MDMsMzcuMzkxIEMyNS4xODgsMzcuODAyIDI0LjY0MiwzNy45OTkgMjQuMDk4LDM3Ljk5MCBDMjMuNTU2LDM3Ljk5NSAyMy4wMTMsMzcuNzkyIDIyLjYwMCwzNy4zNzggQzIyLjU1NywzNy4zMzUgMjIuNTQzLDM3LjI3OSAyMi41MDUsMzcuMjM1IEw2LjU1MiwyMS40NTQgQzUuNzQwLDIwLjY1MSA1Ljc0MCwxOS4zNDkgNi41NTIsMTguNTQ2IEM3LjM2NCwxNy43NDMgOC42ODAsMTcuNzQzIDkuNDkyLDE4LjU0NiBMMjQuMDU1LDMyLjk1MiBMMzguNDIwLDE4LjU1NyBDMzkuMjM3LDE3LjczNyA0MC41NjMsMTcuNzM3IDQxLjM4MCwxOC41NTcgQzQyLjE5OCwxOS4zNzYgNDIuMTk4LDIwLjcwNSA0MS4zODAsMjEuNTI0IFoiIGNsYXNzPSJjbHMtMSIvPjwvZz48L3N2Zz4=") no-repeat
+}
+
+.tab_boxIn {
+    margin-bottom: 32px;
+    border-bottom: 1px solid #eee;
+}
+
+.tab_boxIn li {
+    display: inline-block;
+    margin-right: 24px;
+}
+
+.tab_boxIn li a {
+    display: inline-block;
+    font-size: 16px;
+    color: #777;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.tab_boxIn li.on a {
+    font-weight: bold;
+    color: #111;
+    border-bottom: 2px solid #111;
+}
+
+.tab_content {
+    display: none;
+}
+
+.tab_content.on {
+    display: block;
+}
+
+.spt_contact .location .content {
+    margin: 0 0.5%;
+    padding: 14px 40px 40px 430px;
+    height: 300px;
+    background: #fff;
+    background-size: 645px;
+}
+
+.spt_contact .location dl {
+    display: table;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.spt_contact .location dt {
+    display: table-cell;
+    width: 23%;
+    color: #999;
+    font-size: 15px;
+}
+
+.spt_contact .location dd {
+    display: table-cell;
+    width: 75%;
+    font-size: 15px;
+}
+
+.spt_contact .location .btn_ss_black {
+    position: relative;
+    top: -2px;
+    margin-left: 6px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    padding-left: 20px;
+    background: url(https://image.autowini.com/resources/IMG/common/ico_map.svg) no-repeat;
+    background-size: 17px;
+}
+
+.spt_contact .location .btn_ss_black span {
+    border-bottom: 1px solid #0B83E6;
+    color: #0B83E6;
+    font-size: 15px;
+}
+
+.spt_contact .company {
+    position: relative;
+}
+
+.spt_contact .pic_company {
+    float: left;
+    margin-left: 0.5%;
+    width: 400px;
+    overflow: hidden;
+}
+
+.spt_contact .pic_company li {
+    width: 100%;
+    height: 300px;
+    outline: none;
+}
+
+.spt_contact .pic_company li img {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.spt_contact .btn_box {
+    position: absolute;
+    top: 270px;
+    right: 619px;
+    display: flex;
+}
+
+.spt_contact .btn_box a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0;
+    opacity: 1;
+}
+
+.spt_contact .btn_box .prev {
+    background-image: url(../images/main/ico_bnPrev.png);
+}
+
+.spt_contact .btn_box .next {
+    background-image: url(../images/main/ico_bnNext.png);
+}
+
+.btn_box .pause {
+    background-image: url(../images/main/ico_bnStop.png);
+}
+
+.btn_box .play {
+    background-image: url(../images/main/ico_bnPlay.png);
+}
+
+/*notice*/
+.table_style1 table {
+    width: 100%;
+}
+
+.table_style1 table th,
+.table_style1 table td {
+    font-size: 16px;
+}
+
+.table_style1 thead th {
+    padding: 16px 0;
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+    text-align: center;
+}
+
+.table_style1 tbody tr:hover {
+    background: #f5f5f5;
+}
+
+.table_style1 tbody tr td:nth-child(2) {
+    text-align: left;
+}
+
+.table_style1 thead tr th:nth-child(2) {
+    text-align: left;
+}
+
+.table_style1 tbody td {
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.table_style1 tbody td.tit a {
+    display: block;
+    padding: 20px 0;
+}
+
+.table_style1 .txt_left {
+    text-align: left;
+}
+
+.table_style1 .date {
+    font-size: 14px;
+    color: #999;
+}
+
+.table_style1 .tit {
+    color: #111;
+}
+
+.spt_notice .category {
+    display: block;
+    font-size: 14px;
+    color: #0B83E6;
+}
+
+.spt_notice strong {
+    font-size: 15px;
+}
+
+/*공지사항 서브페이지*/
+.spt_notiSub .tit_area {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.spt_notiSub .tit_area h4 {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.spt_notiSub .category {
+    display: block;
+    margin-bottom: 4px;
+    color: #0B83E6;
+    font-size: 15px;
+}
+
+.spt_notiSub .tit_area .date {
+    display: block;
+    margin-top: 8px;
+    color: #999;
+    font-size: 15px;
+}
+
+.spt_notiSub .noti_area {
+    padding: 60px 0;
+    font-size: 15px;
+}
+
+.spt_notiSub .noti_area h5 {
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #111;
+}
+
+.spt_notiSub .noti_area .section {
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.spt_notiSub .noti_area .section:last-child {
+    margin-bottom: 0;
+}
+
+.spt_notiSub .noti_area .section .txt {
+    line-height: 1.8;
+}
+
+.spt_notiSub .noti_area .section .txt_deco {
+    text-decoration: underline;
+}
+
+.spt_notiSub .noti_area em {
+    font-size: 15px;
+}
+
+.spt_notiSub .noti_area .list {
+    padding-left: 14px;
+}
+
+.spt_notiSub .noti_area .list li {
+    margin-bottom: 4px;
+}
+
+.spt_notiSub .btn_area {
+    padding-top: 50px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+.spt_notiSub .btn_area .btn_list {
+    display: inline-block;
+    padding: 0 80px;
+    height: 50px;
+    font-weight: 500;
+    line-height: 50px;
+    border: 1px solid #111;
+    transition: .3s;
+}
+
+.spt_notiSub .btn_area .btn_list:hover {
+    background: #111;
+    color: #fff;
+}
+
+/*아랍어*/
+.ar .lnb {
+    right: 0;
+    left: auto;
+}
+
+.ar .support {
+    padding-right: 280px;
+    padding-left: 0;
+}
+
+.ar .support .lnb_inner {
+    text-align: right;
+}
+
+.ar .support h3.page_tit {
+    text-align: right;
+}
+
+.ar .lnb .dep1_btn i {
+    left: 8px;
+}
+
+.ar .lnb .dep1>li>a {
+    text-align: right;
+    padding-right: 18px;
+    padding-left: 0;
+}
+
+.ar .lnb .dep1>li>a:after {
+    right: 2px;
+    left: auto;
+}
+
+.ar .lnb .dep2 li a {
+    padding-right: 12px;
+    padding-left: 0;
+    text-align: right;
+}
+
+.ar .lnb .dep2 li a:after {
+    right: 0;
+    left: auto;
+}
+
+.ar .step_zone li a {
+    margin-left: 24px;
+    margin-right: 0;
+}
+
+.ar .step_zone li:before {
+    top: 33px;
+    left: 2px;
+    transform: rotate(180deg);
+}
+
+.ar .spt_regist .benefits dd {
+    padding-left: 0;
+    padding-right: 12px;
+}
+
+.ar .spt_regist .benefits dd:before {
+    right: 0;
+    left: auto
+}
+
+.ar .spt_regist .benefits li:first-child {
+    padding-right: 24px;
+}
+
+.ar .spt_regist .benefits li {
+    background-position: top left 32px
+}
+
+.ar .spt_membership .eximg_box li {
+    float: right;
+    margin-left: 2%;
+    margin-right: 0;
+    text-align: right;
+}
+
+.ar .spt_terms .txt_list li {
+    list-style: none;
+}
+
+.ar .spt_videos .btn_txtLink {
+    left: 0;
+    right: auto;
+}
+
+.ar .spt_overview .appdown_box .lnb_inner {
+    background: url(../images/content/img_appdown.png) no-repeat left bottom
+}
+
+.ar .step_zone li {
+    float: right;
+}
+
+.ar .app_step li {
+    float: right;
+}
+
+.ar .compCsBuyer li dl {
+    float: right;
+}
+
+.ar .compCsBuyer li.box_btn {
+    float: left;
+}
+
+@media only all and (max-width:1300px) {
+    .support .lnb_inner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/*셀러가입문의페이지*/
+.seller_contact {
+    padding-top: 60px;
+    background: url(../images/content/bg_seller_contact.png) no-repeat top right;
+}
+
+.seller_contact .inner {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.seller_contact h3.page_tit {
+    margin-bottom: 60px;
+    font-size: 36px;
+    color: #111;
+    text-align: left;
+}
+
+.seller_contact .lnb_inner {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.seller_contact h4 {
+    font-size: 27px;
+    color: #111;
+    letter-spacing: -1px;
+}
+
+.seller_contact h4 strong {
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    z-index: 100;
+}
+
+.seller_contact h4 strong:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: #e0000c;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.seller_contact p.txt {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.seller_contact .section1 {
+    padding-bottom: 69px;
+}
+
+.seller_contact .section1 h4 {
+    margin-bottom: 35px;
+    color: #111;
+}
+
+.seller_contact .section1 dl {
+    margin-bottom: 24px;
+    font-size: 18px;
+}
+
+.seller_contact .section1 dt {
+    padding-left: 34px;
+    font-weight: 600;
+    background: url(https://image.autowini.com/resources/IMG/common/ico_check.svg) no-repeat left -3px;
+    background-size: 26px;
+}
+
+.seller_contact .section1 dd {
+    font-size: 16px;
+    color: #555;
+}
+
+.seller_contact .section2 {
+    padding: 80px 0;
+    text-align: center;
+    background: #111;
+}
+
+.seller_contact .section2 h4 {
+    color: #fff;
+}
+
+.seller_contact .section2 p.txt {
+    color: #bbb;
+}
+
+.seller_contact .section2 .date {
+    display: inline-block;
+    margin: 40px 0 20px;
+    padding: 8px 20px;
+    color: #888;
+    border-radius: 40px;
+    background: #000;
+}
+
+.seller_contact .section2 .data {
+    color: #fff;
+}
+
+.seller_contact .section2 .data li {
+    float: left;
+    width: 33.333%;
+    border-right: 1px solid #333;
+}
+
+.seller_contact .section2 .data li:last-child {
+    border-right: 0;
+}
+
+.seller_contact .section2 .data li dt {
+    font-size: 20px;
+    color: #bbb;
+}
+
+.seller_contact .section2 .data li dd {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.seller_contact .section3 {
+    padding: 80px 0 100px;
+    text-align: center;
+}
+
+.seller_contact .section3 .inner {
+    width: 1000px;
+}
+
+.seller_contact .section3 .cs_list li {
+    float: left;
+    width: 33.333%;
+    padding: 30px;
+    height: 260px;
+    text-align: left;
+    border: 10px solid #fff;
+    box-sizing: border-box;
+}
+
+.seller_contact .section3 .cs_list li.gyeonggi {
+    background: #f8f8f8 url(../images/content/img_map_gyeonggi.png) no-repeat top 15px right -32px;
+}
+
+.seller_contact .section3 .cs_list li.chngcheong {
+    background: #f8f8f8 url(../images/content/img_map_chngcheong.png) no-repeat top 15px right -32px;
+}
+
+.seller_contact .section3 .cs_list li.gangwon {
+    background: #f8f8f8 url(../images/content/img_map_gyeongsang.png) no-repeat top 15px right -32px;
+}
+
+.seller_contact .section3 .cs_list li.gyeongsang {
+    background: #f8f8f8 url(../images/content/img_map_gangwon.png) no-repeat top 15px right -32px;
+}
+
+.seller_contact .section3 .cs_list h5 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    letter-spacing: -.5px;
+}
+
+.seller_contact .section3 .cs_list dl {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.seller_contact .section3 .cs_list dt {
+    margin-bottom: 2px;
+    color: #555;
+}
+
+.seller_contact .section3 .cs_list dd {
+    padding-left: 28px;
+    font-weight: 500;
+    background: url(https://image.autowini.com/resources/IMG/common/ico_phone.svg) no-repeat;
+}
+
+.seller_contact .section3 .add_txt {
+    display: block;
+    margin: 30px 0;
+    text-align: center;
+    color: #999;
+}
+
+.step_box {
+    padding: 80px 0;
+    text-align: center;
+    background: #f8f8f8;
+}
+
+.step_box ul {
+    position: relative;
+    margin-top: 50px;
+}
+
+.step_box ul:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 1px;
+    background: #ddd;
+}
+
+.step_box li {
+    display: inline-block;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: 0 15px;
+    text-align: center;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    vertical-align: top;
+    z-index: 100;
+}
+
+.step_box li span {
+    display: inline-block;
+    margin: 40px 0 5px;
+    color: #999;
+}
+
+.step_box li p {
+    font-size: 18px;
+    color: #111;
+}
+
+/*notice 본문*/
+.refer .indent {
+    padding-left: 24px;
+}
+
+.refer .step li {
+    margin-bottom: 6px;
+}
+
+.refer .step li strong {
+    display: inline-block;
+    padding: 0 9px;
+    margin-right: 8px;
+    font-size: 14px;
+    border: 2px solid #ddd;
+    border-radius: 16px;
+}
+
+.ar .refer .step li strong {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+.refer .center {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.refer .center p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.refer h5 {
+    font-size: 18px;
+}
+
+.lunar img {
+    margin-bottom: 24px;
+}
+
+.lunar .box p {
+    margin-bottom: 24px;
+    line-height: 30px;
+}
+
+.lunar .box p:last-child {
+    margin-bottom: 0;
+}
+
+.lunar .box p strong {
+    font-weight: bold;
+    color: #e0000c;
+}
+
+.spt_notiSub .roro .section .tit {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.event_100th {
+    padding-top: 0 !important;
+    margin-top: 60px
+}
+
+.event_100th img {
+    display: block;
+}
+
+.event_100th .section {
+    padding: 40px;
+    background-color: #c70c0d;
+}
+
+.event_100th .section .lnb_inner {
+    padding: 40px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.event_100th .section h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.event_100th .section li {
+    margin: 4px 0;
+}
+
+.commission .step li {
+    margin-bottom: 16px;
+}
+
+.commission .step li strong {
+    margin-right: 6px;
+    border: 1px solid #ddd;
+    border-radius: 60px;
+    padding: 2px 10px;
+}
+
+.ar .commission .dot_list li {
+    padding-left: 14px;
+}
+
+.ar .commission .dot_list li:after {
+    left: 0;
+}
+
+/* center */
+.lnb_layout .page_tit+p {
+    margin: -20px 0 28px;
+}
+
+.btnGuideDown {
+    display: block;
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    margin: 0 24px;
+    padding-left: 18px;
+    width: 210px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #dedede;
+    text-align: center;
+    background: url(../images/content/ico_down.png) 22px center no-repeat;
+}
+
+.btnGuideDown:hover {
+    border-color: #e0000c;
+    color: #e0000c
+}
+
+.sellerProcedure li {
+    width: 100%
+}
+
+.sellerProcedure li dl {
+    display: flex;
+    align-items: baseline
+}
+
+.sellerProcedure li dt {
+    display: flex;
+    flex: 1.1;
+    justify-content: space-between;
+    padding: 46px 0;
+    font-size: 18px;
+    color: #111;
+    letter-spacing: -0.5px
+}
+
+.sellerProcedure li dt span {
+    position: relative;
+    margin-top: -2px;
+    width: 26px;
+    height: 26px;
+    line-height: 24px;
+    border: 2px solid #e0000c;
+    background: #fff;
+    color: #e0000c;
+    text-align: center;
+    border-radius: 28px;
+    z-index: 1
+}
+
+.sellerProcedure li dd {
+    position: relative;
+    flex: 4.1;
+    padding: 50px 0 50px 36px;
+    line-height: 1.6
+}
+
+.sellerProcedure li dd a {
+    color: #0B83E6;
+    text-decoration: underline
+}
+
+.sellerProcedure li dd:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -14px;
+    width: 2px;
+    height: 100%;
+    background: #e0000c
+}
+
+.sellerProcedure li:first-child dd:before {
+    top: 50px
+}
+
+.sellerProcedure li:last-child dd:before {
+    top: -80px
+}
+
+.dayOfWeek .list_info {
+    margin: 60px 0 20px;
+    padding: 20px;
+    background: #F8F8F8;
+    text-align: center;
+}
+
+.dayOfWeek .list_info span {
+    display: inline-block;
+    margin: 0 72px;
+    font-weight: bold;
+    color: #303030;
+    vertical-align: middle
+}
+
+.dayOfWeek .list_info span:before {
+    display: inline-block;
+    content: '';
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #303030;
+    border-radius: 20px;
+    vertical-align: middle
+}
+
+.dayOfWeek .list_info .red {
+    color: #e0000c
+}
+
+.dayOfWeek .list_info .red:before {
+    border-color: #e0000c;
+}
+
+.dayOfWeek li dl {
+    display: flex;
+    align-items: baseline;
+    letter-spacing: -0.5px
+}
+
+.dayOfWeek li dt {
+    position: relative;
+    flex: 1;
+    padding: 40px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #101010
+}
+
+.dayOfWeek li dt:before {
+    display: inline-block;
+    position: relative;
+    content: '';
+    margin-right: 18px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #303030;
+    background: #fff;
+    border-radius: 20px;
+    vertical-align: top;
+    z-index: 1
+}
+
+.dayOfWeek li dt:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    width: 2px;
+    height: 160%;
+    background: #303030
+}
+
+.dayOfWeek li dd {
+    flex: 3;
+    padding: 40px 0 20px;
+}
+
+.dayOfWeek li dd strong {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #101010
+}
+
+.dayOfWeek li dl {
+    display: flex;
+    align-items: baseline;
+    letter-spacing: -0.5px
+}
+
+.dayOfWeek li.red {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E2E2E2
+}
+
+.dayOfWeek .red dt,
+.dayOfWeek .red dd strong {
+    color: #e0000c
+}
+
+.dayOfWeek .red dt:before {
+    border-color: #e0000c
+}
+
+.dayOfWeek .red dt:after,
+.dayOfWeek li:last-child dt:after {
+    display: none
+}
+
+.centerFaq .btnTab {
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.centerFaq .btnTab a {
+    display: inline-block;
+    margin-right: 12px;
+    padding: 0 32px;
+    height: 50px;
+    line-height: 50px;
+    color: #707070;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.centerFaq .btnTab a.on {
+    color: #fff;
+    background: #101010;
+    border-color: #101010
+}
+
+.centerFaq ul {
+    margin-bottom: 100px;
+    border-top: 2px solid #101010;
+    border-bottom: 1px solid #eee
+}
+
+.centerFaq li {
+    border-top: 1px solid #eee
+}
+
+.centerFaq li:first-child {
+    border-top: none
+}
+
+.centerFaq li .quest {
+    display: flex;
+    align-items: baseline;
+    padding: 30px 42px;
+    background: #fff url(../images/content/img_arrow_down.png) right 30px center no-repeat;
+}
+
+.centerFaq li .quest span {
+    flex: 1;
+    font-size: 14px;
+    color: #808080
+}
+
+.centerFaq li .quest b {
+    flex: 5
+}
+
+.centerFaq li .quest b:before {
+    display: inline-block;
+    content: 'Q.';
+    padding-right: 12px;
+    color: #e0000c
+}
+
+.centerFaq li .answer {
+    display: none;
+    padding: 30px 30px 30px 198px;
+    background: #f5f5f5;
+    line-height: 1.7
+}
+
+.centerFaq li .answer:before {
+    display: block;
+    content: 'A.';
+    padding-right: 12px;
+    color: #e0000c;
+    font-weight: bold
+}
+
+.centerFaq li .answer strong {
+    display: block;
+    padding-top: 8px
+}
+
+.centerFaq li .answer a {
+    color: #0B83E6;
+    text-decoration: underline
+}
+
+.centerFaq li.on .quest {
+    background-image: url(../images/content/img_arrow_up.png)
+}
+
+.centerFaq li.on .quest b {
+    color: #e0000c
+}
+
+.centerFaq li.on .answer {
+    display: flex
+}
+
+.centerContact h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 20px;
+    font-size: 26px;
+}
+
+.centerContact h4 span {
+    color: #909090;
+    font-weight: normal;
+}
+
+.centerContact .ctSales {
+    display: flex;
+    margin: 0 0 40px -18px;
+    justify-content: space-between
+}
+
+.ctSales li {
+    flex: 1;
+    margin: 12px 0 12px 18px;
+    padding: 24px 30px 20px;
+    background-color: #F5F5F5;
+    box-sizing: border-box
+}
+
+.ctSales li.gyeonggi {
+    background: #f8f8f8 url(../images/content/img_map_gyeonggi.png) no-repeat top 15px right -42px;
+}
+
+.ctSales li.chngcheong {
+    background: #f8f8f8 url(../images/content/img_map_chngcheong.png) no-repeat top 15px right -42px;
+}
+
+.ctSales li.gangwon {
+    background: #f8f8f8 url(../images/content/img_map_gyeongsang.png) no-repeat top 15px right -42px;
+}
+
+.ctSales li.gyeongsang {
+    background: #f8f8f8 url(../images/content/img_map_gangwon.png) no-repeat top 15px right -42px;
+}
+
+.ctSales h5 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    letter-spacing: -0.8px;
+    color: #111
+}
+
+.ctSales dl {
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.ctSales dt {
+    margin-bottom: 8px;
+    color: #303030;
+    font-weight: normal;
+}
+
+.ctSales dd {
+    padding-left: 28px;
+    font-weight: 500;
+    background: url(https://image.autowini.com/resources/IMG/common/ico_phone.svg) no-repeat;
+}
+
+.centerContact .ctArea {
+    padding-left: 512px;
+}
+
+.centerContact .ctArea strong {
+    display: block;
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #101010
+}
+
+.centerContact .ctArea ul {
+    padding-bottom: 16px
+}
+
+.centerContact .ctArea li {
+    margin-bottom: 18px
+}
+
+.centerContact .ctArea li b {
+    display: inline-block;
+    width: 90px;
+    vertical-align: middle;
+}
+
+.centerContact .ctArea li a {
+    color: #0B83E6;
+    text-decoration: underline
+}
+
+.centerContact .btnGoogle {
+    display: block;
+    margin-right: 30px;
+    padding-left: 30px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #505050;
+    border: 1px solid #dedede;
+    background: url(../images/content/ico_map.png) 134px center no-repeat
+}
+
+.centerContact .btnGoogle:hover {
+    border-color: #303030
+}
+
+.centerContact .area1 {
+    margin: 40px 0 60px;
+}
+
+.centerContact .area1 {
+    background: url(../images/content/img_contact1.png) 0 center no-repeat;
+    background-size: 470px;
+}
+
+.centerContact .area2 {
+    background: url(../images/content/img_contact2.png) 0 center no-repeat;
+    background-size: 470px;
+}
+
+.centerContact .compContact {
+    margin-bottom: 60px;
+}
+
+.inq_bottom {
+    display: flex;
+    margin-top: 60px;
+    padding: 40px 50px;
+    background: #f5f5f5;
+    justify-content: space-between;
+    align-items: center
+}
+
+.inq_bottom dl {
+    padding: 10px 0 10px 106px;
+    flex: 3.5;
+    background: url(../images/content/img_inqIcon.png) 0 center no-repeat
+}
+
+.inq_bottom dt {
+    font-size: 26px;
+    font-weight: bold;
+    color: #111;
+    letter-spacing: -0.5px
+}
+
+.inq_bottom dd {
+    padding-top: 12px;
+    color: #808080
+}
+
+.inq_bottom a {
+    flex: 1;
+    padding: 0 16px;
+    margin-right: 20px;
+    height: 54px;
+    line-height: 54px;
+    background: #e0000c;
+    color: #fff;
+    text-align: center
+}
+
+.comp_cs {
+    position: relative;
+}
+
+.comp_cs img {
+    display: block;
+    width: 280px;
+    padding-top: 26px
+}
+
+.comp_cs .left {
+    float: left;
+    width: 45%
+}
+
+.comp_cs .right {
+    float: right;
+    width: 50%;
+    padding: 32px 32px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05)
+}
+
+.comp_cs .cs_info {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+/*공통 가입문의 연락처 */
+.compContact {
+    margin-top: 32px;
+}
+
+.compContact table {
+    border-top: 1px solid #111;
+}
+
+.compContact .table_style2 tbody th {
+    background: #f9f9f9;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.compContact .table_style2 tbody td {
+    padding: 16px 24px;
+    border-right: 0;
+    border-bottom: 1px solid #eee;
+}
+
+.compContact .table_style2 tbody .name {
+    padding: 16px 0 16px 40px;
+    text-align: left;
+}
+
+.compContact .table_style2 tbody .call span {
+    padding-left: 24px;
+    background: url(https://image.autowini.com/resources/IMG/common/ico_phone.svg) no-repeat left center;
+    background-size: 18px;
+}
+
+.compContact .txtInfo {
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #0B83E6;
+    text-align: right;
+}
+
+/* 국내입찰안내 */
+.dmBid {
+    padding-left: 0
+}
+
+.dmBid .page_img {
+    margin-bottom: 36px;
+    padding: 60px 390px 60px 70px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    background: url(../images/content/bg_dmBid.png) center no-repeat;
+    border-radius: 10px;
+    overflow: hidden
+}
+
+.dmBid b {
+    position: relative;
+    z-index: 1
+}
+
+.dmBid b:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: #e0000c;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.dmBid .page_img b:after {
+    bottom: 3px;
+    height: 15px;
+    background: #4a2224;
+    opacity: 1
+}
+
+.dmBid .page_img span {
+    display: block;
+    margin-top: 32px;
+    font-size: 16px;
+    color: #d8d8d8;
+    font-weight: normal
+}
+
+.dmBid dl {
+    padding: 30px 0;
+}
+
+.dmBid dt {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.5px
+}
+
+.dmBid dd {
+    display: flex;
+    align-items: center;
+    margin-top: 8px
+}
+
+.dmBid .img {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.dmBid .con {
+    flex: 1;
+    font-size: 15px
+}
+
+.dmBid .con strong {
+    display: block;
+    padding: 4px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.dmBid .con .tel {
+    padding: 12px 25px;
+    background: url(https://image.autowini.com/resources/IMG/common/ico_phone.svg) no-repeat left center;
+    background-size: 20px
+}
+
+.dmBid .con li {
+    margin: 12px 0
+}
+
+.dmBid .con li+li {
+    margin-bottom: 0
+}
+
+.dmBid .con .data {
+    font-size: 14px;
+    line-height: 1.6
+}
+
+.dmBid dd a {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #0B83E6;
+    text-decoration: underline
+}
+
+.dmBid .con span {
+    display: block;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #e0000c;
+}
+
+.dmBid .con .tip {
+    padding: 16px 24px;
+    font-size: 13px;
+    line-height: 1.6;
+    background: #f5f5f5;
+    color: #666;
+    border-radius: 8px
+}
+
+/* 컷팅서비스 */
+.cutSvc h4 strong {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    color: #111;
+    z-index: 1;
+}
+
+.cutSvc h4 strong:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background: #e0000c;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.cutSvc dt {
+    margin-bottom: 6px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #111
+}
+
+.cutSvc dd {
+    margin: 12px 0;
+    font-size: 16px;
+    color: #303030
+}
+
+.cutSvc dd li {
+    padding: 24px 0;
+}
+
+.cutSvc dd li strong {
+    display: block;
+    font-weight: bold
+}
+
+.cutSvc iframe {
+    margin: 32px 0 8px;
+}
+
+.cutSvc .svcVideo span {
+    font-size: 14px;
+    color: #909090;
+    line-height: 1.3
+}
+
+.cutSvc .flex {
+    display: flex;
+    align-items: flex-end;
+    margin: 40px 0
+}
+
+.cutSvc .flex dl {
+    flex: 1;
+    margin-left: 60px
+}
+
+.cutSvc .flex dt {
+    font-size: 20px
+}
+
+.cutSvc .cutThumb {
+    display: flex;
+    margin: 0 -8px 80px;
+    width: 100%
+}
+
+.cutSvc .cutThumb img {
+    margin: 0 8px
+}
+
+.cutSvc .slick-prev,
+.cutSvc .slick-next {
+    display: none
+}
+
+.cutSvc .option {
+    margin-top: 40px;
+}
+
+.cutSvc .option dt {
+    margin-bottom: 28px;
+}
+
+.cutSvc .option dt em {
+    margin-left: 8px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #707578
+}
+
+.cutSvc .option dd {
+    display: flex;
+    align-items: center;
+    margin: 0 0 32px;
+}
+
+.cutSvc .option span {
+    flex: 1;
+    position: relative;
+    padding: 16px 22px 16px 54px;
+    background: #fff url(../images/content/ico_done.png) 18px center no-repeat;
+    background-size: 24px;
+    text-align: left;
+    border: 2px solid #eee;
+    border-radius: 10px
+}
+
+.cutSvc .option span+span {
+    margin-left: 16px
+}
+
+.cutSvc .option img {
+    display: block;
+    width: 60px;
+    position: absolute;
+    top: 9px;
+    right: 20px
+}
+
+.cutSvc .works {
+    padding: 80px;
+    background: #f5f5f5;
+}
+
+.cutSvc .works dl {
+    flex: 1;
+    margin-right: 36px;
+}
+
+.cutSvc .works ul {
+    flex: 2;
+}
+
+.cutSvc .works li {
+    position: relative;
+    padding: 24px 0 16px 100px
+}
+
+.cutSvc .works li:nth-child(1) {
+    background: url(../images/content/ic_ask.svg) 0 center no-repeat
+}
+
+.cutSvc .works li:nth-child(2) {
+    background: url(../images/content/ic_invoice.svg) 0 center no-repeat
+}
+
+.cutSvc .works li:nth-child(3) {
+    background: url(../images/content/ic_confirm.svg) 0 center no-repeat
+}
+
+.cutSvc .works li:nth-child(4) {
+    background: url(../images/content/ic_ship.svg) 0 center no-repeat
+}
+
+.cutSvc .works li strong {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold
+}
+
+.cutSvc .works li span {
+    display: block;
+    color: #e0000c
+}
+
+.cutSvc .works a {
+    display: inline-block;
+    margin-top: 32px;
+    padding: 0 38px;
+    height: 40px;
+    line-height: 40px;
+    background: #111;
+    color: #fff;
+    border-radius: 2px
+}
+
+.cutSvc .why {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.cutSvc .why ul {
+    display: flex;
+    padding: 20px 0 0;
+}
+
+.cutSvc .why li {
+    flex: 1;
+    padding-top: 100px;
+    background: url(../images/content/ico_allInOne@2x.png) 0 28px no-repeat;
+    background-size: 46px;
+}
+
+.cutSvc .why li:nth-child(2) {
+    margin-left: 32px;
+    background: url(../images/content/ico_support@2x.png) 0 28px no-repeat;
+    background-size: 46px;
+}
+
+.cutSvc .why li:nth-child(3) {
+    margin-left: 32px;
+    background: url(../images/content/ico_engineer@2x.png) 0 28px no-repeat;
+    background-size: 46px;
+}
+
+.cutSvc .why li strong {
+    margin-bottom: 6px;
+}
+
+.cutSvc .partswini {
+    display: flex;
+    align-items: center;
+    margin: 80px auto 100px;
+    padding: 16px 36px;
+    width: 1024px;
+    background: #001a46;
+    border-radius: 4px
+}
+
+.cutSvc .partswini dt {
+    flex: 3.5;
+    margin: 0;
+    padding: 12px 0 12px 80px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    background: url(https://image.autowini.com/resources/IMG/DGN/partswini/pi_partswini_symbol.png) 0 center no-repeat;
+    text-align: left;
+    background-size: 60px
+}
+
+.cutSvc .partswini dd {
+    flex: 1;
+    margin: 0;
+    padding: 12px 0
+}
+
+.cutSvc .partswini a {
+    display: block;
+    width: 100%;
+    background: #00348E;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px
+}
+
+/* how to start */
+.howToStart .start {
+    padding-left: 260px;
+    background: #101010 url(../images/content/bg_howToStart.png) right 40% bottom -30px no-repeat;
+}
+
+.ar .howToStart .start {
+    padding-right: 260px;
+    padding-left: 0;
+}
+
+.ar .howToStart .lnb_layout {
+    padding-right: 260px;
+    padding-left: 0
+}
+
+.howToStart .start .inner {
+    position: relative;
+    padding: 100px 0;
+    width: 1024px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.howToStart .start .title {
+    width: 40%;
+    font-size: 56px;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.howToStart .start .title+p {
+    padding-top: 28px;
+    width: 40%;
+    font-size: 24px;
+    color: #ccc;
+}
+
+.ko .howToStart .start .title+p {
+    font-size: 20px;
+}
+
+.es .howToStart .start .title+p {
+    font-size: 20px;
+}
+
+.ru .howToStart .start .title {
+    font-size: 50px;
+}
+
+.ru .howToStart .start .title+p {
+    font-size: 20px;
+}
+
+.mn .howToStart .start .title {
+    font-size: 44px;
+}
+
+.mn .howToStart .start .title+p {
+    font-size: 20px;
+}
+
+.howToStart .start .bg_how {
+    position: absolute;
+    top: 0;
+    left: 200px
+}
+
+.howToStart .start .bg_how {
+    position: absolute;
+    top: 0;
+    left: 200px
+}
+
+.howToStart .start .bg {
+    display: block;
+    text-shadow: 0 0 80px rgba(255, 255, 255, .5);
+    background: url(https://image.autowini.com/cdn/auction/web/images/content/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes aitf {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.howToStart .start .bounce {
+    display: block;
+    position: relative;
+    animation: bounce 1s infinite linear;
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        top: 0;
+        opacity: 1
+    }
+
+    50% {
+        top: -10px;
+        opacity: 1
+    }
+
+    70% {
+        top: -3px;
+        opacity: 1
+    }
+
+    100% {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.howToStart .page_tit {
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.howToStart .page_tit b {
+    display: block;
+    margin-bottom: 12px;
+    color: #e0000c
+}
+
+.howToStart .page_tit+p {
+    margin-top: 16px;
+    font-size: 17px
+}
+
+.howToStart .page_tit+p b {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.howToStart .section {
+    margin-bottom: 160px
+}
+
+.howToStart .section button {
+    display: inline-block;
+    padding: 0 48px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: #e0000c;
+    border-radius: 4px
+}
+
+.howToStart .flex {
+    display: flex;
+    align-items: center;
+}
+
+.howToStart .left {
+    flex: 1;
+    margin-right: 80px;
+}
+
+.howToStart .right {
+    flex: 1;
+    overflow: hidden
+}
+
+.howToStart .membership {
+    display: flex;
+    margin-top: 24px
+}
+
+.howToStart .membership>li {
+    flex: 1;
+    text-align: left;
+    border: 2px solid #fbb80c;
+    background: #FFF8E7;
+    border-radius: 10px
+}
+
+.howToStart .membership>li+li {
+    margin-left: 16px
+}
+
+.howToStart .membership dt {
+    padding: 6px 12px;
+    font-size: 22px;
+    line-height: 50px;
+    font-weight: bold;
+    border-bottom: 1px solid #fbb80c
+}
+
+.howToStart .membership dt img {
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: middle
+}
+
+.howToStart .membership dd {
+    padding: 6px 12px;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+.howToStart .membership dd li {
+    margin: 14px 0;
+    padding-left: 22px;
+    font-weight: bold;
+    background: url(../images/content/bg_check_yellow.png) 0 0 no-repeat;
+    background-size: 16px;
+}
+
+.howToStart .membership .basic {
+    border: 2px solid #e0e0e0;
+    background: #f5f5f5;
+}
+
+.howToStart .membership .basic dt {
+    border-color: #e0e0e0;
+}
+
+.howToStart .membership .basic li {
+    background: url(../images/content/bg_check_silver.png) 0 0 no-repeat;
+    background-size: 16px;
+}
+
+.howToStart .membership .basic .red {
+    display: block;
+    color: #e0000c;
+    margin-top: 36px;
+    line-height: 1.4;
+    padding: 0;
+    background: none
+}
+
+.howToStart .bid .right {
+    margin-top: 24px
+}
+
+.howToStart .get .sub {
+    display: block;
+    margin: 38px 0 20px;
+    color: #0c0d0e;
+    font-size: 20px
+}
+
+.howToStart .get button {
+    display: block;
+    margin: 12px 0;
+    padding: 0 60px 0 24px;
+    width: 80%;
+    height: 50px;
+    text-align: left;
+    line-height: 50px;
+    color: #0c0d0e;
+    background: #fff url(https://image.autowini.com/resources/IMG/common/ico_next.png) right 18px center no-repeat;
+    background-size: 20px;
+    border: 1px solid #0c0d0e
+}
+
+.howToStart .get button img {
+    display: inline-block;
+    height: 36px;
+    margin-right: 18px;
+    vertical-align: middle
+}
+
+.howToStart .faq .page_tit {
+    padding-bottom: 28px
+}
+
+.howToStart .faq ul {
+    border-bottom: 1px solid #333;
+    text-align: left;
+    background: #fff
+}
+
+.howToStart .faq li .ques:before {
+    display: inline-block;
+    content: 'Q.';
+    margin-right: 8px;
+    font-size: 16px;
+    color: #e0000c;
+    font-weight: bold
+}
+
+.ru .howToStart .faq li .ques:before {
+    content: 'B.';
+}
+
+.es .howToStart .faq li .ques:before {
+    content: 'P.';
+}
+
+.mn .howToStart .faq li .ques:before {
+    content: 'A.';
+}
+
+.howToStart .faq li .ques {
+    display: block;
+    padding: 16px 58px 16px 24px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: -.3px;
+    border-top: 1px solid #e0e0e0;
+    background: url(https://image.autowini.com/resources/IMG/common/drop_arrow_fill_2.png) right 18px center no-repeat;
+    background-size: 26px
+}
+
+.howToStart .faq li:first-child .ques {
+    border-color: #333
+}
+
+.howToStart .faq li .ques+p {
+    display: none;
+    padding: 16px 24px;
+    font-size: 16px;
+    background: #f5f5f5;
+    border-top: 1px solid #e0e0e0;
+}
+
+.howToStart .faq li p a {
+    display: block;
+    margin-top: 6px;
+    color: #0B83E6;
+    text-decoration: underline
+}
+
+.howToStart .faq li.on .ques {
+    background: url(https://image.autowini.com/resources/IMG/common/drop_arrow_fill_1.png) right 18px center no-repeat;
+    background-size: 26px
+}
+
+.howToStart .faq li.on p {
+    display: block;
+}
+
+.howToStart .delivery .right {
+    position: relative
+}
+
+.howToStart .swiperDelivery img {
+    width: 472px
+}
+
+.howToStart .indicaotr {
+    display: inline-block;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    padding: 8px 8px 6px;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 0;
+    border-radius: 60px;
+    z-index: 111
+}
+
+.howToStart .indicaotr span {
+    display: inline-block;
+    width: 20px;
+    height: 17px;
+    font-size: 0;
+    cursor: pointer
+}
+
+.howToStart .indicaotr .prevArrow {
+    background: url(/assets/img/ico_bnPrev.png) center no-repeat;
+}
+
+.howToStart .indicaotr .nextArrow {
+    background: url(/assets/img/ico_bnNext.png) center no-repeat
+}
+
+.howToStart .htFooter {
+    margin: 0;
+    padding: 60px 0;
+    text-align: center;
+    background: #101010;
+}
+
+.howToStart .htFooter .page_tit {
+    margin-bottom: 24px;
+    text-align: center;
+    color: #fff
+}
+
+.howToStart .lnb_layout {
+    padding-top: 100px;
+}
+
+/*videos*/
+.spt_videos ul {
+    margin-bottom: 80px;
+}
+
+.spt_videos li {
+    float: left;
+    width: 49%;
+    margin-bottom: 40px;
+}
+
+.spt_videos li:first-child {
+    margin-right: 2%;
+}
+
+.spt_videos li iframe {
+    max-width: 100%;
+}
+
+.spt_videos li a {
+    display: inline-block;
+}
+
+.spt_videos li a:hover {
+    text-decoration: underline;
+}
+
+.ar .spt_videos li a {
+    width: 100%;
+    text-align: right
+}
+
+.spt_videos .section {
+    position: relative;
+}
+
+.spt_videos .btn_txtLink {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* 구매자 리뷰 */
+.customReview {}
+
+/* 리뷰 공통 */
+.customReview .flag {
+    font-size: 14px;
+    color: #505050;
+    font-weight: 500
+}
+
+.customReview .flag img {
+    display: inline-block;
+    width: auto;
+    height: 13px;
+    margin-top: 8px;
+    margin-right: 8px;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+/* 스크립트해보기 */
+.customReview .grayBar {}
+
+.customReview .grayBar:before {
+    content: "";
+    width: 1px;
+    height: 12px;
+    background: #ddd;
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle
+}
+
+.customReview .searchBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #F9F9F9;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    padding: 24px;
+    margin-bottom: 40px
+}
+
+.searchBox .checkArea li {
+    display: inline-block;
+    margin-right: 22px;
+}
+
+.checkArea li input[type="checkbox"]+label {
+    font-size: 14px;
+    padding-top: 3px;
+    padding-left: 31px;
+    font-weight: 500;
+    color: #111
+}
+
+.checkArea li input[type="checkbox"]:checked+label {
+    font-size: 14px;
+    padding-left: 31px
+}
+
+.checkArea li input[type="checkbox"]:checked+label:after {
+    background: url(../images/content/ico_check_on.png) no-repeat center;
+    background-size: 20px 20px;
+}
+
+.checkArea li input[type="checkbox"]+label:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../images/content/ico_check.png) no-repeat center;
+    background-size: 18px 18px
+}
+
+.optionArea {}
+
+.optionArea select {
+    width: 200px;
+    height: 42px;
+    line-height: 40px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin: 0 8px 0 0;
+}
+
+.optionArea input {
+    width: 200px;
+    height: 42px;
+    line-height: 40px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin-right: 8px
+}
+
+.optionArea button {
+    padding: 0px 30px;
+    background: #E82020;
+    color: #fff;
+    line-height: 42px;
+    margin-right: 20px
+}
+
+.optionArea a {
+    text-decoration: underline;
+    cursor: pointer
+}
+
+.listBox {}
+
+.listBox .listNum {
+    padding: 16px 0;
+    border-bottom: 1px solid #eee
+}
+
+.listBox .listNum div {
+    font-size: 15px;
+    font-weight: 500
+}
+
+.listBox .listNum span {
+    color: #E82020;
+    margin: 0 2px
+}
+
+.listBox .imgListArea {}
+
+.imgListArea .imgList {
+    display: flex;
+    flex-direction: column
+}
+
+.imgListArea .imgList .listBox {
+    border-bottom: 1px solid #ddd;
+    padding: 30px 0;
+}
+
+.imgListArea .imgList .listBox .reviewDetailList {
+    display: flex;
+}
+
+.listBox .video {
+    flex: 1;
+    max-width: 100%;
+    height: 140px;
+    background: #101010
+}
+
+.listBox .video img {
+    width: 100%
+}
+
+.listBox .imgText {
+    flex: 4;
+    background: #fff;
+    padding: 0 16px;
+}
+
+.listBox .imgText .text01 {
+    color: #111;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    word-break: break-word;
+}
+
+.listBox .imgText .text02 {
+    color: #505050;
+    font-size: 14px;
+    font-weight: 500
+}
+
+.listBox .imgText .videoInfo {
+    overflow: hidden;
+    margin-bottom: 10px
+}
+
+.listBox .videoInfo .best {
+    padding-left: 22px;
+    margin-right: 15px;
+    cursor: pointer;
+    background: url(../images/content/ico_like_gray.png) no-repeat center left;
+    background-size: 16px
+}
+
+.listBox .videoInfo .best span {
+    color: #007aff;
+    font-weight: 500;
+    font-size: 14px;
+    margin-right: 18px
+}
+
+.listBox .videoInfo .comment {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+    position: relative;
+    background: url(../images/content/ico_comment02.png) no-repeat center;
+    background-size: 16px;
+    display: inline-block;
+}
+
+.listBox .videoInfo span {
+    position: relative;
+    margin-right: 30px
+}
+
+.listBox .videoInfo>span:after {
+    content: "";
+    width: 1px;
+    height: 12px;
+    background: #ddd;
+    display: inline-block;
+    position: absolute;
+    left: -15px;
+    top: 3px
+}
+
+.listBox .videoInfo span.flag:after {
+    content: none
+}
+
+.listBox .viewIconBox+p {
+    margin-top: 20px
+}
+
+.listBox .viewIconBox .bestIcon {
+    display: none;
+    padding: 0px 26px;
+    background: #E82020;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 10px;
+    height: 18px
+}
+
+.listBox .viewIconBox .bestIcon.on {
+    display: inline-block
+}
+
+.listBox .viewIconBox .youtubeIcon {
+    width: 0px;
+    height: 18px;
+    display: inline-block;
+    background: url(../images/common/new/ic_yt_on.svg) no-repeat center;
+    background-size: contain;
+    vertical-align: middle
+}
+
+.listBox .viewIconBox .youtubeIcon {
+    width: 24px
+}
+
+.listBox.best .viewIconBox .bestIcon {
+    display: inline-block
+}
+
+.listBox.youtube .viewIconBox .youtubeIcon {
+    width: 26px
+}
+
+.listBox .contentBox {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    line-height: 1.5em;
+    max-height: 7.5em;
+    overflow: hidden
+}
+
+.agingSearch {
+    margin-top: 70px;
+    text-align: center;
+    display: none;
+}
+
+.agingSearch span {
+    color: #777
+}
+
+/* 바이어후기 상세 */
+.reviewTitBox {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 24px
+}
+
+.reviewTitBox p {
+    color: #111;
+    font-size: 24px;
+    font-weight: 500
+}
+
+.reviewTitBox p .reviewer {
+    color: #111;
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 4px
+}
+
+.reviewTitBox .titInfo {
+    display: flex;
+    justify-content: space-between
+}
+
+.titInfo .titInfoDetail {
+    line-height: 32px
+}
+
+.titInfo .titInfoDetail span {
+    font-size: 14px
+}
+
+.titInfo .titInfoDetail .view {
+    padding-left: 38px;
+    background: url(../images/content/carbon_view.png) no-repeat 16px center;
+    background-size: 16px;
+    position: relative
+}
+
+.titInfo .titInfoDetail .view:before {
+    content: "";
+    width: 1px;
+    height: 12px;
+    background: #ddd;
+    margin: 0 10px;
+    position: absolute;
+    top: 2px;
+    left: -4px
+}
+
+.titInfo .titButton {
+    display: none
+}
+
+.titInfo .titButton a {
+    font-size: 14px;
+    padding: 7px 22px;
+    line-height: 32px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    cursor: pointer
+}
+
+.titInfo .titButton a+a {
+    margin-left: 8px
+}
+
+.reviewDetailArea {
+    padding: 0 16px
+}
+
+.reviewPhoto {
+    display: flex;
+    margin: 36px auto;
+    align-items: flex-start
+}
+
+.reviewPhoto .photoBox {
+    flex: 1;
+    max-height: 380px
+}
+
+.reviewPhoto .photoBox+.photoBox {
+    flex: 1.5;
+    margin-left: 24px;
+}
+
+.reviewPhoto .photoBox iframe {
+    min-height: 380px
+}
+
+.reviewPhoto .photoBox img {
+    height: 100%;
+    max-height: 380px;
+    object-fit: contain;
+}
+
+.reviewBestArea {
+    margin: 20px 0;
+    text-align: center
+}
+
+.reviewBestArea .btnBest {
+    padding: 5px 20px 5px 36px;
+    background: url(../images/content/ico_like.png) no-repeat center left 16px;
+    background-size: 16px;
+    width: 80px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    font-size: 14px;
+    color: #111;
+    cursor: pointer
+}
+
+.reviewArea .tag {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px
+}
+
+.reviewArea .tag span:first-child {
+    font-size: 15px;
+    color: #333;
+    line-height: 32px;
+    padding-left: 26px;
+    background: url(../images/content/ico_tag.png) no-repeat center left;
+    background-size: 20px
+}
+
+.reviewArea .tag .amendBox {}
+
+.reviewArea .tag .amendBox a {
+    cursor: pointer;
+    padding: 4px 20px;
+    line-height: 24px;
+    border: 1px solid #eee;
+    font-size: 13px;
+    border-radius: 4px
+}
+
+.reviewArea dl {
+    background-color: #F8F8F8;
+    padding: 25px 40px 25px 56px
+}
+
+.reviewArea dt {
+    position: relative
+}
+
+.reviewArea dt:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url(../images/content/dash.png) no-repeat center;
+    position: absolute;
+    left: -18px;
+    top: -3px
+}
+
+.reviewArea dt .name {
+    font-size: 15px;
+    color: #111;
+    font-weight: 500
+}
+
+.reviewArea dt .data {
+    font-size: 12px;
+    color: #999;
+    font-weight: 400
+}
+
+.reviewArea dt .time {
+    font-size: 12px;
+    color: #999;
+    font-style: normal;
+    margin-left: 4px
+}
+
+.reviewArea dt+dd {
+    margin-top: 12px
+}
+
+.reviewArea dd {
+    font-size: 14px;
+    color: #333
+}
+
+/* 후기작성/수정 */
+.contents .page_tit {
+    margin: 0 auto;
+    text-align: left
+}
+
+.reviewWrite {
+    margin: 0 auto;
+    background: #fff
+}
+
+.reviewWrite .writeArea {
+    padding: 20px 0;
+    position: relative;
+}
+
+.reviewWrite .writeArea dl {
+    display: flex;
+    align-items: center
+}
+
+.reviewWrite .writeArea dt {
+    width: 160px;
+    height: 120px;
+    display: inline-block;
+    border-radius: 4px;
+    background-size: contain
+}
+
+.reviewWrite .writeArea dt img {
+    border-radius: 4px
+}
+
+.reviewWrite .writeArea dd {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333
+}
+
+.reviewWrite .writeArea dd span {
+    color: #111
+}
+
+.reviewWrite .req {
+    text-align: center;
+    font-size: 13px;
+    color: #DB3500;
+    margin-top: 40px
+}
+
+.writeArea {
+    margin-top: 32px
+}
+
+.writeArea li p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #111;
+    display: inline-block
+}
+
+.writeArea li>div {
+    margin-top: 10px
+}
+
+.writeArea li p:after {
+    content: "*";
+    color: #E82020
+}
+
+.writeArea li.wArea04 p:after {
+    content: none
+}
+
+.writeArea li+li {
+    margin-top: 25px
+}
+
+.writeArea li input {
+    border-color: #ddd
+}
+
+.writeArea li input[type="text"]:focus {
+    border-color: #ddd
+}
+
+.writeArea li.wArea02>div {
+    display: flex;
+    align-items: flex-end
+}
+
+.writeArea li.wArea02 .photoBox {
+    position: relative;
+    width: 160px;
+    height: 120px;
+    background: #F8F8F8 url(../images/content/ico_photo_fill.png) no-repeat center 30px;
+    background-size: 40px;
+    border: 2px dashed #dddddd;
+    border-radius: 4px
+}
+
+.writeArea li.wArea02 .photoBox .photoDel {
+    display: none
+}
+
+.writeArea li.wArea02 .photoBox.on {
+    border: none;
+    height: 100%;
+    max-height: 160px
+}
+
+.writeArea li.wArea02 .photoBox.on+ul li:first-child .photoDel {
+    display: block;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/content/ico_trash_fill_gray.png) no-repeat center;
+    background-size: 24px;
+    cursor: pointer;
+}
+
+.writeArea li.wArea02 ul {
+    flex: 1;
+    padding-left: 30px
+}
+
+.writeArea li.wArea02 ul li {
+    font-size: 13px;
+    position: relative
+}
+
+.writeArea li.wArea02 ul li:first-child {
+    line-height: 46px
+}
+
+.writeArea li.wArea02 ul li:before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background-color: #ccc;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 4px
+}
+
+.writeArea li.wArea02 ul li:first-child:before {
+    content: none;
+    padding-bottom: 20px
+}
+
+.writeArea li.wArea02 ul li+li {
+    margin-top: 5px
+}
+
+.writeArea li.wArea02 .photoStory {
+    display: none;
+    font-size: 16px;
+    padding-left: 55px
+}
+
+.writeArea li.wArea02 .photoBox.on+ul li .photoStory {
+    display: block
+}
+
+.writeArea li.wArea03 textarea {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    height: 140px;
+    margin-top: 10px;
+    border-radius: 4px
+}
+
+.writeArea li.wArea04 em {
+    font-size: 13px;
+    margin-top: 5px;
+    color: #777
+}
+
+.reviewWrite .reviewWriteBtn {
+    text-align: center;
+    margin-top: 20px
+}
+
+.reviewWrite .reviewWriteBtn a {
+    line-height: 48px;
+    font-size: 15px;
+    cursor: pointer
+}
+
+.reviewWrite .reviewWriteBtn a+a {
+    margin-left: 12px
+}
+
+.reviewWrite .reviewWriteBtn a.cancle {
+    padding: 10px 40px;
+    background-color: #fff;
+    border: 1px solid #ddd
+}
+
+.reviewWrite .reviewWriteBtn a.save {
+    padding: 10px 80px;
+    background-color: #E82020;
+    border: 1px solid #E82020;
+    color: #fff;
+    font-weight: 600
+}
+
+/* 후기작성 알럿 */
+.registAlertPopup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 20px;
+    width: 340px;
+    border: 1px solid #aaa;
+    text-align: center;
+    z-index: 999;
+    background: #fff
+}
+
+.registAlertPopup p {
+    line-height: 30px;
+    margin: 40px 0
+}
+
+.registAlertPopup a {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background: #111;
+    padding: 10px 30px;
+    border-radius: 4px;
+    display: block;
+    cursor: pointer
+}
+
+.localAuction h4 {
+    color: #303030;
+    font-weight: 600
+}
+
+.localAuction li {
+    display: flex;
+    padding: 20px 0;
+}
+
+.localAuction li span {
+    width: 70px;
+    margin-right: 8px;
+    font-size: 50px;
+    line-height: 1;
+    font-weight: bold;
+    color: #eee
+}
+
+.localAuction li dl {
+    flex: 8
+}
+
+.localAuction li dt {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.localAuction li dd {
+    font-weight: 400;
+    color: #707070
+}
+
+.localAuction li dd a {
+    color: #007aff;
+    text-decoration: underline
+}
+
+.localAuction .bidLink {
+    background: #f6f6f6;
+    border-radius: 8px;
+}
+
+.localAuction .bidLink a {
+    display: block;
+    padding: 32px 54px;
+    width: 100%;
+    height: 100%;
+    background: url(../images/content/bg_bid.png) right 32px center no-repeat
+}
+
+.localAuction .bidLink strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 22px;
+    color: #101010;
+    font-weight: bold
+}
+
+.localAuction .bidLink span {
+    display: block;
+    padding-right: 240px;
+    color: #606060;
+    line-height: 1.5;
+}
+
+

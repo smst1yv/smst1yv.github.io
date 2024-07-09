@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/two.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrap">
+
+        <header class="header en">
+            <!-- HEADER LANGUAGE -->
+            <div class="headerTnb clearfix">
+                <div class="inner">
+
+
+                    <div class="language">
+                        <button type="button" id="lang" class="btnLang">English</button>
+                        <ul class="clearfix">
+                            <li id="en" class="on"><a href="javscript:;" class="btn_language btn_only_buyer lang_en act"
+                                    style="display: inline-block;">English</a></li>
+                            <li id="es"><a href="javscript:;" class="btn_language btn_only_buyer lang_es"
+                                    style="display: inline-block;">Español</a></li>
+                            <li id="ru"><a href="javscript:;" class="btn_language btn_only_buyer lang_ru"
+                                    style="display: inline-block;">Русский</a></li>
+                            <li id="ar"><a href="javscript:;" class="btn_language btn_only_buyer lang_ar"
+                                    style="display: inline-block;">العربية</a></li>
+                            <li id="mn"><a href="javscript:;" class="btn_language btn_only_buyer lang_mn"
+                                    style="display: inline-block;">Монгол</a></li>
+                            <li id="ko" class="ko"><a href="javscript:;" class="btn_language lang_ko"
+                                    style="display: inline-block;">한국어</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="gmt" id="gmt">
+                        <a href="javascript:;"><span id="headerTime">22:11 pm London</span></a>
+                        <div class="set_gmt">
+                            <span class="clearfix">Set Your Time Zone<em id="timeChg">22:11 pm London</em></span>
+                            <select id="set_timeZone" name="set_tz">
+                                <option data-sub="GMT" value="Europe/London">(GMT+00:00) U.K London</option>
+                                <option data-sub="PYST" value="America/Asuncion">(GMT-03:00) Paraguay Asuncion</option>
+                                <option data-sub="CLST" value="America/Santiago">(GMT-03:00) Chile Santiago</option>
+                                <option data-sub="AST" value="America/Santo_Domingo">(GMT-04:00) Rep Dominicana Santo
+                                    Domingo</option>
+                                <option data-sub="CST" value="America/Tegucigalpa">(GMT-06:00) Honduras Tegucigalpa
+                                </option>
+                                <option data-sub="CST" value="America/Guatemala">(GMT-06:00) Guatemala Guatemala
+                                </option>
+                                <option data-sub="GMT" value="Africa/Accra">(GMT+00:00) Ghana Accra</option>
+                                <option data-sub="WAT" value="Africa/Lagos">(GMT+01:00) Nigeria Lagos</option>
+                                <option data-sub="WAT" value="Africa/Libreville">(GMT+01:00) Gabon libreville</option>
+                                <option data-sub="CET" value="Europe/Tirane">(GMT+01:00) Albania Tirane</option>
+                                <option data-sub="CET" value="Europe/Warsaw">(GMT+01:00) Poland Warsaw</option>
+                                <option data-sub="EET" value="Africa/Tripoli">(GMT+02:00) Libya Tripoli</option>
+                                <option data-sub="CAT" value="Africa/Kigali">(GMT+02:00) Rwanda Kigali</option>
+                                <option data-sub="EET" value="Europe/Kiev">(GMT+02:00) Ukraine Kiev</option>
+                                <option data-sub="AST" value="Asia/Riyadh">(GMT+03:00) Saudi Arabia Riyadh</option>
+                                <option data-sub="MSK" value="Europe/Moscow">(GMT+03:00) Russia Moscow</option>
+                                <option data-sub="EAT" value="Indian/Antananarivo">(GMT+03:00) Madagascar Antananarivo
+                                </option>
+                                <option data-sub="GET" value="Asia/Tbilisi">(GMT+04:00) Georgia Tbilisi</option>
+                                <option data-sub="AZT" value="Asia/Baku">(GMT+04:00) Azerbaijan Baku</option>
+                                <option data-sub="UZT" value="Asia/Tashkent">(GMT+05:00) Uzbekistan Tashkent</option>
+                                <option data-sub="ICT" value="Asia/Phnom_Penh">(GMT+07:00) Cambodia Phnom Penh</option>
+                                <option data-sub="ULAT" value="Asia/Ulaanbaatar">(GMT+08:00) Mongolia Ulaanbaatar
+                                </option>
+                                <option data-sub="KST" value="Asia/Seoul">(GMT+09:00) Korea Seoul</option>
+                            </select>
+                            <div class="btn_area clearfix">
+                                <button type="button" id="btn_sv" class="btn_sv">Save My Time Zone</button>
+                                <button type="button" id="btn_cl" class="btn_cl">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- END HEADER LANGUAGE -->
+
+            <!-- SEARCH HEADER -->
+            <div class="headerCon">
+                <div class="inner">
+
+                    <div class="left">
+                        <h1 class="logo">
+                            <a href="/main"><img src="https://image.autowini.com/resources/IMG/common/img_logo.svg"></a>
+                        </h1>
+                        <div class="searchBox">
+                            <input id="i_skeyword_header_Search" type="text" class="ui-autocomplete-input"
+                                placeholder="Enter Make, Model, Year" autocomplete="off">
+                            <button id="btnheaderSearch" type="button" class="btn_search"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="right" id="headMenuArea">
+                        <ul class="quickMeun buyer clearfix" style="display:none;">
+                            <li class="account">
+                                <a href="javascript:;">
+                                    <i></i>
+                                    <span class="label">My Account</span>
+                                </a>
+                                <div class="accountModal">
+                                    <ul>
+                                        <li><a href="/mypage/info/my-account-view">My Information</a></li>
+                                        <li id="btnMembership"><a href="javscript:;">Membership Status</a></li>
+                                        <li id="btnPhotoId"><a href="javscript:;">Photo ID</a></li>
+                                        <li id="btnDeposit"><a href="javscript:;">Deposit</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="watch btn_subList" data-flag="WL">
+                                <a href="javascript:;">
+                                    <i></i>
+                                    <span class="label">Watch List</span>
+                                </a>
+                            </li>
+                            <li class="order account alertCheck ">
+                                <a href="javascript:;">
+                                    <i></i>
+                                    <span class="label">My Auction</span>
+                                </a>
+                                <div class="accountModal">
+                                    <ul>
+                                        <li><a href="/mybids/get-bidding-list/live">My Bidding (Live)</a></li>
+                                        <li><a href="/mybids/get-bidding-list/local">My Bidding (Rental/Local)</a></li>
+                                        <li><a href="/mybids/order-list" class="alertCheck ">My Order</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="quickMeun seller clearfix" style="display: none">
+                            <li class="account">
+                                <a href="javascript:;">
+                                    <i></i>
+                                    <span class="label">마이페이지</span>
+                                </a>
+
+                                <div class="accountModal">
+                                    <ul>
+                                        <li class="sub_my_info">
+                                            <a href="javscript:;" class="">내 정보</a>
+                                        </li>
+                                        <li class="sub_employee_manage ceo" style="display: none">
+                                            <a href="javscript:;">직원 관리</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="contact btn_sale_contact">
+                                <a href="javascript:;">
+                                    <i></i>
+                                    <span class="label">가입문의</span>
+                                </a>
+                            </li>
+                            <li class="regist btn_sale_reg">
+                                <a href="javascript:;">
+                                    <i></i>
+                                    <span class="label">매물등록</span>
+                                </a>
+                            </li>
+                            <li class="manage btn_sale_manage">
+                                <a href="javascript:;">
+                                    <i></i>
+                                    <span class="label">매물관리</span>
+                                </a>
+                            </li>
+                            <li class="biding btn_sale_biding">
+                                <a href="javascript:;">
+                                    <i></i>
+                                    <span class="label">입찰내역</span>
+                                </a>
+                            </li>
+                            <li class="order btn_sale_order">
+                                <a href="javascript:;">
+                                    <i></i>
+                                    <span class="label">거래내역</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="signZone nologin" style="" id="noLoginMenu">
+                            <li class="signIn"><a href="/login">SIGN IN</a></li>
+                            <li class="singUp"><a href="/join/joinus">SIGN UP</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- END SEARCH HEADER -->
+            <div class="headerGnb">
+                <div class="inner">
+                    <div class="menu buyer">
+                        <div class="menuLive"><a href="/entry/carsale/get-carsale-pc-list-on">Auctions</a></div>
+
+                        <ul class="depth1">
+                            <li class="rentalAuc">
+                                <a href="javascript:;" style="line-height: 62px;" id="rentalAucEvent">
+                                    <span
+                                        style="display:block;position:absolute;top:8px;left:50%;text-align:center;width:100%;font-size:11px;line-height:1;color:#FF3102;transform: translateX(-50%);">
+                                        EVENT
+                                    </span>
+                                    Rental Auction
+                                </a>
+                                <a href="javascript:;" id="rentalAucNoneEvent" style="display: none;">
+                                    Rental Auction
+                                </a>
+                            </li>
+                            <li class="localAuc">
+                                <a href="javascript:;" style="line-height:62px; display:none;" id="localAucEvent">
+                                    <span
+                                        style="display:block;position:absolute;top:8px;left:50%;text-align:center;width:100%;font-size:11px;line-height:1;color:#dd1f26;transform: translateX(-50%);">
+                                        EVENT
+                                    </span>
+                                    Local Auction
+                                </a>
+                                <a href="javascript:;" id="localAucNoneEvent">
+                                    Local Auction
+                                </a>
+                            </li>
+                            <li class="memuKo"> <a href="/support/howtobuy/overview" class="btn_menu">Support</a>
+                                <ul class="depth2">
+                                    <li><a href="/support/how-to-start" class="">How to Start</a></li>
+                                    <li><a href="/support/howtobuy/overview" class="">How to Buy</a></li>
+                                    <li><a href="/support/terms-guides" class="">Terms and Guides</a></li>
+                                    <li><a href="/support/fee-cost" class="">Fees &amp; Costs</a></li>
+                                    <li><a href="/support/rule-policy" class="">Rules &amp; Policies</a></li>
+                                    <li><a href="/support/shipping" class="">Shipping</a></li>
+                                    <li><a href="/support/cutting-service" class="">Cutting Services</a></li>
+                                    <li><a href="/support/local-auction" class="">Rental and Local Auctions</a></li>
+                                    <li><a href="/support/contactus" class="">Contact Us</a></li>
+                                </ul>
+                            </li>
+                            <li class="reviewsmenu">
+                                <a href="/community/reviews" class="btn_menu">Reviews</a>
+                                <ul class="depth2">
+                                    <li><a href="/community/reviews">Buyer's review</a></li>
+                                </ul>
+                            </li>
+                            <li class="aboutusmenu">
+                                <a href="/about/aboutus/about-auctionwini" class="btn_menu">About Us</a>
+                                <ul class="depth2">
+                                    <li><a href="/about/aboutus/about-auctionwini">About Us</a></li>
+                                    <li><a href="/support/notice" class="">Notice</a></li>
+
+
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <div class="contents">
+            <div class="aboutArea en">
+
+                <div class="top" style="background-image: url(/assets/img/bg_aboutW.png);">
+                    <div class="inner1280">
+                        <div class="tit">Korea’s No.1 <br>Global Auto Auction</div>
+                        <p>Auctionwini is a place to buy competitive vehicles easier and safer with the lowest pricing. Bid and win cars straight from the local yard just with a few clicks online.</p>
+                    </div>
+                </div>
+
+                <div class="platform inner1280">
+                    <div style="color: #fff;" class="tit">Starting with Korea's No.1 auto trading platform</div>
+                    <p>In 2019, Auctionwini found by Autowini, Korea's No.1 Auto Trading Platform. We are currently operating in a wide range of businesses within the Auto industry. From quality used cars to auto parts, our reputation has been building up for over 10 years.</p>
+                    <a href="">autowini</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

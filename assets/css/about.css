@@ -1,0 +1,1157 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700");
+
+/* How to Buy */
+.htb {
+    display: table;
+    position: relative;
+    padding-bottom: 0;
+    width: 100%;
+    text-align: left;
+    background: #fff
+}
+
+.htb:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.htb .lftMn {
+    display: table-cell;
+    width: 20%;
+    height: 100vh;
+    background: #f4f4f4;
+    border-right: 1px solid #ccc
+}
+
+.htb .lftMn h3 {
+    padding: 30px 40px;
+    font-size: 25px;
+    line-height: 28px;
+    border-bottom: 1px solid #1f1f1f;
+    font-weight: 700
+}
+
+.htb .lftMn li {
+    border-bottom: 1px solid #ccc
+}
+
+.htb .lftMn li a {
+    display: block;
+    position: relative;
+    padding: 20px 40px;
+    color: #666
+}
+
+.htb .lftMn li a:after {
+    display: none;
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    margin-top: -4px;
+    width: 6px;
+    height: 6px;
+    border-right: 1px solid #e0000c;
+    border-top: 1px solid #e0000c;
+    transform: rotate(45deg)
+}
+
+.htb .lftMn li a:hover {
+    color: #1f1f1f
+}
+
+.htb .lftMn li a:hover:after {
+    display: block;
+    border-color: #ccc
+}
+
+.htb .lftMn li a.on {
+    color: #e0000c;
+    background: #fff
+}
+
+.htb .lftMn li a.on:after {
+    display: block;
+    border-color: #e0000c
+}
+
+.htb .rgtCon {
+    display: table-cell;
+    width: 80%;
+    min-height: 90vh;
+}
+
+.htb .rgtCon .ttArea {
+    padding: 0 40px 40px;
+}
+
+.htb .ttArea .tit {
+    padding: 30px 0;
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 400;
+    border-bottom: 1px solid #e0e0e0
+}
+
+.htb .ttArea p {
+    margin: 35px 0;
+    line-height: 1.8
+}
+
+.htb .ttArea span {
+    display: block;
+    margin: 5px 0;
+    padding-left: 10px;
+}
+
+.htb .ttArea em {
+    display: inline-block;
+    padding-right: 10px
+}
+
+.htb .ttArea .quick a {
+    display: block;
+    margin: 15px 0;
+}
+
+.htb .ttArea .quick a span {
+    display: inline-block;
+    color: #e0000c;
+    border-bottom: 1px solid #e0000c
+}
+
+.htb .ttArea .quick a:hover span {
+    border-color: #000;
+    color: #000
+}
+
+.htb .ttArea table {
+    width: 80%;
+    border-top: 2px solid #1f1f1f;
+    border-left: 1px solid #ccc;
+}
+
+.htb .ttArea th {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-left: none;
+    background: #f4f4f4;
+    font-weight: 500;
+    text-align: center;
+}
+
+.htb .ttArea td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-left: none;
+    background: #fff
+}
+
+.htb .ttArea .stt {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600
+}
+
+.htb .ttArea .btnApp {
+    display: block;
+    margin-top: 20px;
+    padding: 0
+}
+
+.htb .ttArea .btnApp a {
+    display: inline-block;
+    padding: 8px 0 8px 30px;
+    width: 210px;
+    font-size: 13px;
+    line-height: 34px;
+    border: 1px solid #000;
+    color: #000;
+    text-align: center
+}
+
+.htb .ttArea .btnAnd {
+    background: #fff url(https://image.autowini.com/resources/IMG/common/ico_and_black.png) 15px center no-repeat;
+    background-size: 28px
+}
+
+.htb .ttArea .btnIos {
+    margin-left: 10px;
+    background: #fff url(https://image.autowini.com/resources/IMG/common/ico_ios_black.png) 25px center no-repeat;
+    background-size: 28px
+}
+
+.htb .ttArea .btnAnd:hover {
+    background: #000 url(https://image.autowini.com/resources/IMG/common/ico_and_white.png) 15px center no-repeat;
+    background-size: 28px;
+    color: #fff
+}
+
+.htb .ttArea .btnIos:hover {
+    background: #000 url(https://image.autowini.com/resources/IMG/common/ico_ios_white.png) 25px center no-repeat;
+    background-size: 28px;
+    color: #fff
+}
+
+.htb .ttArea .feeChart {
+    width: 550px
+}
+
+.htb .ttArea .feeChart td {
+    text-align: center
+}
+
+/* trems */
+.tc_area {
+    width: 100%;
+    max-width: 1240px;
+    padding: 50px 40px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.tc_area h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.tc_area .tit {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 40px 0 10px;
+}
+
+.tc_area .scroll_inner {
+    background: #fff;
+    padding: 20px 50px 50px;
+}
+
+.tc_area dl dt {
+    margin: 15px 0 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #303030;
+}
+
+.tc_area dl dd {
+    color: #505050;
+}
+
+/* about */
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.aboutAuction a {
+    color: #0B83E6;
+}
+
+.aboutAuction {
+    background: #f5f5f5 url("../images/content/bg_aboutBottom.jpg") no-repeat center 122%
+}
+
+.aboutAuction .inner {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.aboutAuction h3 {
+    margin-bottom: 50px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.aboutAuction .info1 {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.aboutAuction .info1 h4 {
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.aboutAuction .info1 p {
+    font-size: 18px;
+}
+
+.aboutAuction .info1 img {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.aboutAuction .info h4 {
+    margin-bottom: 15px;
+}
+
+.aboutAuction .info2 {
+    display: flex;
+    margin-bottom: 160px;
+    padding-right: 40px;
+    min-height: 400px;
+    background: #fff;
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.1);
+}
+
+.aboutAuction .info2 h4 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 500;
+}
+
+.ko.aboutAuction .info2 h4 {
+    margin-bottom: 24px;
+}
+
+.aboutAuction .info2 p {
+    font-size: 16px;
+    color: #808080;
+}
+
+.ko.aboutAuction .info2 p {
+    line-height: 29px;
+}
+
+.aboutAuction .info2 a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 0 30px;
+    height: 55px;
+    font-size: 16px;
+    line-height: 55px;
+    color: #fff;
+    background: #000;
+}
+
+.ko.aboutAuction .info2 a {
+    margin-top: 40px;
+}
+
+.aboutAuction .info2 .left {
+    flex: 1;
+    background: url(../images/content/img_about.png);
+    background-position: center right;
+    background-size: cover
+}
+
+.aboutAuction .info2 .right {
+    flex: 1.4;
+    padding: 30px 0 30px 40px;
+    text-align: left;
+}
+
+.aboutAuction .info3 {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.aboutAuction .info3 h4 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 500;
+}
+
+.aboutAuction .info3 p.txt {
+    margin: 0 auto 40px;
+    width: 85%;
+    font-size: 18px;
+    color: #303030;
+}
+
+.aboutAuction .info3 .circle {
+    padding-bottom: 100px;
+    background: url("../images/content/bg_line.png") no-repeat center bottom;
+}
+
+.aboutAuction .info3 .circle div {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 38px;
+    color: #fff;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.aboutAuction .info3 .circle div span {
+    display: inline-block;
+    margin-top: 110px;
+}
+
+.aboutAuction .info3 .circle .left {
+    margin-right: -20px;
+}
+
+.aboutAuction .info3 .circle .right {
+    margin-left: -20px;
+}
+
+.aboutAuction .info3 li {
+    float: left;
+    width: 33.333%;
+}
+
+.aboutAuction .info3 li>div {
+    margin: 0 auto;
+    padding: 30px 20px;
+    width: 93%;
+    background: #fff;
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.1);
+}
+
+.aboutAuction .info3 li h5 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.aboutAuction .info3 li p {
+    font-size: 16px;
+    color: #808080;
+}
+
+.aboutAuction .info4 {
+    padding: 60px 50px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.aboutAuction .info4 h4 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.aboutAuction .info4 p {
+    font-size: 18px;
+    color: #303030;
+}
+
+.aboutAuction .info5 img {
+    max-width: 100%;
+}
+
+.aboutAuction .info5 {
+    margin-bottom: 140px;
+}
+
+.aboutAuction .info5 .info {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.aboutAuction .info5 .info dt {
+    float: left;
+    width: 30%;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.aboutAuction .info5 .info dd {
+    float: right;
+    width: 60%;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #303030;
+}
+
+.aboutAuction .info5 .img {
+    position: relative;
+}
+
+.aboutAuction .info5 .address {
+    display: block;
+    margin: 20px 0;
+    padding-left: 24px;
+    font-size: 16px;
+    background: url(../images/main/ico_location.png) no-repeat left center;
+}
+
+.aboutAuction .info5 .link {
+    display: inline-block;
+    padding: 0 30px;
+    height: 55px;
+    font-size: 15px;
+    line-height: 55px;
+    color: #fff;
+    background: #000;
+}
+
+.aboutAuction .info5 .btn_box {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.aboutAuction .info5 .btn_box a {
+    display: inline-block;
+    width: 35px;
+    height: 40px;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+    opacity: 1;
+    z-index: 300;
+}
+
+.aboutAuction .info5 .btn_box .prev {
+    background-image: url(../images/main/ico_bnPrev.png);
+}
+
+.aboutAuction .info5 .btn_box .next {
+    background-image: url(../images/main/ico_bnNext.png);
+}
+
+.aboutAuction .info5 .btn_box .pause {
+    background-image: url(../images/main/ico_bnStop.png);
+}
+
+.aboutAuction .info5 .btn_box .play {
+    background-image: url(../images/main/ico_bnPlay.png);
+}
+
+.my_info_b input[type=text]:focus {
+    border: 1px #e00001 solid
+}
+
+.my_info_s input[type=text]:focus {
+    border: 1px #e00001 solid
+}
+
+.my_info_s input[type=tel]:focus {
+    border: 1px #e00001 solid
+}
+
+/*Local Contact*/
+.lnb_layout .titBox .page_tit {
+    margin-bottom: 16px;
+}
+
+.lnb_layout .titBox .pageTxt {
+    font-size: 16px;
+    color: #777;
+}
+
+.btnTab {
+    display: inline-block;
+    margin: 50px 0;
+}
+
+.btnTab a {
+    display: inline-block;
+    padding: 0 32px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    color: #111;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.btnTab a.on {
+    color: #fff;
+    background: #101010;
+    border-color: #101010
+}
+
+.btnTab li.disabled {
+    position: relative;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.btnTab li {
+    position: relative;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.btnTab em {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: no-drop;
+    z-index: 10000;
+}
+
+.localCon {
+    background: #f9f9f9;
+}
+
+.localCon .cTit {
+    font-size: 26px;
+    font-weight: bold;
+    color: #111;
+}
+
+.localCon .cTit span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+}
+
+.localCon .pTxt {
+    color: #555;
+}
+
+.localCon .list_contact {
+    float: left;
+    width: 450px;
+}
+
+.localCon .list_contact>div:first-child .country {
+    margin-top: 0;
+}
+
+.localCon .country {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #111;
+}
+
+.localCon .country img {
+    display: inline-block;
+    margin-top: -2px;
+    margin-right: 12px;
+    width: 28px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+.localCon .sec {
+    margin-top: 16px;
+    padding: 24px;
+    background: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 5%);
+    border-radius: 4px;
+    border: 1px solid #eee;
+}
+
+.localCon .sec>.info {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.localCon .sec .info h4 {
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+}
+
+.localCon .sec .info .name {
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #111;
+}
+
+.localCon .sec .info .num {
+    padding-left: 26px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    background: url(https://image.autowini.com/resources/IMG/common/ico_phone.svg) no-repeat left center;
+    background-size: 20px;
+}
+
+.localCon .sec .info .bar {
+    display: inline-block;
+    width: 1px;
+    height: 15px;
+    background: #ddd;
+    margin: 3px 12px 0;
+    position: relative;
+    top: 2px;
+}
+
+.localCon .sec .info .btn_link {
+    display: inline-block;
+    font-size: 14px;
+    color: #40A3FF;
+    text-decoration: underline;
+}
+
+.localCon .sec .info .btn_link.noLink {
+    cursor: context-menu;
+    text-decoration: none;
+    color: #999;
+}
+
+.localCon .sec .manager>li {
+    margin-top: 16px;
+}
+
+.localCon .sec .manager>li:last-child {
+    border-bottom: 0;
+}
+
+.localCon .sec .manager .info {}
+
+.localCon .sec .btnZone .label {
+    display: inline-block;
+    text-indent: -9999px;
+}
+
+.localCon .sec .btnZone .btn {
+    display: inline-block;
+    margin-left: 12px;
+    width: 32px;
+    height: 32px;
+    background-color: #f5f5f5;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.localCon .sec .btnZone .btn_call {
+    background-image: url(https://image.autowini.com/resources/IMG/common/ico_phone.svg);
+}
+
+.localCon .sec .btnZone .btn_whatsApp {
+    background-image: url(https://image.autowini.com/resources/IMG/common/ico_whatsApp.svg);
+}
+
+.btn_whatsApp {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #22CF3F;
+    color: #22CF3F;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+.btn_whatsApp img {
+    display: inline-block;
+    margin: -2px 6px 0 0;
+    vertical-align: middle;
+}
+
+.localCon .map {
+    position: relative;
+    float: right;
+    width: 524px;
+    text-align: center;
+}
+
+.localCon .map img {
+    max-width: 100%;
+    margin-top: 40px;
+    opacity: 0.7;
+}
+
+.localCon .map span {
+    position: absolute;
+    font-weight: 500;
+}
+
+.localCon .map span em:after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 22px;
+    height: 23px;
+    transform: translateX(-50%);
+    background: url(../images/content/ico_local.svg) center no-repeat;
+    background-size: 16px;
+    animation: bounce1 .4s cubic-bezier(0.82, 0.02, 1, 1) infinite alternate;
+}
+
+.localCon .map .ukraine {
+    bottom: 42%;
+    right: 23%;
+}
+
+.localCon .map .moldova {
+    bottom: 36%;
+    right: 31%;
+}
+
+.localCon .map .georgia {
+    bottom: 26%;
+    right: 9%;
+}
+
+.localCon .map .azerbaijan {
+    bottom: 20%;
+    right: -1%;
+}
+
+.localCon .map .ghana {
+    bottom: 50%;
+    right: 66%;
+}
+
+.localCon .map .rwanda {
+    bottom: 37.5%;
+    right: 30.5%;
+}
+
+/* new About us */
+.aboutArea {
+    background: #000
+}
+
+.aboutArea .inner1280 {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.aboutArea .tit {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 40px;
+    line-height: 1.3;
+    color: #fff;
+    font-weight: bold
+}
+
+.aboutArea .tit+p {
+    width: 80%;
+    margin: 16px auto 0;
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300
+}
+
+.aboutArea>div {
+    padding: 120px 0
+}
+
+.aboutArea .top {
+    position: relative;
+    padding: 0;
+    height: 400px;
+    background: #F0F0F1  center bottom no-repeat;
+    background-size: 1920px;
+}
+
+.aboutArea .top .inner1280 {
+    width: 30%;
+    margin: 0 auto 0 22%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.es.aboutArea .top .inner1280 {
+    width: 34%;
+    margin-left: 20%
+}
+
+.aboutArea .top .tit {
+    padding: 0;
+    line-height: 1.1;
+    color: #0E0C0C;
+}
+
+.aboutArea .top .tit+p {
+    padding: 0;
+    color: #4B4545;
+    font-weight: 400
+}
+
+.aboutArea .swiper-slide img {
+    width: 100%
+}
+
+.aboutArea .swiper-pagination-bullet {
+    background: #fff;
+    opacity: .6
+}
+
+.aboutArea .swiper-pagination-bullet-active {
+    background: #FF4646
+}
+
+.aboutArea .swiper-container-horizontal>.swiper-pagination {
+    bottom: 20px
+}
+
+.aboutArea .platform {
+    text-align: center
+}
+
+.aboutArea .platform p {
+    margin-bottom: 66px;
+}
+
+.aboutArea .platform a {
+    display: inline-block;
+    margin: 0 50px;
+    width: 20%;
+    height: 48px;
+    font-size: 0;
+    color: #000;
+    vertical-align: middle
+}
+
+.aboutArea .platform .autowini_link {
+    background:      0 0 no-repeat;
+    background-size: 100%
+}
+
+.aboutArea .platform .partswini_link {
+    background: url(../images/content/logo_partswini.svg) 0 0 no-repeat;
+    background-size: 100%
+}
+
+.aboutArea .platform .logis_link {
+    background: url(https://image.autowini.com/resources/IMG/common/logo3_1total.png) center no-repeat;
+    background-size: 100%;
+}
+
+.aboutArea .globalCount {
+    padding-top: 0;
+    text-align: center
+}
+
+.aboutArea .globalCount .tit {
+    padding-top: 120px;
+    text-align: center
+}
+
+.aboutArea .globalCount .tit+span {
+    display: block;
+    margin: 0 24px 60px;
+    font-size: 17px;
+    color: #E1D8D8
+}
+
+.aboutArea .globalCount .count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1280px;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+.aboutArea .globalCount .count li {
+    margin: 14px 32px;
+    padding-left: 100px;
+    text-align: left
+}
+
+.ko.aboutArea .globalCount .count li {
+    margin: 14px 52px
+}
+
+.aboutArea .globalCount .gc1 {
+    background: url(../images/content/ic_members.svg) 0 -10px no-repeat;
+    background-size: 77px
+}
+
+.aboutArea .globalCount .gc2 {
+    background: url(../images/content/ic_vehicles.svg) 0 -10px no-repeat;
+    background-size: 77px
+}
+
+.aboutArea .globalCount .gc3 {
+    background: url(../images/content/ic_country.svg) 0 -10px no-repeat;
+    background-size: 77px
+}
+
+.aboutArea .globalCount .count li span {
+    display: block;
+    font-size: 22px;
+    line-height: 1.2;
+    color: #E1D8D8
+}
+
+.aboutArea .globalCount .count li strong {
+    display: block;
+    font-size: 50px;
+    color: #fff
+}
+
+.aboutArea .globalCount .count li b {
+    font-weight: bold;
+}
+
+.aboutArea .dealers {
+    padding: 5rem 3rem;
+    background: #fff;
+}
+
+.aboutArea .dealers .inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1820px;
+    margin: 0 auto;
+}
+
+.aboutArea .dealers .tit {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    margin-right: 32px;
+    color: #1f1f1f;
+}
+
+.es.aboutArea .dealers .tit,
+.ru.aboutArea .dealers .tit {
+    align-items: flex-start;
+    padding-top: 36px;
+}
+
+.aboutArea .dealers dl {
+    flex: 1;
+    margin-left: 1.5rem;
+    text-align: left
+}
+
+.aboutArea .dealers dt {
+    margin-bottom: 6px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #303030
+}
+
+.aboutArea .dealers dt strong {
+    margin-right: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fb3434;
+    vertical-align: middle
+}
+
+.aboutArea .dealers dd {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #606060
+}
+
+.aboutArea .dealers .img {
+    height: 270px;
+    overflow: hidden
+}
+
+.aboutArea .dealers img {
+    height: 100%
+}
+
+.aboutArea .aucLocal {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.aboutArea .aucLocal .inner1280 {
+    width: 100%;
+    text-align: center;
+}
+
+.aboutArea .aucLocal .left,
+.aboutArea .aucLocal .right {
+    width: 475px;
+    margin: 0 16px
+}
+
+.aboutArea .aucLocal .tit+p {
+    margin: 12px 0 42px;
+    width: 100%;
+}
+
+.aboutArea .aucLocal .tit+p:before {
+    display: inline-block;
+    content: '';
+    margin-right: 6px;
+    width: 6px;
+    height: 6px;
+    background: #DD1F26;
+    border-radius: 50%;
+    vertical-align: middle
+}
+
+.aboutArea .aucLocal .local {
+    margin: 24px;
+    padding-left: 28px;
+    background: url(../images/content/ic_map.svg) 0 4px no-repeat;
+}
+
+.aboutArea .aucLocal .local b {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff
+}
+
+.aboutArea .aucLocal .local span {
+    display: block;
+    font-size: 15px;
+    color: #E1D8D8;
+    font-weight: 300;
+}
+
+.aboutArea .aucLocal a {
+    display: block;
+    margin: 20px 24px;
+    padding-left: 28px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+    background: url(../images/content/ic_call.svg) 0 2px no-repeat;
+}
+
+.aboutArea .aucLocal a:after {
+    display: inline-block;
+    content: '';
+    margin-left: 12px;
+    width: 19px;
+    height: 19px;
+    background: url(../images/content/btn_blank.svg) 0 -2px no-repeat;
+    background-size: 23px;
+    vertical-align: middle
+}
+
+.aboutArea .joinus {
+    padding: 0 0 180px;
+    text-align: center
+}
+
+.aboutArea .joinus .inner1280 {
+    padding: 32px;
+    background: #000;
+    border-radius: 10px;
+}
+
+.aboutArea .joinus .btn_area {
+    width: 30%;
+    margin: 40px auto 0
+}
+
+.aboutArea .joinus .btn_area button {
+    font-size: 17px;
+}
